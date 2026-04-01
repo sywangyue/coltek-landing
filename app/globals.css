@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand Colors */
+  --color-background: #FFFFFF;
+  --color-background-alt: #F8F9FA;
+  --color-foreground: #111827;
+  --color-foreground-muted: #6B7280;
+  --color-border: #E5E7EB;
+
+  /* Primary - Tech Purple (Violet-600) */
+  --color-primary: #7C3AED;
+  --color-primary-light: #A78BFA;
+  --color-primary-dark: #6D28D9;
+
+  /* Accent - EVA Green (Emerald-500) */
+  --color-accent: #10B981;
+  --color-accent-light: #34D399;
+  --color-accent-dark: #059669;
+
+  /* Typography */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  --font-chinese: var(--font-noto-sans-sc), system-ui, sans-serif;
+
+  /* Border radius */
+  --radius-btn: 12px;
+  --radius-card: 8px;
+  --radius-container: 16px;
+}
+
+/* Remove dark mode override */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Brand gradient utility */
+.gradient-brand {
+  background: linear-gradient(135deg, #7C3AED, #10B981);
+}
+
+.gradient-brand-text {
+  background: linear-gradient(135deg, #7C3AED, #10B981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── News horizontal scroll: hide scrollbar ── */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Radar animation keyframes (AirspaceShowcase) ── */
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes radar-blink {
+  0%, 100% { opacity: 1;   transform: scale(1); }
+  50%       { opacity: 0.2; transform: scale(0.7); }
+}
+@keyframes radar-pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.animate-radar-spin    { animation: radar-spin 4s linear infinite; }
+.animate-radar-blink   { animation: radar-blink 1.4s ease-in-out infinite; }
+.animate-radar-pulse   { animation: radar-pulse-ring 2s ease-out infinite; }
+
+/* ── AI Hardware ring animation keyframes ── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes spin-reverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(1);   opacity: 0.7; }
+  50%       { transform: scale(1.06); opacity: 1; }
+}
+.animate-spin-slow    { animation: spin-slow    8s linear infinite; }
+.animate-spin-reverse { animation: spin-reverse 12s linear infinite; }
+.animate-pulse-ring   { animation: pulse-ring   3s ease-in-out infinite; }
+
+/* ── Global scrollbar styling ── */
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #7C3AED;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6D28D9;
 }
