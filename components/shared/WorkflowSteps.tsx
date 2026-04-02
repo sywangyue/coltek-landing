@@ -16,8 +16,8 @@ interface Props {
 export default function WorkflowSteps({
   title,
   steps,
-  accentFrom = '#7C3AED',
-  accentTo   = '#10B981',
+  accentFrom = '#8B5CF6',
+  accentTo   = '#34D399',
 }: Props) {
   return (
     <div className="mt-16">

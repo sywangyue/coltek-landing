@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { CheckCircle, MapPin, Phone, Mail, ExternalLink, Loader2 } from 'lucide-react';
+import { CheckCircle, MapPin, Phone, Mail, Loader2 } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/ui/SectionTitle';
+import SocialIconRow from '@/components/shared/SocialIconRow';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 
@@ -309,16 +310,10 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* LinkedIn */}
-            <a
-              href="#"
-              className="flex items-center gap-3 px-5 py-4 bg-background-alt rounded-[8px] border border-border hover:border-primary/40 transition-colors group"
-            >
-              <ExternalLink size={18} className="text-primary shrink-0" />
-              <span className="text-sm text-foreground group-hover:text-primary transition-colors">
-                {t('linkedin')}
-              </span>
-            </a>
+            {/* Social icons */}
+            <div className="flex items-center gap-1 px-3 py-3 bg-background-alt rounded-[8px] border border-border">
+              <SocialIconRow size="sm" withLinkedIn />
+            </div>
           </motion.div>
 
         </div>

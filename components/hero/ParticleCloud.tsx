@@ -48,8 +48,8 @@ function Particles({ count, mouseRef }: ParticlesProps) {
     const phases = new Float32Array(count);
     const speeds = new Float32Array(count);
 
-    const purple = new THREE.Color('#7C3AED');
-    const green = new THREE.Color('#10B981');
+    const purple = new THREE.Color('#8B5CF6');
+    const green = new THREE.Color('#34D399');
 
     for (let i = 0; i < count; i++) {
       // Spherical distribution

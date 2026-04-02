@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { MapPin, Phone } from 'lucide-react';
 import CookieResetButton from './CookieResetButton';
+import SocialIconRow from '@/components/shared/SocialIconRow';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -24,12 +26,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Left: Logo + description */}
           <div>
-            <span className="font-display text-2xl font-bold gradient-brand-text block mb-3">
-              COLTEK
-            </span>
-            <p className="text-sm text-foreground-muted leading-relaxed">
+            <Image
+              src="/images/logo/Logo.png"
+              alt="Coltek"
+              width={160}
+              height={40}
+              className="h-10 w-auto mb-3"
+            />
+            <p className="text-sm text-foreground-muted leading-relaxed mb-4">
               {t('description')}
             </p>
+            <SocialIconRow size="sm" />
           </div>
 
           {/* Center: Quick Links */}

@@ -63,7 +63,7 @@ function StatCard({
       <div
         className="font-display text-4xl font-bold mb-1"
         style={{
-          background: 'linear-gradient(135deg, #7C3AED, #10B981)',
+          background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',

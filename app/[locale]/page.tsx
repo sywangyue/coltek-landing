@@ -6,37 +6,24 @@ import AirspaceOverview from '@/components/sections/AirspaceOverview';
 import AIHardware from '@/components/sections/AIHardware';
 import News from '@/components/sections/News';
 import About from '@/components/sections/About';
+import SocialBar from '@/components/sections/SocialBar';
 import Contact from '@/components/sections/Contact';
-import SpatialProducts from '@/components/spatial/SpatialProducts';
-import SpatialShowcase from '@/components/spatial/SpatialShowcase';
-import SpatialIndustries from '@/components/spatial/SpatialIndustries';
-import AirspaceProducts from '@/components/airspace/AirspaceProducts';
-import AirspaceShowcase from '@/components/airspace/AirspaceShowcase';
-import AirspaceIndustries from '@/components/airspace/AirspaceIndustries';
+import { resolveImageDir } from '@/lib/resolveImages';
 
 export default function HomePage() {
+  const overviewImages = resolveImageDir('images/overview');
+
   return (
     <main>
       <Navbar />
       <Hero />
-      <SpatialOverview />
-      <AirspaceOverview />
+      <SpatialOverview imageSrc={overviewImages['spatial']} />
+      <AirspaceOverview imageSrc={overviewImages['airspace']} />
       <AIHardware />
       <News />
       <About />
+      <SocialBar />
       <Contact />
-
-      {/* ── Business detail sections ── */}
-      <div className="border-t border-border" />
-      <SpatialProducts />
-      <SpatialShowcase />
-      <SpatialIndustries />
-
-      <div className="border-t border-border" />
-      <AirspaceProducts />
-      <AirspaceShowcase />
-      <AirspaceIndustries />
-
       <Footer />
     </main>
   );

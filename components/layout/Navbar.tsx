@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -64,20 +65,16 @@ export default function Navbar() {
   const navItems: NavItem[] = [
     {
       labelKey: 'spatial',
-      href: `/${locale}/#spatial`,
+      href: `/${locale}/spatial/xgrids`,
       dropdown: [
-        { labelKey: 'spatialProducts', descKey: 'spatialProductsDesc', href: `/${locale}/#spatial-products` },
-        { labelKey: 'spatialShowcase', descKey: 'spatialShowcaseDesc', href: `/${locale}/#spatial-showcase` },
-        { labelKey: 'spatialIndustries', descKey: 'spatialIndustriesDesc', href: `/${locale}/#spatial-industries` },
+        { labelKey: 'xgrids', descKey: 'xgridsDesc', href: `/${locale}/spatial/xgrids` },
       ],
     },
     {
       labelKey: 'airspace',
-      href: `/${locale}/#airspace`,
+      href: `/${locale}/airspace/terjin`,
       dropdown: [
-        { labelKey: 'airspaceProducts', descKey: 'airspaceProductsDesc', href: `/${locale}/#airspace-products` },
-        { labelKey: 'airspaceShowcase', descKey: 'airspaceShowcaseDesc', href: `/${locale}/#airspace-showcase` },
-        { labelKey: 'airspaceIndustries', descKey: 'airspaceIndustriesDesc', href: `/${locale}/#airspace-industries` },
+        { labelKey: 'terjin', descKey: 'terjinDesc', href: `/${locale}/airspace/terjin` },
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
@@ -104,9 +101,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={`/${locale}/`} className="flex items-center">
-            <span className="font-display text-xl font-bold gradient-brand-text">
-              COLTEK
-            </span>
+            <Image
+              src="/images/logo/Logo.png"
+              alt="Coltek"
+              width={160}
+              height={40}
+              className="h-9 w-auto sm:h-10"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

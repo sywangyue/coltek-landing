@@ -1,7 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ScanLine, Brain, Target, ImageIcon, ArrowRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/ui/SectionTitle';
@@ -27,8 +29,10 @@ const HIGHLIGHTS = [
   { icon: Target,   key: 'precision' as const },
 ];
 
-export default function SpatialOverview() {
+export default function SpatialOverview({ imageSrc }: { imageSrc?: string }) {
   const t = useTranslations('spatial');
+  const locale = useLocale();
+  const router = useRouter();
 
   return (
     <section id="spatial" className="bg-white py-24 lg:py-32">
@@ -82,10 +86,10 @@ export default function SpatialOverview() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-3">
-              <Button variant="primary" size="md" onClick={() => document.getElementById('spatial-products')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="primary" size="md" onClick={() => router.push(`/${locale}/spatial/xgrids`)}>
                 {t('ctaProducts')} <ArrowRight size={16} />
               </Button>
-              <Button variant="secondary" size="md" onClick={() => document.getElementById('spatial-showcase')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="secondary" size="md" onClick={() => router.push(`/${locale}/spatial/xgrids#spatial-showcase`)}>
                 {t('ctaShowcase')} <ArrowRight size={16} />
               </Button>
             </div>
@@ -99,16 +103,20 @@ export default function SpatialOverview() {
             viewport={{ once: true, margin: '-80px' }}
             className="relative"
           >
-            <div className="aspect-[4/3] rounded-[16px] bg-[#F1F5F9] flex flex-col items-center justify-center gap-3 border border-border">
-              <ImageIcon size={40} className="text-foreground-muted/40" />
-              <span className="text-sm text-foreground-muted/60 font-medium">
-                Product Image
-              </span>
+            <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
+              {imageSrc ? (
+                <Image src={imageSrc} alt="Spatial Intelligence" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              ) : (
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <ImageIcon size={40} className="text-foreground-muted/40" />
+                  <span className="text-sm text-foreground-muted/60 font-medium">Product Image</span>
+                </div>
+              )}
             </div>
             {/* Decorative gradient accent */}
             <div
               className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10 -z-10"
-              style={{ background: 'linear-gradient(135deg, #7C3AED, #10B981)' }}
+              style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}
             />
           </motion.div>
 

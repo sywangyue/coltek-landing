@@ -44,7 +44,7 @@ export default function SpatialIndustries() {
               {/* Top gradient line */}
               <div
                 className="absolute top-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: 'linear-gradient(90deg, #7C3AED, #10B981)' }}
+                style={{ background: 'linear-gradient(90deg, #8B5CF6, #34D399)' }}
               />
               <Icon size={26} className="text-accent mb-3" />
               <h4 className="font-display font-semibold text-foreground mb-1.5">{title}</h4>

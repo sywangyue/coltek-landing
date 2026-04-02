@@ -68,7 +68,7 @@ export default function BeforeAfter({ title, before, after, height = 'h-72 md:h-
           className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg pointer-events-none z-10"
           style={{
             left: `${pos}%`,
-            background: 'linear-gradient(135deg, #7C3AED, #10B981)',
+            background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
           }}
         >
           <ChevronsLeftRight size={18} className="text-white" />

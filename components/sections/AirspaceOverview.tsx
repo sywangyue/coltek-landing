@@ -1,7 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Radio, Crosshair, Eye, ImageIcon, ArrowRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/ui/SectionTitle';
@@ -27,8 +29,10 @@ const HIGHLIGHTS = [
   { icon: Eye,       key: 'awareness' as const },
 ];
 
-export default function AirspaceOverview() {
+export default function AirspaceOverview({ imageSrc }: { imageSrc?: string }) {
   const t = useTranslations('airspace');
+  const locale = useLocale();
+  const router = useRouter();
 
   return (
     <section id="airspace" className="bg-background-alt py-24 lg:py-32">
@@ -47,16 +51,20 @@ export default function AirspaceOverview() {
             viewport={{ once: true, margin: '-80px' }}
             className="relative order-1 lg:order-1"
           >
-            <div className="aspect-[4/3] rounded-[16px] bg-[#F1F5F9] flex flex-col items-center justify-center gap-3 border border-border">
-              <ImageIcon size={40} className="text-foreground-muted/40" />
-              <span className="text-sm text-foreground-muted/60 font-medium">
-                Product Image
-              </span>
+            <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
+              {imageSrc ? (
+                <Image src={imageSrc} alt="Airspace Security" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              ) : (
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <ImageIcon size={40} className="text-foreground-muted/40" />
+                  <span className="text-sm text-foreground-muted/60 font-medium">Product Image</span>
+                </div>
+              )}
             </div>
             {/* Decorative gradient accent */}
             <div
               className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full opacity-10 -z-10"
-              style={{ background: 'linear-gradient(135deg, #7C3AED, #10B981)' }}
+              style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}
             />
           </motion.div>
 
@@ -108,10 +116,10 @@ export default function AirspaceOverview() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-3">
-              <Button variant="primary" size="md" onClick={() => document.getElementById('airspace-products')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="primary" size="md" onClick={() => router.push(`/${locale}/airspace/terjin`)}>
                 {t('ctaProducts')} <ArrowRight size={16} />
               </Button>
-              <Button variant="secondary" size="md" onClick={() => document.getElementById('airspace-showcase')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="secondary" size="md" onClick={() => router.push(`/${locale}/airspace/terjin#airspace-showcase`)}>
                 {t('ctaShowcase')} <ArrowRight size={16} />
               </Button>
             </div>

@@ -14,6 +14,8 @@
     "airspaceProductsDesc": "Drone detection & localization hardware",
     "airspaceShowcaseDesc": "Deployed security case studies",
     "airspaceIndustriesDesc": "Airports, events, government & more",
+    "xgrids": "XGRIDS", "xgridsDesc": "Spatial intelligence platform",
+    "terjin": "Terjin", "terjinDesc": "Airspace security system",
     "aiHardware": "AI Hardware",
     "news": "News",
     "about": "About",
@@ -185,33 +187,40 @@
   "airspaceProducts": {
     "label": "Airspace Security",
     "title": "Products & Platform",
-    "subtitle": "From detection hardware to intelligent command software",
-    "hardware": {
-      "sectionTitle": "Hardware",
-      "fixedArray":  { "name": "Fixed Detection Array",           "tagline": "360° Omnidirectional Drone Detection",    "spec0": "Multi-Band RF Monitoring", "spec1": "360° Coverage", "spec2": "5km+ Detection Range", "spec3": "24/7 All-Weather" },
-      "portable":    { "name": "Portable Detector",               "tagline": "Rapid-Deploy Handheld Unit",               "spec0": "Single-Operator", "spec1": "Instant Deployment", "spec2": "Real-Time Spectrum Analysis", "spec3": "Lightweight" },
-      "opticalPod":  { "name": "Electro-Optical Tracking Pod",    "tagline": "Visual Confirmation & Target Tracking",    "spec0": "High-Power Optical Zoom", "spec1": "Thermal Imaging", "spec2": "AI Target Lock", "spec3": "All-Weather Imaging" }
-    },
-    "software": {
-      "sectionTitle": "Software & Platform",
-      "command":    { "name": "Terjin Command Center",  "desc": "Unified C2 platform with multi-sensor fusion and GIS overlay" },
-      "mobile":     { "name": "DroneAlert Mobile",      "desc": "Real-time mobile alert app for frontline rapid response" },
-      "analytics":  { "name": "Terjin Analytics",       "desc": "Historical data analysis and compliance reporting platform" }
-    },
-    "workflow": {
-      "title": "How It Works",
-      "step0": { "label": "Detect",   "desc": "Multi-band RF signal scanning" },
-      "step1": { "label": "Identify", "desc": "AI-powered drone classification" },
-      "step2": { "label": "Locate",   "desc": "Multi-sensor fusion positioning" },
-      "step3": { "label": "Report",   "desc": "Real-time situational alert" }
-    },
-    "techHighlights": {
-      "title": "Technology",
-      "item0": "Multi-Band RF Fusion Detection",
-      "item1": "AI Drone Model Identification",
-      "item2": "Multi-Sensor Fusion Positioning (RF + EO + Acoustic)",
-      "item3": "Low False-Alarm Intelligent Filtering",
-      "item4": "Open API for Airport, Security & Government Integration"
+    "subtitle": "TDOA-based drone detection, localization and defense systems",
+    "categories": {
+      "system": {
+        "title": "System",
+        "desc": "Integrated drone management and defense systems",
+        "products": [
+          { "name": "TDOA Drone Management",     "desc": "Infrastructure-level networking drone management system with TDOA positioning" },
+          { "name": "TDOA X4 Drone Detection",   "desc": "4-station networked TDOA drone detection system for wide-area coverage" },
+          { "name": "TDOA X5 Drone Defense",     "desc": "5-station integrated detection and defense system with precision countermeasures" },
+          { "name": "Multi-layered Mgmt. Platform","desc": "Centralized multi-layered management platform for large-scale deployments" }
+        ]
+      },
+      "fixed": {
+        "title": "Fixed",
+        "desc": "Permanently deployed detection and defense equipment",
+        "products": [
+          { "name": "TDOA FTD1",                 "desc": "Fixed TDOA detection equipment for continuous perimeter monitoring" },
+          { "name": "FD1 Drone Detector",         "desc": "Fixed drone detection equipment for 24/7 airspace surveillance" },
+          { "name": "FTA1 TDOA+AOA Detector",     "desc": "Hybrid TDOA and AOA technology for enhanced positioning accuracy" },
+          { "name": "FPC1 Detection & Jamming",   "desc": "Integrated detection and precision jamming in a single fixed unit" },
+          { "name": "FR3 Drone RID Reader",       "desc": "Remote ID reader for regulatory-compliant drone identification" }
+        ]
+      },
+      "portable": {
+        "title": "Portable",
+        "desc": "Handheld and rapid-deploy detection devices",
+        "products": [
+          { "name": "PD1 Handheld Detector",     "desc": "Single-operator handheld drone detector for mobile security teams" },
+          { "name": "PL2 Pro Handheld Locator",  "desc": "Portable drone locator with enhanced directional positioning" },
+          { "name": "PC2 Pro All-in-One",        "desc": "Handheld detection, jamming and spoofing integrated device" },
+          { "name": "PL1-B Briefcase Detector",  "desc": "Briefcase-style portable detector for covert and rapid deployment" },
+          { "name": "PJ1 Portable Jammer",       "desc": "Lightweight portable drone jammer for immediate threat response" }
+        ]
+      }
     }
   },
   "airspaceShowcase": {
@@ -234,6 +243,14 @@
     "item4": { "title": "Industrial Facilities",              "desc": "Petrochemical, nuclear, and high-risk facility no-fly zones" },
     "item5": { "title": "Ports & Maritime",                   "desc": "Port and coastline drone intrusion monitoring" }
   },
+  "social": {
+    "title": "Follow Us",
+    "youtube": "YouTube",
+    "twitter": "X (Twitter)",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn"
+  },
   "cookies": {
     "message": "We use cookies to improve your experience. By clicking 'Accept All', you consent to the use of all cookies.",
     "acceptAll": "Accept All",
@@ -243,6 +260,10 @@
   "meta": {
     "title": "Coltek — Connecting Technologies. Enabling Industries.",
     "description": "Spatial Intelligence, Airspace Security, and AI Hardware solutions for European industries. Founded by former DJI engineers."
+  },
+  "common": {
+    "viewOnTerjin": "View on Terjin",
+    "viewOnXgrids": "View on XGRIDS"
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",

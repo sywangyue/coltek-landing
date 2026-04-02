@@ -4,6 +4,8 @@
     "spatialProductsDesc": "3D-scan hardware en softwareoplossingen", "spatialShowcaseDesc": "Praktische 3D-reconstructieprojecten", "spatialIndustriesDesc": "Architectuur, erfgoed, industrie en meer",
     "airspace": "Luchtruimbeveiliging", "airspaceProducts": "Producten", "airspaceShowcase": "Projecten", "airspaceIndustries": "Sectoren",
     "airspaceProductsDesc": "Hardware voor drone-detectie en -lokalisatie", "airspaceShowcaseDesc": "Casestudies over beveiliging", "airspaceIndustriesDesc": "Luchthavens, evenementen, overheid en meer",
+    "xgrids": "XGRIDS", "xgridsDesc": "Ruimtelijk intelligentieplatform",
+    "terjin": "Terjin", "terjinDesc": "Luchtruimbeveiligingssysteem",
     "aiHardware": "AI-hardware", "news": "Nieuws", "about": "Over ons", "contact": "Contact"
   },
   "hero": {
@@ -122,31 +124,40 @@
     "item5": { "title": "Industriële Digitalisering",   "desc": "Fabriek digitale twins voor planning en onderhoud" }
   },
   "airspaceProducts": {
-    "label": "Luchtruimbeveiliging", "title": "Producten & Platform", "subtitle": "Van detectiehardware tot intelligente commando-software",
-    "hardware": {
-      "sectionTitle": "Hardware",
-      "fixedArray":  { "name": "Vast Detectiearray",              "tagline": "360° Omnidirectionele Dronedetectie",      "spec0": "Multiband RF-monitoring", "spec1": "360° dekking", "spec2": "5km+ detectiebereik", "spec3": "24/7 allweer" },
-      "portable":    { "name": "Draagbaar Detectieapparaat",      "tagline": "Snel-inzetbare Handheld Eenheid",          "spec0": "Éénpersoonsgebruik", "spec1": "Directe inzet", "spec2": "Realtime spectrumanalyse", "spec3": "Lichtgewicht" },
-      "opticalPod":  { "name": "Elektro-Optische Tracking Pod",   "tagline": "Visuele Bevestiging & Doeltracking",       "spec0": "Krachtige optische zoom", "spec1": "Warmtebeeldvorming", "spec2": "AI-doelslot", "spec3": "Allweer beeldvorming" }
-    },
-    "software": {
-      "sectionTitle": "Software & Platform",
-      "command":   { "name": "Terjin Command Center", "desc": "Unified C2-platform met multi-sensorfusie en GIS-overlay" },
-      "mobile":    { "name": "DroneAlert Mobile",     "desc": "Realtime mobiele alert-app voor snelle reactie" },
-      "analytics": { "name": "Terjin Analytics",      "desc": "Historische data-analyse en compliance-rapportageplatform" }
-    },
-    "workflow": {
-      "title": "Hoe het werkt",
-      "step0": { "label": "Detecteren",    "desc": "Multiband RF-signaalscannen" },
-      "step1": { "label": "Identificeren", "desc": "AI-gestuurde droneclassificatie" },
-      "step2": { "label": "Lokaliseren",   "desc": "Multi-sensorfusie positionering" },
-      "step3": { "label": "Rapporteren",   "desc": "Realtime situationele melding" }
-    },
-    "techHighlights": {
-      "title": "Technologie",
-      "item0": "Multiband RF-fusiedetectie", "item1": "AI dronemodel-identificatie",
-      "item2": "Multi-sensorfusie positionering (RF + EO + Akoestisch)", "item3": "Laag vals alarm intelligente filtering",
-      "item4": "Open API voor luchthaven-, beveiligings- en overheidsintegratie"
+    "label": "Luchtruimbeveiliging", "title": "Producten & Platform", "subtitle": "TDOA-gebaseerde drone-detectie, lokalisatie en verdedigingssystemen",
+    "categories": {
+      "system": {
+        "title": "Systeem",
+        "desc": "Geïntegreerde drone-management- en verdedigingssystemen",
+        "products": [
+          { "name": "TDOA Drone Management",      "desc": "Infrastructureel netwerk drone-managementsysteem met TDOA-positionering" },
+          { "name": "TDOA X4 Drone Detection",    "desc": "4-stations genetwerkt TDOA drone-detectiesysteem voor brede gebiedsdekking" },
+          { "name": "TDOA X5 Drone Defense",      "desc": "5-stations geïntegreerd detectie- en verdedigingssysteem met precisietegenmaatregel" },
+          { "name": "Multi-layered Mgmt. Platform","desc": "Gecentraliseerd meerlaags beheerplatform voor grootschalige inzet" }
+        ]
+      },
+      "fixed": {
+        "title": "Vast",
+        "desc": "Permanent geïnstalleerde detectie- en verdedigingsapparatuur",
+        "products": [
+          { "name": "TDOA FTD1",                  "desc": "Vaste TDOA-detectieapparatuur voor continue perimetermonitoring" },
+          { "name": "FD1 Drone Detector",          "desc": "Vaste drone-detectieapparatuur voor 24/7 luchtruimbewaking" },
+          { "name": "FTA1 TDOA+AOA Detector",      "desc": "Hybride TDOA- en AOA-technologie voor verbeterde positioneringsnauwkeurigheid" },
+          { "name": "FPC1 Detection & Jamming",    "desc": "Geïntegreerde detectie en precisiestoorzender in één vaste eenheid" },
+          { "name": "FR3 Drone RID Reader",        "desc": "Remote ID-lezer voor regelgevingsconforme drone-identificatie" }
+        ]
+      },
+      "portable": {
+        "title": "Draagbaar",
+        "desc": "Handheld en snel inzetbare detectieapparaten",
+        "products": [
+          { "name": "PD1 Handheld Detector",      "desc": "Eénpersoons handheld drone-detector voor mobiele beveiligingsteams" },
+          { "name": "PL2 Pro Handheld Locator",   "desc": "Draagbare drone-locator met verbeterde richtingspositionering" },
+          { "name": "PC2 Pro All-in-One",         "desc": "Handheld geïntegreerd detectie-, stoor- en spoofingapparaat" },
+          { "name": "PL1-B Briefcase Detector",   "desc": "Koffermodel draagbare detector voor heimelijke en snelle inzet" },
+          { "name": "PJ1 Portable Jammer",        "desc": "Lichte draagbare drone-stoorzender voor directe dreigingsrespons" }
+        ]
+      }
     }
   },
   "airspaceShowcase": {
@@ -165,6 +176,14 @@
     "item4": { "title": "Industriële Faciliteiten",         "desc": "Petrochemisch, nucleair en hoogrisicofaciliteiten vliegverbodszones" },
     "item5": { "title": "Havens & Maritiem",                "desc": "Haven- en kustlijn drone-indringingsmonitoring" }
   },
+  "social": {
+    "title": "Volg ons",
+    "youtube": "YouTube",
+    "twitter": "X (Twitter)",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn"
+  },
   "cookies": {
     "message": "We gebruiken cookies om uw ervaring te verbeteren. Door op 'Alles accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
     "acceptAll": "Alles accepteren",
@@ -174,6 +193,10 @@
   "meta": {
     "title": "Coltek — Technologieën verbinden. Industrieën mogelijk maken.",
     "description": "Ruimtelijke Intelligentie, Luchtruimbeveiliging en AI-hardware voor de Europese industrie. Opgericht door voormalige DJI-ingenieurs."
+  },
+  "common": {
+    "viewOnTerjin": "Bekijk op Terjin",
+    "viewOnXgrids": "Bekijk op XGRIDS"
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",

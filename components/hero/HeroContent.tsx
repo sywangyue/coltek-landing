@@ -75,7 +75,7 @@ function BusinessCard({
       {/* Gradient border layer — hidden by default, visible on hover */}
       <div
         className="absolute inset-0 rounded-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: 'linear-gradient(135deg, #7C3AED, #10B981)' }}
+        style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}
       />
       {/* Static border layer */}
       <div className="absolute inset-0 rounded-[8px] border border-border group-hover:opacity-0 transition-opacity duration-300" />
@@ -85,7 +85,7 @@ function BusinessCard({
           {cardKey === 'ai' ? (
             <span
               style={{
-                background: 'linear-gradient(135deg, #7C3AED, #10B981)',
+                background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',

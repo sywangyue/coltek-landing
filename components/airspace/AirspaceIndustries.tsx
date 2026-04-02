@@ -44,7 +44,7 @@ export default function AirspaceIndustries() {
               {/* Top gradient line — purple for airspace */}
               <div
                 className="absolute top-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: 'linear-gradient(90deg, #7C3AED, #6D28D9)' }}
+                style={{ background: 'linear-gradient(90deg, #8B5CF6, #7C3AED)' }}
               />
               <Icon size={26} className="text-primary mb-3" />
               <h4 className="font-display font-semibold text-foreground mb-1.5">{title}</h4>

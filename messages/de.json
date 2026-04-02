@@ -4,6 +4,8 @@
     "spatialProductsDesc": "3D-Scan-Hardware und Softwarelösungen", "spatialShowcaseDesc": "Reale 3D-Rekonstruktionsprojekte", "spatialIndustriesDesc": "Architektur, Kulturgut, Industrie und mehr",
     "airspace": "Luftraumsicherheit", "airspaceProducts": "Produkte", "airspaceShowcase": "Referenzen", "airspaceIndustries": "Branchen",
     "airspaceProductsDesc": "Hardware zur Drohnenerkennung und -ortung", "airspaceShowcaseDesc": "Fallstudien aus dem Sicherheitsbereich", "airspaceIndustriesDesc": "Flughäfen, Veranstaltungen, Behörden und mehr",
+    "xgrids": "XGRIDS", "xgridsDesc": "Räumliche Intelligenz-Plattform",
+    "terjin": "Terjin", "terjinDesc": "Luftraumsicherheitssystem",
     "aiHardware": "KI-Hardware", "news": "Neuigkeiten", "about": "Über uns", "contact": "Kontakt"
   },
   "hero": {
@@ -122,31 +124,40 @@
     "item5": { "title": "Industrielle Digitalisierung","desc": "Fabrik-Digital-Twins für Planung und Wartung" }
   },
   "airspaceProducts": {
-    "label": "Luftraumsicherheit", "title": "Produkte & Plattform", "subtitle": "Von Erkennungshardware bis intelligenter Kommandosoftware",
-    "hardware": {
-      "sectionTitle": "Hardware",
-      "fixedArray":  { "name": "Stationäres Erkennungsarray",      "tagline": "360° Omnidirektionale Drohnenerkennung",  "spec0": "Mehrband-HF-Überwachung", "spec1": "360° Abdeckung", "spec2": "5km+ Erkennungsreichweite", "spec3": "24/7 Allwetter" },
-      "portable":    { "name": "Tragbares Erkennungsgerät",        "tagline": "Schnell-Einsatz-Handgerät",              "spec0": "Einzelbediener", "spec1": "Soforteinsatz", "spec2": "Echtzeit-Spektrumanalyse", "spec3": "Leichtgewicht" },
-      "opticalPod":  { "name": "Elektro-optischer Tracking-Pod",   "tagline": "Visuelle Bestätigung & Zielverfolgung",  "spec0": "Hochleistungs-Optikzoom", "spec1": "Wärmebildgebung", "spec2": "KI-Zielsperre", "spec3": "Allwetter-Bildgebung" }
-    },
-    "software": {
-      "sectionTitle": "Software & Plattform",
-      "command":   { "name": "Terjin Command Center", "desc": "Einheitliche C2-Plattform mit Multi-Sensor-Fusion und GIS-Overlay" },
-      "mobile":    { "name": "DroneAlert Mobile",     "desc": "Echtzeit-Mobile-Alert-App für schnelle Reaktion" },
-      "analytics": { "name": "Terjin Analytics",      "desc": "Historische Datenanalyse und Compliance-Berichterstattungsplattform" }
-    },
-    "workflow": {
-      "title": "So funktioniert es",
-      "step0": { "label": "Erkennen",      "desc": "Mehrband-HF-Signalscanning" },
-      "step1": { "label": "Identifizieren","desc": "KI-gestützte Drohnenklassifizierung" },
-      "step2": { "label": "Lokalisieren",  "desc": "Multi-Sensor-Fusion-Positionierung" },
-      "step3": { "label": "Melden",        "desc": "Echtzeit-Lagealarmierung" }
-    },
-    "techHighlights": {
-      "title": "Technologie",
-      "item0": "Mehrband-HF-Fusionserkennung", "item1": "KI-Drohnenmodell-Identifizierung",
-      "item2": "Multi-Sensor-Fusionspositionierung (HF + EO + Akustik)", "item3": "Intelligente Filterung mit niedriger Fehlalarmrate",
-      "item4": "Offene API für Flughafen-, Sicherheits- und Behördenintegration"
+    "label": "Luftraumsicherheit", "title": "Produkte & Plattform", "subtitle": "TDOA-basierte Drohnenerkennung, -ortung und Abwehrsysteme",
+    "categories": {
+      "system": {
+        "title": "System",
+        "desc": "Integrierte Drohnenmanagement- und Abwehrsysteme",
+        "products": [
+          { "name": "TDOA Drone Management",      "desc": "Infrastrukturelles Netzwerk-Drohnenmanagement mit TDOA-Positionierung" },
+          { "name": "TDOA X4 Drone Detection",    "desc": "4-Stations-vernetztes TDOA-Drohnenerkennungssystem für großflächige Abdeckung" },
+          { "name": "TDOA X5 Drone Defense",      "desc": "5-Stations-Komplettsystem für Erkennung und Abwehr mit Präzisionsgegenmaßnahmen" },
+          { "name": "Multi-layered Mgmt. Platform","desc": "Zentralisierte Mehrebenen-Verwaltungsplattform für Großdeployments" }
+        ]
+      },
+      "fixed": {
+        "title": "Stationär",
+        "desc": "Fest installierte Erkennungs- und Abwehrgeräte",
+        "products": [
+          { "name": "TDOA FTD1",                  "desc": "Stationäres TDOA-Erkennungsgerät für kontinuierliche Perimeterüberwachung" },
+          { "name": "FD1 Drone Detector",          "desc": "Festes Drohnenerkennungsgerät für 24/7-Luftraumüberwachung" },
+          { "name": "FTA1 TDOA+AOA Detector",      "desc": "Hybrid-TDOA-und-AOA-Technologie für verbesserte Positionierungsgenauigkeit" },
+          { "name": "FPC1 Detection & Jamming",    "desc": "Integrierte Erkennung und Präzisionsstörung in einer festen Einheit" },
+          { "name": "FR3 Drone RID Reader",        "desc": "Remote-ID-Lesegerät für normkonforme Drohnenidentifikation" }
+        ]
+      },
+      "portable": {
+        "title": "Tragbar",
+        "desc": "Handgeräte und schnell einsetzbare Erkennungsgeräte",
+        "products": [
+          { "name": "PD1 Handheld Detector",      "desc": "Einzelbediener-Handgerät zur Drohnenerkennung für mobile Sicherheitsteams" },
+          { "name": "PL2 Pro Handheld Locator",   "desc": "Tragbarer Drohnenortungsgerät mit verbesserter Richtungspositionierung" },
+          { "name": "PC2 Pro All-in-One",         "desc": "Handgerät mit integrierter Erkennung, Störung und Spoofing" },
+          { "name": "PL1-B Briefcase Detector",   "desc": "Aktentaschen-Detektor für verdeckten und schnellen Einsatz" },
+          { "name": "PJ1 Portable Jammer",        "desc": "Leichter tragbarer Drohnenstörer für sofortige Bedrohungsreaktion" }
+        ]
+      }
     }
   },
   "airspaceShowcase": {
@@ -165,6 +176,14 @@
     "item4": { "title": "Industrieanlagen",                   "desc": "Petrochemie, Kernkraft und Hochrisikoanlagen-Sperrzonendurchsetzung" },
     "item5": { "title": "Häfen & Maritime",                   "desc": "Hafen- und Küstendrohnen-Eindringungsüberwachung" }
   },
+  "social": {
+    "title": "Folge uns",
+    "youtube": "YouTube",
+    "twitter": "X (Twitter)",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn"
+  },
   "cookies": {
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch Klicken auf 'Alle akzeptieren' stimmen Sie der Verwendung aller Cookies zu.",
     "acceptAll": "Alle akzeptieren",
@@ -174,6 +193,10 @@
   "meta": {
     "title": "Coltek — Technologien verbinden. Industrien befähigen.",
     "description": "Räumliche Intelligenz, Luftraumsicherheit und KI-Hardware für die europäische Industrie. Gegründet von ehemaligen DJI-Ingenieuren."
+  },
+  "common": {
+    "viewOnTerjin": "Auf Terjin ansehen",
+    "viewOnXgrids": "Auf XGRIDS ansehen"
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",

@@ -64,8 +64,8 @@ function ChipAnimation() {
             fill="url(#chipGrad)" opacity="0.3" />
           <defs>
             <linearGradient id="chipGrad" x1="0" y1="0" x2="32" y2="32">
-              <stop offset="0%" stopColor="#7C3AED" />
-              <stop offset="100%" stopColor="#10B981" />
+              <stop offset="0%" stopColor="#8B5CF6" />
+              <stop offset="100%" stopColor="#34D399" />
             </linearGradient>
           </defs>
         </svg>
@@ -178,7 +178,7 @@ export default function AIHardware() {
           <p
             className="text-xl font-semibold mb-6"
             style={{
-              background: 'linear-gradient(135deg, #7C3AED, #10B981)',
+              background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',

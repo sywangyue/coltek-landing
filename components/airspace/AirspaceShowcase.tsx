@@ -34,8 +34,8 @@ function RadarViz() {
         <svg viewBox="0 0 100 100" className="w-full h-full">
           <defs>
             <radialGradient id="scanGrad" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stopColor="#7C3AED" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="#7C3AED" stopOpacity="0" />
+              <stop offset="0%"   stopColor="#8B5CF6" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="#8B5CF6" stopOpacity="0" />
             </radialGradient>
           </defs>
           {/* 60° sector */}
@@ -95,7 +95,7 @@ function CaseCard({ data, delay }: { data: CaseData; delay: number }) {
       {/* Top border on hover */}
       <div
         className="absolute top-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: 'linear-gradient(90deg, #7C3AED, #6D28D9)' }}
+        style={{ background: 'linear-gradient(90deg, #8B5CF6, #7C3AED)' }}
       />
 
       <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">

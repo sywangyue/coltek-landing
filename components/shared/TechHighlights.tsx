@@ -10,7 +10,7 @@ interface Props {
   dotColor?: string;
 }
 
-export default function TechHighlights({ title, items, dotColor = '#10B981' }: Props) {
+export default function TechHighlights({ title, items, dotColor = '#34D399' }: Props) {
   return (
     <div className="mt-12">
       <h3 className="font-display text-lg font-bold text-foreground mb-5">{title}</h3>
