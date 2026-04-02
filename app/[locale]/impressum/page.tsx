@@ -18,7 +18,7 @@ export default function ImpressumPage() {
                   <h2 className="text-base font-semibold text-foreground">Coltek Robotics GmbH</h2>
                   <p className="text-sm">
                     [Address to be provided]<br />
-                    Munich, Germany<br />
+                    Plinganserstraße 150, 81369 München, Germany<br />
                     Tel: +49 151 20266740
                   </p>
                 </div>

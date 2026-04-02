@@ -4,9 +4,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { ScanLine, Camera } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
-import BeforeAfter from '@/components/shared/BeforeAfter';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 
@@ -99,20 +97,6 @@ export default function SpatialShowcase() {
           ))}
         </div>
 
-        {/* Before / After */}
-        <BeforeAfter
-          title={t('beforeAfter.title')}
-          before={{
-            label: t('beforeAfter.before'),
-            bg: '#F1F5F9',
-            icon: <Camera size={36} className="text-foreground-muted/40" />,
-          }}
-          after={{
-            label: t('beforeAfter.after'),
-            bg: 'rgba(124,58,237,0.08)',
-            icon: <ScanLine size={36} className="text-primary/50" />,
-          }}
-        />
       </div>
     </section>
   );

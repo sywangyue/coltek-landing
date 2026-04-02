@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-base font-semibold text-foreground mb-2">2. Data Controller</h2>
               <p>
-                Coltek Robotics GmbH, Munich, Germany<br />
+                Coltek Robotics GmbH, Plinganserstraße 150, 81369 München, Germany<br />
                 Sunova Innovation B.V., Rotterdam, Netherlands<br />
                 Email:{' '}
                 <a href="mailto:support@sunova-innovation.nl" className="text-primary hover:underline">

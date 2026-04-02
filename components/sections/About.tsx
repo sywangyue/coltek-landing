@@ -3,10 +3,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, useInView } from 'framer-motion';
-import { Camera } from 'lucide-react';
+import { User } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
+const fadeUp = (d = 0) => ({
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: d, ease: EASE } },
+});
 
 // ── Count-up hook ────────────────────────────────────────────────────────────
 function useCountUp(target: number, duration = 1200, startOnView = false) {
@@ -72,7 +76,25 @@ function StatCard({
         {isNumber ? count : value}
       </div>
       <p className="text-sm font-semibold text-foreground mb-0.5">{label}</p>
-      <p className="text-xs text-foreground-muted">{detail}</p>
+      {detail ? <p className="text-xs text-foreground-muted">{detail}</p> : null}
+    </motion.div>
+  );
+}
+
+function TeamCard({ name, role, delay }: { name: string; role: string; delay: number }) {
+  return (
+    <motion.div
+      variants={fadeUp(delay)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="bg-white rounded-[8px] border border-border p-5 flex flex-col items-center text-center"
+    >
+      <div className="w-24 h-24 rounded-full bg-[#F1F5F9] border border-border flex items-center justify-center mb-3">
+        <User size={36} className="text-foreground-muted/40" />
+      </div>
+      <p className="text-sm font-semibold text-foreground">{name}</p>
+      <p className="text-xs text-foreground-muted mt-0.5">{role}</p>
     </motion.div>
   );
 }
@@ -92,6 +114,7 @@ export default function About() {
       ...t.raw('stats.terjin') as { value: string; label: string; detail: string },
     },
   ];
+  const team = t.raw('team.members') as { name: string; role: string }[];
 
   return (
     <section id="about" className="bg-background-alt py-24 lg:py-32">
@@ -133,18 +156,20 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* ── Right: Image placeholder ── */}
+          {/* ── Right: Team grid ── */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: EASE }}
           >
-            <div className="aspect-[4/3] rounded-[16px] bg-[#F1F5F9] flex flex-col items-center justify-center gap-3 border border-border">
-              <Camera size={40} className="text-foreground-muted/40" />
-              <span className="text-sm text-foreground-muted/60 font-medium">
-                Team Photo
-              </span>
+            <h3 className="font-display text-xl font-bold text-foreground mb-5">
+              {t('team.title')}
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {team.map((member, i) => (
+                <TeamCard key={`${member.name}-${i}`} name={member.name} role={member.role} delay={i * 0.06} />
+              ))}
             </div>
           </motion.div>
 

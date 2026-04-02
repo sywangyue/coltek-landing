@@ -14,7 +14,7 @@ const BASE_ICONS: IconDef[] = [
   { icon: FaYoutube,   label: 'YouTube',     color: '#FF0000', href: '#' },
   { icon: FaXTwitter,  label: 'X (Twitter)', color: '#000000', href: '#' },
   { icon: FaInstagram, label: 'Instagram',   color: '#E4405F', href: '#' },
-  { icon: FaFacebookF, label: 'Facebook',    color: '#1877F2', href: '#' },
+  { icon: FaFacebookF, label: 'Facebook',    color: '#2477F2', href: '#' },
 ];
 
 const LINKEDIN_ICON: IconDef = {

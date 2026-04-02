@@ -14,8 +14,10 @@
     "airspaceProductsDesc": "Drone detection & localization hardware",
     "airspaceShowcaseDesc": "Deployed security case studies",
     "airspaceIndustriesDesc": "Airports, events, government & more",
-    "xgrids": "XGRIDS", "xgridsDesc": "Spatial intelligence platform",
-    "terjin": "Terjin", "terjinDesc": "Airspace security system",
+    "xgrids": "XGRIDS",
+    "xgridsDesc": "Spatial intelligence platform",
+    "terjin": "Terjin",
+    "terjinDesc": "Airspace security system",
     "aiHardware": "AI Hardware",
     "news": "News",
     "about": "About",
@@ -25,11 +27,20 @@
     "slogan": "Connecting Technologies. Enabling Industries.",
     "mission": "We integrate leading global technologies into real-world applications across industries in Europe.",
     "cards": {
-      "spatial": { "title": "Digital Reality", "keywords": "3D Scanning · Spatial Intelligence · Reconstruction" },
-      "airspace": { "title": "Airspace Security", "keywords": "Drone Detection · Localization · Situational Awareness" },
-      "ai": { "title": "AI Hardware", "keywords": "Next-Gen · Intelligent Devices · Coming Soon" }
+      "spatial": {
+        "title": "Digital Reality",
+        "keywords": "3D Scanning · Spatial Intelligence · Reconstruction"
+      },
+      "airspace": {
+        "title": "Airspace Security",
+        "keywords": "Drone Detection · Localization · Situational Awareness"
+      },
+      "ai": {
+        "title": "AI Hardware",
+        "keywords": "Next-Gen · Intelligent Devices · Coming Soon"
+      }
     },
-    "trust": "Founded by former DJI engineers · EU operations",
+    "trust": "European technology integration platform · NL & DE operations",
     "ctaPrimary": "Explore Solutions",
     "ctaSecondary": "Get in Touch"
   },
@@ -39,9 +50,18 @@
     "subtitle": "Europe's XGRIDS Strategic Partner",
     "description": "We provide comprehensive 3D spatial digitization solutions, from hardware scanning to AI-powered reconstruction, serving industries across Europe.",
     "highlights": {
-      "hardware": { "title": "Flagship Hardware", "desc": "Lixel L2 Pro · K1 · PortalCam" },
-      "platform": { "title": "AI Reconstruction", "desc": "LixelStudio · LCC · 3D Gaussian Splatting" },
-      "precision": { "title": "CM-Level Precision", "desc": "Indoor & outdoor full-scene coverage" }
+      "hardware": {
+        "title": "Flagship Hardware",
+        "desc": "Lixel L2 Pro · K1 · PortalCam"
+      },
+      "platform": {
+        "title": "AI Reconstruction",
+        "desc": "LixelStudio · LCC · 3D Gaussian Splatting"
+      },
+      "precision": {
+        "title": "CM-Level Precision",
+        "desc": "Indoor & outdoor full-scene coverage"
+      }
     },
     "ctaProducts": "Explore Products",
     "ctaShowcase": "View Showcase"
@@ -52,9 +72,18 @@
     "subtitle": "Europe's Terjin Strategic Partner",
     "description": "We deliver professional counter-drone detection and localization systems, protecting critical infrastructure, events, and airspace across Europe.",
     "highlights": {
-      "detection": { "title": "Multi-Band Detection", "desc": "Full-spectrum RF monitoring across all major drone frequencies" },
-      "tracking": { "title": "Precision Tracking", "desc": "Multi-sensor fusion for accurate target localization" },
-      "awareness": { "title": "24/7 Awareness", "desc": "All-weather real-time situational monitoring" }
+      "detection": {
+        "title": "Multi-Band Detection",
+        "desc": "Full-spectrum RF monitoring across all major drone frequencies"
+      },
+      "tracking": {
+        "title": "Precision Tracking",
+        "desc": "Multi-sensor fusion for accurate target localization"
+      },
+      "awareness": {
+        "title": "24/7 Awareness",
+        "desc": "All-weather real-time situational monitoring"
+      }
     },
     "ctaProducts": "Explore Products",
     "ctaShowcase": "View Showcase"
@@ -76,7 +105,7 @@
     "viewAll": "View All News",
     "readMore": "Read More",
     "item1Type": "Partnership",
-    "item1Title": "Coltek Becomes XGRIDS' Largest European Partner",
+    "item1Title": "Coltek Becomes XGRIDS Strategic Partner in Europe",
     "item1Date": "2026-03-15",
     "item1Summary": "Strategic partnership established to bring advanced 3D scanning solutions to the European market.",
     "item2Type": "Event",
@@ -91,11 +120,52 @@
   "about": {
     "label": "About Us",
     "title": "Technology Experts with a Global Vision",
-    "story": "Founded by former DJI engineers, we bring deep expertise in spatial intelligence and smart hardware to the European market. With registered entities in the Netherlands and Germany, we bridge leading Chinese technology brands with European industry needs.",
+    "story": "We bring deep spatial intelligence and security technology expertise to the European market, with operations in the Netherlands and Germany.",
     "stats": {
-      "entities": { "value": "2", "label": "Registered Entities", "detail": "Netherlands & Germany" },
-      "xgrids": { "value": "#1", "label": "XGRIDS Partner", "detail": "Largest in Europe" },
-      "terjin": { "value": "#1", "label": "Terjin Partner", "detail": "Largest in Europe" }
+      "entities": {
+        "value": "2",
+        "label": "Registered Entities",
+        "detail": "Netherlands & Germany"
+      },
+      "xgrids": {
+        "value": "",
+        "label": "XGRIDS Strategic Partner in Europe",
+        "detail": ""
+      },
+      "terjin": {
+        "value": "",
+        "label": "Terjin Strategic Partner in Europe",
+        "detail": ""
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "members": [
+        {
+          "name": "Member 1",
+          "role": "Co-Founder & CEO"
+        },
+        {
+          "name": "Member 2",
+          "role": "Co-Founder & CTO"
+        },
+        {
+          "name": "Member 3",
+          "role": "Head of Sales"
+        },
+        {
+          "name": "Member 4",
+          "role": "Head of Operations"
+        },
+        {
+          "name": "Member 5",
+          "role": "Technical Lead"
+        },
+        {
+          "name": "Member 6",
+          "role": "Marketing Director"
+        }
+      ]
     }
   },
   "contact": {
@@ -103,7 +173,9 @@
     "title": "Let's Build Something Together",
     "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
     "form": {
-      "name": "Your Name", "company": "Company", "email": "Email Address",
+      "name": "Your Name",
+      "company": "Company",
+      "email": "Email Address",
       "interest": "I'm interested in...",
       "interests": {
         "spatial": "Spatial Intelligence (3D Scanning)",
@@ -111,15 +183,27 @@
         "ai": "AI Hardware",
         "other": "Other / General Inquiry"
       },
-      "message": "Message", "submit": "Send Inquiry", "submitting": "Sending...",
+      "message": "Message",
+      "submit": "Send Inquiry",
+      "submitting": "Sending...",
       "success": "Thank you! We'll respond within 24 hours.",
       "error": "Something went wrong. Please try again or email us directly.",
       "required": "This field is required.",
       "invalidEmail": "Please enter a valid email address."
     },
     "companies": {
-      "coltek": { "name": "Coltek Robotics GmbH", "country": "Germany", "address": "Munich, Germany", "phone": "+49 151 20266740" },
-      "sunova": { "name": "Sunova Innovation B.V.", "country": "Netherlands", "address": "Rotterdam, Netherlands", "phone": "+31 645402151" }
+      "coltek": {
+        "name": "Coltek Robotics GmbH",
+        "country": "Germany",
+        "address": "Plinganserstraße 150, 81369 München, Germany",
+        "phone": "+49 151 20266740"
+      },
+      "sunova": {
+        "name": "Sunova Innovation B.V.",
+        "country": "Netherlands",
+        "address": "Rotterdam, Netherlands",
+        "phone": "+31 645402151"
+      }
     },
     "email": "support@sunova-innovation.nl",
     "linkedin": "LinkedIn"
@@ -130,23 +214,68 @@
     "subtitle": "From scanning hardware to AI-powered reconstruction software",
     "hardware": {
       "sectionTitle": "Hardware",
-      "l2pro": { "name": "Lixel L2 Pro", "tagline": "Flagship Handheld 3D Scanner", "spec0": "16-Channel LiDAR", "spec1": "120m Range", "spec2": "1.2cm Accuracy", "spec3": "320K pts/sec", "spec4": "Drone-Mountable" },
-      "k1":    { "name": "LixelKity K1", "tagline": "Compact Handheld 3D Scanner",  "spec0": "Under 1kg", "spec1": "48MP Dual Panoramic Camera", "spec2": "360° LiDAR", "spec3": "40m Range" },
-      "portalcam": { "name": "PortalCam", "tagline": "Spatial Camera", "spec0": "Dual Fisheye + Dual Front Camera", "spec1": "3D Gaussian Splatting", "spec2": "Instant Spatial Models" }
+      "l2pro": {
+        "name": "Lixel L2 Pro",
+        "tagline": "Flagship Handheld 3D Scanner",
+        "spec0": "16-Channel LiDAR",
+        "spec1": "120m Range",
+        "spec2": "1.2cm Accuracy",
+        "spec3": "320K pts/sec",
+        "spec4": "Drone-Mountable"
+      },
+      "k1": {
+        "name": "LixelKity K1",
+        "tagline": "Compact Handheld 3D Scanner",
+        "spec0": "Under 1kg",
+        "spec1": "48MP Dual Panoramic Camera",
+        "spec2": "360° LiDAR",
+        "spec3": "40m Range"
+      },
+      "portalcam": {
+        "name": "PortalCam",
+        "tagline": "Spatial Camera",
+        "spec0": "Dual Fisheye + Dual Front Camera",
+        "spec1": "3D Gaussian Splatting",
+        "spec2": "Instant Spatial Models"
+      }
     },
     "software": {
       "sectionTitle": "Software & Platform",
-      "studio": { "name": "LixelStudio",              "desc": "Desktop point cloud processing and 3D model generation" },
-      "go":     { "name": "LixelGo",                  "desc": "Mobile scanning control and real-time preview" },
-      "lcc":    { "name": "Lixel CyberColor (LCC)",   "desc": "AI-driven 3DGS reconstruction platform for automated large-scale photorealistic models" },
-      "revit":  { "name": "LCC for Revit",             "desc": "BIM integration plugin — 3DGS empowering architectural information modeling" }
+      "studio": {
+        "name": "LixelStudio",
+        "desc": "Desktop point cloud processing and 3D model generation"
+      },
+      "go": {
+        "name": "LixelGo",
+        "desc": "Mobile scanning control and real-time preview"
+      },
+      "lcc": {
+        "name": "Lixel CyberColor (LCC)",
+        "desc": "AI-driven 3DGS reconstruction platform for automated large-scale photorealistic models"
+      },
+      "revit": {
+        "name": "LCC for Revit",
+        "desc": "BIM integration plugin — 3DGS empowering architectural information modeling"
+      }
     },
     "workflow": {
       "title": "How It Works",
-      "step0": { "label": "Scan",          "desc": "Capture spatial data with LiDAR hardware" },
-      "step1": { "label": "Process",       "desc": "AI-powered automated 3D reconstruction" },
-      "step2": { "label": "View & Share",  "desc": "Explore, edit, and distribute 3D models" },
-      "step3": { "label": "Develop",       "desc": "Integrate via SDK into Unity, Unreal, Web, Mobile" }
+      "step0": {
+        "label": "Scan",
+        "desc": "Capture spatial data with LiDAR hardware"
+      },
+      "step1": {
+        "label": "Process",
+        "desc": "AI-powered automated 3D reconstruction"
+      },
+      "step2": {
+        "label": "View & Share",
+        "desc": "Explore, edit, and distribute 3D models"
+      },
+      "step3": {
+        "label": "Develop",
+        "desc": "Integrate via SDK into Unity, Unreal, Web, Mobile"
+      }
     },
     "techHighlights": {
       "title": "Technology",
@@ -167,22 +296,59 @@
       "reset": "Reset View",
       "fullscreen": "Fullscreen"
     },
-    "beforeAfter": { "title": "Before & After", "before": "Original Photo", "after": "3D Reconstruction" },
-    "category0": "Architecture", "category1": "Cultural Heritage", "category2": "Industrial", "category3": "Interior",
-    "case0": { "title": "Historic Cathedral Scan",         "category": "Cultural Heritage", "description": "Complete interior and exterior digitization of a 14th-century cathedral, capturing intricate architectural details at centimeter-level accuracy." },
-    "case1": { "title": "Industrial Plant Digital Twin",   "category": "Industrial",        "description": "Full-facility 3D scan of a manufacturing plant for maintenance planning and spatial documentation." },
-    "case2": { "title": "Modern Office Interior",          "category": "Interior",          "description": "High-fidelity interior scan for renovation planning, enabling precise measurements and virtual walkthroughs." }
+    "beforeAfter": {
+      "title": "Before & After",
+      "before": "Original Photo",
+      "after": "3D Reconstruction"
+    },
+    "category0": "Architecture",
+    "category1": "Cultural Heritage",
+    "category2": "Industrial",
+    "category3": "Interior",
+    "case0": {
+      "title": "Historic Cathedral Scan",
+      "category": "Cultural Heritage",
+      "description": "Complete interior and exterior digitization of a 14th-century cathedral, capturing intricate architectural details at centimeter-level accuracy."
+    },
+    "case1": {
+      "title": "Industrial Plant Digital Twin",
+      "category": "Industrial",
+      "description": "Full-facility 3D scan of a manufacturing plant for maintenance planning and spatial documentation."
+    },
+    "case2": {
+      "title": "Modern Office Interior",
+      "category": "Interior",
+      "description": "High-fidelity interior scan for renovation planning, enabling precise measurements and virtual walkthroughs."
+    }
   },
   "spatialIndustries": {
     "label": "Spatial Intelligence",
     "title": "Industry Applications",
     "subtitle": "3D spatial solutions across sectors",
-    "item0": { "title": "Architecture & Construction", "desc": "BIM documentation, as-built verification, construction monitoring" },
-    "item1": { "title": "Surveying & Mapping",         "desc": "High-precision geographic and topographic surveying" },
-    "item2": { "title": "Cultural Heritage",           "desc": "Digital preservation of artifacts and historic sites" },
-    "item3": { "title": "Real Estate",                 "desc": "Immersive virtual property tours and spatial measurement" },
-    "item4": { "title": "Film & Entertainment",        "desc": "Production-grade environment asset creation" },
-    "item5": { "title": "Industrial Digitization",     "desc": "Factory digital twins for planning and maintenance" }
+    "item0": {
+      "title": "Architecture & Construction",
+      "desc": "BIM documentation, as-built verification, construction monitoring"
+    },
+    "item1": {
+      "title": "Surveying & Mapping",
+      "desc": "High-precision geographic and topographic surveying"
+    },
+    "item2": {
+      "title": "Cultural Heritage",
+      "desc": "Digital preservation of artifacts and historic sites"
+    },
+    "item3": {
+      "title": "Real Estate",
+      "desc": "Immersive virtual property tours and spatial measurement"
+    },
+    "item4": {
+      "title": "Film & Entertainment",
+      "desc": "Production-grade environment asset creation"
+    },
+    "item5": {
+      "title": "Industrial Digitization",
+      "desc": "Factory digital twins for planning and maintenance"
+    }
   },
   "airspaceProducts": {
     "label": "Airspace Security",
@@ -193,32 +359,74 @@
         "title": "System",
         "desc": "Integrated drone management and defense systems",
         "products": [
-          { "name": "TDOA Drone Management",     "desc": "Infrastructure-level networking drone management system with TDOA positioning" },
-          { "name": "TDOA X4 Drone Detection",   "desc": "4-station networked TDOA drone detection system for wide-area coverage" },
-          { "name": "TDOA X5 Drone Defense",     "desc": "5-station integrated detection and defense system with precision countermeasures" },
-          { "name": "Multi-layered Mgmt. Platform","desc": "Centralized multi-layered management platform for large-scale deployments" }
+          {
+            "name": "TDOA Drone Management",
+            "desc": "Infrastructure-level networking drone management system with TDOA positioning"
+          },
+          {
+            "name": "TDOA X4 Drone Detection",
+            "desc": "4-station networked TDOA drone detection system for wide-area coverage"
+          },
+          {
+            "name": "TDOA X5 Drone Defense",
+            "desc": "5-station integrated detection and defense system with precision countermeasures"
+          },
+          {
+            "name": "Multi-layered Mgmt. Platform",
+            "desc": "Centralized multi-layered management platform for large-scale deployments"
+          }
         ]
       },
       "fixed": {
         "title": "Fixed",
         "desc": "Permanently deployed detection and defense equipment",
         "products": [
-          { "name": "TDOA FTD1",                 "desc": "Fixed TDOA detection equipment for continuous perimeter monitoring" },
-          { "name": "FD1 Drone Detector",         "desc": "Fixed drone detection equipment for 24/7 airspace surveillance" },
-          { "name": "FTA1 TDOA+AOA Detector",     "desc": "Hybrid TDOA and AOA technology for enhanced positioning accuracy" },
-          { "name": "FPC1 Detection & Jamming",   "desc": "Integrated detection and precision jamming in a single fixed unit" },
-          { "name": "FR3 Drone RID Reader",       "desc": "Remote ID reader for regulatory-compliant drone identification" }
+          {
+            "name": "TDOA FTD1",
+            "desc": "Fixed TDOA detection equipment for continuous perimeter monitoring"
+          },
+          {
+            "name": "FD1 Drone Detector",
+            "desc": "Fixed drone detection equipment for 24/7 airspace surveillance"
+          },
+          {
+            "name": "FTA1 TDOA+AOA Detector",
+            "desc": "Hybrid TDOA and AOA technology for enhanced positioning accuracy"
+          },
+          {
+            "name": "FPC1 Detection & Jamming",
+            "desc": "Integrated detection and precision jamming in a single fixed unit"
+          },
+          {
+            "name": "FR3 Drone RID Reader",
+            "desc": "Remote ID reader for regulatory-compliant drone identification"
+          }
         ]
       },
       "portable": {
         "title": "Portable",
         "desc": "Handheld and rapid-deploy detection devices",
         "products": [
-          { "name": "PD1 Handheld Detector",     "desc": "Single-operator handheld drone detector for mobile security teams" },
-          { "name": "PL2 Pro Handheld Locator",  "desc": "Portable drone locator with enhanced directional positioning" },
-          { "name": "PC2 Pro All-in-One",        "desc": "Handheld detection, jamming and spoofing integrated device" },
-          { "name": "PL1-B Briefcase Detector",  "desc": "Briefcase-style portable detector for covert and rapid deployment" },
-          { "name": "PJ1 Portable Jammer",       "desc": "Lightweight portable drone jammer for immediate threat response" }
+          {
+            "name": "PD1 Handheld Detector",
+            "desc": "Single-operator handheld drone detector for mobile security teams"
+          },
+          {
+            "name": "PL2 Pro Handheld Locator",
+            "desc": "Portable drone locator with enhanced directional positioning"
+          },
+          {
+            "name": "PC2 Pro All-in-One",
+            "desc": "Handheld detection, jamming and spoofing integrated device"
+          },
+          {
+            "name": "PL1-B Briefcase Detector",
+            "desc": "Briefcase-style portable detector for covert and rapid deployment"
+          },
+          {
+            "name": "PJ1 Portable Jammer",
+            "desc": "Lightweight portable drone jammer for immediate threat response"
+          }
         ]
       }
     }
@@ -227,21 +435,64 @@
     "label": "Airspace Security",
     "title": "Deployment Cases",
     "subtitle": "Real-world counter-drone protection scenarios",
-    "beforeAfter": { "title": "Coverage Comparison", "before": "Before — Security Blind Spots", "after": "After — Full Situational Awareness" },
-    "case0": { "title": "International Airport Perimeter", "environment": "Airport",         "coverage": "8km radius, 360°",       "accuracy": "98.5% detection rate", "response": "<3s alert latency", "description": "24/7 airspace monitoring protecting runway approach paths and terminal zones from unauthorized drone incursions." },
-    "case1": { "title": "Major Sports Event",              "environment": "Stadium / Venue", "coverage": "5km radius, full dome",  "accuracy": "97.2% detection rate", "response": "<5s alert latency", "description": "Temporary deployment for a 60,000-seat stadium event, integrating with local security command." },
-    "case2": { "title": "Critical Infrastructure",        "environment": "Energy Facility", "coverage": "6km radius, 24/7",       "accuracy": "99.1% detection rate", "response": "<2s alert latency", "description": "Permanent installation protecting a power plant with multi-layered detection and automated reporting." }
+    "beforeAfter": {
+      "title": "Coverage Comparison",
+      "before": "Before — Security Blind Spots",
+      "after": "After — Full Situational Awareness"
+    },
+    "case0": {
+      "title": "International Airport Perimeter",
+      "environment": "Airport",
+      "coverage": "8km radius, 360°",
+      "accuracy": "98.5% detection rate",
+      "response": "<3s alert latency",
+      "description": "24/7 airspace monitoring protecting runway approach paths and terminal zones from unauthorized drone incursions."
+    },
+    "case1": {
+      "title": "Major Sports Event",
+      "environment": "Stadium / Venue",
+      "coverage": "5km radius, full dome",
+      "accuracy": "97.2% detection rate",
+      "response": "<5s alert latency",
+      "description": "Temporary deployment for a 60,000-seat stadium event, integrating with local security command."
+    },
+    "case2": {
+      "title": "Critical Infrastructure",
+      "environment": "Energy Facility",
+      "coverage": "6km radius, 24/7",
+      "accuracy": "99.1% detection rate",
+      "response": "<2s alert latency",
+      "description": "Permanent installation protecting a power plant with multi-layered detection and automated reporting."
+    }
   },
   "airspaceIndustries": {
     "label": "Airspace Security",
     "title": "Industry Applications",
     "subtitle": "Counter-drone solutions across sectors",
-    "item0": { "title": "Airports & Aviation",                "desc": "Runway clearance protection and flight safety assurance" },
-    "item1": { "title": "Major Events & Venues",              "desc": "Sports, concerts, summits, and large-scale event security" },
-    "item2": { "title": "Government & Critical Infrastructure","desc": "Government buildings, power stations, water treatment plants" },
-    "item3": { "title": "Military & Defense",                 "desc": "Base perimeter security and battlefield situational awareness" },
-    "item4": { "title": "Industrial Facilities",              "desc": "Petrochemical, nuclear, and high-risk facility no-fly zones" },
-    "item5": { "title": "Ports & Maritime",                   "desc": "Port and coastline drone intrusion monitoring" }
+    "item0": {
+      "title": "Airports & Aviation",
+      "desc": "Runway clearance protection and flight safety assurance"
+    },
+    "item1": {
+      "title": "Major Events & Venues",
+      "desc": "Sports, concerts, summits, and large-scale event security"
+    },
+    "item2": {
+      "title": "Government & Critical Infrastructure",
+      "desc": "Government buildings, power stations, water treatment plants"
+    },
+    "item3": {
+      "title": "Military & Defense",
+      "desc": "Base perimeter security and battlefield situational awareness"
+    },
+    "item4": {
+      "title": "Industrial Facilities",
+      "desc": "Petrochemical, nuclear, and high-risk facility no-fly zones"
+    },
+    "item5": {
+      "title": "Ports & Maritime",
+      "desc": "Port and coastline drone intrusion monitoring"
+    }
   },
   "social": {
     "title": "Follow Us",
@@ -259,7 +510,7 @@
   },
   "meta": {
     "title": "Coltek — Connecting Technologies. Enabling Industries.",
-    "description": "Spatial Intelligence, Airspace Security, and AI Hardware solutions for European industries. Founded by former DJI engineers."
+    "description": "Spatial Intelligence, Airspace Security, and AI Hardware solutions for European industries."
   },
   "common": {
     "viewOnTerjin": "View on Terjin",
@@ -267,10 +518,17 @@
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",
-    "privacy": "Privacy Policy", "impressum": "Impressum", "cookies": "Cookie Notice",
+    "privacy": "Privacy Policy",
+    "impressum": "Impressum",
+    "cookies": "Cookie Notice",
     "description": "Connecting leading global technologies with European industries.",
-    "quickLinks": "Quick Links", "contactInfo": "Contact",
-    "coltek": "Coltek Robotics GmbH", "coltekAddress": "Munich, Germany", "coltekPhone": "+49 151 20266740",
-    "sunova": "Sunova Innovation B.V.", "sunovaAddress": "Rotterdam, Netherlands", "sunovaPhone": "+31 645402151"
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact",
+    "coltek": "Coltek Robotics GmbH",
+    "coltekAddress": "Plinganserstraße 150, 81369 München, Germany",
+    "coltekPhone": "+49 151 20266740",
+    "sunova": "Sunova Innovation B.V.",
+    "sunovaAddress": "Rotterdam, Netherlands",
+    "sunovaPhone": "+31 645402151"
   }
 }

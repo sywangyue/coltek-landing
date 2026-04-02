@@ -43,11 +43,11 @@ function ProductCard({ name, desc, delay, linkLabel, imageSrc }: ProductCardProp
         className="absolute top-0 left-0 right-0 h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-[8px]"
         aria-hidden="true"
       />
-      <div className="relative h-36 bg-[#F3F0FF] overflow-hidden group-hover:scale-[1.01] transition-transform duration-300">
+      <div className="relative h-36 bg-[#F3F0FF] overflow-hidden rounded-t-lg">
         {imageSrc ? (
-          <Image src={imageSrc} alt={name} fill className="object-contain p-4" sizes="(max-width: 768px) 100vw, 25vw" />
+          <Image src={imageSrc} alt={name} fill className="object-contain p-4 transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 25vw" />
         ) : (
-          <div className="h-full flex flex-col items-center justify-center gap-2">
+          <div className="h-full flex flex-col items-center justify-center gap-2 transition-transform duration-300 group-hover:scale-105">
             <Shield size={28} className="text-primary/40" />
             <span className="text-xs text-foreground-muted/50">{name}</span>
           </div>

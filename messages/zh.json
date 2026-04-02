@@ -1,180 +1,498 @@
 {
   "nav": {
-    "spatial": "空间智能", "spatialProducts": "产品", "spatialShowcase": "案例展示", "spatialIndustries": "行业应用",
-    "spatialProductsDesc": "3D扫描硬件与软件解决方案", "spatialShowcaseDesc": "真实3D重建项目案例", "spatialIndustriesDesc": "建筑、文遗、工业等更多领域",
-    "airspace": "空间安防", "airspaceProducts": "产品", "airspaceShowcase": "案例展示", "airspaceIndustries": "行业应用",
-    "airspaceProductsDesc": "无人机探测与定位硬件", "airspaceShowcaseDesc": "安防部署案例研究", "airspaceIndustriesDesc": "机场、活动、政府设施等更多领域",
-    "xgrids": "XGRIDS", "xgridsDesc": "空间智能平台",
-    "terjin": "Terjin", "terjinDesc": "空域安防系统",
-    "aiHardware": "AI硬件", "news": "新闻", "about": "关于我们", "contact": "联系我们"
+    "spatial": "空间智能",
+    "spatialProducts": "产品",
+    "spatialShowcase": "案例展示",
+    "spatialIndustries": "行业应用",
+    "spatialProductsDesc": "3D扫描硬件与软件解决方案",
+    "spatialShowcaseDesc": "真实3D重建项目案例",
+    "spatialIndustriesDesc": "建筑、文遗、工业等更多领域",
+    "airspace": "空间安防",
+    "airspaceProducts": "产品",
+    "airspaceShowcase": "案例展示",
+    "airspaceIndustries": "行业应用",
+    "airspaceProductsDesc": "无人机探测与定位硬件",
+    "airspaceShowcaseDesc": "安防部署案例研究",
+    "airspaceIndustriesDesc": "机场、活动、政府设施等更多领域",
+    "xgrids": "XGRIDS",
+    "xgridsDesc": "空间智能平台",
+    "terjin": "Terjin",
+    "terjinDesc": "空域安防系统",
+    "aiHardware": "AI硬件",
+    "news": "新闻",
+    "about": "关于我们",
+    "contact": "联系我们"
   },
   "hero": {
     "slogan": "连接技术，赋能产业",
     "mission": "我们将全球领先技术整合到欧洲工业实际应用中。",
     "cards": {
-      "spatial":  { "title": "数字现实", "keywords": "3D扫描 · 空间智能 · 三维重建" },
-      "airspace": { "title": "空间安防", "keywords": "无人机探测 · 精准定位 · 态势感知" },
-      "ai":       { "title": "AI硬件",  "keywords": "下一代 · 智能设备 · 即将推出" }
+      "spatial": {
+        "title": "数字现实",
+        "keywords": "3D扫描 · 空间智能 · 三维重建"
+      },
+      "airspace": {
+        "title": "空间安防",
+        "keywords": "无人机探测 · 精准定位 · 态势感知"
+      },
+      "ai": {
+        "title": "AI硬件",
+        "keywords": "下一代 · 智能设备 · 即将推出"
+      }
     },
-    "trust": "由前大疆工程师创立 · 欧盟运营",
-    "ctaPrimary": "探索解决方案", "ctaSecondary": "联系我们"
+    "trust": "欧洲技术整合平台 · 荷兰与德国运营",
+    "ctaPrimary": "探索解决方案",
+    "ctaSecondary": "联系我们"
   },
   "spatial": {
-    "label": "空间智能", "title": "3D扫描与重建解决方案", "subtitle": "欧洲XGRIDS战略合作伙伴",
+    "label": "空间智能",
+    "title": "3D扫描与重建解决方案",
+    "subtitle": "欧洲XGRIDS战略合作伙伴",
     "description": "我们提供全面的3D空间数字化解决方案，从硬件扫描到AI驱动的三维重建，服务于欧洲各行各业。",
     "highlights": {
-      "hardware":  { "title": "旗舰硬件",     "desc": "Lixel L2 Pro · K1 · PortalCam" },
-      "platform":  { "title": "AI重建平台",   "desc": "LixelStudio · LCC · 3D高斯泼溅" },
-      "precision": { "title": "厘米级精度",   "desc": "室内外全场景覆盖" }
+      "hardware": {
+        "title": "旗舰硬件",
+        "desc": "Lixel L2 Pro · K1 · PortalCam"
+      },
+      "platform": {
+        "title": "AI重建平台",
+        "desc": "LixelStudio · LCC · 3D高斯泼溅"
+      },
+      "precision": {
+        "title": "厘米级精度",
+        "desc": "室内外全场景覆盖"
+      }
     },
-    "ctaProducts": "探索产品", "ctaShowcase": "查看案例"
+    "ctaProducts": "探索产品",
+    "ctaShowcase": "查看案例"
   },
   "airspace": {
-    "label": "空间安防", "title": "无人机探测与定位解决方案", "subtitle": "欧洲Terjin战略合作伙伴",
+    "label": "空间安防",
+    "title": "无人机探测与定位解决方案",
+    "subtitle": "欧洲Terjin战略合作伙伴",
     "description": "我们提供专业的反无人机探测与定位系统，保护欧洲各地的关键基础设施、活动场所和空域安全。",
     "highlights": {
-      "detection": { "title": "多频段探测",   "desc": "覆盖所有主要无人机频段的全频谱射频监测" },
-      "tracking":  { "title": "精准定位",     "desc": "多传感器融合，实现精确目标定位" },
-      "awareness": { "title": "全天候态势感知","desc": "全天候实时态势监控" }
+      "detection": {
+        "title": "多频段探测",
+        "desc": "覆盖所有主要无人机频段的全频谱射频监测"
+      },
+      "tracking": {
+        "title": "精准定位",
+        "desc": "多传感器融合，实现精确目标定位"
+      },
+      "awareness": {
+        "title": "全天候态势感知",
+        "desc": "全天候实时态势监控"
+      }
     },
-    "ctaProducts": "探索产品", "ctaShowcase": "查看案例"
+    "ctaProducts": "探索产品",
+    "ctaShowcase": "查看案例"
   },
   "aiHardware": {
-    "label": "AI硬件", "title": "智能硬件的下一个篇章", "subtitle": "敬请期待",
-    "description": "我们正在研发下一代AI智能硬件产品。订阅获取第一手资讯。",
-    "emailPlaceholder": "输入您的邮箱", "subscribe": "订阅通知", "subscribed": "感谢订阅！我们将及时更新您。",
+    "label": "AI硬件",
+    "title": "智能硬件的下一个篇章",
+    "subtitle": "敬请期待",
+    "description": "我们正在研发下一代AI智能硬件产品。订阅获取最新资讯。",
+    "emailPlaceholder": "输入您的邮箱",
+    "subscribe": "订阅通知",
+    "subscribed": "感谢订阅！我们将及时更新您。",
     "invalidEmail": "请输入有效的电子邮箱地址。",
     "subscribeError": "发送失败，请稍后重试。"
   },
   "news": {
-    "title": "最新动态", "subtitle": "更新、活动与公告", "viewAll": "查看全部动态", "readMore": "阅读更多",
-    "item1Type": "合作伙伴", "item1Title": "Coltek成为XGRIDS欧洲最大战略合作伙伴", "item1Date": "2026-03-15", "item1Summary": "战略合作协议正式签署，将先进3D扫描解决方案引入欧洲市场。",
-    "item2Type": "活动",     "item2Title": "Intergeo 2026 — 在斯图加特与我们相聚",   "item2Date": "2026-09-15", "item2Summary": "参观我们的展台，现场体验最新的Lixel L2 Pro和LCC平台实时演示。",
-    "item3Type": "产品更新", "item3Title": "LCC平台突破10,000次重建里程碑",           "item3Date": "2026-02-28", "item3Summary": "Lixel CyberColor云平台里程碑：已生成超过10,000个3D高斯泼溅模型。"
+    "title": "最新动态",
+    "subtitle": "更新、活动与公告",
+    "viewAll": "查看全部动态",
+    "readMore": "阅读更多",
+    "item1Type": "合作伙伴",
+    "item1Title": "Coltek 成为 XGRIDS 欧洲战略合作伙伴",
+    "item1Date": "2026-03-15",
+    "item1Summary": "战略合作协议正式签署，将先进3D扫描解决方案引入欧洲市场。",
+    "item2Type": "活动",
+    "item2Title": "Intergeo 2026 — 在斯图加特与我们相聚",
+    "item2Date": "2026-09-15",
+    "item2Summary": "参观我们的展台，现场体验最新的Lixel L2 Pro和LCC平台实时演示。",
+    "item3Type": "产品更新",
+    "item3Title": "LCC平台突破10,000次重建里程碑",
+    "item3Date": "2026-02-28",
+    "item3Summary": "Lixel CyberColor云平台里程碑：已生成超过10,000个3D高斯泼溅模型。"
   },
   "about": {
-    "label": "关于我们", "title": "具有全球视野的技术专家",
-    "story": "由前大疆工程师创立，我们将空间智能和智能硬件领域的深厚专业知识带入欧洲市场。在荷兰和德国均设有注册实体，我们连接中国领先科技品牌与欧洲产业需求。",
+    "label": "关于我们",
+    "title": "具有全球视野的技术专家",
+    "story": "我们在空间智能与安防技术方面具备深厚专业能力，服务欧洲市场，并在荷兰与德国开展运营。",
     "stats": {
-      "entities": { "value": "2",  "label": "注册实体",        "detail": "荷兰 & 德国" },
-      "xgrids":   { "value": "#1", "label": "XGRIDS合作伙伴",  "detail": "欧洲最大" },
-      "terjin":   { "value": "#1", "label": "Terjin合作伙伴",  "detail": "欧洲最大" }
+      "entities": {
+        "value": "2",
+        "label": "注册实体",
+        "detail": "荷兰 & 德国"
+      },
+      "xgrids": {
+        "value": "",
+        "label": "XGRIDS 欧洲战略合作伙伴",
+        "detail": ""
+      },
+      "terjin": {
+        "value": "",
+        "label": "Terjin 欧洲战略合作伙伴",
+        "detail": ""
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "members": [
+        {
+          "name": "Member 1",
+          "role": "联合创始人兼CEO"
+        },
+        {
+          "name": "Member 2",
+          "role": "联合创始人兼CTO"
+        },
+        {
+          "name": "Member 3",
+          "role": "销售负责人"
+        },
+        {
+          "name": "Member 4",
+          "role": "运营负责人"
+        },
+        {
+          "name": "Member 5",
+          "role": "技术负责人"
+        },
+        {
+          "name": "Member 6",
+          "role": "市场总监"
+        }
+      ]
     }
   },
   "contact": {
-    "label": "联系我们", "title": "共同构建未来", "subtitle": "告诉我们您的项目需求，我们将在24小时内回复。",
+    "label": "联系我们",
+    "title": "共同构建未来",
+    "subtitle": "告诉我们您的项目需求，我们将在24小时内回复。",
     "form": {
-      "name": "您的姓名", "company": "公司名称", "email": "电子邮箱", "interest": "我感兴趣的领域...",
-      "interests": { "spatial": "空间智能（3D扫描）", "airspace": "空间安防（无人机探测）", "ai": "AI硬件", "other": "其他 / 一般咨询" },
-      "message": "留言", "submit": "发送询价", "submitting": "发送中...",
-      "success": "感谢您的咨询！我们将在24小时内回复。", "error": "发送失败，请重试或直接发送邮件联系我们。",
+      "name": "您的姓名",
+      "company": "公司名称",
+      "email": "电子邮箱",
+      "interest": "我感兴趣的领域...",
+      "interests": {
+        "spatial": "空间智能（3D扫描）",
+        "airspace": "空间安防（无人机探测）",
+        "ai": "AI硬件",
+        "other": "其他 / 一般咨询"
+      },
+      "message": "留言",
+      "submit": "发送询价",
+      "submitting": "发送中...",
+      "success": "感谢您的咨询！我们将在24小时内回复。",
+      "error": "发送失败，请重试或直接发送邮件联系我们。",
       "required": "此项为必填项。",
       "invalidEmail": "请输入有效的电子邮箱地址。"
     },
     "companies": {
-      "coltek": { "name": "Coltek Robotics GmbH", "country": "德国", "address": "德国慕尼黑", "phone": "+49 151 20266740" },
-      "sunova": { "name": "Sunova Innovation B.V.", "country": "荷兰", "address": "荷兰鹿特丹", "phone": "+31 645402151" }
+      "coltek": {
+        "name": "Coltek Robotics GmbH",
+        "country": "德国",
+        "address": "Plinganserstraße 150, 81369 München, Germany",
+        "phone": "+49 151 20266740"
+      },
+      "sunova": {
+        "name": "Sunova Innovation B.V.",
+        "country": "荷兰",
+        "address": "荷兰鹿特丹",
+        "phone": "+31 645402151"
+      }
     },
-    "email": "support@sunova-innovation.nl", "linkedin": "领英"
+    "email": "support@sunova-innovation.nl",
+    "linkedin": "领英"
   },
   "spatialProducts": {
-    "label": "空间智能", "title": "产品与平台", "subtitle": "从扫描硬件到AI驱动的重建软件",
+    "label": "空间智能",
+    "title": "产品与平台",
+    "subtitle": "从扫描硬件到AI驱动的重建软件",
     "hardware": {
       "sectionTitle": "硬件",
-      "l2pro":      { "name": "Lixel L2 Pro",   "tagline": "旗舰手持3D扫描仪",   "spec0": "16通道LiDAR", "spec1": "120m探测范围", "spec2": "1.2cm精度", "spec3": "32万点/秒", "spec4": "支持无人机挂载" },
-      "k1":         { "name": "LixelKity K1",   "tagline": "紧凑型手持3D扫描仪", "spec0": "<1kg", "spec1": "48MP双全景相机", "spec2": "360°LiDAR", "spec3": "40m范围" },
-      "portalcam":  { "name": "PortalCam",      "tagline": "空间相机",            "spec0": "双鱼眼+双前置相机", "spec1": "3D高斯泼溅", "spec2": "即时空间模型" }
+      "l2pro": {
+        "name": "Lixel L2 Pro",
+        "tagline": "旗舰手持3D扫描仪",
+        "spec0": "16通道LiDAR",
+        "spec1": "120m探测范围",
+        "spec2": "1.2cm精度",
+        "spec3": "32万点/秒",
+        "spec4": "支持无人机挂载"
+      },
+      "k1": {
+        "name": "LixelKity K1",
+        "tagline": "紧凑型手持3D扫描仪",
+        "spec0": "<1kg",
+        "spec1": "48MP双全景相机",
+        "spec2": "360°LiDAR",
+        "spec3": "40m范围"
+      },
+      "portalcam": {
+        "name": "PortalCam",
+        "tagline": "空间相机",
+        "spec0": "双鱼眼+双前置相机",
+        "spec1": "3D高斯泼溅",
+        "spec2": "即时空间模型"
+      }
     },
     "software": {
       "sectionTitle": "软件与平台",
-      "studio": { "name": "LixelStudio",            "desc": "桌面端点云处理与3D模型生成" },
-      "go":     { "name": "LixelGo",                "desc": "移动端扫描控制与实时预览" },
-      "lcc":    { "name": "Lixel CyberColor (LCC)", "desc": "AI驱动3DGS重建平台，自动化大规模真实感模型生成" },
-      "revit":  { "name": "LCC for Revit",          "desc": "BIM集成插件——3DGS赋能建筑信息建模" }
+      "studio": {
+        "name": "LixelStudio",
+        "desc": "桌面端点云处理与3D模型生成"
+      },
+      "go": {
+        "name": "LixelGo",
+        "desc": "移动端扫描控制与实时预览"
+      },
+      "lcc": {
+        "name": "Lixel CyberColor (LCC)",
+        "desc": "AI驱动3DGS重建平台，自动化大规模真实感模型生成"
+      },
+      "revit": {
+        "name": "LCC for Revit",
+        "desc": "BIM集成插件——3DGS赋能建筑信息建模"
+      }
     },
     "workflow": {
       "title": "工作流程",
-      "step0": { "label": "扫描",     "desc": "使用LiDAR硬件采集空间数据" },
-      "step1": { "label": "处理",     "desc": "AI驱动的自动化3D重建" },
-      "step2": { "label": "查看分享", "desc": "探索、编辑和分享3D模型" },
-      "step3": { "label": "开发集成", "desc": "通过SDK集成Unity、Unreal、Web、移动端" }
+      "step0": {
+        "label": "扫描",
+        "desc": "使用LiDAR硬件采集空间数据"
+      },
+      "step1": {
+        "label": "处理",
+        "desc": "AI驱动的自动化3D重建"
+      },
+      "step2": {
+        "label": "查看分享",
+        "desc": "探索、编辑和分享3D模型"
+      },
+      "step3": {
+        "label": "开发集成",
+        "desc": "通过SDK集成Unity、Unreal、Web、移动端"
+      }
     },
     "techHighlights": {
       "title": "技术亮点",
-      "item0": "多源SLAM传感器融合", "item1": "3D高斯泼溅（3DGS）", "item2": "AI动态物体移除",
-      "item3": "无人机+手持数据融合", "item4": "开放SDK：Unity / Unreal / Web / 移动端"
+      "item0": "多源SLAM传感器融合",
+      "item1": "3D高斯泼溅（3DGS）",
+      "item2": "AI动态物体移除",
+      "item3": "无人机+手持数据融合",
+      "item4": "开放SDK：Unity / Unreal / Web / 移动端"
     }
   },
   "spatialShowcase": {
-    "label": "空间智能", "title": "3D案例展示", "subtitle": "探索真实3D扫描成果",
-    "viewer": { "instruction": "拖拽旋转 · 滚轮缩放 · 右键平移", "loading": "加载3D模型中...", "reset": "重置视图", "fullscreen": "全屏" },
-    "beforeAfter": { "title": "前后对比", "before": "原始照片", "after": "3D重建结果" },
-    "category0": "建筑", "category1": "文化遗产", "category2": "工业", "category3": "室内",
-    "case0": { "title": "历史大教堂扫描",      "category": "文化遗产", "description": "14世纪大教堂内外完整数字化，厘米级精度捕捉建筑细节。" },
-    "case1": { "title": "工业厂房数字孪生",    "category": "工业",     "description": "制造厂完整3D扫描，用于维护规划和空间存档。" },
-    "case2": { "title": "现代办公室内部",      "category": "室内",     "description": "高保真室内扫描，支持装修规划、精确测量和虚拟参观。" }
+    "label": "空间智能",
+    "title": "3D案例展示",
+    "subtitle": "探索真实3D扫描成果",
+    "viewer": {
+      "instruction": "拖拽旋转 · 滚轮缩放 · 右键平移",
+      "loading": "加载3D模型中...",
+      "reset": "重置视图",
+      "fullscreen": "全屏"
+    },
+    "beforeAfter": {
+      "title": "前后对比",
+      "before": "原始照片",
+      "after": "3D重建结果"
+    },
+    "category0": "建筑",
+    "category1": "文化遗产",
+    "category2": "工业",
+    "category3": "室内",
+    "case0": {
+      "title": "历史大教堂扫描",
+      "category": "文化遗产",
+      "description": "14世纪大教堂内外完整数字化，厘米级精度捕捉建筑细节。"
+    },
+    "case1": {
+      "title": "工业厂房数字孪生",
+      "category": "工业",
+      "description": "制造厂完整3D扫描，用于维护规划和空间存档。"
+    },
+    "case2": {
+      "title": "现代办公室内部",
+      "category": "室内",
+      "description": "高保真室内扫描，支持装修规划、精确测量和虚拟参观。"
+    }
   },
   "spatialIndustries": {
-    "label": "空间智能", "title": "行业应用", "subtitle": "跨行业3D空间解决方案",
-    "item0": { "title": "建筑与施工",      "desc": "BIM文档、竣工验证、施工监测" },
-    "item1": { "title": "测绘与制图",      "desc": "高精度地理与地形测绘" },
-    "item2": { "title": "文化遗产",        "desc": "文物和历史遗址数字化保护" },
-    "item3": { "title": "房地产",          "desc": "沉浸式虚拟房产展示和空间测量" },
-    "item4": { "title": "影视与娱乐",      "desc": "制作级环境资产创建" },
-    "item5": { "title": "工业数字化",      "desc": "工厂数字孪生，用于规划和维护" }
+    "label": "空间智能",
+    "title": "行业应用",
+    "subtitle": "跨行业3D空间解决方案",
+    "item0": {
+      "title": "建筑与施工",
+      "desc": "BIM文档、竣工验证、施工监测"
+    },
+    "item1": {
+      "title": "测绘与制图",
+      "desc": "高精度地理与地形测绘"
+    },
+    "item2": {
+      "title": "文化遗产",
+      "desc": "文物和历史遗址数字化保护"
+    },
+    "item3": {
+      "title": "房地产",
+      "desc": "沉浸式虚拟房产展示和空间测量"
+    },
+    "item4": {
+      "title": "影视与娱乐",
+      "desc": "制作级环境资产创建"
+    },
+    "item5": {
+      "title": "工业数字化",
+      "desc": "工厂数字孪生，用于规划和维护"
+    }
   },
   "airspaceProducts": {
-    "label": "空间安防", "title": "产品与平台", "subtitle": "基于TDOA的无人机探测、定位与防御系统",
+    "label": "空间安防",
+    "title": "产品与平台",
+    "subtitle": "基于TDOA的无人机探测、定位与防御系统",
     "categories": {
       "system": {
         "title": "系统方案",
         "desc": "一体化无人机管控与防御系统",
         "products": [
-          { "name": "TDOA Drone Management",      "desc": "基础设施级网络化无人机管控系统，搭载TDOA定位" },
-          { "name": "TDOA X4 Drone Detection",    "desc": "4站网络化TDOA无人机探测系统，覆盖大范围区域" },
-          { "name": "TDOA X5 Drone Defense",      "desc": "5站一体化探测与防御系统，配备精准对抗措施" },
-          { "name": "Multi-layered Mgmt. Platform","desc": "面向大规模部署的集中式多层管理平台" }
+          {
+            "name": "TDOA Drone Management",
+            "desc": "基础设施级网络化无人机管控系统，搭载TDOA定位"
+          },
+          {
+            "name": "TDOA X4 Drone Detection",
+            "desc": "4站网络化TDOA无人机探测系统，覆盖大范围区域"
+          },
+          {
+            "name": "TDOA X5 Drone Defense",
+            "desc": "5站一体化探测与防御系统，配备精准对抗措施"
+          },
+          {
+            "name": "Multi-layered Mgmt. Platform",
+            "desc": "面向大规模部署的集中式多层管理平台"
+          }
         ]
       },
       "fixed": {
         "title": "固定式设备",
         "desc": "永久部署的探测与防御设备",
         "products": [
-          { "name": "TDOA FTD1",                  "desc": "固定式TDOA探测设备，用于持续周界监控" },
-          { "name": "FD1 Drone Detector",          "desc": "固定式无人机探测设备，提供全天候空域监控" },
-          { "name": "FTA1 TDOA+AOA Detector",      "desc": "TDOA与AOA混合技术，提升定位精度" },
-          { "name": "FPC1 Detection & Jamming",    "desc": "单一固定单元集成探测与精准干扰" },
-          { "name": "FR3 Drone RID Reader",        "desc": "远程ID读取器，支持合规无人机身份识别" }
+          {
+            "name": "TDOA FTD1",
+            "desc": "固定式TDOA探测设备，用于持续周界监控"
+          },
+          {
+            "name": "FD1 Drone Detector",
+            "desc": "固定式无人机探测设备，提供全天候空域监控"
+          },
+          {
+            "name": "FTA1 TDOA+AOA Detector",
+            "desc": "TDOA与AOA混合技术，提升定位精度"
+          },
+          {
+            "name": "FPC1 Detection & Jamming",
+            "desc": "单一固定单元集成探测与精准干扰"
+          },
+          {
+            "name": "FR3 Drone RID Reader",
+            "desc": "远程ID读取器，支持合规无人机身份识别"
+          }
         ]
       },
       "portable": {
         "title": "便携式设备",
         "desc": "手持与快速部署探测装备",
         "products": [
-          { "name": "PD1 Handheld Detector",      "desc": "单兵手持无人机探测仪，适用于机动安保队伍" },
-          { "name": "PL2 Pro Handheld Locator",   "desc": "便携式无人机定位仪，具备增强定向定位能力" },
-          { "name": "PC2 Pro All-in-One",         "desc": "集探测、干扰与欺骗于一体的手持设备" },
-          { "name": "PL1-B Briefcase Detector",   "desc": "公文包式便携探测器，适合隐蔽与快速部署" },
-          { "name": "PJ1 Portable Jammer",        "desc": "轻量级便携无人机干扰仪，可即时响应威胁" }
+          {
+            "name": "PD1 Handheld Detector",
+            "desc": "单兵手持无人机探测仪，适用于机动安保队伍"
+          },
+          {
+            "name": "PL2 Pro Handheld Locator",
+            "desc": "便携式无人机定位仪，具备增强定向定位能力"
+          },
+          {
+            "name": "PC2 Pro All-in-One",
+            "desc": "集探测、干扰与欺骗于一体的手持设备"
+          },
+          {
+            "name": "PL1-B Briefcase Detector",
+            "desc": "公文包式便携探测器，适合隐蔽与快速部署"
+          },
+          {
+            "name": "PJ1 Portable Jammer",
+            "desc": "轻量级便携无人机干扰仪，可即时响应威胁"
+          }
         ]
       }
     }
   },
   "airspaceShowcase": {
-    "label": "空间安防", "title": "部署案例", "subtitle": "真实反无人机防护场景",
-    "beforeAfter": { "title": "覆盖对比", "before": "部署前——安全盲区", "after": "部署后——全面态势感知" },
-    "case0": { "title": "国际机场周界防护",   "environment": "机场",     "coverage": "8km半径，360°", "accuracy": "98.5%探测率", "response": "<3s告警延迟", "description": "全天候空域监控，保护跑道进近通道和航站区域免受无人机入侵。" },
-    "case1": { "title": "大型体育赛事",       "environment": "体育场",   "coverage": "5km半径，全域", "accuracy": "97.2%探测率", "response": "<5s告警延迟", "description": "为6万座体育场赛事临时部署，与当地安全指挥系统集成。" },
-    "case2": { "title": "关键基础设施防护",   "environment": "能源设施", "coverage": "6km半径，全天候","accuracy": "99.1%探测率", "response": "<2s告警延迟", "description": "发电厂永久安装，多层探测与自动报告系统。" }
+    "label": "空间安防",
+    "title": "部署案例",
+    "subtitle": "真实反无人机防护场景",
+    "beforeAfter": {
+      "title": "覆盖对比",
+      "before": "部署前——安全盲区",
+      "after": "部署后——全面态势感知"
+    },
+    "case0": {
+      "title": "国际机场周界防护",
+      "environment": "机场",
+      "coverage": "8km半径，360°",
+      "accuracy": "98.5%探测率",
+      "response": "<3s告警延迟",
+      "description": "全天候空域监控，保护跑道进近通道和航站区域免受无人机入侵。"
+    },
+    "case1": {
+      "title": "大型体育赛事",
+      "environment": "体育场",
+      "coverage": "5km半径，全域",
+      "accuracy": "97.2%探测率",
+      "response": "<5s告警延迟",
+      "description": "为6万座体育场赛事临时部署，与当地安全指挥系统集成。"
+    },
+    "case2": {
+      "title": "关键基础设施防护",
+      "environment": "能源设施",
+      "coverage": "6km半径，全天候",
+      "accuracy": "99.1%探测率",
+      "response": "<2s告警延迟",
+      "description": "发电厂永久安装，多层探测与自动报告系统。"
+    }
   },
   "airspaceIndustries": {
-    "label": "空间安防", "title": "行业应用", "subtitle": "跨行业反无人机解决方案",
-    "item0": { "title": "机场与航空",      "desc": "跑道净空保护与飞行安全保障" },
-    "item1": { "title": "大型活动",        "desc": "体育、演唱会、峰会等大规模活动安保" },
-    "item2": { "title": "政府与关键基础设施","desc": "政府建筑、发电厂、水处理设施" },
-    "item3": { "title": "军事与国防",      "desc": "基地周界安全与战场态势感知" },
-    "item4": { "title": "工业设施",        "desc": "石化、核能及高风险设施禁飞区管控" },
-    "item5": { "title": "港口与海事",      "desc": "港口和海岸线无人机入侵监控" }
+    "label": "空间安防",
+    "title": "行业应用",
+    "subtitle": "跨行业反无人机解决方案",
+    "item0": {
+      "title": "机场与航空",
+      "desc": "跑道净空保护与飞行安全保障"
+    },
+    "item1": {
+      "title": "大型活动",
+      "desc": "体育、演唱会、峰会等大规模活动安保"
+    },
+    "item2": {
+      "title": "政府与关键基础设施",
+      "desc": "政府建筑、发电厂、水处理设施"
+    },
+    "item3": {
+      "title": "军事与国防",
+      "desc": "基地周界安全与战场态势感知"
+    },
+    "item4": {
+      "title": "工业设施",
+      "desc": "石化、核能及高风险设施禁飞区管控"
+    },
+    "item5": {
+      "title": "港口与海事",
+      "desc": "港口和海岸线无人机入侵监控"
+    }
   },
   "social": {
     "title": "关注我们",
@@ -192,7 +510,7 @@
   },
   "meta": {
     "title": "Coltek — 连接技术，赋能产业。",
-    "description": "为欧洲产业提供空间智能、空域安防和AI硬件解决方案。由前DJI工程师创立。"
+    "description": "为欧洲产业提供空间智能、空域安防和AI硬件解决方案。"
   },
   "common": {
     "viewOnTerjin": "在 Terjin 查看",
@@ -200,10 +518,17 @@
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",
-    "privacy": "隐私政策", "impressum": "法律声明", "cookies": "Cookie说明",
+    "privacy": "隐私政策",
+    "impressum": "法律声明",
+    "cookies": "Cookie说明",
     "description": "连接全球领先技术与欧洲产业。",
-    "quickLinks": "快速链接", "contactInfo": "联系方式",
-    "coltek": "Coltek Robotics GmbH", "coltekAddress": "德国慕尼黑", "coltekPhone": "+49 151 20266740",
-    "sunova": "Sunova Innovation B.V.", "sunovaAddress": "荷兰鹿特丹", "sunovaPhone": "+31 645402151"
+    "quickLinks": "快速链接",
+    "contactInfo": "联系方式",
+    "coltek": "Coltek Robotics GmbH",
+    "coltekAddress": "Plinganserstraße 150, 81369 München, Germany",
+    "coltekPhone": "+49 151 20266740",
+    "sunova": "Sunova Innovation B.V.",
+    "sunovaAddress": "荷兰鹿特丹",
+    "sunovaPhone": "+31 645402151"
   }
 }

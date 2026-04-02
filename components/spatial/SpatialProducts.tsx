@@ -26,11 +26,11 @@ function HardwareCard({ name, tagline, specs, delay, href, linkLabel, imageSrc }
       viewport={{ once: true }}
       className="group bg-white border border-border rounded-[8px] overflow-hidden hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col"
     >
-      <div className="relative h-40 bg-[#F1F5F9] overflow-hidden group-hover:scale-[1.01] transition-transform duration-300">
+      <div className="relative h-40 bg-[#F1F5F9] overflow-hidden rounded-t-lg">
         {imageSrc ? (
-          <Image src={imageSrc} alt={name} fill className="object-contain p-4" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src={imageSrc} alt={name} fill className="object-contain p-4 transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
         ) : (
-          <div className="h-full flex flex-col items-center justify-center gap-2">
+          <div className="h-full flex flex-col items-center justify-center gap-2 transition-transform duration-300 group-hover:scale-105">
             <ScanLine size={32} className="text-accent/50" />
             <span className="text-xs text-foreground-muted/60">{name}</span>
           </div>

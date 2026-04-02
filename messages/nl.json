@@ -1,180 +1,498 @@
 {
   "nav": {
-    "spatial": "Ruimtelijke Intelligentie", "spatialProducts": "Producten", "spatialShowcase": "Projecten", "spatialIndustries": "Sectoren",
-    "spatialProductsDesc": "3D-scan hardware en softwareoplossingen", "spatialShowcaseDesc": "Praktische 3D-reconstructieprojecten", "spatialIndustriesDesc": "Architectuur, erfgoed, industrie en meer",
-    "airspace": "Luchtruimbeveiliging", "airspaceProducts": "Producten", "airspaceShowcase": "Projecten", "airspaceIndustries": "Sectoren",
-    "airspaceProductsDesc": "Hardware voor drone-detectie en -lokalisatie", "airspaceShowcaseDesc": "Casestudies over beveiliging", "airspaceIndustriesDesc": "Luchthavens, evenementen, overheid en meer",
-    "xgrids": "XGRIDS", "xgridsDesc": "Ruimtelijk intelligentieplatform",
-    "terjin": "Terjin", "terjinDesc": "Luchtruimbeveiligingssysteem",
-    "aiHardware": "AI-hardware", "news": "Nieuws", "about": "Over ons", "contact": "Contact"
+    "spatial": "Ruimtelijke Intelligentie",
+    "spatialProducts": "Producten",
+    "spatialShowcase": "Projecten",
+    "spatialIndustries": "Sectoren",
+    "spatialProductsDesc": "3D-scan hardware en softwareoplossingen",
+    "spatialShowcaseDesc": "Praktische 3D-reconstructieprojecten",
+    "spatialIndustriesDesc": "Architectuur, erfgoed, industrie en meer",
+    "airspace": "Luchtruimbeveiliging",
+    "airspaceProducts": "Producten",
+    "airspaceShowcase": "Projecten",
+    "airspaceIndustries": "Sectoren",
+    "airspaceProductsDesc": "Hardware voor drone-detectie en -lokalisatie",
+    "airspaceShowcaseDesc": "Casestudies over beveiliging",
+    "airspaceIndustriesDesc": "Luchthavens, evenementen, overheid en meer",
+    "xgrids": "XGRIDS",
+    "xgridsDesc": "Ruimtelijk intelligentieplatform",
+    "terjin": "Terjin",
+    "terjinDesc": "Luchtruimbeveiligingssysteem",
+    "aiHardware": "AI-hardware",
+    "news": "Nieuws",
+    "about": "Over ons",
+    "contact": "Contact"
   },
   "hero": {
     "slogan": "Technologieën verbinden. Industrieën mogelijk maken.",
     "mission": "Wij integreren toonaangevende wereldwijde technologieën in praktische toepassingen voor de Europese industrie.",
     "cards": {
-      "spatial":  { "title": "Digitale Realiteit",    "keywords": "3D-scanning · Ruimtelijke Intelligentie · Reconstructie" },
-      "airspace": { "title": "Luchtruimbeveiliging",  "keywords": "Drone-detectie · Lokalisatie · Situatiebewustzijn" },
-      "ai":       { "title": "AI-hardware",           "keywords": "Next-Gen · Intelligente Apparaten · Binnenkort" }
+      "spatial": {
+        "title": "Digitale Realiteit",
+        "keywords": "3D-scanning · Ruimtelijke Intelligentie · Reconstructie"
+      },
+      "airspace": {
+        "title": "Luchtruimbeveiliging",
+        "keywords": "Drone-detectie · Lokalisatie · Situatiebewustzijn"
+      },
+      "ai": {
+        "title": "AI-hardware",
+        "keywords": "Next-Gen · Intelligente Apparaten · Binnenkort"
+      }
     },
-    "trust": "Opgericht door voormalige DJI-ingenieurs · EU-activiteiten",
-    "ctaPrimary": "Oplossingen verkennen", "ctaSecondary": "Neem contact op"
+    "trust": "Europees technologie-integratieplatform · activiteiten in NL & DE",
+    "ctaPrimary": "Oplossingen verkennen",
+    "ctaSecondary": "Neem contact op"
   },
   "spatial": {
-    "label": "Ruimtelijke Intelligentie", "title": "3D-scan- en reconstructieoplossingen", "subtitle": "Europees XGRIDS-strategisch partner",
+    "label": "Ruimtelijke Intelligentie",
+    "title": "3D-scan- en reconstructieoplossingen",
+    "subtitle": "Europees XGRIDS-strategisch partner",
     "description": "Wij bieden uitgebreide 3D-ruimtelijke digitalisatieoplossingen, van hardware-scanning tot AI-gedreven reconstructie, voor industrieën in heel Europa.",
     "highlights": {
-      "hardware":  { "title": "Vlaggenschip Hardware",  "desc": "Lixel L2 Pro · K1 · PortalCam" },
-      "platform":  { "title": "AI-reconstructie",       "desc": "LixelStudio · LCC · 3D Gaussian Splatting" },
-      "precision": { "title": "CM-nauwkeurigheid",      "desc": "Binnen- en buitendekking voor volledige scènes" }
+      "hardware": {
+        "title": "Vlaggenschip Hardware",
+        "desc": "Lixel L2 Pro · K1 · PortalCam"
+      },
+      "platform": {
+        "title": "AI-reconstructie",
+        "desc": "LixelStudio · LCC · 3D Gaussian Splatting"
+      },
+      "precision": {
+        "title": "CM-nauwkeurigheid",
+        "desc": "Binnen- en buitendekking voor volledige scènes"
+      }
     },
-    "ctaProducts": "Producten verkennen", "ctaShowcase": "Projecten bekijken"
+    "ctaProducts": "Producten verkennen",
+    "ctaShowcase": "Projecten bekijken"
   },
   "airspace": {
-    "label": "Luchtruimbeveiliging", "title": "Drone-detectie- en lokalisatieoplossingen", "subtitle": "Europees Terjin-strategisch partner",
+    "label": "Luchtruimbeveiliging",
+    "title": "Drone-detectie- en lokalisatieoplossingen",
+    "subtitle": "Europees Terjin-strategisch partner",
     "description": "Wij leveren professionele counter-drone detectie- en lokalisatiesystemen ter bescherming van kritieke infrastructuur, evenementen en luchtruim in Europa.",
     "highlights": {
-      "detection": { "title": "Multibanddetectie",  "desc": "Volspectrum RF-monitoring op alle belangrijke dronefrequenties" },
-      "tracking":  { "title": "Precisietracking",   "desc": "Multi-sensorfusie voor nauwkeurige doellokalisatie" },
-      "awareness": { "title": "24/7 Bewaking",       "desc": "Allweer realtime situationeel toezicht" }
+      "detection": {
+        "title": "Multibanddetectie",
+        "desc": "Volspectrum RF-monitoring op alle belangrijke dronefrequenties"
+      },
+      "tracking": {
+        "title": "Precisietracking",
+        "desc": "Multi-sensorfusie voor nauwkeurige doellokalisatie"
+      },
+      "awareness": {
+        "title": "24/7 Bewaking",
+        "desc": "Allweer realtime situationeel toezicht"
+      }
     },
-    "ctaProducts": "Producten verkennen", "ctaShowcase": "Projecten bekijken"
+    "ctaProducts": "Producten verkennen",
+    "ctaShowcase": "Projecten bekijken"
   },
   "aiHardware": {
-    "label": "AI-hardware", "title": "Het volgende hoofdstuk in intelligente hardware", "subtitle": "Blijf op de hoogte",
+    "label": "AI-hardware",
+    "title": "Het volgende hoofdstuk in intelligente hardware",
+    "subtitle": "Blijf op de hoogte",
     "description": "Wij ontwikkelen hardware van de volgende generatie met AI. Abonneer u om als eerste op de hoogte te zijn.",
-    "emailPlaceholder": "Voer uw e-mailadres in", "subscribe": "Breng mij op de hoogte", "subscribed": "Bedankt! We houden u op de hoogte.",
+    "emailPlaceholder": "Voer uw e-mailadres in",
+    "subscribe": "Breng mij op de hoogte",
+    "subscribed": "Bedankt! We houden u op de hoogte.",
     "invalidEmail": "Voer een geldig e-mailadres in.",
     "subscribeError": "Er is iets misgegaan. Probeer het later opnieuw."
   },
   "news": {
-    "title": "Laatste Nieuws", "subtitle": "Updates, evenementen en aankondigingen", "viewAll": "Al het nieuws", "readMore": "Meer lezen",
-    "item1Type": "Partnerschap", "item1Title": "Coltek wordt grootste Europese partner van XGRIDS", "item1Date": "2026-03-15", "item1Summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
-    "item2Type": "Evenement",    "item2Title": "Intergeo 2026 — Ontmoet ons in Stuttgart",           "item2Date": "2026-09-15", "item2Summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
-    "item3Type": "Productupdates","item3Title": "LCC-platform bereikt 10.000 reconstructies",         "item3Date": "2026-02-28", "item3Summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd."
+    "title": "Laatste Nieuws",
+    "subtitle": "Updates, evenementen en aankondigingen",
+    "viewAll": "Al het nieuws",
+    "readMore": "Meer lezen",
+    "item1Type": "Partnerschap",
+    "item1Title": "Coltek wordt XGRIDS Strategische Partner in Europa",
+    "item1Date": "2026-03-15",
+    "item1Summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
+    "item2Type": "Evenement",
+    "item2Title": "Intergeo 2026 — Ontmoet ons in Stuttgart",
+    "item2Date": "2026-09-15",
+    "item2Summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
+    "item3Type": "Productupdates",
+    "item3Title": "LCC-platform bereikt 10.000 reconstructies",
+    "item3Date": "2026-02-28",
+    "item3Summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd."
   },
   "about": {
-    "label": "Over ons", "title": "Technologie-experts met een wereldwijde visie",
-    "story": "Opgericht door voormalige DJI-ingenieurs brengen wij diepgaande expertise op het gebied van ruimtelijke intelligentie en slimme hardware naar de Europese markt. Met geregistreerde entiteiten in Nederland en Duitsland verbinden wij toonaangevende Chinese technologiemerken met de behoeften van de Europese industrie.",
+    "label": "Over ons",
+    "title": "Technologie-experts met een wereldwijde visie",
+    "story": "Wij brengen diepgaande expertise in ruimtelijke intelligentie en beveiligingstechnologie naar de Europese markt, met activiteiten in Nederland en Duitsland.",
     "stats": {
-      "entities": { "value": "2",  "label": "Geregistreerde Entiteiten", "detail": "Nederland & Duitsland" },
-      "xgrids":   { "value": "#1", "label": "XGRIDS Partner",            "detail": "Grootste in Europa" },
-      "terjin":   { "value": "#1", "label": "Terjin Partner",            "detail": "Grootste in Europa" }
+      "entities": {
+        "value": "2",
+        "label": "Geregistreerde Entiteiten",
+        "detail": "Nederland & Duitsland"
+      },
+      "xgrids": {
+        "value": "",
+        "label": "XGRIDS Strategische Partner in Europa",
+        "detail": ""
+      },
+      "terjin": {
+        "value": "",
+        "label": "Terjin Strategische Partner in Europa",
+        "detail": ""
+      }
+    },
+    "team": {
+      "title": "Ons Team",
+      "members": [
+        {
+          "name": "Member 1",
+          "role": "Medeoprichter & CEO"
+        },
+        {
+          "name": "Member 2",
+          "role": "Medeoprichter & CTO"
+        },
+        {
+          "name": "Member 3",
+          "role": "Hoofd Verkoop"
+        },
+        {
+          "name": "Member 4",
+          "role": "Hoofd Operaties"
+        },
+        {
+          "name": "Member 5",
+          "role": "Technisch Leider"
+        },
+        {
+          "name": "Member 6",
+          "role": "Marketingdirecteur"
+        }
+      ]
     }
   },
   "contact": {
-    "label": "Neem contact op", "title": "Laten we samen iets bouwen", "subtitle": "Vertel ons over uw project en wij nemen binnen 24 uur contact op.",
+    "label": "Neem contact op",
+    "title": "Laten we samen iets bouwen",
+    "subtitle": "Vertel ons over uw project en wij nemen binnen 24 uur contact op.",
     "form": {
-      "name": "Uw naam", "company": "Bedrijf", "email": "E-mailadres", "interest": "Ik ben geïnteresseerd in...",
-      "interests": { "spatial": "Ruimtelijke Intelligentie (3D-scanning)", "airspace": "Luchtruimbeveiliging (Drone-detectie)", "ai": "AI-hardware", "other": "Anders / Algemene vraag" },
-      "message": "Bericht", "submit": "Aanvraag sturen", "submitting": "Verzenden...",
-      "success": "Dank u! We reageren binnen 24 uur.", "error": "Er is iets misgegaan. Probeer het opnieuw of stuur ons direct een e-mail.",
+      "name": "Uw naam",
+      "company": "Bedrijf",
+      "email": "E-mailadres",
+      "interest": "Ik ben geïnteresseerd in...",
+      "interests": {
+        "spatial": "Ruimtelijke Intelligentie (3D-scanning)",
+        "airspace": "Luchtruimbeveiliging (Drone-detectie)",
+        "ai": "AI-hardware",
+        "other": "Anders / Algemene vraag"
+      },
+      "message": "Bericht",
+      "submit": "Aanvraag sturen",
+      "submitting": "Verzenden...",
+      "success": "Dank u! We reageren binnen 24 uur.",
+      "error": "Er is iets misgegaan. Probeer het opnieuw of stuur ons direct een e-mail.",
       "required": "Dit veld is verplicht.",
       "invalidEmail": "Voer een geldig e-mailadres in."
     },
     "companies": {
-      "coltek": { "name": "Coltek Robotics GmbH", "country": "Duitsland", "address": "München, Duitsland", "phone": "+49 151 20266740" },
-      "sunova": { "name": "Sunova Innovation B.V.", "country": "Nederland", "address": "Rotterdam, Nederland", "phone": "+31 645402151" }
+      "coltek": {
+        "name": "Coltek Robotics GmbH",
+        "country": "Duitsland",
+        "address": "Plinganserstraße 150, 81369 München, Germany",
+        "phone": "+49 151 20266740"
+      },
+      "sunova": {
+        "name": "Sunova Innovation B.V.",
+        "country": "Nederland",
+        "address": "Rotterdam, Nederland",
+        "phone": "+31 645402151"
+      }
     },
-    "email": "support@sunova-innovation.nl", "linkedin": "LinkedIn"
+    "email": "support@sunova-innovation.nl",
+    "linkedin": "LinkedIn"
   },
   "spatialProducts": {
-    "label": "Ruimtelijke Intelligentie", "title": "Producten & Platform", "subtitle": "Van scan-hardware tot AI-gestuurde reconstructiesoftware",
+    "label": "Ruimtelijke Intelligentie",
+    "title": "Producten & Platform",
+    "subtitle": "Van scan-hardware tot AI-gestuurde reconstructiesoftware",
     "hardware": {
       "sectionTitle": "Hardware",
-      "l2pro":      { "name": "Lixel L2 Pro",   "tagline": "Vlaggenschip Handheld 3D-Scanner", "spec0": "16-Kanaals LiDAR", "spec1": "120m bereik", "spec2": "1,2cm nauwkeurigheid", "spec3": "320K pnt/sec", "spec4": "Drone-monteerbaar" },
-      "k1":         { "name": "LixelKity K1",   "tagline": "Compacte Handheld 3D-Scanner",     "spec0": "Onder 1kg", "spec1": "48MP Dual Panorama Camera", "spec2": "360° LiDAR", "spec3": "40m bereik" },
-      "portalcam":  { "name": "PortalCam",      "tagline": "Ruimtecamera",                      "spec0": "Dual Fisheye + Dual Front Camera", "spec1": "3D Gaussian Splatting", "spec2": "Directe ruimtemodellen" }
+      "l2pro": {
+        "name": "Lixel L2 Pro",
+        "tagline": "Vlaggenschip Handheld 3D-Scanner",
+        "spec0": "16-Kanaals LiDAR",
+        "spec1": "120m bereik",
+        "spec2": "1,2cm nauwkeurigheid",
+        "spec3": "320K pnt/sec",
+        "spec4": "Drone-monteerbaar"
+      },
+      "k1": {
+        "name": "LixelKity K1",
+        "tagline": "Compacte Handheld 3D-Scanner",
+        "spec0": "Onder 1kg",
+        "spec1": "48MP Dual Panorama Camera",
+        "spec2": "360° LiDAR",
+        "spec3": "40m bereik"
+      },
+      "portalcam": {
+        "name": "PortalCam",
+        "tagline": "Ruimtecamera",
+        "spec0": "Dual Fisheye + Dual Front Camera",
+        "spec1": "3D Gaussian Splatting",
+        "spec2": "Directe ruimtemodellen"
+      }
     },
     "software": {
       "sectionTitle": "Software & Platform",
-      "studio": { "name": "LixelStudio",            "desc": "Desktop puntenwolk verwerking en 3D-modelgeneratie" },
-      "go":     { "name": "LixelGo",                "desc": "Mobiele scanbesturing en realtime voorvertoning" },
-      "lcc":    { "name": "Lixel CyberColor (LCC)", "desc": "AI-gedreven 3DGS reconstructieplatform voor geautomatiseerde fotorealistische modellen" },
-      "revit":  { "name": "LCC for Revit",          "desc": "BIM-integratieplugin — 3DGS voor architectonische informatiepmodellering" }
+      "studio": {
+        "name": "LixelStudio",
+        "desc": "Desktop puntenwolk verwerking en 3D-modelgeneratie"
+      },
+      "go": {
+        "name": "LixelGo",
+        "desc": "Mobiele scanbesturing en realtime voorvertoning"
+      },
+      "lcc": {
+        "name": "Lixel CyberColor (LCC)",
+        "desc": "AI-gedreven 3DGS reconstructieplatform voor geautomatiseerde fotorealistische modellen"
+      },
+      "revit": {
+        "name": "LCC for Revit",
+        "desc": "BIM-integratieplugin — 3DGS voor architectonische informatiepmodellering"
+      }
     },
     "workflow": {
       "title": "Hoe het werkt",
-      "step0": { "label": "Scannen",    "desc": "Ruimtelijke data vastleggen met LiDAR-hardware" },
-      "step1": { "label": "Verwerken",  "desc": "AI-gestuurde automatische 3D-reconstructie" },
-      "step2": { "label": "Bekijken",   "desc": "3D-modellen verkennen, bewerken en delen" },
-      "step3": { "label": "Ontwikkelen","desc": "Integreren via SDK in Unity, Unreal, Web, Mobile" }
+      "step0": {
+        "label": "Scannen",
+        "desc": "Ruimtelijke data vastleggen met LiDAR-hardware"
+      },
+      "step1": {
+        "label": "Verwerken",
+        "desc": "AI-gestuurde automatische 3D-reconstructie"
+      },
+      "step2": {
+        "label": "Bekijken",
+        "desc": "3D-modellen verkennen, bewerken en delen"
+      },
+      "step3": {
+        "label": "Ontwikkelen",
+        "desc": "Integreren via SDK in Unity, Unreal, Web, Mobile"
+      }
     },
     "techHighlights": {
       "title": "Technologie",
-      "item0": "Multi-SLAM-sensorfusie", "item1": "3D Gaussian Splatting (3DGS)", "item2": "AI dynamische objectverwijdering",
-      "item3": "Drone + handheld datafusie", "item4": "Open SDK: Unity / Unreal / Web / Mobile"
+      "item0": "Multi-SLAM-sensorfusie",
+      "item1": "3D Gaussian Splatting (3DGS)",
+      "item2": "AI dynamische objectverwijdering",
+      "item3": "Drone + handheld datafusie",
+      "item4": "Open SDK: Unity / Unreal / Web / Mobile"
     }
   },
   "spatialShowcase": {
-    "label": "Ruimtelijke Intelligentie", "title": "3D-projecten", "subtitle": "Verken reële 3D-scanresultaten",
-    "viewer": { "instruction": "Slepen om te draaien · Scrollen om in te zoomen · Rechtermuisknop om te pannen", "loading": "3D-model laden...", "reset": "Weergave resetten", "fullscreen": "Volledig scherm" },
-    "beforeAfter": { "title": "Voor & Na", "before": "Originele foto", "after": "3D-reconstructie" },
-    "category0": "Architectuur", "category1": "Cultureel Erfgoed", "category2": "Industrie", "category3": "Interieur",
-    "case0": { "title": "Historische Kathedraal Scan",        "category": "Cultureel Erfgoed", "description": "Volledige digitalisatie van een 14e-eeuwse kathedraal met centimeternauwkeurige details." },
-    "case1": { "title": "Industriële Fabriek Digital Twin",   "category": "Industrie",         "description": "Volledig 3D-scan van een productiefabriek voor onderhoudsplanning en ruimtelijke documentatie." },
-    "case2": { "title": "Modern Kantoor Interieur",           "category": "Interieur",         "description": "Hooggetrouwe interieurscan voor renovatieplanning met precieze maten en virtuele rondleidingen." }
+    "label": "Ruimtelijke Intelligentie",
+    "title": "3D-projecten",
+    "subtitle": "Verken reële 3D-scanresultaten",
+    "viewer": {
+      "instruction": "Slepen om te draaien · Scrollen om in te zoomen · Rechtermuisknop om te pannen",
+      "loading": "3D-model laden...",
+      "reset": "Weergave resetten",
+      "fullscreen": "Volledig scherm"
+    },
+    "beforeAfter": {
+      "title": "Voor & Na",
+      "before": "Originele foto",
+      "after": "3D-reconstructie"
+    },
+    "category0": "Architectuur",
+    "category1": "Cultureel Erfgoed",
+    "category2": "Industrie",
+    "category3": "Interieur",
+    "case0": {
+      "title": "Historische Kathedraal Scan",
+      "category": "Cultureel Erfgoed",
+      "description": "Volledige digitalisatie van een 14e-eeuwse kathedraal met centimeternauwkeurige details."
+    },
+    "case1": {
+      "title": "Industriële Fabriek Digital Twin",
+      "category": "Industrie",
+      "description": "Volledig 3D-scan van een productiefabriek voor onderhoudsplanning en ruimtelijke documentatie."
+    },
+    "case2": {
+      "title": "Modern Kantoor Interieur",
+      "category": "Interieur",
+      "description": "Hooggetrouwe interieurscan voor renovatieplanning met precieze maten en virtuele rondleidingen."
+    }
   },
   "spatialIndustries": {
-    "label": "Ruimtelijke Intelligentie", "title": "Sectortoepassingen", "subtitle": "3D-ruimteoplossingen voor alle sectoren",
-    "item0": { "title": "Architectuur & Bouw",          "desc": "BIM-documentatie, as-built verificatie, bouwmonitoring" },
-    "item1": { "title": "Landmeten & Kartering",        "desc": "Hoogprecisielandmeten en topografische kartering" },
-    "item2": { "title": "Cultureel Erfgoed",            "desc": "Digitaal behoud van artefacten en historische locaties" },
-    "item3": { "title": "Vastgoed",                     "desc": "Meeslepende virtuele woningpresentaties en ruimtemeting" },
-    "item4": { "title": "Film & Entertainment",         "desc": "Productieklare omgevingsasset creatie" },
-    "item5": { "title": "Industriële Digitalisering",   "desc": "Fabriek digitale twins voor planning en onderhoud" }
+    "label": "Ruimtelijke Intelligentie",
+    "title": "Sectortoepassingen",
+    "subtitle": "3D-ruimteoplossingen voor alle sectoren",
+    "item0": {
+      "title": "Architectuur & Bouw",
+      "desc": "BIM-documentatie, as-built verificatie, bouwmonitoring"
+    },
+    "item1": {
+      "title": "Landmeten & Kartering",
+      "desc": "Hoogprecisielandmeten en topografische kartering"
+    },
+    "item2": {
+      "title": "Cultureel Erfgoed",
+      "desc": "Digitaal behoud van artefacten en historische locaties"
+    },
+    "item3": {
+      "title": "Vastgoed",
+      "desc": "Meeslepende virtuele woningpresentaties en ruimtemeting"
+    },
+    "item4": {
+      "title": "Film & Entertainment",
+      "desc": "Productieklare omgevingsasset creatie"
+    },
+    "item5": {
+      "title": "Industriële Digitalisering",
+      "desc": "Fabriek digitale twins voor planning en onderhoud"
+    }
   },
   "airspaceProducts": {
-    "label": "Luchtruimbeveiliging", "title": "Producten & Platform", "subtitle": "TDOA-gebaseerde drone-detectie, lokalisatie en verdedigingssystemen",
+    "label": "Luchtruimbeveiliging",
+    "title": "Producten & Platform",
+    "subtitle": "TDOA-gebaseerde drone-detectie, lokalisatie en verdedigingssystemen",
     "categories": {
       "system": {
         "title": "Systeem",
         "desc": "Geïntegreerde drone-management- en verdedigingssystemen",
         "products": [
-          { "name": "TDOA Drone Management",      "desc": "Infrastructureel netwerk drone-managementsysteem met TDOA-positionering" },
-          { "name": "TDOA X4 Drone Detection",    "desc": "4-stations genetwerkt TDOA drone-detectiesysteem voor brede gebiedsdekking" },
-          { "name": "TDOA X5 Drone Defense",      "desc": "5-stations geïntegreerd detectie- en verdedigingssysteem met precisietegenmaatregel" },
-          { "name": "Multi-layered Mgmt. Platform","desc": "Gecentraliseerd meerlaags beheerplatform voor grootschalige inzet" }
+          {
+            "name": "TDOA Drone Management",
+            "desc": "Infrastructureel netwerk drone-managementsysteem met TDOA-positionering"
+          },
+          {
+            "name": "TDOA X4 Drone Detection",
+            "desc": "4-stations genetwerkt TDOA drone-detectiesysteem voor brede gebiedsdekking"
+          },
+          {
+            "name": "TDOA X5 Drone Defense",
+            "desc": "5-stations geïntegreerd detectie- en verdedigingssysteem met precisietegenmaatregel"
+          },
+          {
+            "name": "Multi-layered Mgmt. Platform",
+            "desc": "Gecentraliseerd meerlaags beheerplatform voor grootschalige inzet"
+          }
         ]
       },
       "fixed": {
         "title": "Vast",
         "desc": "Permanent geïnstalleerde detectie- en verdedigingsapparatuur",
         "products": [
-          { "name": "TDOA FTD1",                  "desc": "Vaste TDOA-detectieapparatuur voor continue perimetermonitoring" },
-          { "name": "FD1 Drone Detector",          "desc": "Vaste drone-detectieapparatuur voor 24/7 luchtruimbewaking" },
-          { "name": "FTA1 TDOA+AOA Detector",      "desc": "Hybride TDOA- en AOA-technologie voor verbeterde positioneringsnauwkeurigheid" },
-          { "name": "FPC1 Detection & Jamming",    "desc": "Geïntegreerde detectie en precisiestoorzender in één vaste eenheid" },
-          { "name": "FR3 Drone RID Reader",        "desc": "Remote ID-lezer voor regelgevingsconforme drone-identificatie" }
+          {
+            "name": "TDOA FTD1",
+            "desc": "Vaste TDOA-detectieapparatuur voor continue perimetermonitoring"
+          },
+          {
+            "name": "FD1 Drone Detector",
+            "desc": "Vaste drone-detectieapparatuur voor 24/7 luchtruimbewaking"
+          },
+          {
+            "name": "FTA1 TDOA+AOA Detector",
+            "desc": "Hybride TDOA- en AOA-technologie voor verbeterde positioneringsnauwkeurigheid"
+          },
+          {
+            "name": "FPC1 Detection & Jamming",
+            "desc": "Geïntegreerde detectie en precisiestoorzender in één vaste eenheid"
+          },
+          {
+            "name": "FR3 Drone RID Reader",
+            "desc": "Remote ID-lezer voor regelgevingsconforme drone-identificatie"
+          }
         ]
       },
       "portable": {
         "title": "Draagbaar",
         "desc": "Handheld en snel inzetbare detectieapparaten",
         "products": [
-          { "name": "PD1 Handheld Detector",      "desc": "Eénpersoons handheld drone-detector voor mobiele beveiligingsteams" },
-          { "name": "PL2 Pro Handheld Locator",   "desc": "Draagbare drone-locator met verbeterde richtingspositionering" },
-          { "name": "PC2 Pro All-in-One",         "desc": "Handheld geïntegreerd detectie-, stoor- en spoofingapparaat" },
-          { "name": "PL1-B Briefcase Detector",   "desc": "Koffermodel draagbare detector voor heimelijke en snelle inzet" },
-          { "name": "PJ1 Portable Jammer",        "desc": "Lichte draagbare drone-stoorzender voor directe dreigingsrespons" }
+          {
+            "name": "PD1 Handheld Detector",
+            "desc": "Eénpersoons handheld drone-detector voor mobiele beveiligingsteams"
+          },
+          {
+            "name": "PL2 Pro Handheld Locator",
+            "desc": "Draagbare drone-locator met verbeterde richtingspositionering"
+          },
+          {
+            "name": "PC2 Pro All-in-One",
+            "desc": "Handheld geïntegreerd detectie-, stoor- en spoofingapparaat"
+          },
+          {
+            "name": "PL1-B Briefcase Detector",
+            "desc": "Koffermodel draagbare detector voor heimelijke en snelle inzet"
+          },
+          {
+            "name": "PJ1 Portable Jammer",
+            "desc": "Lichte draagbare drone-stoorzender voor directe dreigingsrespons"
+          }
         ]
       }
     }
   },
   "airspaceShowcase": {
-    "label": "Luchtruimbeveiliging", "title": "Inzetcasussen", "subtitle": "Reële counter-drone beveiligingsscenario's",
-    "beforeAfter": { "title": "Dekkingsvergelijking", "before": "Voor — Beveiligingsblinde vlekken", "after": "Na — Volledig situatiebewustzijn" },
-    "case0": { "title": "Internationale Luchthaven Perimeter", "environment": "Luchthaven",       "coverage": "8km straal, 360°",    "accuracy": "98,5% detectiequote",  "response": "<3s alertlatentie",  "description": "24/7 luchtruimbewaking ter bescherming van start- en landingsbaan naderingsroutes." },
-    "case1": { "title": "Groot Sportevenement",                 "environment": "Stadion",          "coverage": "5km straal, vol dom", "accuracy": "97,2% detectiequote",  "response": "<5s alertlatentie",  "description": "Tijdelijke inzet voor een 60.000-zits stadiongebeurtenis, geïntegreerd met lokaal veiligheidscommando." },
-    "case2": { "title": "Kritieke Infrastructuurbescherming",   "environment": "Energiecentrale",  "coverage": "6km straal, 24/7",    "accuracy": "99,1% detectiequote",  "response": "<2s alertlatentie",  "description": "Permanente installatie ter bescherming van een elektriciteitscentrale met meerlaagse detectie." }
+    "label": "Luchtruimbeveiliging",
+    "title": "Inzetcasussen",
+    "subtitle": "Reële counter-drone beveiligingsscenario's",
+    "beforeAfter": {
+      "title": "Dekkingsvergelijking",
+      "before": "Voor — Beveiligingsblinde vlekken",
+      "after": "Na — Volledig situatiebewustzijn"
+    },
+    "case0": {
+      "title": "Internationale Luchthaven Perimeter",
+      "environment": "Luchthaven",
+      "coverage": "8km straal, 360°",
+      "accuracy": "98,5% detectiequote",
+      "response": "<3s alertlatentie",
+      "description": "24/7 luchtruimbewaking ter bescherming van start- en landingsbaan naderingsroutes."
+    },
+    "case1": {
+      "title": "Groot Sportevenement",
+      "environment": "Stadion",
+      "coverage": "5km straal, vol dom",
+      "accuracy": "97,2% detectiequote",
+      "response": "<5s alertlatentie",
+      "description": "Tijdelijke inzet voor een 60.000-zits stadiongebeurtenis, geïntegreerd met lokaal veiligheidscommando."
+    },
+    "case2": {
+      "title": "Kritieke Infrastructuurbescherming",
+      "environment": "Energiecentrale",
+      "coverage": "6km straal, 24/7",
+      "accuracy": "99,1% detectiequote",
+      "response": "<2s alertlatentie",
+      "description": "Permanente installatie ter bescherming van een elektriciteitscentrale met meerlaagse detectie."
+    }
   },
   "airspaceIndustries": {
-    "label": "Luchtruimbeveiliging", "title": "Sectortoepassingen", "subtitle": "Counter-drone oplossingen voor alle sectoren",
-    "item0": { "title": "Luchthavens & Luchtvaart",         "desc": "Startbaanvrijgavebescherming en vliegveiligheidsgarantie" },
-    "item1": { "title": "Grote Evenementen & Venues",       "desc": "Sport, concerten, topontmoetingen en grootschalige evenementenbeveiliging" },
-    "item2": { "title": "Overheid & Kritieke Infrastructuur","desc": "Overheidsgebouwen, elektriciteitscentrales, waterbehandelingsinstallaties" },
-    "item3": { "title": "Militair & Defensie",              "desc": "Basisperimeterbescherming en slagveld situatiebewustzijn" },
-    "item4": { "title": "Industriële Faciliteiten",         "desc": "Petrochemisch, nucleair en hoogrisicofaciliteiten vliegverbodszones" },
-    "item5": { "title": "Havens & Maritiem",                "desc": "Haven- en kustlijn drone-indringingsmonitoring" }
+    "label": "Luchtruimbeveiliging",
+    "title": "Sectortoepassingen",
+    "subtitle": "Counter-drone oplossingen voor alle sectoren",
+    "item0": {
+      "title": "Luchthavens & Luchtvaart",
+      "desc": "Startbaanvrijgavebescherming en vliegveiligheidsgarantie"
+    },
+    "item1": {
+      "title": "Grote Evenementen & Venues",
+      "desc": "Sport, concerten, topontmoetingen en grootschalige evenementenbeveiliging"
+    },
+    "item2": {
+      "title": "Overheid & Kritieke Infrastructuur",
+      "desc": "Overheidsgebouwen, elektriciteitscentrales, waterbehandelingsinstallaties"
+    },
+    "item3": {
+      "title": "Militair & Defensie",
+      "desc": "Basisperimeterbescherming en slagveld situatiebewustzijn"
+    },
+    "item4": {
+      "title": "Industriële Faciliteiten",
+      "desc": "Petrochemisch, nucleair en hoogrisicofaciliteiten vliegverbodszones"
+    },
+    "item5": {
+      "title": "Havens & Maritiem",
+      "desc": "Haven- en kustlijn drone-indringingsmonitoring"
+    }
   },
   "social": {
     "title": "Volg ons",
@@ -192,7 +510,7 @@
   },
   "meta": {
     "title": "Coltek — Technologieën verbinden. Industrieën mogelijk maken.",
-    "description": "Ruimtelijke Intelligentie, Luchtruimbeveiliging en AI-hardware voor de Europese industrie. Opgericht door voormalige DJI-ingenieurs."
+    "description": "Ruimtelijke Intelligentie, Luchtruimbeveiliging en AI-hardwareoplossingen voor de Europese industrie."
   },
   "common": {
     "viewOnTerjin": "Bekijk op Terjin",
@@ -200,10 +518,17 @@
   },
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",
-    "privacy": "Privacybeleid", "impressum": "Impressum", "cookies": "Cookieverklaring",
+    "privacy": "Privacybeleid",
+    "impressum": "Impressum",
+    "cookies": "Cookieverklaring",
     "description": "Toonaangevende wereldwijde technologieën verbinden met Europese industrieën.",
-    "quickLinks": "Snelle links", "contactInfo": "Contact",
-    "coltek": "Coltek Robotics GmbH", "coltekAddress": "München, Duitsland", "coltekPhone": "+49 151 20266740",
-    "sunova": "Sunova Innovation B.V.", "sunovaAddress": "Rotterdam, Nederland", "sunovaPhone": "+31 645402151"
+    "quickLinks": "Snelle links",
+    "contactInfo": "Contact",
+    "coltek": "Coltek Robotics GmbH",
+    "coltekAddress": "Plinganserstraße 150, 81369 München, Germany",
+    "coltekPhone": "+49 151 20266740",
+    "sunova": "Sunova Innovation B.V.",
+    "sunovaAddress": "Rotterdam, Nederland",
+    "sunovaPhone": "+31 645402151"
   }
 }
