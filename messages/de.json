@@ -142,28 +142,24 @@
       "title": "Unser Team",
       "members": [
         {
-          "name": "Member 1",
-          "role": "Mitgründer & CEO"
+          "name": "Colt Chen",
+          "role": "CEO"
         },
         {
-          "name": "Member 2",
-          "role": "Mitgründer & CTO"
+          "name": "Herry Sun",
+          "role": "COO"
         },
         {
-          "name": "Member 3",
-          "role": "Leiter Vertrieb"
+          "name": "Estrella Wang",
+          "role": "Technischer Support · xgrids"
         },
         {
-          "name": "Member 4",
-          "role": "Leiter Betrieb"
+          "name": "Shenshen",
+          "role": "Produktmanager · xgrids"
         },
         {
-          "name": "Member 5",
-          "role": "Technischer Leiter"
-        },
-        {
-          "name": "Member 6",
-          "role": "Marketingdirektor"
+          "name": "Max Wang",
+          "role": "Berater"
         }
       ]
     }

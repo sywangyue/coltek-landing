@@ -142,28 +142,24 @@
       "title": "我们的团队",
       "members": [
         {
-          "name": "Member 1",
-          "role": "联合创始人兼CEO"
+          "name": "Colt Chen",
+          "role": "首席执行官"
         },
         {
-          "name": "Member 2",
-          "role": "联合创始人兼CTO"
+          "name": "Herry Sun",
+          "role": "首席运营官"
         },
         {
-          "name": "Member 3",
-          "role": "销售负责人"
+          "name": "Estrella Wang",
+          "role": "技术支持 · xgrids"
         },
         {
-          "name": "Member 4",
-          "role": "运营负责人"
+          "name": "Shenshen",
+          "role": "产品经理 · xgrids"
         },
         {
-          "name": "Member 5",
-          "role": "技术负责人"
-        },
-        {
-          "name": "Member 6",
-          "role": "市场总监"
+          "name": "Max Wang",
+          "role": "顾问"
         }
       ]
     }

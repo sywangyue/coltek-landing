@@ -1,10 +1,19 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion, useInView } from 'framer-motion';
 import { User } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
+
+const TEAM_IMAGES = [
+  '/images/team/colt_chen_ceo.png',
+  '/images/team/Herry_Sun_coo.jpg',
+  '/images/team/estrella_wang_tecknical_support_xgrids.jpg',
+  '/images/team/shenshen_pm_xgrids.jpg',
+  '/images/team/max_wang_consultant.png',
+];
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 const fadeUp = (d = 0) => ({
@@ -81,7 +90,7 @@ function StatCard({
   );
 }
 
-function TeamCard({ name, role, delay }: { name: string; role: string; delay: number }) {
+function TeamCard({ name, role, image, delay }: { name: string; role: string; image?: string; delay: number }) {
   return (
     <motion.div
       variants={fadeUp(delay)}
@@ -90,8 +99,12 @@ function TeamCard({ name, role, delay }: { name: string; role: string; delay: nu
       viewport={{ once: true }}
       className="bg-white rounded-[8px] border border-border p-5 flex flex-col items-center text-center"
     >
-      <div className="w-24 h-24 rounded-full bg-[#F1F5F9] border border-border flex items-center justify-center mb-3">
-        <User size={36} className="text-foreground-muted/40" />
+      <div className="w-full aspect-square overflow-hidden bg-[#F1F5F9] border border-border flex items-center justify-center mb-3">
+        {image ? (
+          <Image src={image} alt={name} width={96} height={96} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+        ) : (
+          <User size={36} className="text-foreground-muted/40" />
+        )}
       </div>
       <p className="text-sm font-semibold text-foreground">{name}</p>
       <p className="text-xs text-foreground-muted mt-0.5">{role}</p>
@@ -119,12 +132,12 @@ export default function About() {
   return (
     <section id="about" className="bg-background-alt py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="flex flex-col gap-12 lg:gap-16">
 
-          {/* ── Left: Text content ── */}
+          {/* ── Top: Text content ── */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: EASE }}
           >
@@ -156,10 +169,10 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* ── Right: Team grid ── */}
+          {/* ── Bottom: Team grid ── */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: EASE }}
           >
@@ -168,7 +181,7 @@ export default function About() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {team.map((member, i) => (
-                <TeamCard key={`${member.name}-${i}`} name={member.name} role={member.role} delay={i * 0.06} />
+                <TeamCard key={`${member.name}-${i}`} name={member.name} role={member.role} image={TEAM_IMAGES[i]} delay={i * 0.06} />
               ))}
             </div>
           </motion.div>
