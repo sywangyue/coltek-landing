@@ -72,9 +72,9 @@ export default function Navbar() {
     },
     {
       labelKey: 'airspace',
-      href: `/${locale}/airspace/terjin`,
+      href: `/${locale}/airspace/droneguard`,
       dropdown: [
-        { labelKey: 'terjin', descKey: 'terjinDesc', href: `/${locale}/airspace/terjin` },
+        { labelKey: 'droneguard', descKey: 'droneguardDesc', href: `/${locale}/airspace/droneguard` },
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },

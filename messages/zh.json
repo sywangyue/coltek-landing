@@ -7,7 +7,7 @@
     "spatialProductsDesc": "3D扫描硬件与软件解决方案",
     "spatialShowcaseDesc": "真实3D重建项目案例",
     "spatialIndustriesDesc": "建筑、文遗、工业等更多领域",
-    "airspace": "空间安防",
+    "airspace": "无人机探测",
     "airspaceProducts": "产品",
     "airspaceShowcase": "案例展示",
     "airspaceIndustries": "行业应用",
@@ -16,8 +16,8 @@
     "airspaceIndustriesDesc": "机场、活动、政府设施等更多领域",
     "xgrids": "XGRIDS",
     "xgridsDesc": "空间智能平台",
-    "terjin": "Terjin",
-    "terjinDesc": "空域安防系统",
+    "droneguard": "DroneGuard",
+    "droneguardDesc": "无人机探测系统",
     "aiHardware": "AI硬件",
     "news": "新闻",
     "about": "关于我们",
@@ -32,7 +32,7 @@
         "keywords": "3D扫描 · 空间智能 · 三维重建"
       },
       "airspace": {
-        "title": "空间安防",
+        "title": "无人机探测",
         "keywords": "无人机探测 · 精准定位 · 态势感知"
       },
       "ai": {
@@ -67,9 +67,9 @@
     "ctaShowcase": "查看案例"
   },
   "airspace": {
-    "label": "空间安防",
+    "label": "无人机探测",
     "title": "无人机探测与定位解决方案",
-    "subtitle": "欧洲Terjin战略合作伙伴",
+    "subtitle": "DroneGuard无人机探测系统",
     "description": "我们提供专业的反无人机探测与定位系统，保护欧洲各地的关键基础设施、活动场所和空域安全。",
     "highlights": {
       "detection": {
@@ -132,9 +132,9 @@
         "label": "XGRIDS 欧洲战略合作伙伴",
         "detail": ""
       },
-      "terjin": {
+      "droneguard": {
         "value": "",
-        "label": "Terjin 欧洲战略合作伙伴",
+        "label": "DroneGuard 欧洲战略合作伙伴",
         "detail": ""
       }
     },
@@ -179,7 +179,7 @@
       "interest": "我感兴趣的领域...",
       "interests": {
         "spatial": "空间智能（3D扫描）",
-        "airspace": "空间安防（无人机探测）",
+        "airspace": "无人机探测（反无人机）",
         "ai": "AI硬件",
         "other": "其他 / 一般咨询"
       },
@@ -351,7 +351,7 @@
     }
   },
   "airspaceProducts": {
-    "label": "空间安防",
+    "label": "无人机探测",
     "title": "产品与平台",
     "subtitle": "基于TDOA的无人机探测、定位与防御系统",
     "categories": {
@@ -432,7 +432,7 @@
     }
   },
   "airspaceShowcase": {
-    "label": "空间安防",
+    "label": "无人机探测",
     "title": "部署案例",
     "subtitle": "真实反无人机防护场景",
     "beforeAfter": {
@@ -466,7 +466,7 @@
     }
   },
   "airspaceIndustries": {
-    "label": "空间安防",
+    "label": "无人机探测",
     "title": "行业应用",
     "subtitle": "跨行业反无人机解决方案",
     "item0": {
@@ -510,10 +510,9 @@
   },
   "meta": {
     "title": "Coltek — 连接技术，赋能产业。",
-    "description": "为欧洲产业提供空间智能、空域安防和AI硬件解决方案。"
+    "description": "为欧洲产业提供空间智能、无人机探测和AI硬件解决方案。"
   },
   "common": {
-    "viewOnTerjin": "在 Terjin 查看",
     "viewOnXgrids": "在 XGRIDS 查看"
   },
   "footer": {
@@ -530,5 +529,197 @@
     "sunova": "Sunova Innovation B.V.",
     "sunovaAddress": "荷兰鹿特丹",
     "sunovaPhone": "+31 645402151"
+  },
+  "droneguard": {
+    "hero": {
+      "title": "无人机探测与防御",
+      "description": "我们的解决方案专注于被动无线电频谱分析，可在完全合规的前提下应用于各类场景。我们拥有广泛的产品组合，可适配多种应用需求。技术体系涵盖AOA（到达角）、TDOA（到达时间差）、解码及Remote-ID（远程识别）。"
+    },
+    "products": {
+      "portable": {
+        "title": "便携式",
+        "desc": "快速部署的移动探测设备",
+        "items": [
+          {
+            "id": "dgh2",
+            "name": "DGH2",
+            "tagline": "野外作业手持无人机探测仪——被动射频扫描，探测距离达3公里",
+            "specs": [
+              "被动射频，零信号发射",
+              "探测距离最远3公里",
+              "100 MHz – 6 GHz",
+              "电池续航约3小时",
+              "重量约650克",
+              "6.0英寸屏幕",
+              "支持离线或在线（SIM卡/Wi-Fi）"
+            ],
+            "description": "DroneGuard H2是一款便携式手持无人机探测设备，无需发射任何信号，被动扫描无线电频谱，可探测包括FPV和Wi-Fi在内的商用无人机，探测距离最远3公里。支持无人机序列号识别、黑白名单分类，并可通过Google地图导航至飞手位置。可作为附加接收单元接入DroneGuard管理平台。",
+            "image": "/images/airspace/products/dgh2.png"
+          }
+        ]
+      },
+      "fixed": {
+        "title": "固定式",
+        "desc": "永久安装的探测与防御设备",
+        "items": [
+          {
+            "id": "dgm2j",
+            "name": "DGM2J",
+            "tagline": "车载探测与干扰系统，适用于机动部署",
+            "specs": [
+              "探测距离最远5公里",
+              "干扰距离最远2公里（选配）",
+              "100 MHz – 6 GHz",
+              "干扰频段：900 MHz、1.5 GHz、2.4 GHz、5.8 GHz",
+              "响应时间约3秒",
+              "全向或定向干扰",
+              "行驶中可正常使用"
+            ],
+            "description": "DroneGuard M2J是一款可车载安装的探测与防御系统，将被动射频探测与可选干扰能力相结合。行驶过程中可探测商用无人机（距离最远5公里），并可干扰控制及导航信号（距离最远2公里）。探测与防御自动联动，响应时间约3秒。",
+            "image": "/images/airspace/products/dgm2j.png"
+          },
+          {
+            "id": "dgs2",
+            "name": "DGS2",
+            "tagline": "固定式TDOA天线，广域无人机定位距离最远6公里",
+            "specs": [
+              "被动射频，零信号发射",
+              "每天线探测距离最远6公里",
+              "100 MHz – 6 GHz",
+              "扇区探测400 MHz – 6 GHz（选配）",
+              "角度容差3–10°",
+              "最多16台天线联网",
+              "位置更新约1–3秒"
+            ],
+            "description": "DroneGuard S2是一款固定式TDOA天线，可独立工作或组成最多16台的联网阵列。3台及以上联网时，可基于TDOA算法对无人机（包括FPV）进行实时定位，更新间隔1–3秒。支持序列号识别、黑白名单分类及可选扇区探测功能。",
+            "image": "/images/airspace/products/dgs2.png"
+          },
+          {
+            "id": "dgs2mini",
+            "name": "DGS2 Mini",
+            "tagline": "紧凑型固定式TDOA天线，可灵活扩展联网探测",
+            "specs": [
+              "被动射频，零信号发射",
+              "每天线探测距离最远2公里",
+              "100 MHz – 6 GHz",
+              "最多16台天线联网",
+              "3台及以上可实现TDOA定位",
+              "支持离线或在线运行"
+            ],
+            "description": "DroneGuard S2mini是一款适用于空间受限场所的紧凑型天线。每台设备可独立探测2公里内的无人机。3台及以上联网后，可对包括FPV在内的所有无人机类型进行TDOA定位。支持仅Remote-ID模式、编码模式或全联网TDOA模式。",
+            "image": "/images/airspace/products/dgs2mini.png"
+          },
+          {
+            "id": "dgs2d",
+            "name": "DGS2D",
+            "tagline": "定向AOA天线，兼具广域探测与精准扇区追踪",
+            "specs": [
+              "被动射频，零信号发射",
+              "探测距离最远5公里",
+              "扇区探测距离最远4公里",
+              "100 MHz – 6 GHz / 扇区：400 MHz – 6 GHz",
+              "角度容差3–10°",
+              "重量约25公斤 | IP65防护"
+            ],
+            "description": "DroneGuard S2D在S2平台基础上增加AOA（到达角）扇区探测，可将无人机来袭方向角精确至3–10°以内。全被动射频，频段覆盖100 MHz–6 GHz。IP65防护等级，适合户外安装，可集成至TDOA联网阵列。",
+            "image": "/images/airspace/products/dgs2d.png"
+          },
+          {
+            "id": "dgr3",
+            "name": "DGR3",
+            "tagline": "专用Remote-ID接收器，合规识别无人机，探测距离最远3公里",
+            "specs": [
+              "被动Remote-ID接收",
+              "探测半径最远3公里",
+              "探测高度最高500米",
+              "响应时间2–3秒",
+              "蓝牙4/5、Wi-Fi Beacon/NAN",
+              "ASTM F3411 · GB 42590-2023 · ASD-STAN prEN 4709-002",
+              "100–240V交流/12V直流 | IP66 | 约2.2公斤"
+            ],
+            "description": "DroneGuard R3是一款被动Remote-ID接收器，通过蓝牙4/5和Wi-Fi Beacon/NAN协议接收合规无人机广播信号，支持三大主流国际标准。IP66防护，支持交直流供电，适合永久户外安装。",
+            "image": "/images/airspace/products/dgr3.png"
+          },
+          {
+            "id": "dgd1",
+            "name": "DGD1",
+            "tagline": "远程固定式解码站，探测覆盖距离最远10公里",
+            "specs": [
+              "被动射频",
+              "探测距离最远10公里",
+              "900 MHz · 1.2 GHz · 2.4 GHz · 5.2 GHz · 5.8 GHz",
+              "重量约25公斤 | IP65防护",
+              "可联网扩展覆盖范围"
+            ],
+            "description": "DroneGuard D1是一款大功率固定式解码站，被动监测五个频段内的无人机视频和控制信号，探测距离最远10公里。多台设备可联网以覆盖更大区域，是关键基础设施大范围周界防护的核心传感器。",
+            "image": "/images/airspace/products/dgd1.png"
+          }
+        ]
+      },
+      "software": {
+        "title": "软件",
+        "desc": "指挥与监控平台",
+        "items": [
+          {
+            "id": "software",
+            "name": "DroneGuard 管理平台",
+            "tagline": "基于浏览器的指挥平台，统一管理无人机探测、防区设置和反制措施",
+            "specs": [
+              "基于浏览器，跨平台使用",
+              "防区管理与白名单设置",
+              "热力图、轨迹回放、统计分析",
+              "干扰仪控制",
+              "支持离线/托管服务器/本地部署",
+              "可接入欧洲KRITIS认证数据中心托管"
+            ],
+            "description": "DroneGuard管理平台是一款基于浏览器的软件解决方案，提供对一个或多个探测区域的统一视图。操作人员可自定义预警区域、将已知无人机加入白名单、触发反制措施，并通过热力图和轨迹回放查看历史数据。支持本地局域网离线部署、服务器托管及客户本地数据中心部署三种模式。",
+            "image": "/images/airspace/products/dgsoftware.png"
+          }
+        ]
+      }
+    },
+    "scenarios": {
+      "title": "应用场景",
+      "items": [
+        {
+          "id": "prison",
+          "title": "监狱",
+          "desc": "实时监测并拦截试图投送违禁品、非法侦察或协助越狱的无人机，维护监所绝对安全。",
+          "image": "/images/airspace/scenarios/prison.jpg"
+        },
+        {
+          "id": "airport",
+          "title": "机场",
+          "desc": "确保持续监控飞行净空区，防止无人机干扰民航航路，保障航空器的起降安全。",
+          "image": "/images/airspace/scenarios/airport.jpg"
+        },
+        {
+          "id": "border",
+          "title": "边境",
+          "desc": "实施远程自动预警，严厉打击利用无人机进行的跨境走私、非法入境及间谍侦察活动。",
+          "image": "/images/airspace/scenarios/border.jpg"
+        },
+        {
+          "id": "government",
+          "title": "政府驻地",
+          "desc": "构建严密的低空防护网，杜绝针对敏感办公区域的非法航拍、信息窃取及潜在安全威胁。",
+          "image": "/images/airspace/scenarios/government.jpg"
+        },
+        {
+          "id": "factory",
+          "title": "工厂",
+          "desc": "防止商业机密和核心工艺通过空中航拍泄露，同时降低无人机撞击易燃易爆设施引发事故的风险。",
+          "image": "/images/airspace/scenarios/factory.jpg"
+        },
+        {
+          "id": "hotel",
+          "title": "酒店",
+          "desc": "有效拦截针对客房私密空间的无人机偷拍行为，全方位保障住客的个人隐私与住宿尊严。",
+          "image": "/images/airspace/scenarios/hotel.jpg"
+        }
+      ]
+    },
+    "viewDetails": "查看详情",
+    "hideDetails": "收起详情"
   }
 }

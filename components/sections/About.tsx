@@ -111,7 +111,7 @@ export default function About() {
       ...t.raw('stats.xgrids') as { value: string; label: string; detail: string },
     },
     {
-      ...t.raw('stats.terjin') as { value: string; label: string; detail: string },
+      ...t.raw('stats.droneguard') as { value: string; label: string; detail: string },
     },
   ];
   const team = t.raw('team.members') as { name: string; role: string }[];

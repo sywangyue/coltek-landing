@@ -53,7 +53,7 @@ export default function AirspaceOverview({ imageSrc }: { imageSrc?: string }) {
           >
             <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
               {imageSrc ? (
-                <Image src={imageSrc} alt="Airspace Security" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image src={imageSrc} alt="Drone Detection" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               ) : (
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                   <ImageIcon size={40} className="text-foreground-muted/40" />
@@ -116,10 +116,10 @@ export default function AirspaceOverview({ imageSrc }: { imageSrc?: string }) {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-3">
-              <Button variant="primary" size="md" onClick={() => router.push(`/${locale}/airspace/terjin`)}>
+              <Button variant="primary" size="md" onClick={() => router.push(`/${locale}/airspace/droneguard`)}>
                 {t('ctaProducts')} <ArrowRight size={16} />
               </Button>
-              <Button variant="secondary" size="md" onClick={() => router.push(`/${locale}/airspace/terjin#airspace-showcase`)}>
+              <Button variant="secondary" size="md" onClick={() => router.push(`/${locale}/airspace/droneguard#airspace-showcase`)}>
                 {t('ctaShowcase')} <ArrowRight size={16} />
               </Button>
             </div>

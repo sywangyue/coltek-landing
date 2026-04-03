@@ -7,7 +7,7 @@
     "spatialProductsDesc": "3D scanning hardware & software solutions",
     "spatialShowcaseDesc": "Real-world 3D reconstruction projects",
     "spatialIndustriesDesc": "Architecture, heritage, industrial & more",
-    "airspace": "Airspace Security",
+    "airspace": "Drone Detection",
     "airspaceProducts": "Products",
     "airspaceShowcase": "Showcase",
     "airspaceIndustries": "Industries",
@@ -16,8 +16,8 @@
     "airspaceIndustriesDesc": "Airports, events, government & more",
     "xgrids": "XGRIDS",
     "xgridsDesc": "Spatial intelligence platform",
-    "terjin": "Terjin",
-    "terjinDesc": "Airspace security system",
+    "droneguard": "DroneGuard",
+    "droneguardDesc": "Drone detection system",
     "aiHardware": "AI Hardware",
     "news": "News",
     "about": "About",
@@ -32,7 +32,7 @@
         "keywords": "3D Scanning · Spatial Intelligence · Reconstruction"
       },
       "airspace": {
-        "title": "Airspace Security",
+        "title": "Drone Detection",
         "keywords": "Drone Detection · Localization · Situational Awareness"
       },
       "ai": {
@@ -67,9 +67,9 @@
     "ctaShowcase": "View Showcase"
   },
   "airspace": {
-    "label": "Airspace Security",
+    "label": "Drone Detection",
     "title": "Drone Detection & Localization Solutions",
-    "subtitle": "Europe's Terjin Strategic Partner",
+    "subtitle": "DroneGuard — Drone Detection Systems",
     "description": "We deliver professional counter-drone detection and localization systems, protecting critical infrastructure, events, and airspace across Europe.",
     "highlights": {
       "detection": {
@@ -132,9 +132,9 @@
         "label": "XGRIDS Strategic Partner in Europe",
         "detail": ""
       },
-      "terjin": {
+      "droneguard": {
         "value": "",
-        "label": "Terjin Strategic Partner in Europe",
+        "label": "DroneGuard Strategic Partner in Europe",
         "detail": ""
       }
     },
@@ -179,7 +179,7 @@
       "interest": "I'm interested in...",
       "interests": {
         "spatial": "Spatial Intelligence (3D Scanning)",
-        "airspace": "Airspace Security (Drone Detection)",
+        "airspace": "Drone Detection (Counter-UAV)",
         "ai": "AI Hardware",
         "other": "Other / General Inquiry"
       },
@@ -351,7 +351,7 @@
     }
   },
   "airspaceProducts": {
-    "label": "Airspace Security",
+    "label": "Drone Detection",
     "title": "Products & Platform",
     "subtitle": "TDOA-based drone detection, localization and defense systems",
     "categories": {
@@ -432,7 +432,7 @@
     }
   },
   "airspaceShowcase": {
-    "label": "Airspace Security",
+    "label": "Drone Detection",
     "title": "Deployment Cases",
     "subtitle": "Real-world counter-drone protection scenarios",
     "beforeAfter": {
@@ -466,7 +466,7 @@
     }
   },
   "airspaceIndustries": {
-    "label": "Airspace Security",
+    "label": "Drone Detection",
     "title": "Industry Applications",
     "subtitle": "Counter-drone solutions across sectors",
     "item0": {
@@ -510,10 +510,9 @@
   },
   "meta": {
     "title": "Coltek — Connecting Technologies. Enabling Industries.",
-    "description": "Spatial Intelligence, Airspace Security, and AI Hardware solutions for European industries."
+    "description": "Spatial Intelligence, Drone Detection, and AI Hardware solutions for European industries."
   },
   "common": {
-    "viewOnTerjin": "View on Terjin",
     "viewOnXgrids": "View on XGRIDS"
   },
   "footer": {
@@ -530,5 +529,197 @@
     "sunova": "Sunova Innovation B.V.",
     "sunovaAddress": "Rotterdam, Netherlands",
     "sunovaPhone": "+31 645402151"
+  },
+  "droneguard": {
+    "hero": {
+      "title": "Drone Detection & Defence",
+      "description": "Our solutions focus on passive radio spectrum analysis. It can be used in any scenario in full compliance. We have a wide portfolio that can fit into many scenarios. Our technology includes AOA, TDOA, Decoding and RID."
+    },
+    "products": {
+      "portable": {
+        "title": "Portable",
+        "desc": "Mobile detection devices for rapid deployment",
+        "items": [
+          {
+            "id": "dgh2",
+            "name": "DGH2",
+            "tagline": "Handheld drone detection for field operations — passive RF scanning up to 3 km",
+            "specs": [
+              "Passive RF, no signal emission",
+              "Up to 3 km range",
+              "100 MHz – 6 GHz",
+              "Battery ~3 h",
+              "Weight ~650 g",
+              "6.0\" screen",
+              "Offline / online (SIM or Wi-Fi)"
+            ],
+            "description": "DroneGuard H2 is a portable handheld unit for mobile drone detection. It passively scans the radio spectrum without emitting any signal, detecting commercial drones including FPV and Wi-Fi models up to 3 km away. Identifies drone serial numbers, supports Black- & Whitelist classification, and navigates to the pilot's location via Google Maps. Integrates into the DroneGuard Management Platform as an additional receiving unit.",
+            "image": "/images/airspace/products/dgh2.png"
+          }
+        ]
+      },
+      "fixed": {
+        "title": "Fixed",
+        "desc": "Permanently installed detection and defense equipment",
+        "items": [
+          {
+            "id": "dgm2j",
+            "name": "DGM2J",
+            "tagline": "Vehicle-mounted detection and jamming system for mobile deployment",
+            "specs": [
+              "Detection up to 5 km",
+              "Jamming up to 2 km (optional)",
+              "100 MHz – 6 GHz",
+              "Jamming: 900 MHz, 1.5 GHz, 2.4 GHz, 5.8 GHz",
+              "Response ~3 sec",
+              "Omnidirectional or directional",
+              "Operable while driving"
+            ],
+            "description": "DroneGuard M2J is a vehicle-mountable detection and defence system combining passive RF detection with optional jamming. It detects commercial drones up to 5 km while in motion and can disrupt control and navigation signals up to 2 km. Automated detection-to-defence link reduces response time to approximately 3 seconds.",
+            "image": "/images/airspace/products/dgm2j.png"
+          },
+          {
+            "id": "dgs2",
+            "name": "DGS2",
+            "tagline": "Stationary TDOA antenna for wide-area drone localization up to 6 km",
+            "specs": [
+              "Passive RF, no signal emission",
+              "Up to 6 km per antenna",
+              "100 MHz – 6 GHz",
+              "Sector detection 400 MHz – 6 GHz (optional)",
+              "Angle tolerance 3–10°",
+              "Max. 16 antennas networked",
+              "Position update ~1–3 s"
+            ],
+            "description": "DroneGuard S2 is a stationary TDOA antenna operable independently or in a network of up to 16 units. When three or more are networked, TDOA localization tracks drones including FPV in real time with 1–3 s updates. Includes serial number identification, Black- & Whitelist classification, and optional sector detection.",
+            "image": "/images/airspace/products/dgs2.png"
+          },
+          {
+            "id": "dgs2mini",
+            "name": "DGS2 Mini",
+            "tagline": "Compact stationary TDOA antenna for scalable networked drone detection",
+            "specs": [
+              "Passive RF, no signal emission",
+              "Up to 2 km per antenna",
+              "100 MHz – 6 GHz",
+              "Max. 16 antennas networked",
+              "TDOA localization from 3+ antennas",
+              "Offline or online operation"
+            ],
+            "description": "DroneGuard S2mini is a compact antenna for space-constrained installations. Each unit independently detects drones up to 2 km. When three or more antennas are networked, TDOA localization tracks all drone types including FPV. Supports RID-only, encoding, or full networked TDOA mode.",
+            "image": "/images/airspace/products/dgs2mini.png"
+          },
+          {
+            "id": "dgs2d",
+            "name": "DGS2D",
+            "tagline": "Directional AOA antenna combining wide-range detection with precise sector tracking",
+            "specs": [
+              "Passive RF, no signal emission",
+              "Detection up to 5 km",
+              "Sector detection up to 4 km",
+              "100 MHz – 6 GHz / Sector: 400 MHz – 6 GHz",
+              "Angle tolerance 3–10°",
+              "Weight ~25 kg | IP65"
+            ],
+            "description": "DroneGuard S2D adds Angle of Arrival (AOA) sector detection to the S2 platform, determining the directional approach angle to within 3–10°. Fully passive RF, 100 MHz–6 GHz coverage. IP65-rated for outdoor installation and integrable into a TDOA network.",
+            "image": "/images/airspace/products/dgs2d.png"
+          },
+          {
+            "id": "dgr3",
+            "name": "DGR3",
+            "tagline": "Dedicated Remote-ID receiver for standards-compliant drone identification up to 3 km",
+            "specs": [
+              "Passive Remote-ID reception",
+              "Up to 3 km radius",
+              "Detection altitude up to 500 m",
+              "Response 2–3 s",
+              "Bluetooth 4/5, Wi-Fi Beacon/NAN",
+              "ASTM F3411 · GB 42590-2023 · ASD-STAN prEN 4709-002",
+              "100–240 V AC / 12 V DC | IP66 | ~2.2 kg"
+            ],
+            "description": "DroneGuard R3 is a passive Remote-ID receiver capturing broadcast signals from compliant drones via Bluetooth 4/5 and Wi-Fi Beacon/NAN. Supports three major international standards. IP66-rated, AC/DC powered, suitable for permanent outdoor installation.",
+            "image": "/images/airspace/products/dgr3.png"
+          },
+          {
+            "id": "dgd1",
+            "name": "DGD1",
+            "tagline": "Long-range stationary decoding station extending detection coverage up to 10 km",
+            "specs": [
+              "Passive RF",
+              "Up to 10 km range",
+              "900 MHz · 1.2 GHz · 2.4 GHz · 5.2 GHz · 5.8 GHz",
+              "Weight ~25 kg | IP65",
+              "Networkable for extended coverage"
+            ],
+            "description": "DroneGuard D1 is a high-power stationary decoding station passively monitoring drone video and control signals across five frequency bands up to 10 km. Multiple units can be networked to cover larger areas, ideal for wide-area perimeter protection of critical infrastructure.",
+            "image": "/images/airspace/products/dgd1.png"
+          }
+        ]
+      },
+      "software": {
+        "title": "Software",
+        "desc": "Command and monitoring platform",
+        "items": [
+          {
+            "id": "software",
+            "name": "DroneGuard Management Platform",
+            "tagline": "Browser-based command platform for unified drone detection, zone management, and countermeasure control",
+            "specs": [
+              "Browser-based, platform-independent",
+              "Zone management & whitelisting",
+              "Heat maps, track replay, evaluations",
+              "Jammer control",
+              "Offline / Serverhost / On-Premises",
+              "European KRITIS-certified hosting available"
+            ],
+            "description": "The DroneGuard Management Platform is a browser-based solution providing a unified view across one or more detection zones. Operators can define warning zones, whitelist known drones, trigger countermeasures, and review historical data through heat maps and track replay. Supports offline LAN, server-hosted, and on-premises deployment.",
+            "image": "/images/airspace/products/dgsoftware.png"
+          }
+        ]
+      }
+    },
+    "scenarios": {
+      "title": "Application Scenarios",
+      "items": [
+        {
+          "id": "prison",
+          "title": "Prison",
+          "desc": "Real-time monitoring and interception of drones attempting to deliver contraband, conduct illegal surveillance, or aid prison escapes.",
+          "image": "/images/airspace/scenarios/prison.jpg"
+        },
+        {
+          "id": "airport",
+          "title": "Airport",
+          "desc": "Continuous airspace monitoring to prevent drone interference with flight paths and ensure safe aircraft takeoff and landing.",
+          "image": "/images/airspace/scenarios/airport.jpg"
+        },
+        {
+          "id": "border",
+          "title": "Border",
+          "desc": "Remote automated early warning against drone-based cross-border smuggling, illegal entry, and espionage reconnaissance.",
+          "image": "/images/airspace/scenarios/border.jpg"
+        },
+        {
+          "id": "government",
+          "title": "Government Facilities",
+          "desc": "Comprehensive low-altitude protection against unauthorized aerial photography, information theft, and security threats to sensitive areas.",
+          "image": "/images/airspace/scenarios/government.jpg"
+        },
+        {
+          "id": "factory",
+          "title": "Factory",
+          "desc": "Prevent aerial photography leaks of trade secrets and core processes, while reducing risks of drone collisions with flammable or explosive facilities.",
+          "image": "/images/airspace/scenarios/factory.jpg"
+        },
+        {
+          "id": "hotel",
+          "title": "Hotel",
+          "desc": "Effectively intercept drone voyeurism targeting guest rooms, fully protecting personal privacy and accommodation dignity.",
+          "image": "/images/airspace/scenarios/hotel.jpg"
+        }
+      ]
+    },
+    "viewDetails": "View Details",
+    "hideDetails": "Hide Details"
   }
 }

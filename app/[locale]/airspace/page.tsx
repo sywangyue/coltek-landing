@@ -6,5 +6,5 @@ export default async function AirspacePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  redirect(`/${locale}/airspace/terjin`);
+  redirect(`/${locale}/airspace/droneguard`);
 }
