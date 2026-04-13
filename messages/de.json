@@ -332,21 +332,7 @@
       "before": "Originalfoto",
       "after": "3D-Rekonstruktion"
     },
-    "category0": "Architektur",
-    "category1": "Kulturerbe",
-    "category2": "Industrie",
-    "category3": "Innenbereich",
     "case0": {
-      "title": "Historischer Dom-Scan",
-      "category": "Kulturerbe",
-      "description": "Vollständige Innen- und Außendigitalisierung einer gotischen Kathedrale mit zentimetergenauer Detailerfassung."
-    },
-    "case1": {
-      "title": "Industrieanlage Digital Twin",
-      "category": "Industrie",
-      "description": "Vollständiger 3D-Scan einer Fertigungsanlage für Wartungsplanung und räumliche Dokumentation."
-    },
-    "case2": {
       "title": "Modernes Büro-Innenraum",
       "category": "Innenbereich",
       "description": "Hochauflösender Innenraumscan für Renovierungsplanung mit präzisen Maßen und virtuellen Rundgängen."

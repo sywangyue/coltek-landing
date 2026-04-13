@@ -332,21 +332,7 @@
       "before": "Original Photo",
       "after": "3D Reconstruction"
     },
-    "category0": "Architecture",
-    "category1": "Cultural Heritage",
-    "category2": "Industrial",
-    "category3": "Interior",
     "case0": {
-      "title": "Historic Cathedral Scan",
-      "category": "Cultural Heritage",
-      "description": "Complete interior and exterior digitization of a 14th-century cathedral, capturing intricate architectural details at centimeter-level accuracy."
-    },
-    "case1": {
-      "title": "Industrial Plant Digital Twin",
-      "category": "Industrial",
-      "description": "Full-facility 3D scan of a manufacturing plant for maintenance planning and spatial documentation."
-    },
-    "case2": {
       "title": "Modern Office Interior",
       "category": "Interior",
       "description": "High-fidelity interior scan for renovation planning, enabling precise measurements and virtual walkthroughs."

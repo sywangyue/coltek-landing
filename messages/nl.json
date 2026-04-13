@@ -332,21 +332,7 @@
       "before": "Originele foto",
       "after": "3D-reconstructie"
     },
-    "category0": "Architectuur",
-    "category1": "Cultureel Erfgoed",
-    "category2": "Industrie",
-    "category3": "Interieur",
     "case0": {
-      "title": "Historische Kathedraal Scan",
-      "category": "Cultureel Erfgoed",
-      "description": "Volledige digitalisatie van een 14e-eeuwse kathedraal met centimeternauwkeurige details."
-    },
-    "case1": {
-      "title": "Industriële Fabriek Digital Twin",
-      "category": "Industrie",
-      "description": "Volledig 3D-scan van een productiefabriek voor onderhoudsplanning en ruimtelijke documentatie."
-    },
-    "case2": {
       "title": "Modern Kantoor Interieur",
       "category": "Interieur",
       "description": "Hooggetrouwe interieurscan voor renovatieplanning met precieze maten en virtuele rondleidingen."

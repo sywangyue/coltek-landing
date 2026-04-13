@@ -332,21 +332,7 @@
       "before": "原始照片",
       "after": "3D重建结果"
     },
-    "category0": "建筑",
-    "category1": "文化遗产",
-    "category2": "工业",
-    "category3": "室内",
     "case0": {
-      "title": "历史大教堂扫描",
-      "category": "文化遗产",
-      "description": "14世纪大教堂内外完整数字化，厘米级精度捕捉建筑细节。"
-    },
-    "case1": {
-      "title": "工业厂房数字孪生",
-      "category": "工业",
-      "description": "制造厂完整3D扫描，用于维护规划和空间存档。"
-    },
-    "case2": {
       "title": "现代办公室内部",
       "category": "室内",
       "description": "高保真室内扫描，支持装修规划、精确测量和虚拟参观。"
