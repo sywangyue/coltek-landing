@@ -20,6 +20,7 @@
     "droneguardDesc": "Drohnenerkennungssystem",
     "aiHardware": "KI-Hardware",
     "news": "Neuigkeiten",
+    "download": "Download",
     "about": "Über uns",
     "contact": "Kontakt"
   },
@@ -104,18 +105,43 @@
     "subtitle": "Updates, Veranstaltungen und Ankündigungen",
     "viewAll": "Alle Neuigkeiten",
     "readMore": "Mehr lesen",
-    "item1Type": "Partnerschaft",
-    "item1Title": "Coltek wird strategischer XGRIDS-Partner in Europa",
-    "item1Date": "2026-03-15",
-    "item1Summary": "Strategische Partnerschaft zur Einführung fortschrittlicher 3D-Scanlösungen auf dem europäischen Markt.",
-    "item2Type": "Veranstaltung",
-    "item2Title": "Intergeo 2026 — Treffen Sie uns in Stuttgart",
-    "item2Date": "2026-09-15",
-    "item2Summary": "Besuchen Sie unseren Stand für Live-Demos des neuesten Lixel L2 Pro und der LCC-Plattform.",
-    "item3Type": "Produkt-Update",
-    "item3Title": "LCC-Plattform erreicht 10.000 Rekonstruktionen",
-    "item3Date": "2026-02-28",
-    "item3Summary": "Meilenstein der Lixel CyberColor Cloud-Plattform: über 10.000 generierte 3D-Modelle."
+    "items": [
+      {
+        "type": "Partnerschaft",
+        "title": "Coltek wird strategischer XGRIDS-Partner in Europa",
+        "date": "2026-03-15",
+        "summary": "Strategische Partnerschaft zur Einführung fortschrittlicher 3D-Scanlösungen auf dem europäischen Markt.",
+        "content": "Coltek hat offiziell einen strategischen Partnerschaftsvertrag mit XGRIDS unterzeichnet und ist damit exklusiver strategischer Partner für den europäischen Raum. Die Partnerschaft umfasst den Vertrieb und Support des gesamten XGRIDS-Produktportfolios — einschließlich Lixel L2 Pro, LixelKity K1, PortalCam und der LCC-Cloud-Plattform — auf allen europäischen Märkten."
+      },
+      {
+        "type": "Veranstaltung",
+        "title": "Intergeo 2026 — Treffen Sie uns in Stuttgart",
+        "date": "2026-09-15",
+        "summary": "Besuchen Sie unseren Stand für Live-Demos des neuesten Lixel L2 Pro und der LCC-Plattform.",
+        "content": "Coltek stellt auf der Intergeo 2026 in Stuttgart aus — einer der führenden Geospatial-Technologiemessen Europas. Erleben Sie Live-Scandemonstrationen mit dem Lixel L2 Pro, erkunden Sie die LCC 3D-Gaussian-Splatting-Plattform und sprechen Sie mit unserem technischen Team über Ihre Projektanforderungen."
+      },
+      {
+        "type": "Produkt-Update",
+        "title": "LCC-Plattform erreicht 10.000 Rekonstruktionen",
+        "date": "2026-02-28",
+        "summary": "Meilenstein der Lixel CyberColor Cloud-Plattform: über 10.000 generierte 3D-Modelle.",
+        "content": "Die Lixel CyberColor (LCC) KI-Cloud-Plattform hat einen bedeutenden Meilenstein erreicht — mehr als 10.000 3D-Gaussian-Splatting-Rekonstruktionen wurden verarbeitet. Dieses Wachstum spiegelt die steigende Akzeptanz in den Bereichen Architektur, Kulturerbe und Industrie in Europa und weltweit wider."
+      },
+      {
+        "type": "Produkt-Update",
+        "title": "LixelKity K1 jetzt in Europa erhältlich",
+        "date": "2026-01-20",
+        "summary": "Der kompakte Handscanner K1 ist jetzt offiziell über Coltek in Europa bestellbar.",
+        "content": "Coltek freut sich bekanntzugeben, dass der LixelKity K1 — XGRIDS' kompakter Handscanner — jetzt in ganz Europa bestellbar ist. Mit einem Gewicht von unter 1 kg, 48-MP-Doppelpanoramakameras und 360°-LiDAR eignet sich der K1 ideal für Indoor-Mapping, Immobilien und Kulturerbe-Anwendungen."
+      },
+      {
+        "type": "Partnerschaft",
+        "title": "Coltek schließt Vertriebspartnerschaft mit DroneGuard für Europa",
+        "date": "2025-11-10",
+        "summary": "Coltek erweitert sein Portfolio um Counter-Drone-Lösungen durch eine neue Partnerschaft mit DroneGuard.",
+        "content": "Coltek hat eine Vertriebspartnerschaft mit DroneGuard abgeschlossen und fügt seinem europäischen Portfolio professionelle Counter-Drone-Erkennungs- und Lokalisierungssysteme hinzu. Die Vereinbarung umfasst die gesamte DroneGuard-Produktlinie — von tragbaren Handdetektoren bis hin zu stationären TDOA-Netzwerksystemen."
+      }
+    ]
   },
   "about": {
     "label": "Über uns",
@@ -185,7 +211,16 @@
       "success": "Danke! Wir antworten innerhalb von 24 Stunden.",
       "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail.",
       "required": "Dieses Feld ist erforderlich.",
-      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "sourceLabel": "Wie haben Sie von uns erfahren?",
+      "sources": {
+        "exhibition": "Messe / Ausstellung",
+        "socialMedia": "Soziale Medien",
+        "searchEngine": "Suchmaschine (Google, Bing...)",
+        "referral": "Empfehlung / Mundpropaganda",
+        "partner": "Partner / Händler",
+        "other": "Sonstiges"
+      }
     },
     "companies": {
       "coltek": {
@@ -717,5 +752,10 @@
     },
     "viewDetails": "Details anzeigen",
     "hideDetails": "Details ausblenden"
+  },
+  "download": {
+    "title": "Download-Center",
+    "subtitle": "Produktbroschüren, Datenblätter und Ressourcen werden hier bald verfügbar sein.",
+    "comingSoon": "Demnächst verfügbar"
   }
 }

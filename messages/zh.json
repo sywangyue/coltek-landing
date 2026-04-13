@@ -20,6 +20,7 @@
     "droneguardDesc": "无人机探测系统",
     "aiHardware": "AI硬件",
     "news": "新闻",
+    "download": "下载",
     "about": "关于我们",
     "contact": "联系我们"
   },
@@ -104,18 +105,43 @@
     "subtitle": "更新、活动与公告",
     "viewAll": "查看全部动态",
     "readMore": "阅读更多",
-    "item1Type": "合作伙伴",
-    "item1Title": "Coltek 成为 XGRIDS 欧洲战略合作伙伴",
-    "item1Date": "2026-03-15",
-    "item1Summary": "战略合作协议正式签署，将先进3D扫描解决方案引入欧洲市场。",
-    "item2Type": "活动",
-    "item2Title": "Intergeo 2026 — 在斯图加特与我们相聚",
-    "item2Date": "2026-09-15",
-    "item2Summary": "参观我们的展台，现场体验最新的Lixel L2 Pro和LCC平台实时演示。",
-    "item3Type": "产品更新",
-    "item3Title": "LCC平台突破10,000次重建里程碑",
-    "item3Date": "2026-02-28",
-    "item3Summary": "Lixel CyberColor云平台里程碑：已生成超过10,000个3D高斯泼溅模型。"
+    "items": [
+      {
+        "type": "合作伙伴",
+        "title": "Coltek 成为 XGRIDS 欧洲战略合作伙伴",
+        "date": "2026-03-15",
+        "summary": "战略合作协议正式签署，将先进3D扫描解决方案引入欧洲市场。",
+        "content": "Coltek 已与 XGRIDS 正式签署战略合作协议，成为欧洲区域独家战略合作伙伴。合作范围涵盖 Lixel L2 Pro、LixelKity K1、PortalCam 及 LCC 云平台全系产品在欧洲市场的分销与技术支持。"
+      },
+      {
+        "type": "活动",
+        "title": "Intergeo 2026 — 在斯图加特与我们相聚",
+        "date": "2026-09-15",
+        "summary": "参观我们的展台，现场体验最新的 Lixel L2 Pro 和 LCC 平台实时演示。",
+        "content": "Coltek 将亮相德国斯图加特 Intergeo 2026 — 欧洲领先的地理空间技术展会之一。欢迎莅临体验 Lixel L2 Pro 现场扫描演示、探索 LCC 三维高斯泼溅平台，并与我们的技术团队深入交流您的项目需求。"
+      },
+      {
+        "type": "产品更新",
+        "title": "LCC 平台突破 10,000 次重建里程碑",
+        "date": "2026-02-28",
+        "summary": "Lixel CyberColor 云平台里程碑：已生成超过 10,000 个 3D 高斯泼溅模型。",
+        "content": "Lixel CyberColor（LCC）AI 云平台已完成超过 10,000 次 3D 高斯泼溅重建，达成重要里程碑。这一增长反映了建筑、文化遗产和工业等领域在欧洲及全球的加速采用趋势。"
+      },
+      {
+        "type": "产品更新",
+        "title": "LixelKity K1 现已在欧洲正式开售",
+        "date": "2026-01-20",
+        "summary": "紧凑型手持 3D 扫描仪 K1 现已通过 Coltek 正式开放欧洲订购。",
+        "content": "Coltek 宣布 LixelKity K1 — XGRIDS 紧凑型手持 3D 扫描仪 — 现已在欧洲全面开售。K1 重量不足 1 kg，配备 48MP 双全景相机与 360° 激光雷达，适用于室内测绘、房地产及文化遗产保护等场景。"
+      },
+      {
+        "type": "合作伙伴",
+        "title": "Coltek 与 DroneGuard 签署欧洲分销合作协议",
+        "date": "2025-11-10",
+        "summary": "Coltek 通过与 DroneGuard 的新合作协议，将反无人机解决方案纳入其产品组合。",
+        "content": "Coltek 已与 DroneGuard 签署分销合作协议，将专业反无人机探测与定位系统纳入欧洲产品组合。合作覆盖 DroneGuard 全系产品线——从便携手持探测器到固定式 TDOA 网络系统，助力 Coltek 服务欧洲机场、公共活动及关键基础设施运营商。"
+      }
+    ]
   },
   "about": {
     "label": "关于我们",
@@ -185,7 +211,16 @@
       "success": "感谢您的咨询！我们将在24小时内回复。",
       "error": "发送失败，请重试或直接发送邮件联系我们。",
       "required": "此项为必填项。",
-      "invalidEmail": "请输入有效的电子邮箱地址。"
+      "invalidEmail": "请输入有效的电子邮箱地址。",
+      "sourceLabel": "您从哪里了解到我们？",
+      "sources": {
+        "exhibition": "展会",
+        "socialMedia": "社交媒体",
+        "searchEngine": "搜索引擎（Google、Bing 等）",
+        "referral": "朋友推荐",
+        "partner": "合作伙伴 / 经销商",
+        "other": "其他"
+      }
     },
     "companies": {
       "coltek": {
@@ -717,5 +752,10 @@
     },
     "viewDetails": "查看详情",
     "hideDetails": "收起详情"
+  },
+  "download": {
+    "title": "下载中心",
+    "subtitle": "产品手册、数据表及相关资源即将上线。",
+    "comingSoon": "即将推出"
   }
 }

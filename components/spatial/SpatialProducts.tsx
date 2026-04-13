@@ -115,7 +115,7 @@ const HW_IMAGE_BASES: Record<string, string> = {
 
 const HW_LINKS: Record<string, string> = {
   l2pro:    'https://xgrids.com/lixell2pro',
-  k1:       'https://xgrids.com/',
+  k1:       'https://xgrids.com/intl/lixelk1',
   portalcam:'https://xgrids.com/',
 };
 

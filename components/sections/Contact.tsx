@@ -13,6 +13,7 @@ const EASE = [0.25, 0.1, 0.25, 1] as const;
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
 const INTEREST_KEYS = ['spatial', 'airspace', 'ai', 'other'] as const;
+const SOURCE_KEYS = ['exhibition', 'socialMedia', 'searchEngine', 'referral', 'partner', 'other'] as const;
 
 // ── Inquiry form ─────────────────────────────────────────────────────────────
 function InquiryForm() {
@@ -20,6 +21,7 @@ function InquiryForm() {
   const [status, setStatus] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [interests, setInterests] = useState<string[]>([]);
+  const [source, setSource] = useState('');
 
   // Controlled field values for error recovery
   const [name, setName]       = useState('');
@@ -57,7 +59,7 @@ function InquiryForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, company, email, interests, message }),
+        body: JSON.stringify({ name, company, email, interests, source, message }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -164,6 +166,27 @@ function InquiryForm() {
             </label>
           ))}
         </div>
+      </div>
+
+      {/* Source — how did you hear about us */}
+      <div>
+        <p className="block text-sm font-medium text-foreground mb-2">
+          {t('form.sourceLabel')}
+        </p>
+        <select
+          value={source}
+          onChange={(e) => setSource(e.target.value)}
+          className="w-full px-4 py-2.5 bg-white border border-border rounded-lg text-sm
+            focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors
+            text-foreground"
+        >
+          <option value="">—</option>
+          {SOURCE_KEYS.map((key) => (
+            <option key={key} value={key}>
+              {t(`form.sources.${key}`)}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* Message */}

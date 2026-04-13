@@ -97,13 +97,15 @@ function TeamCard({ name, role, image, delay }: { name: string; role: string; im
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="bg-white rounded-[8px] border border-border p-5 flex flex-col items-center text-center"
+      className="bg-white rounded-[8px] p-5 flex flex-col items-center text-center hover:shadow-md transition-shadow duration-200"
     >
-      <div className="w-full aspect-square overflow-hidden bg-[#F1F5F9] border border-border flex items-center justify-center mb-3">
+      <div className="relative w-full aspect-square overflow-hidden bg-[#F1F5F9] mb-3">
         {image ? (
-          <Image src={image} alt={name} width={96} height={96} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+          <Image src={image} alt={name} fill quality={90} className="object-cover object-top" />
         ) : (
-          <User size={36} className="text-foreground-muted/40" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <User size={36} className="text-foreground-muted/40" />
+          </div>
         )}
       </div>
       <p className="text-sm font-semibold text-foreground">{name}</p>

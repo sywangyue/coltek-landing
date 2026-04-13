@@ -79,7 +79,7 @@ export default function ModelViewer({
           format: GaussianSplats3D.SceneFormat.Ply,
           splatAlphaRemovalThreshold: 5,
           showLoadingUI: false,
-          progressiveLoad: true,
+          progressiveLoad: false,
         });
 
         if (!disposed) {

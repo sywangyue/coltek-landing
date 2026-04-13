@@ -20,6 +20,7 @@
     "droneguardDesc": "Drone-detectiesysteem",
     "aiHardware": "AI-hardware",
     "news": "Nieuws",
+    "download": "Download",
     "about": "Over ons",
     "contact": "Contact"
   },
@@ -104,18 +105,43 @@
     "subtitle": "Updates, evenementen en aankondigingen",
     "viewAll": "Al het nieuws",
     "readMore": "Meer lezen",
-    "item1Type": "Partnerschap",
-    "item1Title": "Coltek wordt XGRIDS Strategische Partner in Europa",
-    "item1Date": "2026-03-15",
-    "item1Summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
-    "item2Type": "Evenement",
-    "item2Title": "Intergeo 2026 — Ontmoet ons in Stuttgart",
-    "item2Date": "2026-09-15",
-    "item2Summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
-    "item3Type": "Productupdates",
-    "item3Title": "LCC-platform bereikt 10.000 reconstructies",
-    "item3Date": "2026-02-28",
-    "item3Summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd."
+    "items": [
+      {
+        "type": "Partnerschap",
+        "title": "Coltek wordt XGRIDS Strategische Partner in Europa",
+        "date": "2026-03-15",
+        "summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
+        "content": "Coltek heeft officieel een strategische partnerschapsovereenkomst getekend met XGRIDS en wordt daarmee de exclusieve strategische partner voor de Europese regio. Dit partnerschap stelt Coltek in staat het volledige XGRIDS-productportfolio te distribueren en ondersteunen — inclusief Lixel L2 Pro, LixelKity K1, PortalCam en het LCC-cloudplatform — op alle Europese markten."
+      },
+      {
+        "type": "Evenement",
+        "title": "Intergeo 2026 — Ontmoet ons in Stuttgart",
+        "date": "2026-09-15",
+        "summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
+        "content": "Coltek neemt deel aan Intergeo 2026 in Stuttgart, Duitsland — een van Europa's toonaangevende geospatiale technologiebeurzen. Kom live scandemonstraties beleven met de Lixel L2 Pro, verken het LCC 3D Gaussian Splatting-platform en spreek met ons technisch team over uw projectvereisten."
+      },
+      {
+        "type": "Productupdates",
+        "title": "LCC-platform bereikt 10.000 reconstructies",
+        "date": "2026-02-28",
+        "summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd.",
+        "content": "Het Lixel CyberColor (LCC) AI-cloudplatform heeft een belangrijke mijlpaal bereikt — meer dan 10.000 3D Gaussian Splatting-reconstructies verwerkt. Deze groei weerspiegelt de toenemende adoptie in architectuur, cultureel erfgoed en industriële sectoren in Europa en wereldwijd."
+      },
+      {
+        "type": "Productupdates",
+        "title": "LixelKity K1 nu beschikbaar in Europa",
+        "date": "2026-01-20",
+        "summary": "De compacte handheld 3D-scanner K1 is nu officieel beschikbaar via Coltek.",
+        "content": "Coltek kondigt aan dat de LixelKity K1 — XGRIDS' compacte handheld 3D-scanner — nu in heel Europa te bestellen is. Met een gewicht van minder dan 1 kg, 48MP dual panoramische camera's en 360° LiDAR is de K1 ideaal voor binnenmapping, vastgoed en cultureel erfgoed toepassingen."
+      },
+      {
+        "type": "Partnerschap",
+        "title": "Coltek sluit distributiepartnerschap met DroneGuard voor Europa",
+        "date": "2025-11-10",
+        "summary": "Coltek breidt zijn portfolio uit met counter-drone oplossingen via een nieuw partnerschap met DroneGuard.",
+        "content": "Coltek heeft een distributiepartnerschap gesloten met DroneGuard en voegt professionele counter-drone detectie- en lokalisatiesystemen toe aan zijn Europese portfolio. De overeenkomst omvat de volledige DroneGuard-productlijn — van draagbare handdetectoren tot vaste TDOA-netwerksystemen."
+      }
+    ]
   },
   "about": {
     "label": "Over ons",
@@ -185,7 +211,16 @@
       "success": "Dank u! We reageren binnen 24 uur.",
       "error": "Er is iets misgegaan. Probeer het opnieuw of stuur ons direct een e-mail.",
       "required": "Dit veld is verplicht.",
-      "invalidEmail": "Voer een geldig e-mailadres in."
+      "invalidEmail": "Voer een geldig e-mailadres in.",
+      "sourceLabel": "Hoe heeft u ons gevonden?",
+      "sources": {
+        "exhibition": "Beurs / Tentoonstelling",
+        "socialMedia": "Sociale media",
+        "searchEngine": "Zoekmachine (Google, Bing...)",
+        "referral": "Aanbeveling / Mond-tot-mondreclame",
+        "partner": "Partner / Distributeur",
+        "other": "Anders"
+      }
     },
     "companies": {
       "coltek": {
@@ -717,5 +752,10 @@
     },
     "viewDetails": "Details bekijken",
     "hideDetails": "Details verbergen"
+  },
+  "download": {
+    "title": "Downloadcentrum",
+    "subtitle": "Productbrochures, databladen en bronnen zijn hier binnenkort beschikbaar.",
+    "comingSoon": "Binnenkort beschikbaar"
   }
 }

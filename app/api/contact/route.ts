@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
     company?: string;
     email?: string;
     interests?: string[];
+    source?: string;
     message?: string;
   };
   try {
@@ -45,7 +46,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid request.' }, { status: 400 });
   }
 
-  const { name, company, email, interests = [], message } = body;
+  const { name, company, email, interests = [], source, message } = body;
 
   // Server-side validation
   if (!name?.trim()) {
@@ -77,6 +78,7 @@ export async function POST(req: NextRequest) {
     `Company: ${company}`,
     `Email: ${email}`,
     `Interested in: ${interests.length ? interests.join(', ') : '—'}`,
+    `Heard about us via: ${source || '—'}`,
     '',
     'Message:',
     message?.trim() || '—',

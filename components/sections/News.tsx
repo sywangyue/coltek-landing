@@ -1,8 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ArrowRight, Calendar } from 'lucide-react';
+import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
@@ -33,6 +34,7 @@ interface NewsItem {
   title: string;
   date: string;
   summary: string;
+  content: string;
 }
 
 function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
@@ -70,25 +72,21 @@ function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
       <p className="text-sm text-foreground-muted leading-relaxed flex-1">{item.summary}</p>
 
       {/* Read more */}
-      <a
-        href="#"
-        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
+      <span
+        className="inline-flex items-center gap-1 text-sm font-medium text-primary"
       >
         {t('readMore')} <ArrowRight size={14} />
-      </a>
+      </span>
     </motion.article>
   );
 }
 
 export default function News() {
   const t = useTranslations('news');
+  const locale = useLocale();
 
-  const items: NewsItem[] = [1, 2, 3].map((i) => ({
-    type:    t(`item${i}Type` as 'item1Type'),
-    title:   t(`item${i}Title` as 'item1Title'),
-    date:    t(`item${i}Date` as 'item1Date'),
-    summary: t(`item${i}Summary` as 'item1Summary'),
-  }));
+  const allItems = t.raw('items') as NewsItem[];
+  const items = allItems.slice(0, 3);
 
   return (
     <section id="news" className="bg-white py-24 lg:py-32 overflow-hidden">
@@ -110,12 +108,12 @@ export default function News() {
                 withAccent
               />
             </div>
-            <a
-              href="#news"
+            <Link
+              href={`/${locale}/news`}
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors mt-6 lg:mt-0"
             >
               {t('viewAll')} <ArrowRight size={14} />
-            </a>
+            </Link>
           </motion.div>
 
           {/* ── Right: horizontal scroll cards ── */}

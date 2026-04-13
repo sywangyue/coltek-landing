@@ -103,7 +103,7 @@ function ProductCard({
     >
       {/* Image */}
       <div
-        className={`relative bg-[#F3F0FF] overflow-hidden rounded-t-[12px] ${
+        className={`relative bg-[#F1F5F9] overflow-hidden rounded-t-[12px] ${
           fullWidth
             ? 'lg:rounded-t-none lg:rounded-l-[12px] lg:w-80 lg:flex-shrink-0 h-52 lg:h-auto'
             : 'h-44'
@@ -122,7 +122,7 @@ function ProductCard({
           {product.specs.map((spec, i) => (
             <span
               key={i}
-              className="inline-block px-2 py-0.5 text-xs font-medium bg-primary/8 text-primary rounded-full border border-primary/15"
+              className="inline-block px-2 py-0.5 text-xs font-medium bg-background-alt text-foreground-muted rounded-full border border-border"
             >
               {spec}
             </span>
@@ -193,7 +193,7 @@ function CategorySection({
           transition={{ duration: 0.5, ease: EASE }}
           className="mb-10"
         >
-          <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary bg-primary/8 rounded-full border border-primary/15 mb-3">
+          <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-widest text-foreground-muted bg-background-alt rounded-full border border-border mb-3">
             {category.title}
           </span>
           <h2 className="font-display text-3xl font-bold text-foreground mb-2">

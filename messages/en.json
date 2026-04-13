@@ -20,6 +20,7 @@
     "droneguardDesc": "Drone detection system",
     "aiHardware": "AI Hardware",
     "news": "News",
+    "download": "Download",
     "about": "About",
     "contact": "Contact"
   },
@@ -104,18 +105,43 @@
     "subtitle": "Updates, events, and announcements",
     "viewAll": "View All News",
     "readMore": "Read More",
-    "item1Type": "Partnership",
-    "item1Title": "Coltek Becomes XGRIDS Strategic Partner in Europe",
-    "item1Date": "2026-03-15",
-    "item1Summary": "Strategic partnership established to bring advanced 3D scanning solutions to the European market.",
-    "item2Type": "Event",
-    "item2Title": "Intergeo 2026 — Meet Us in Stuttgart",
-    "item2Date": "2026-09-15",
-    "item2Summary": "Visit our booth to experience the latest Lixel L2 Pro and LCC platform live demonstrations.",
-    "item3Type": "Product Update",
-    "item3Title": "LCC Platform Reaches 10,000 Reconstructions",
-    "item3Date": "2026-02-28",
-    "item3Summary": "Lixel CyberColor cloud platform milestone: over 10,000 3D Gaussian Splatting models generated."
+    "items": [
+      {
+        "type": "Partnership",
+        "title": "Coltek Becomes XGRIDS Strategic Partner in Europe",
+        "date": "2026-03-15",
+        "summary": "Strategic partnership established to bring advanced 3D scanning solutions to the European market.",
+        "content": "Coltek has officially signed a strategic partnership agreement with XGRIDS, becoming the exclusive strategic partner for the European region. This partnership enables Coltek to distribute and support the full XGRIDS product portfolio — including the Lixel L2 Pro, LixelKity K1, PortalCam, and the LCC cloud platform — across all European markets."
+      },
+      {
+        "type": "Event",
+        "title": "Intergeo 2026 — Meet Us in Stuttgart",
+        "date": "2026-09-15",
+        "summary": "Visit our booth to experience the latest Lixel L2 Pro and LCC platform live demonstrations.",
+        "content": "Coltek will be exhibiting at Intergeo 2026 in Stuttgart, Germany — one of Europe's leading geospatial technology conferences. Come experience live scanning demonstrations with the Lixel L2 Pro, explore the LCC 3D Gaussian Splatting platform, and speak with our technical team about your project requirements."
+      },
+      {
+        "type": "Product Update",
+        "title": "LCC Platform Reaches 10,000 Reconstructions",
+        "date": "2026-02-28",
+        "summary": "Lixel CyberColor cloud platform milestone: over 10,000 3D Gaussian Splatting models generated.",
+        "content": "The Lixel CyberColor (LCC) AI cloud platform has reached a significant milestone — more than 10,000 3D Gaussian Splatting reconstructions processed. This growth reflects accelerating adoption across architecture, cultural heritage, and industrial sectors in Europe and globally."
+      },
+      {
+        "type": "Product Update",
+        "title": "LixelKity K1 Now Available in Europe",
+        "date": "2026-01-20",
+        "summary": "The compact handheld 3D scanner K1 is now officially available for purchase through Coltek.",
+        "content": "Coltek is pleased to announce that the LixelKity K1 — XGRIDS' compact handheld 3D scanner — is now available for order across Europe. Weighing under 1 kg with 48MP dual panoramic cameras and 360° LiDAR, the K1 is ideal for indoor mapping, real estate, and cultural heritage applications."
+      },
+      {
+        "type": "Partnership",
+        "title": "Coltek Partners with DroneGuard for European Distribution",
+        "date": "2025-11-10",
+        "summary": "Coltek expands its portfolio with counter-drone solutions through a new partnership with DroneGuard.",
+        "content": "Coltek has signed a distribution partnership with DroneGuard, adding professional counter-drone detection and localization systems to its European portfolio. The agreement covers the full DroneGuard product line — from portable handheld detectors to fixed TDOA network systems — enabling Coltek to serve airports, public events, and critical infrastructure operators across Europe."
+      }
+    ]
   },
   "about": {
     "label": "About Us",
@@ -185,7 +211,16 @@
       "success": "Thank you! We'll respond within 24 hours.",
       "error": "Something went wrong. Please try again or email us directly.",
       "required": "This field is required.",
-      "invalidEmail": "Please enter a valid email address."
+      "invalidEmail": "Please enter a valid email address.",
+      "sourceLabel": "How did you hear about us?",
+      "sources": {
+        "exhibition": "Trade Show / Exhibition",
+        "socialMedia": "Social Media",
+        "searchEngine": "Search Engine (Google, Bing...)",
+        "referral": "Referral / Word of Mouth",
+        "partner": "Partner / Distributor",
+        "other": "Other"
+      }
     },
     "companies": {
       "coltek": {
@@ -717,5 +752,10 @@
     },
     "viewDetails": "View Details",
     "hideDetails": "Hide Details"
+  },
+  "download": {
+    "title": "Download Center",
+    "subtitle": "Product brochures, datasheets, and resources will be available here.",
+    "comingSoon": "Coming Soon"
   }
 }
