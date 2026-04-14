@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { CheckCircle, MapPin, Phone, Mail, Loader2 } from 'lucide-react';
 import Button from '@/components/ui/Button';
@@ -18,10 +19,12 @@ const SOURCE_KEYS = ['exhibition', 'socialMedia', 'searchEngine', 'referral', 'p
 // ── Inquiry form ─────────────────────────────────────────────────────────────
 function InquiryForm() {
   const t = useTranslations('contact');
+  const locale = useLocale();
   const [status, setStatus] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [interests, setInterests] = useState<string[]>([]);
   const [source, setSource] = useState('');
+  const [privacyConsented, setPrivacyConsented] = useState(false);
 
   // Controlled field values for error recovery
   const [name, setName]       = useState('');
@@ -203,13 +206,30 @@ function InquiryForm() {
         />
       </div>
 
+      {/* Privacy consent */}
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={privacyConsented}
+          onChange={(e) => setPrivacyConsented(e.target.checked)}
+          className="mt-0.5 w-4 h-4 rounded border-border accent-primary cursor-pointer shrink-0"
+        />
+        <span className="text-sm text-foreground-muted leading-snug">
+          {t('form.privacyConsent.before')}
+          <Link href={`/${locale}/privacy`} className="text-primary underline hover:text-primary/80">
+            {t('form.privacyConsent.linkText')}
+          </Link>
+          {t('form.privacyConsent.after')}
+        </span>
+      </label>
+
       {/* Submit */}
       <Button
         type="submit"
         variant="primary"
         size="lg"
-        disabled={status === 'submitting'}
-        className="w-full"
+        disabled={status === 'submitting' || !privacyConsented}
+        className={`w-full ${!privacyConsented ? 'opacity-50 cursor-not-allowed' : ''}`}
       >
         {status === 'submitting' ? (
           <>

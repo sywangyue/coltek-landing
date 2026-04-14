@@ -11,7 +11,7 @@ import { Globe, ChevronDown, Menu, X } from 'lucide-react';
 const LOCALES = [
   { code: 'en', label: 'English' },
   { code: 'de', label: 'Deutsch' },
-  { code: 'nl', label: 'Nederlands' },
+  { code: 'nl', label: 'Dutch' },
   { code: 'zh', label: '中文' },
 ];
 

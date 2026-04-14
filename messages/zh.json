@@ -176,11 +176,11 @@
           "role": "首席运营官"
         },
         {
-          "name": "Estrella Wang",
+          "name": "Shenshen",
           "role": "技术支持 · xgrids"
         },
         {
-          "name": "Shenshen",
+          "name": "Estrella Wang",
           "role": "产品经理 · xgrids"
         },
         {
@@ -220,6 +220,11 @@
         "referral": "朋友推荐",
         "partner": "合作伙伴 / 经销商",
         "other": "其他"
+      },
+      "privacyConsent": {
+        "before": "提交此询价即表示您已阅读我们的",
+        "linkText": "隐私政策",
+        "after": "并了解您的个人数据将如何被处理。"
       }
     },
     "companies": {
@@ -333,7 +338,7 @@
       "after": "3D重建结果"
     },
     "case0": {
-      "title": "现代办公室内部",
+      "title": "历史遗址房间内部",
       "category": "室内",
       "description": "高保真室内扫描，支持装修规划、精确测量和虚拟参观。"
     }

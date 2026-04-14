@@ -176,11 +176,11 @@
           "role": "COO"
         },
         {
-          "name": "Estrella Wang",
+          "name": "Shenshen",
           "role": "Technische ondersteuning · xgrids"
         },
         {
-          "name": "Shenshen",
+          "name": "Estrella Wang",
           "role": "Productmanager · xgrids"
         },
         {
@@ -220,6 +220,11 @@
         "referral": "Aanbeveling / Mond-tot-mondreclame",
         "partner": "Partner / Distributeur",
         "other": "Anders"
+      },
+      "privacyConsent": {
+        "before": "Door dit formulier in te dienen, bevestigt u dat u ons ",
+        "linkText": "Privacybeleid",
+        "after": " heeft gelezen en begrijpt hoe uw persoonsgegevens worden verwerkt."
       }
     },
     "companies": {
@@ -333,7 +338,7 @@
       "after": "3D-reconstructie"
     },
     "case0": {
-      "title": "Modern Kantoor Interieur",
+      "title": "Historisch Gebouw Interieur",
       "category": "Interieur",
       "description": "Hooggetrouwe interieurscan voor renovatieplanning met precieze maten en virtuele rondleidingen."
     }

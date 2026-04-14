@@ -176,11 +176,11 @@
           "role": "COO"
         },
         {
-          "name": "Estrella Wang",
+          "name": "Shenshen",
           "role": "Technischer Support · xgrids"
         },
         {
-          "name": "Shenshen",
+          "name": "Estrella Wang",
           "role": "Produktmanager · xgrids"
         },
         {
@@ -220,6 +220,11 @@
         "referral": "Empfehlung / Mundpropaganda",
         "partner": "Partner / Händler",
         "other": "Sonstiges"
+      },
+      "privacyConsent": {
+        "before": "Mit dem Absenden dieser Anfrage bestätigen Sie, dass Sie unsere ",
+        "linkText": "Datenschutzrichtlinie",
+        "after": " gelesen haben und verstehen, wie Ihre personenbezogenen Daten verarbeitet werden."
       }
     },
     "companies": {
@@ -333,7 +338,7 @@
       "after": "3D-Rekonstruktion"
     },
     "case0": {
-      "title": "Modernes Büro-Innenraum",
+      "title": "Historisches Gebäude Innenraum",
       "category": "Innenbereich",
       "description": "Hochauflösender Innenraumscan für Renovierungsplanung mit präzisen Maßen und virtuellen Rundgängen."
     }

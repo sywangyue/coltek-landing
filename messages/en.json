@@ -176,11 +176,11 @@
           "role": "COO"
         },
         {
-          "name": "Estrella Wang",
+          "name": "Shenshen",
           "role": "Technical Support · xgrids"
         },
         {
-          "name": "Shenshen",
+          "name": "Estrella Wang",
           "role": "Product Manager · xgrids"
         },
         {
@@ -220,6 +220,11 @@
         "referral": "Referral / Word of Mouth",
         "partner": "Partner / Distributor",
         "other": "Other"
+      },
+      "privacyConsent": {
+        "before": "By submitting this inquiry, you confirm that you have read our ",
+        "linkText": "Privacy Policy",
+        "after": " and understand how your personal data will be processed."
       }
     },
     "companies": {
@@ -333,7 +338,7 @@
       "after": "3D Reconstruction"
     },
     "case0": {
-      "title": "Modern Office Interior",
+      "title": "Historic Site Interior",
       "category": "Interior",
       "description": "High-fidelity interior scan for renovation planning, enabling precise measurements and virtual walkthroughs."
     }
