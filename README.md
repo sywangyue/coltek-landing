@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Coltek Landing Page — sunova-innovation.nl
 
-## Getting Started
+## 项目概述
 
-First, run the development server:
+Coltek Robotics GmbH (DE) 与 Sunova Innovation B.V. (NL) 的多语言企业官网。
+展示两大业务线：**XGRIDS**（空间智能/3D扫描）和 **DroneGuard**（无人机探测）。
+
+## 技术栈
+
+| 层 | 技术 |
+|---|---|
+| Framework | Next.js 16 + TypeScript |
+| Styling | Tailwind CSS v4 (CSS-first `@theme`) |
+| i18n | next-intl (en / de / nl / zh) |
+| Animation | Framer Motion v12 |
+| 3D Viewer | @mkkellogg/gaussian-splats-3d |
+| Email | Resend API |
+| Deployment | Vercel (auto-deploy from GitHub `main`) |
+| DNS | IONOS (sunova-innovation.nl) |
+
+## 本地开发
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # 填入 RESEND_API_KEY
+npm run dev                   # localhost:3000 → auto-redirects to /en/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 项目结构
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+app/
+  [locale]/               # 多语言路由 (en/de/nl/zh)
+    page.tsx              # 主页
+    spatial/xgrids/       # XGRIDS 品牌页 + 子页面
+    airspace/droneguard/  # DroneGuard 品牌页
+    news/                 # 新闻列表
+    download/             # 下载中心（占位）
+    privacy/              # 隐私政策
+    impressum/            # 法律声明
+  api/
+    contact/route.ts      # 联系表单 → Resend
+    subscribe/route.ts    # AI Hardware 订阅
+    splat/route.ts        # 3DGS PLY 代理（绕过 CORS）
+components/
+  hero/                   # ParticleCloud, HeroContent
+  sections/               # SpatialOverview, AirspaceOverview, AIHardware, News, About, Contact
+  spatial/                # SpatialProducts, SpatialShowcase, ModelViewer, BeforeAfter
+  layout/                 # Navbar, Footer, CookieBanner
+  ui/                     # Button, SectionTitle
+messages/                 # i18n JSON (en/de/nl/zh)
+public/
+  images/
+    logo/                 # Logo 文件
+    team/                 # 6 位团队成员照片
+    airspace/
+      products/           # DroneGuard 产品图
+      scenarios/          # 应用场景图 (prison/airport/border/government/factory/hotel)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 日常维护
 
-## Learn More
+### 更新新闻
 
-To learn more about Next.js, take a look at the following resources:
+编辑 `messages/en.json`（及 de/nl/zh）中 `news.items` 数组，git push 即可。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 更新团队照片
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+替换 `public/images/team/` 下的图片，文件名保持一致（next/image 按路径读取）。
 
-## Deploy on Vercel
+### 更新产品信息（XGRIDS）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+编辑 `messages/en.json` 中 `spatialProducts` 命名空间。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 更新 DroneGuard 产品信息
+
+编辑 `messages/en.json` 中 `droneguard.products` 命名空间。
+
+### 更新 DroneGuard 场景图片
+
+替换 `public/images/airspace/scenarios/` 下的图片（文件名对应场景 id）。
+
+### 更新联系地址/电话
+
+编辑 `messages/en.json` 中 `contact.companies.*` 字段，同步四语。
+
+## 部署
+
+```
+git push origin main  →  Vercel 自动构建 (1-2 分钟)
+```
+
+Vercel 项目设置中需配置环境变量 `RESEND_API_KEY`。
+
+## DNS 注意事项 (IONOS)
+
+**绝对不能碰的 DNS 记录（影响邮件收发）：**
+- MX 记录 (mx00.ionos.de / mx01.ionos.de)
+- CNAME _dmarc
+- CNAME *._domainkey (DKIM)
+- TXT SPF 记录
+
+**指向 Vercel 的记录（可以改）：**
+- A 记录 `@` → `76.76.21.21`
+- CNAME `www` → `cname.vercel-dns.com`
+
+## 环境变量
+
+| 变量 | 说明 |
+|---|---|
+| `RESEND_API_KEY` | Resend 邮件服务 API Key（Vercel + 本地均需） |
+| `SPLAT_PLY_URL` | 3DGS PLY 文件 Supabase 签名 URL（可选，默认已内置） |
+
+## 禁词约束（全站）
+
+以下词语不得出现在任何面向用户的内容中（`.tsx/.ts/.css/.json` 文件）：
+
+- DJI / 大疆
+- Terjin / terjin
+- Largest / 最大
+- \#1 / No.1 / 第一（在品牌背书上下文中）
+- Airspace Security / 空间安防
+
+验证命令：
+```bash
+grep -ri "dji\|大疆\|terjin\|largest\|最大\|airspace security\|空间安防" messages/ components/ app/
+```
+
+## 文档索引
+
+详细开发记录在 `../docs/` 目录（项目根目录上层）：
+
+| 文件 | 内容 |
+|---|---|
+| CC-1_project_init_theme_i18n.md | 项目初始化、主题、i18n |
+| CC-2_hero_section_particles.md | Hero 粒子动画 |
+| CC-3_homepage_six_sections.md | 主页六大区块 |
+| CC-4_business_detail_pages.md | 业务详情子页 |
+| CC-5_email_legal_seo.md | 邮件/GDPR/SEO |
+| CC-6_deployment_dns.md | 部署与 DNS |
+| CC-7_3dgs_viewer_implementation.md | 3DGS 查看器实现 |
+| CC-8_ui_restructure_logo_social.md | 路由重构/Logo/社交图标 |
+| CC-9_xgrids_product_external_links.md | XGRIDS 外链 |
+| CC-10_misc_ui_fixes.md | 杂项修复 |
+| CC-11_droneguard_brand_rewrite.md | DroneGuard 品牌重构 |
+| CC-12_news_contact_download_privacy.md | 新闻/联系/下载/隐私 |
+| CC-13_privacy_policy_content.md | 隐私政策内容 |
+| PRD_Coltek_Latest.md | 产品需求文档（最新版） |
