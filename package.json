@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "0": "node -e \"console.log('No script 0 defined for product work; use: npm run dev | build | start | lint'); process.exit(0)\"",
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",

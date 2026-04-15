@@ -3,7 +3,7 @@
 ## 项目概述
 
 Coltek Robotics GmbH (DE) 与 Sunova Innovation B.V. (NL) 的多语言企业官网。
-展示两大业务线：**XGRIDS**（空间智能/3D扫描）和 **DroneGuard**（无人机探测）。
+展示两大业务线：**XGRIDS**（空间智能/3D扫描）和 **GlobeProtect**（无人机探测）。
 
 ## 技术栈
 
@@ -33,7 +33,7 @@ app/
   [locale]/               # 多语言路由 (en/de/nl/zh)
     page.tsx              # 主页
     spatial/xgrids/       # XGRIDS 品牌页 + 子页面
-    airspace/droneguard/  # DroneGuard 品牌页
+    airspace/droneguard/  # GlobeProtect 品牌页
     news/                 # 新闻列表
     download/             # 下载中心（占位）
     privacy/              # 隐私政策
@@ -54,7 +54,7 @@ public/
     logo/                 # Logo 文件
     team/                 # 6 位团队成员照片
     airspace/
-      products/           # DroneGuard 产品图
+      products/           # GlobeProtect 产品图
       scenarios/          # 应用场景图 (prison/airport/border/government/factory/hotel)
 ```
 
@@ -72,11 +72,11 @@ public/
 
 编辑 `messages/en.json` 中 `spatialProducts` 命名空间。
 
-### 更新 DroneGuard 产品信息
+### 更新 GlobeProtect 产品信息
 
 编辑 `messages/en.json` 中 `droneguard.products` 命名空间。
 
-### 更新 DroneGuard 场景图片
+### 更新 GlobeProtect 场景图片
 
 替换 `public/images/airspace/scenarios/` 下的图片（文件名对应场景 id）。
 
@@ -142,7 +142,7 @@ grep -ri "dji\|大疆\|terjin\|largest\|最大\|airspace security\|空间安防"
 | CC-8_ui_restructure_logo_social.md | 路由重构/Logo/社交图标 |
 | CC-9_xgrids_product_external_links.md | XGRIDS 外链 |
 | CC-10_misc_ui_fixes.md | 杂项修复 |
-| CC-11_droneguard_brand_rewrite.md | DroneGuard 品牌重构 |
+| CC-11_droneguard_brand_rewrite.md | GlobeProtect 品牌重构 |
 | CC-12_news_contact_download_privacy.md | 新闻/联系/下载/隐私 |
 | CC-13_privacy_policy_content.md | 隐私政策内容 |
 | PRD_Coltek_Latest.md | 产品需求文档（最新版） |
