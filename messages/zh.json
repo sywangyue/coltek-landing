@@ -70,7 +70,7 @@
   "airspace": {
     "label": "无人机探测",
     "title": "无人机探测与定位解决方案",
-    "subtitle": "DroneGuard无人机探测系统",
+    "subtitle": "GlobeProtect无人机探测系统",
     "description": "我们提供专业的反无人机探测与定位系统，保护欧洲各地的关键基础设施、活动场所和空域安全。",
     "highlights": {
       "detection": {
@@ -136,10 +136,10 @@
       },
       {
         "type": "合作伙伴",
-        "title": "Coltek 与 DroneGuard 签署欧洲分销合作协议",
+        "title": "Coltek 与 GlobeProtect 签署欧洲分销合作协议",
         "date": "2025-11-10",
-        "summary": "Coltek 通过与 DroneGuard 的新合作协议，将反无人机解决方案纳入其产品组合。",
-        "content": "Coltek 已与 DroneGuard 签署分销合作协议，将专业反无人机探测与定位系统纳入欧洲产品组合。合作覆盖 DroneGuard 全系产品线——从便携手持探测器到固定式 TDOA 网络系统，助力 Coltek 服务欧洲机场、公共活动及关键基础设施运营商。"
+        "summary": "Coltek 通过与 GlobeProtect 的新合作协议，将反无人机解决方案纳入其产品组合。",
+        "content": "Coltek 已与 GlobeProtect 签署分销合作协议，将专业反无人机探测与定位系统纳入欧洲产品组合。合作覆盖 GlobeProtect 全系产品线——从便携手持探测器到固定式 TDOA 网络系统，助力 Coltek 服务欧洲机场、公共活动及关键基础设施运营商。"
       }
     ]
   },
@@ -160,7 +160,7 @@
       },
       "droneguard": {
         "value": "",
-        "label": "DroneGuard 欧洲战略合作伙伴",
+        "label": "GlobeProtect 欧洲战略合作伙伴",
         "detail": ""
       }
     },
@@ -575,7 +575,7 @@
               "6.0英寸屏幕",
               "支持离线或在线（SIM卡/Wi-Fi）"
             ],
-            "description": "DroneGuard H2是一款便携式手持无人机探测设备，无需发射任何信号，被动扫描无线电频谱，可探测包括FPV和Wi-Fi在内的商用无人机，探测距离最远3公里。支持无人机序列号识别、黑白名单分类，并可通过Google地图导航至飞手位置。可作为附加接收单元接入DroneGuard管理平台。",
+            "description": "GlobeProtect H2是一款便携式手持无人机探测设备，无需发射任何信号，被动扫描无线电频谱，可探测包括FPV和Wi-Fi在内的商用无人机，探测距离最远3公里。支持无人机序列号识别、黑白名单分类，并可通过Google地图导航至飞手位置。可作为附加接收单元接入GlobeProtect管理平台。",
             "image": "/images/airspace/products/dgh2.png"
           }
         ]
@@ -597,7 +597,7 @@
               "全向或定向干扰",
               "行驶中可正常使用"
             ],
-            "description": "DroneGuard M2J是一款可车载安装的探测与防御系统，将被动射频探测与可选干扰能力相结合。行驶过程中可探测商用无人机（距离最远5公里），并可干扰控制及导航信号（距离最远2公里）。探测与防御自动联动，响应时间约3秒。",
+            "description": "GlobeProtect M2J是一款可车载安装的探测与防御系统，将被动射频探测与可选干扰能力相结合。行驶过程中可探测商用无人机（距离最远5公里），并可干扰控制及导航信号（距离最远2公里）。探测与防御自动联动，响应时间约3秒。",
             "image": "/images/airspace/products/dgm2j.png"
           },
           {
@@ -613,7 +613,7 @@
               "最多16台天线联网",
               "位置更新约1–3秒"
             ],
-            "description": "DroneGuard S2是一款固定式TDOA天线，可独立工作或组成最多16台的联网阵列。3台及以上联网时，可基于TDOA算法对无人机（包括FPV）进行实时定位，更新间隔1–3秒。支持序列号识别、黑白名单分类及可选扇区探测功能。",
+            "description": "GlobeProtect S2是一款固定式TDOA天线，可独立工作或组成最多16台的联网阵列。3台及以上联网时，可基于TDOA算法对无人机（包括FPV）进行实时定位，更新间隔1–3秒。支持序列号识别、黑白名单分类及可选扇区探测功能。",
             "image": "/images/airspace/products/dgs2.png"
           },
           {
@@ -628,7 +628,7 @@
               "3台及以上可实现TDOA定位",
               "支持离线或在线运行"
             ],
-            "description": "DroneGuard S2mini是一款适用于空间受限场所的紧凑型天线。每台设备可独立探测2公里内的无人机。3台及以上联网后，可对包括FPV在内的所有无人机类型进行TDOA定位。支持仅Remote-ID模式、编码模式或全联网TDOA模式。",
+            "description": "GlobeProtect S2mini是一款适用于空间受限场所的紧凑型天线。每台设备可独立探测2公里内的无人机。3台及以上联网后，可对包括FPV在内的所有无人机类型进行TDOA定位。支持仅Remote-ID模式、编码模式或全联网TDOA模式。",
             "image": "/images/airspace/products/dgs2mini.png"
           },
           {
@@ -643,7 +643,7 @@
               "角度容差3–10°",
               "重量约25公斤 | IP65防护"
             ],
-            "description": "DroneGuard S2D在S2平台基础上增加AOA（到达角）扇区探测，可将无人机来袭方向角精确至3–10°以内。全被动射频，频段覆盖100 MHz–6 GHz。IP65防护等级，适合户外安装，可集成至TDOA联网阵列。",
+            "description": "GlobeProtect S2D在S2平台基础上增加AOA（到达角）扇区探测，可将无人机来袭方向角精确至3–10°以内。全被动射频，频段覆盖100 MHz–6 GHz。IP65防护等级，适合户外安装，可集成至TDOA联网阵列。",
             "image": "/images/airspace/products/dgs2d.png"
           },
           {
@@ -659,7 +659,7 @@
               "ASTM F3411 · GB 42590-2023 · ASD-STAN prEN 4709-002",
               "100–240V交流/12V直流 | IP66 | 约2.2公斤"
             ],
-            "description": "DroneGuard R3是一款被动Remote-ID接收器，通过蓝牙4/5和Wi-Fi Beacon/NAN协议接收合规无人机广播信号，支持三大主流国际标准。IP66防护，支持交直流供电，适合永久户外安装。",
+            "description": "GlobeProtect R3是一款被动Remote-ID接收器，通过蓝牙4/5和Wi-Fi Beacon/NAN协议接收合规无人机广播信号，支持三大主流国际标准。IP66防护，支持交直流供电，适合永久户外安装。",
             "image": "/images/airspace/products/dgr3.png"
           },
           {
@@ -673,7 +673,7 @@
               "重量约25公斤 | IP65防护",
               "可联网扩展覆盖范围"
             ],
-            "description": "DroneGuard D1是一款大功率固定式解码站，被动监测五个频段内的无人机视频和控制信号，探测距离最远10公里。多台设备可联网以覆盖更大区域，是关键基础设施大范围周界防护的核心传感器。",
+            "description": "GlobeProtect D1是一款大功率固定式解码站，被动监测五个频段内的无人机视频和控制信号，探测距离最远10公里。多台设备可联网以覆盖更大区域，是关键基础设施大范围周界防护的核心传感器。",
             "image": "/images/airspace/products/dgd1.png"
           }
         ]
@@ -684,7 +684,7 @@
         "items": [
           {
             "id": "software",
-            "name": "DroneGuard 管理平台",
+            "name": "GlobeProtect 管理平台",
             "tagline": "基于浏览器的指挥平台，统一管理无人机探测、防区设置和反制措施",
             "specs": [
               "基于浏览器，跨平台使用",
@@ -694,7 +694,7 @@
               "支持离线/托管服务器/本地部署",
               "可接入欧洲KRITIS认证数据中心托管"
             ],
-            "description": "DroneGuard管理平台是一款基于浏览器的软件解决方案，提供对一个或多个探测区域的统一视图。操作人员可自定义预警区域、将已知无人机加入白名单、触发反制措施，并通过热力图和轨迹回放查看历史数据。支持本地局域网离线部署、服务器托管及客户本地数据中心部署三种模式。",
+            "description": "GlobeProtect管理平台是一款基于浏览器的软件解决方案，提供对一个或多个探测区域的统一视图。操作人员可自定义预警区域、将已知无人机加入白名单、触发反制措施，并通过热力图和轨迹回放查看历史数据。支持本地局域网离线部署、服务器托管及客户本地数据中心部署三种模式。",
             "image": "/images/airspace/products/dgsoftware.png"
           }
         ]

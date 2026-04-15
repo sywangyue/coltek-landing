@@ -70,7 +70,7 @@
   "airspace": {
     "label": "Dronedetectie",
     "title": "Drone-detectie- en lokalisatieoplossingen",
-    "subtitle": "DroneGuard – Drone-detectiesystemen",
+    "subtitle": "GlobeProtect – Drone-detectiesystemen",
     "description": "Wij leveren professionele counter-drone detectie- en lokalisatiesystemen ter bescherming van kritieke infrastructuur, evenementen en luchtruim in Europa.",
     "highlights": {
       "detection": {
@@ -136,10 +136,10 @@
       },
       {
         "type": "Partnerschap",
-        "title": "Coltek sluit distributiepartnerschap met DroneGuard voor Europa",
+        "title": "Coltek sluit distributiepartnerschap met GlobeProtect voor Europa",
         "date": "2025-11-10",
-        "summary": "Coltek breidt zijn portfolio uit met counter-drone oplossingen via een nieuw partnerschap met DroneGuard.",
-        "content": "Coltek heeft een distributiepartnerschap gesloten met DroneGuard en voegt professionele counter-drone detectie- en lokalisatiesystemen toe aan zijn Europese portfolio. De overeenkomst omvat de volledige DroneGuard-productlijn — van draagbare handdetectoren tot vaste TDOA-netwerksystemen."
+        "summary": "Coltek breidt zijn portfolio uit met counter-drone oplossingen via een nieuw partnerschap met GlobeProtect.",
+        "content": "Coltek heeft een distributiepartnerschap gesloten met GlobeProtect en voegt professionele counter-drone detectie- en lokalisatiesystemen toe aan zijn Europese portfolio. De overeenkomst omvat de volledige GlobeProtect-productlijn — van draagbare handdetectoren tot vaste TDOA-netwerksystemen."
       }
     ]
   },
@@ -160,7 +160,7 @@
       },
       "droneguard": {
         "value": "",
-        "label": "DroneGuard Strategische Partner in Europa",
+        "label": "GlobeProtect Strategische Partner in Europa",
         "detail": ""
       }
     },
@@ -575,7 +575,7 @@
               "6,0\" scherm",
               "Offline / online (SIM of Wi-Fi)"
             ],
-            "description": "DroneGuard H2 is een draagbaar handheld apparaat voor mobiele dronedetectie. Het scant het radiospectrum passief zonder enig signaal uit te zenden en detecteert commerciële drones inclusief FPV- en Wi-Fi-modellen tot 3 km afstand. Identificeert drone-serienummers, ondersteunt zwarte/witte lijstclassificatie en navigeert naar de pilotpositie via Google Maps. Integreerbaar in het DroneGuard Managementplatform als aanvullende ontvangsteenheid.",
+            "description": "GlobeProtect H2 is een draagbaar handheld apparaat voor mobiele dronedetectie. Het scant het radiospectrum passief zonder enig signaal uit te zenden en detecteert commerciële drones inclusief FPV- en Wi-Fi-modellen tot 3 km afstand. Identificeert drone-serienummers, ondersteunt zwarte/witte lijstclassificatie en navigeert naar de pilotpositie via Google Maps. Integreerbaar in het GlobeProtect Managementplatform als aanvullende ontvangsteenheid.",
             "image": "/images/airspace/products/dgh2.png"
           }
         ]
@@ -597,7 +597,7 @@
               "Omnidirectioneel of gericht",
               "Bruikbaar tijdens rijden"
             ],
-            "description": "DroneGuard M2J is een voertuigmonteerbaar detectie- en verdedigingssysteem dat passieve RF-detectie combineert met optionele storing. Het detecteert commerciële drones tot 5 km tijdens rijden en kan besturings- en navigatiesignalen tot 2 km verstoren. De automatische koppeling tussen detectie en verdediging reduceert de reactietijd tot circa 3 seconden.",
+            "description": "GlobeProtect M2J is een voertuigmonteerbaar detectie- en verdedigingssysteem dat passieve RF-detectie combineert met optionele storing. Het detecteert commerciële drones tot 5 km tijdens rijden en kan besturings- en navigatiesignalen tot 2 km verstoren. De automatische koppeling tussen detectie en verdediging reduceert de reactietijd tot circa 3 seconden.",
             "image": "/images/airspace/products/dgm2j.png"
           },
           {
@@ -613,7 +613,7 @@
               "Max. 16 antennes genetwerkt",
               "Positie-update ca. 1–3 s"
             ],
-            "description": "DroneGuard S2 is een vaste TDOA-antenne die zelfstandig of in een netwerk van tot 16 eenheden werkt. Vanaf drie genetwerkte antennes lokaliseert TDOA drones — inclusief FPV — in realtime met 1–3 s updates. Inclusief serienummeridentificatie, zwarte/witte lijstclassificatie en optionele sectordetectie.",
+            "description": "GlobeProtect S2 is een vaste TDOA-antenne die zelfstandig of in een netwerk van tot 16 eenheden werkt. Vanaf drie genetwerkte antennes lokaliseert TDOA drones — inclusief FPV — in realtime met 1–3 s updates. Inclusief serienummeridentificatie, zwarte/witte lijstclassificatie en optionele sectordetectie.",
             "image": "/images/airspace/products/dgs2.png"
           },
           {
@@ -628,7 +628,7 @@
               "TDOA-lokalisatie vanaf 3 antennes",
               "Offline of online werking"
             ],
-            "description": "DroneGuard S2mini is een compacte antenne voor ruimtebeperkte installaties. Elke eenheid detecteert drones tot 2 km zelfstandig. Vanaf drie genetwerkte antennes lokaliseert TDOA alle dronetypen inclusief FPV. Ondersteunt RID-only, coderings- of volledig genetwerkte TDOA-modus.",
+            "description": "GlobeProtect S2mini is een compacte antenne voor ruimtebeperkte installaties. Elke eenheid detecteert drones tot 2 km zelfstandig. Vanaf drie genetwerkte antennes lokaliseert TDOA alle dronetypen inclusief FPV. Ondersteunt RID-only, coderings- of volledig genetwerkte TDOA-modus.",
             "image": "/images/airspace/products/dgs2mini.png"
           },
           {
@@ -643,7 +643,7 @@
               "Hoektolerantie 3–10°",
               "Gewicht ca. 25 kg | IP65"
             ],
-            "description": "DroneGuard S2D voegt AOA-sectordetectie (Angle of Arrival) toe aan het S2-platform en bepaalt de naderingshoek van een drone tot op 3–10° nauwkeurig. Volledig passieve RF, 100 MHz–6 GHz dekking. IP65-beschermd voor buiteninstallatie en integreerbaar in een TDOA-netwerk.",
+            "description": "GlobeProtect S2D voegt AOA-sectordetectie (Angle of Arrival) toe aan het S2-platform en bepaalt de naderingshoek van een drone tot op 3–10° nauwkeurig. Volledig passieve RF, 100 MHz–6 GHz dekking. IP65-beschermd voor buiteninstallatie en integreerbaar in een TDOA-netwerk.",
             "image": "/images/airspace/products/dgs2d.png"
           },
           {
@@ -659,7 +659,7 @@
               "ASTM F3411 · GB 42590-2023 · ASD-STAN prEN 4709-002",
               "100–240 V AC / 12 V DC | IP66 | ca. 2,2 kg"
             ],
-            "description": "DroneGuard R3 is een passieve Remote-ID ontvanger die uitzendingen van conforme drones opvangt via Bluetooth 4/5 en Wi-Fi Beacon/NAN. Ondersteunt drie internationale normen. IP66-beschermd, AC/DC-gevoed, geschikt voor permanente buiteninstallatie.",
+            "description": "GlobeProtect R3 is een passieve Remote-ID ontvanger die uitzendingen van conforme drones opvangt via Bluetooth 4/5 en Wi-Fi Beacon/NAN. Ondersteunt drie internationale normen. IP66-beschermd, AC/DC-gevoed, geschikt voor permanente buiteninstallatie.",
             "image": "/images/airspace/products/dgr3.png"
           },
           {
@@ -673,7 +673,7 @@
               "Gewicht ca. 25 kg | IP65",
               "Netwerkbaar voor uitgebreide dekking"
             ],
-            "description": "DroneGuard D1 is een krachtig vast decoderingsstation dat drone-video- en besturingssignalen over vijf frequentiebanden tot 10 km passief bewaakt. Meerdere eenheden kunnen worden genetwerkt om grotere gebieden te dekken, ideaal voor breedbereik perimeterbeveiliging van kritieke infrastructuur.",
+            "description": "GlobeProtect D1 is een krachtig vast decoderingsstation dat drone-video- en besturingssignalen over vijf frequentiebanden tot 10 km passief bewaakt. Meerdere eenheden kunnen worden genetwerkt om grotere gebieden te dekken, ideaal voor breedbereik perimeterbeveiliging van kritieke infrastructuur.",
             "image": "/images/airspace/products/dgd1.png"
           }
         ]
@@ -684,7 +684,7 @@
         "items": [
           {
             "id": "software",
-            "name": "DroneGuard Managementplatform",
+            "name": "GlobeProtect Managementplatform",
             "tagline": "Browsergebaseerd commandoplatform voor geïntegreerde dronedetectie, zonebeheer en tegenmaatregelen",
             "specs": [
               "Browsergebaseerd, platformonafhankelijk",
@@ -694,7 +694,7 @@
               "Offline / Serverhosting / On-Premises",
               "Europees KRITIS-gecertificeerd hosting beschikbaar"
             ],
-            "description": "Het DroneGuard Managementplatform is een browsergebaseerde oplossing die een uniforme weergave biedt van één of meer detectiezones. Operators kunnen waarschuwingszones instellen, bekende drones op de whitelist plaatsen, tegenmaatregelen activeren en historische gegevens bekijken via heatmaps en trackherhalingen. Ondersteunt offline LAN-, server-gehoste en on-premises implementatie.",
+            "description": "Het GlobeProtect Managementplatform is een browsergebaseerde oplossing die een uniforme weergave biedt van één of meer detectiezones. Operators kunnen waarschuwingszones instellen, bekende drones op de whitelist plaatsen, tegenmaatregelen activeren en historische gegevens bekijken via heatmaps en trackherhalingen. Ondersteunt offline LAN-, server-gehoste en on-premises implementatie.",
             "image": "/images/airspace/products/dgsoftware.png"
           }
         ]

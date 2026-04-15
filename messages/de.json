@@ -70,7 +70,7 @@
   "airspace": {
     "label": "Drohnenerkennung",
     "title": "Drohnenerkennung & Ortungslösungen",
-    "subtitle": "DroneGuard – Drohnenerkennungssysteme",
+    "subtitle": "GlobeProtect – Drohnenerkennungssysteme",
     "description": "Wir liefern professionelle Gegendrohnen-Erkennungs- und Ortungssysteme zum Schutz kritischer Infrastruktur, Veranstaltungen und Lufträume in Europa.",
     "highlights": {
       "detection": {
@@ -136,10 +136,10 @@
       },
       {
         "type": "Partnerschaft",
-        "title": "Coltek schließt Vertriebspartnerschaft mit DroneGuard für Europa",
+        "title": "Coltek schließt Vertriebspartnerschaft mit GlobeProtect für Europa",
         "date": "2025-11-10",
-        "summary": "Coltek erweitert sein Portfolio um Counter-Drone-Lösungen durch eine neue Partnerschaft mit DroneGuard.",
-        "content": "Coltek hat eine Vertriebspartnerschaft mit DroneGuard abgeschlossen und fügt seinem europäischen Portfolio professionelle Counter-Drone-Erkennungs- und Lokalisierungssysteme hinzu. Die Vereinbarung umfasst die gesamte DroneGuard-Produktlinie — von tragbaren Handdetektoren bis hin zu stationären TDOA-Netzwerksystemen."
+        "summary": "Coltek erweitert sein Portfolio um Counter-Drone-Lösungen durch eine neue Partnerschaft mit GlobeProtect.",
+        "content": "Coltek hat eine Vertriebspartnerschaft mit GlobeProtect abgeschlossen und fügt seinem europäischen Portfolio professionelle Counter-Drone-Erkennungs- und Lokalisierungssysteme hinzu. Die Vereinbarung umfasst die gesamte GlobeProtect-Produktlinie — von tragbaren Handdetektoren bis hin zu stationären TDOA-Netzwerksystemen."
       }
     ]
   },
@@ -160,7 +160,7 @@
       },
       "droneguard": {
         "value": "",
-        "label": "DroneGuard Strategischer Partner in Europa",
+        "label": "GlobeProtect Strategischer Partner in Europa",
         "detail": ""
       }
     },
@@ -575,7 +575,7 @@
               "6,0\" Display",
               "Offline / online (SIM oder WLAN)"
             ],
-            "description": "DroneGuard H2 ist ein tragbares Handgerät zur mobilen Drohnenerkennung. Es scannt das Funkspektrum passiv ohne jede Signalabstrahlung und erkennt Drohnen – darunter FPV- und WLAN-Modelle – bis 3 km Entfernung. Identifiziert Seriennummern, unterstützt Schwarz-/Weiß-Listen-Klassifikation und navigiert per Google Maps zur Pilotenposition. Integrierbar in die DroneGuard Managementplattform als zusätzliche Empfangseinheit.",
+            "description": "GlobeProtect H2 ist ein tragbares Handgerät zur mobilen Drohnenerkennung. Es scannt das Funkspektrum passiv ohne jede Signalabstrahlung und erkennt Drohnen – darunter FPV- und WLAN-Modelle – bis 3 km Entfernung. Identifiziert Seriennummern, unterstützt Schwarz-/Weiß-Listen-Klassifikation und navigiert per Google Maps zur Pilotenposition. Integrierbar in die GlobeProtect Managementplattform als zusätzliche Empfangseinheit.",
             "image": "/images/airspace/products/dgh2.png"
           }
         ]
@@ -597,7 +597,7 @@
               "Omnidirektional oder gerichtet",
               "Im Fahrbetrieb einsetzbar"
             ],
-            "description": "DroneGuard M2J ist ein fahrzeugmontierbares Erkennungs- und Abwehrsystem mit passiver HF-Erkennung und optionaler Störfunktion. Es erkennt Drohnen bis 5 km im Fahrbetrieb und kann Steuer- und Navigationssignale bis 2 km unterbrechen. Die automatische Verknüpfung von Erkennung und Abwehr reduziert die Reaktionszeit auf ca. 3 Sekunden.",
+            "description": "GlobeProtect M2J ist ein fahrzeugmontierbares Erkennungs- und Abwehrsystem mit passiver HF-Erkennung und optionaler Störfunktion. Es erkennt Drohnen bis 5 km im Fahrbetrieb und kann Steuer- und Navigationssignale bis 2 km unterbrechen. Die automatische Verknüpfung von Erkennung und Abwehr reduziert die Reaktionszeit auf ca. 3 Sekunden.",
             "image": "/images/airspace/products/dgm2j.png"
           },
           {
@@ -613,7 +613,7 @@
               "Max. 16 Antennen vernetzt",
               "Positionsaktualisierung ca. 1–3 s"
             ],
-            "description": "DroneGuard S2 ist eine stationäre TDOA-Antenne, die eigenständig oder im Netzverbund mit bis zu 16 Einheiten betrieben wird. Ab drei vernetzten Antennen ermöglicht die TDOA-Ortung die Echtzeitverfolgung von Drohnen – einschließlich FPV – mit 1–3 s Aktualisierungsintervall. Seriennummernerkennung, Schwarz-/Weiß-Listen und optionale Sektorerkennung sind enthalten.",
+            "description": "GlobeProtect S2 ist eine stationäre TDOA-Antenne, die eigenständig oder im Netzverbund mit bis zu 16 Einheiten betrieben wird. Ab drei vernetzten Antennen ermöglicht die TDOA-Ortung die Echtzeitverfolgung von Drohnen – einschließlich FPV – mit 1–3 s Aktualisierungsintervall. Seriennummernerkennung, Schwarz-/Weiß-Listen und optionale Sektorerkennung sind enthalten.",
             "image": "/images/airspace/products/dgs2.png"
           },
           {
@@ -628,7 +628,7 @@
               "TDOA-Ortung ab 3 Antennen",
               "Offline- oder Online-Betrieb"
             ],
-            "description": "DroneGuard S2mini ist eine kompakte Antenne für platzbeschränkte Installationen. Jede Einheit erkennt Drohnen bis 2 km eigenständig. Ab drei vernetzten Antennen ermöglicht die TDOA-Ortung die Verfolgung aller Drohnentypen einschließlich FPV. Unterstützt RID-only-, Kodierungs- oder vollvernetzten TDOA-Modus.",
+            "description": "GlobeProtect S2mini ist eine kompakte Antenne für platzbeschränkte Installationen. Jede Einheit erkennt Drohnen bis 2 km eigenständig. Ab drei vernetzten Antennen ermöglicht die TDOA-Ortung die Verfolgung aller Drohnentypen einschließlich FPV. Unterstützt RID-only-, Kodierungs- oder vollvernetzten TDOA-Modus.",
             "image": "/images/airspace/products/dgs2mini.png"
           },
           {
@@ -643,7 +643,7 @@
               "Winkeltoleranz 3–10°",
               "Gewicht ca. 25 kg | IP65"
             ],
-            "description": "DroneGuard S2D erweitert die S2-Plattform um AOA-Sektorerkennung (Angle of Arrival) und bestimmt den Anflugwinkel einer Drohne auf 3–10° genau. Vollständig passives HF-Scanning von 100 MHz–6 GHz. IP65-Schutzklasse für Außeninstallation, integrierbar in TDOA-Netzwerke.",
+            "description": "GlobeProtect S2D erweitert die S2-Plattform um AOA-Sektorerkennung (Angle of Arrival) und bestimmt den Anflugwinkel einer Drohne auf 3–10° genau. Vollständig passives HF-Scanning von 100 MHz–6 GHz. IP65-Schutzklasse für Außeninstallation, integrierbar in TDOA-Netzwerke.",
             "image": "/images/airspace/products/dgs2d.png"
           },
           {
@@ -659,7 +659,7 @@
               "ASTM F3411 · GB 42590-2023 · ASD-STAN prEN 4709-002",
               "100–240 V AC / 12 V DC | IP66 | ca. 2,2 kg"
             ],
-            "description": "DroneGuard R3 ist ein passiver Remote-ID-Empfänger, der Broadcast-Signale konformer Drohnen über Bluetooth 4/5 und WLAN Beacon/NAN empfängt. Unterstützt drei internationale Normen. IP66-Schutzklasse, AC/DC-gespeist, geeignet für dauerhaften Außenbetrieb.",
+            "description": "GlobeProtect R3 ist ein passiver Remote-ID-Empfänger, der Broadcast-Signale konformer Drohnen über Bluetooth 4/5 und WLAN Beacon/NAN empfängt. Unterstützt drei internationale Normen. IP66-Schutzklasse, AC/DC-gespeist, geeignet für dauerhaften Außenbetrieb.",
             "image": "/images/airspace/products/dgr3.png"
           },
           {
@@ -673,7 +673,7 @@
               "Gewicht ca. 25 kg | IP65",
               "Vernetzbar für erweiterte Abdeckung"
             ],
-            "description": "DroneGuard D1 ist eine leistungsstarke stationäre Dekodierstation, die Drohnen-Video- und Steuerungssignale auf fünf Frequenzbändern bis 10 km passiv überwacht. Mehrere Geräte können vernetzt werden, um größere Bereiche abzudecken – ideal für den Weitbereichsperimeterschutz kritischer Infrastruktur.",
+            "description": "GlobeProtect D1 ist eine leistungsstarke stationäre Dekodierstation, die Drohnen-Video- und Steuerungssignale auf fünf Frequenzbändern bis 10 km passiv überwacht. Mehrere Geräte können vernetzt werden, um größere Bereiche abzudecken – ideal für den Weitbereichsperimeterschutz kritischer Infrastruktur.",
             "image": "/images/airspace/products/dgd1.png"
           }
         ]
@@ -684,7 +684,7 @@
         "items": [
           {
             "id": "software",
-            "name": "DroneGuard Managementplattform",
+            "name": "GlobeProtect Managementplattform",
             "tagline": "Browserbasierte Kommandoplattform für einheitliche Drohnenerkennung, Zonenverwaltung und Gegenmaßnahmen",
             "specs": [
               "Browserbasiert, plattformunabhängig",
@@ -694,7 +694,7 @@
               "Offline / Serverhosting / On-Premises",
               "Europäisches KRITIS-zertifiziertes Hosting verfügbar"
             ],
-            "description": "Die DroneGuard Managementplattform ist eine browserbasierte Lösung, die eine einheitliche Übersicht über eine oder mehrere Erkennungszonen bietet. Bediener können Warnzonen definieren, bekannte Drohnen auf die Whitelist setzen, Gegenmaßnahmen auslösen und historische Daten über Heatmaps und Streckenreplay auswerten. Unterstützt Offline-LAN-, Server-Hosting- und On-Premises-Betrieb.",
+            "description": "Die GlobeProtect Managementplattform ist eine browserbasierte Lösung, die eine einheitliche Übersicht über eine oder mehrere Erkennungszonen bietet. Bediener können Warnzonen definieren, bekannte Drohnen auf die Whitelist setzen, Gegenmaßnahmen auslösen und historische Daten über Heatmaps und Streckenreplay auswerten. Unterstützt Offline-LAN-, Server-Hosting- und On-Premises-Betrieb.",
             "image": "/images/airspace/products/dgsoftware.png"
           }
         ]
