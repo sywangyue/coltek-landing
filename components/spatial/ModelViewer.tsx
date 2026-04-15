@@ -1,11 +1,9 @@
 'use client';
 
-import { useRef, useEffect, useState, useCallback } from 'react';
+import { useRef, useState, useCallback } from 'react';
 import { RotateCcw, Maximize2 } from 'lucide-react';
-import type { Viewer as GS3DViewer } from '@mkkellogg/gaussian-splats-3d';
 
-// Proxy route: keeps Supabase token server-side, bypasses browser CORS
-const MODEL_URL = '/api/splat';
+const VIEWER_URL = 'https://www.xgrids.com/lcc-viewer';
 
 interface ModelViewerProps {
   instruction: string;
@@ -25,70 +23,12 @@ export default function ModelViewer({
   category,
 }: ModelViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const viewerRef = useRef<GS3DViewer | null>(null);
+  const [viewerKey, setViewerKey] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    let viewer: GS3DViewer | null = null;
-    let disposed = false;
-
-    (async () => {
-      const GaussianSplats3D = await import('@mkkellogg/gaussian-splats-3d');
-      if (disposed) return;
-
-      // Standard initialization — let the Viewer manage its own renderer/canvas
-      viewer = new GaussianSplats3D.Viewer({
-        rootElement: container,
-        sharedMemoryForWorkers: false,
-        gpuAcceleratedSort: false,
-        showLoadingUI: false,
-        logLevel: GaussianSplats3D.LogLevel.None,
-        antialias: false,
-        dpr: Math.min(window.devicePixelRatio, 1.5),
-      });
-
-      viewerRef.current = viewer;
-
-      try {
-        await viewer.addSplatScene(MODEL_URL, {
-          format: GaussianSplats3D.SceneFormat.Ply,
-          splatAlphaRemovalThreshold: 5,
-          showLoadingUI: false,
-          progressiveLoad: false,
-          // SuperSplat exports with inverted Y-axis vs Three.js convention
-          // 180° rotation around X-axis: quaternion (x,y,z,w) = [1,0,0,0]
-          rotation: [1, 0, 0, 0],
-        });
-
-        if (!disposed) {
-          setLoading(false);
-          viewer.start();
-        }
-      } catch (err) {
-        console.error('[ModelViewer] Failed to load splat scene:', err);
-        if (!disposed) setLoading(false);
-      }
-    })();
-
-    return () => {
-      disposed = true;
-      viewerRef.current = null;
-
-      if (viewer) {
-        try {
-          viewer.dispose();
-        } catch {
-          // ignore dispose errors
-        }
-      }
-    };
-  }, []);
-
   const handleReset = useCallback(() => {
-    viewerRef.current?.controls?.reset();
+    setLoading(true);
+    setViewerKey((prev) => prev + 1);
   }, []);
 
   const handleFullscreen = useCallback(() => {
@@ -106,6 +46,16 @@ export default function ModelViewer({
       ref={containerRef}
       className="relative bg-white border border-gray-200 rounded-2xl overflow-hidden h-[300px] md:h-[500px]"
     >
+      <iframe
+        key={viewerKey}
+        src={VIEWER_URL}
+        title="XGRIDS LCC Viewer"
+        className="absolute inset-0 h-full w-full border-0"
+        allow="fullscreen"
+        loading="lazy"
+        onLoad={() => setLoading(false)}
+      />
+
       {/* Loading overlay */}
       {loading && (
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10 pointer-events-none">
