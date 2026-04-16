@@ -5,6 +5,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import CookieBanner from '@/components/layout/CookieBanner';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../globals.css';
 
 const inter = Inter({
@@ -68,6 +69,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
           <CookieBanner />
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
