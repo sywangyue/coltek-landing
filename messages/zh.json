@@ -29,8 +29,8 @@
     "mission": "我们将全球领先技术整合到欧洲工业实际应用中。",
     "cards": {
       "spatial": {
-        "title": "数字现实",
-        "keywords": "3D扫描 · 空间智能 · 三维重建"
+        "title": "空间智能",
+        "keywords": "3D扫描 · 世界模型 · 三维重建"
       },
       "airspace": {
         "title": "无人机探测",
@@ -177,11 +177,11 @@
         },
         {
           "name": "Shenshen",
-          "role": "产品经理 · xgrids"
+          "role": "产品经理 · XGRIDS"
         },
         {
           "name": "Estrella Wang",
-          "role": "技术支持"
+          "role": "技术支持· XGRIDS"
         },
         {
           "name": "Max Wang",
@@ -253,26 +253,17 @@
       "l2pro": {
         "name": "Lixel L2 Pro",
         "tagline": "旗舰手持3D扫描仪",
-        "spec0": "16通道LiDAR",
-        "spec1": "120m探测范围",
-        "spec2": "1.2cm精度",
-        "spec3": "32万点/秒",
-        "spec4": "支持无人机挂载"
+        "desc": "全新 Lixel L2 Pro 融合 LiDAR、视觉与 IMU 模块，搭载 AI 算法，实时输出媲美后处理质量的点云数据，开创 SLAM 设备「零后处理时代」。"
       },
       "k1": {
         "name": "LixelKity K1",
         "tagline": "紧凑型手持3D扫描仪",
-        "spec0": "<1kg",
-        "spec1": "48MP双全景相机",
-        "spec2": "360°LiDAR",
-        "spec3": "40m范围"
+        "desc": "轻巧、强大、精准。以前所未有的便捷与速度，生成色彩丰富、细节精细的 3D 模型。"
       },
       "portalcam": {
         "name": "PortalCam",
         "tagline": "空间相机",
-        "spec0": "双鱼眼+双前置相机",
-        "spec1": "3D高斯泼溅",
-        "spec2": "即时空间模型"
+        "desc": "PortalCam 将真实空间还原为照片级 3D 世界。借助 3D 高斯泼溅技术，PortalCam 把任意场景变为可穿行、可编辑、可分享的交互式空间模型。这就是内容创作的全新方式。"
       }
     },
     "software": {
@@ -748,5 +739,8 @@
     "title": "下载中心",
     "subtitle": "产品手册、数据表及相关资源即将上线。",
     "comingSoon": "即将推出"
+  },
+  "xgrids": {
+    "heroDescription": "端到端空间智能平台——从精密硬件采集到AI驱动的三维重建与企业级数据分析"
   }
 }

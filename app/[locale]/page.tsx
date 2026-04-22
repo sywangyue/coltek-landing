@@ -20,8 +20,8 @@ export default function HomePage() {
       <SpatialOverview imageSrc={overviewImages['spatial']} />
       <AirspaceOverview imageSrc={overviewImages['dronedetection']} />
       <AIHardware />
-      <News />
       <About />
+      <News />
       <SocialBar />
       <Contact />
       <Footer />

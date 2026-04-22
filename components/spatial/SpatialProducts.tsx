@@ -15,8 +15,8 @@ const fadeUp = (d = 0) => ({
 });
 
 // Hardware card
-function HardwareCard({ name, tagline, specs, delay, href, linkLabel, imageSrc }: {
-  name: string; tagline: string; specs: string[]; delay: number; href: string; linkLabel: string; imageSrc?: string;
+function HardwareCard({ name, tagline, desc, delay, href, linkLabel, imageSrc }: {
+  name: string; tagline: string; desc: string; delay: number; href: string; linkLabel: string; imageSrc?: string;
 }) {
   return (
     <motion.div
@@ -40,14 +40,8 @@ function HardwareCard({ name, tagline, specs, delay, href, linkLabel, imageSrc }
       <div className="p-5 flex flex-col gap-3 flex-1">
         <div>
           <h4 className="font-display font-bold text-foreground mb-0.5">{name}</h4>
-          <p className="text-sm text-foreground-muted mb-2">{tagline}</p>
-          <div className="flex flex-wrap gap-1.5">
-            {specs.map((s, i) => (
-              <span key={i} className="text-xs bg-background-alt border border-border rounded-full px-2.5 py-0.5 text-foreground-muted">
-                {s}
-              </span>
-            ))}
-          </div>
+          <p className="text-sm font-medium text-foreground-muted mb-2">{tagline}</p>
+          <p className="text-sm text-foreground-muted leading-relaxed">{desc}</p>
         </div>
         <a
           href={href}
@@ -99,13 +93,6 @@ function SoftwareCard({ name, desc, iconIdx, delay, href, linkLabel }: {
   );
 }
 
-/** Keys must match messages in every locale (avoid MISSING_MESSAGE for absent specs). */
-const HW_SPEC_KEYS = {
-  l2pro: ['spec0', 'spec1', 'spec2', 'spec3', 'spec4'],
-  k1: ['spec0', 'spec1', 'spec2', 'spec3'],
-  portalcam: ['spec0', 'spec1', 'spec2'],
-} as const;
-
 /** Maps component key → lowercase base filename (without extension) in public/images/spatial/ */
 const HW_IMAGE_BASES: Record<string, string> = {
   l2pro:     'l2 pro',
@@ -130,15 +117,15 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
   const t = useTranslations('spatialProducts');
   const tCommon = useTranslations('common');
 
-  const hwKeys = ['l2pro', 'k1', 'portalcam'] as const satisfies readonly (keyof typeof HW_SPEC_KEYS)[];
-  const swKeys = ['studio', 'go', 'lcc', 'revit']   as const;
+  const hwKeys = ['l2pro', 'k1', 'portalcam'] as const;
+  const swKeys = ['studio', 'go', 'lcc', 'revit'] as const;
 
   const linkLabel = tCommon('viewOnXgrids');
 
   const hw = hwKeys.map((k) => ({
     name:     t(`hardware.${k}.name`),
     tagline:  t(`hardware.${k}.tagline`),
-    specs:    HW_SPEC_KEYS[k].map((s) => t(`hardware.${k}.${s}` as Parameters<typeof t>[0])),
+    desc:     t(`hardware.${k}.desc` as Parameters<typeof t>[0]),
     href:     HW_LINKS[k],
     imageSrc: imageMap[HW_IMAGE_BASES[k]],
   }));

@@ -71,20 +71,22 @@ function StatCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay, ease: EASE }}
-      className="bg-white rounded-[8px] border border-border p-6 text-center"
+      className="bg-white rounded-[8px] border border-border p-6 text-center flex flex-col items-center justify-center"
     >
-      <div
-        className="font-display text-4xl font-bold mb-1"
-        style={{
-          background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-        }}
-      >
-        {isNumber ? count : value}
-      </div>
-      <p className="text-sm font-semibold text-foreground mb-0.5">{label}</p>
+      {(isNumber || value) && (
+        <div
+          className="font-display text-4xl font-bold mb-1"
+          style={{
+            background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
+          {isNumber ? count : value}
+        </div>
+      )}
+      <p className="text-sm font-semibold text-foreground mb-0.5 leading-snug">{label}</p>
       {detail ? <p className="text-xs text-foreground-muted">{detail}</p> : null}
     </motion.div>
   );

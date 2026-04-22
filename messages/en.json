@@ -29,8 +29,8 @@
     "mission": "We integrate leading global technologies into real-world applications across industries in Europe.",
     "cards": {
       "spatial": {
-        "title": "Digital Reality",
-        "keywords": "3D Scanning · Spatial Intelligence · Reconstruction"
+        "title": "Spatial Intelligence",
+        "keywords": "3D Scanning · World Model · Reconstruction"
       },
       "airspace": {
         "title": "Drone Detection",
@@ -177,11 +177,11 @@
         },
         {
           "name": "Shenshen",
-          "role": "Product Manager · xgrids"
+          "role": "Product Manager · XGRIDS"
         },
         {
           "name": "Estrella Wang",
-          "role": "Technical Support"
+          "role": "Technical Support· XGRIDS"
         },
         {
           "name": "Max Wang",
@@ -253,26 +253,17 @@
       "l2pro": {
         "name": "Lixel L2 Pro",
         "tagline": "Flagship Handheld 3D Scanner",
-        "spec0": "16-Channel LiDAR",
-        "spec1": "120m Range",
-        "spec2": "1.2cm Accuracy",
-        "spec3": "320K pts/sec",
-        "spec4": "Drone-Mountable"
+        "desc": "The new Lixel L2 Pro combines LiDAR, visual, and IMU modules with AI, delivering real-time point cloud data that rivals post-processed quality, ushering in the \"zero post-processing era\" for SLAM devices."
       },
       "k1": {
         "name": "LixelKity K1",
         "tagline": "Compact Handheld 3D Scanner",
-        "spec0": "Under 1kg",
-        "spec1": "48MP Dual Panoramic Camera",
-        "spec2": "360° LiDAR",
-        "spec3": "40m Range"
+        "desc": "Compact, powerful, and precise. Generate rich-colored, finely detailed 3D models with unmatched ease and speed."
       },
       "portalcam": {
         "name": "PortalCam",
         "tagline": "Spatial Camera",
-        "spec0": "Dual Fisheye + Dual Front Camera",
-        "spec1": "3D Gaussian Splatting",
-        "spec2": "Instant Spatial Models"
+        "desc": "PortalCam captures real spaces as photorealistic 3D worlds. Powered by 3D Gaussian Splatting, PortalCam turns any location into interactive spatial models you can walk through, edit, and share. This is how content gets made now."
       }
     },
     "software": {
@@ -540,7 +531,7 @@
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",
     "privacy": "Privacy Policy",
-    "impressum": "Impressum",
+    "impressum": "Imprint",
     "cookies": "Cookie Notice",
     "description": "Connecting leading global technologies with European industries.",
     "quickLinks": "Quick Links",
@@ -748,5 +739,8 @@
     "title": "Download Center",
     "subtitle": "Product brochures, datasheets, and resources will be available here.",
     "comingSoon": "Coming Soon"
+  },
+  "xgrids": {
+    "heroDescription": "End-to-end spatial intelligence platform — from precision hardware capture to AI-powered 3D reconstruction and enterprise analytics"
   }
 }

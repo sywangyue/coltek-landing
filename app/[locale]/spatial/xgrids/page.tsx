@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SpatialProducts from '@/components/spatial/SpatialProducts';
@@ -12,7 +13,8 @@ export default async function XgridsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const spatialImages = resolveImageDir('images/spatial');
+  const t = await getTranslations({ locale, namespace: 'xgrids' });
+  const spatialImages = resolveImageDir('images/spatial/product');
 
   return (
     <main>
@@ -33,8 +35,7 @@ export default async function XgridsPage({
             XGRIDS
           </h1>
           <p className="text-lg text-foreground-muted max-w-2xl leading-relaxed">
-            End-to-end spatial intelligence platform — from precision hardware capture to
-            AI-powered 3D reconstruction and enterprise analytics.
+            {t('heroDescription')}
           </p>
         </div>
       </section>

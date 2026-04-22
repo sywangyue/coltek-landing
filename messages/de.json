@@ -18,7 +18,7 @@
     "xgridsDesc": "Räumliche Intelligenz-Plattform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drohnenerkennungssystem",
-    "aiHardware": "KI-Hardware",
+    "aiHardware": "AI Hardware",
     "news": "Neuigkeiten",
     "download": "Download",
     "about": "Über uns",
@@ -29,15 +29,15 @@
     "mission": "Wir integrieren führende globale Technologien in reale Anwendungen für Industrien in Europa.",
     "cards": {
       "spatial": {
-        "title": "Digitale Realität",
-        "keywords": "3D-Scanning · Räumliche Intelligenz · Rekonstruktion"
+        "title": "Räumliche Intelligenz",
+        "keywords": "3D-Scanning · Weltmodell · Rekonstruktion"
       },
       "airspace": {
         "title": "Drohnenerkennung",
         "keywords": "Drohnenerkennung · Ortung · Lageerfassung"
       },
       "ai": {
-        "title": "KI-Hardware",
+        "title": "AI Hardware",
         "keywords": "Next-Gen · Intelligente Geräte · Demnächst"
       }
     },
@@ -90,7 +90,7 @@
     "ctaShowcase": "Referenzen ansehen"
   },
   "aiHardware": {
-    "label": "KI-Hardware",
+    "label": "AI Hardware",
     "title": "Das nächste Kapitel intelligenter Hardware",
     "subtitle": "Bleiben Sie gespannt",
     "description": "Wir entwickeln KI-gestützte Hardware der nächsten Generation. Abonnieren Sie, um als Erster informiert zu werden.",
@@ -177,11 +177,11 @@
         },
         {
           "name": "Shenshen",
-          "role": "Product Manager · xgrids"
+          "role": "Product Manager · XGRIDS"
         },
         {
           "name": "Estrella Wang",
-          "role": "Technischer Support"
+          "role": "Technischer Support· XGRIDS"
         },
         {
           "name": "Max Wang",
@@ -202,7 +202,7 @@
       "interests": {
         "spatial": "Räumliche Intelligenz (3D-Scanning)",
         "airspace": "Drohnenerkennung (Gegendrohnen)",
-        "ai": "KI-Hardware",
+        "ai": "AI Hardware",
         "other": "Sonstiges / Allgemeine Anfrage"
       },
       "message": "Nachricht",
@@ -253,26 +253,17 @@
       "l2pro": {
         "name": "Lixel L2 Pro",
         "tagline": "Flagship-Handheld-3D-Scanner",
-        "spec0": "16-Kanal-LiDAR",
-        "spec1": "120m Reichweite",
-        "spec2": "1,2cm Genauigkeit",
-        "spec3": "320K Pkt./Sek.",
-        "spec4": "Drohnen-montierbar"
+        "desc": "Der neue Lixel L2 Pro vereint LiDAR-, Kamera- und IMU-Module mit KI-Algorithmen und liefert Echtzeit-Punktwolkendaten in Post-Processing-Qualität – er läutet die 'Zero-Post-Processing-Ära' für SLAM-Geräte ein."
       },
       "k1": {
         "name": "LixelKity K1",
         "tagline": "Kompakter Handheld-3D-Scanner",
-        "spec0": "Unter 1kg",
-        "spec1": "48MP Dual-Panoramakamera",
-        "spec2": "360° LiDAR",
-        "spec3": "40m Reichweite"
+        "desc": "Kompakt, leistungsstark und präzise. Erstellen Sie farbintensive, detailreiche 3D-Modelle mit unübertroffener Leichtigkeit und Geschwindigkeit."
       },
       "portalcam": {
         "name": "PortalCam",
         "tagline": "Raumkamera",
-        "spec0": "Dual-Fisheye + Dual-Frontkamera",
-        "spec1": "3D Gaussian Splatting",
-        "spec2": "Sofortige Raummodelle"
+        "desc": "PortalCam erfasst reale Räume als fotorealistische 3D-Welten. Mithilfe von 3D Gaussian Splatting verwandelt PortalCam jeden Ort in interaktive Raummodelle, die Sie begehen, bearbeiten und teilen können. So entsteht Content heute."
       }
     },
     "software": {
@@ -532,7 +523,7 @@
   },
   "meta": {
     "title": "Coltek — Technologien verbinden. Industrien befähigen.",
-    "description": "Räumliche Intelligenz, Drohnenerkennung und KI-Hardware-Lösungen für die europäische Industrie."
+    "description": "Räumliche Intelligenz, Drohnenerkennung und AI Hardware-Lösungen für die europäische Industrie."
   },
   "common": {
     "viewOnXgrids": "Auf XGRIDS ansehen"
@@ -748,5 +739,8 @@
     "title": "Download-Center",
     "subtitle": "Produktbroschüren, Datenblätter und Ressourcen werden hier bald verfügbar sein.",
     "comingSoon": "Demnächst verfügbar"
+  },
+  "xgrids": {
+    "heroDescription": "End-to-End-Plattform für räumliche Intelligenz — von der präzisen Hardware-Erfassung bis zur KI-gestützten 3D-Rekonstruktion und Unternehmensanalyse"
   }
 }

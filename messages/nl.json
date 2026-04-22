@@ -29,8 +29,8 @@
     "mission": "Wij integreren toonaangevende wereldwijde technologieën in praktische toepassingen voor de Europese industrie.",
     "cards": {
       "spatial": {
-        "title": "Digitale Realiteit",
-        "keywords": "3D-scanning · Ruimtelijke Intelligentie · Reconstructie"
+        "title": "Ruimtelijke Intelligentie",
+        "keywords": "3D-scanning · Wereldmodel · Reconstructie"
       },
       "airspace": {
         "title": "Dronedetectie",
@@ -177,11 +177,11 @@
         },
         {
           "name": "Shenshen",
-          "role": "Product Manager · xgrids"
+          "role": "Product Manager · XGRIDS"
         },
         {
           "name": "Estrella Wang",
-          "role": "Technische ondersteuning"
+          "role": "Technische ondersteuning· XGRIDS"
         },
         {
           "name": "Max Wang",
@@ -253,26 +253,17 @@
       "l2pro": {
         "name": "Lixel L2 Pro",
         "tagline": "Vlaggenschip Handheld 3D-Scanner",
-        "spec0": "16-Kanaals LiDAR",
-        "spec1": "120m bereik",
-        "spec2": "1,2cm nauwkeurigheid",
-        "spec3": "320K pnt/sec",
-        "spec4": "Drone-monteerbaar"
+        "desc": "De nieuwe Lixel L2 Pro combineert LiDAR-, visuele en IMU-modules met AI-algoritmen en levert realtime puntenwolkdata van post-processing kwaliteit – en luidt daarmee het 'zero post-processing tijdperk' in voor SLAM-apparaten."
       },
       "k1": {
         "name": "LixelKity K1",
         "tagline": "Compacte Handheld 3D-Scanner",
-        "spec0": "Onder 1kg",
-        "spec1": "48MP Dual Panorama Camera",
-        "spec2": "360° LiDAR",
-        "spec3": "40m bereik"
+        "desc": "Compact, krachtig en nauwkeurig. Genereer kleurrijke, gedetailleerde 3D-modellen met ongeëvenaard gemak en snelheid."
       },
       "portalcam": {
         "name": "PortalCam",
         "tagline": "Ruimtecamera",
-        "spec0": "Dual Fisheye + Dual Front Camera",
-        "spec1": "3D Gaussian Splatting",
-        "spec2": "Directe ruimtemodellen"
+        "desc": "PortalCam legt echte ruimtes vast als fotorealistische 3D-werelden. Met 3D Gaussian Splatting verandert PortalCam elke locatie in interactieve ruimtelijke modellen die u kunt doorlopen, bewerken en delen. Zo wordt content tegenwoordig gemaakt."
       }
     },
     "software": {
@@ -540,7 +531,7 @@
   "footer": {
     "copyright": "© 2026 Coltek Robotics GmbH & Sunova Innovation B.V.",
     "privacy": "Privacybeleid",
-    "impressum": "Impressum",
+    "impressum": "Imprint",
     "cookies": "Cookieverklaring",
     "description": "Toonaangevende wereldwijde technologieën verbinden met Europese industrieën.",
     "quickLinks": "Snelle links",
@@ -748,5 +739,8 @@
     "title": "Downloadcentrum",
     "subtitle": "Productbrochures, databladen en bronnen zijn hier binnenkort beschikbaar.",
     "comingSoon": "Binnenkort beschikbaar"
+  },
+  "xgrids": {
+    "heroDescription": "End-to-end ruimtelijk intelligentieplatform — van precisie hardware-capture tot AI-gestuurde 3D-reconstructie en bedrijfsanalyse"
   }
 }

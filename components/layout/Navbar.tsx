@@ -78,9 +78,9 @@ export default function Navbar() {
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
-    { labelKey: 'news', href: `/${locale}/news` },
     { labelKey: 'download', href: `/${locale}/download` },
     { labelKey: 'about', href: `/${locale}/#about` },
+    { labelKey: 'news', href: `/${locale}/news` },
     { labelKey: 'contact', href: `/${locale}/#contact` },
   ];
 
