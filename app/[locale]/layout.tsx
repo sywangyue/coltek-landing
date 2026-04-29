@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, Noto_Sans_SC } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import CookieBanner from '@/components/layout/CookieBanner';
 import '../globals.css';
@@ -67,6 +68,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           {children}
           <CookieBanner />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
