@@ -35,23 +35,16 @@ interface NewsItem {
   date: string;
   summary: string;
   content: string;
+  slug?: string;
 }
 
 function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
   const t = useTranslations('news');
-  return (
-    <motion.article
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay, ease: EASE }}
-      className="
-        snap-start shrink-0 w-[300px] sm:w-[320px]
-        bg-white rounded-[8px] border border-border
-        p-6 flex flex-col gap-3
-        hover:-translate-y-1 hover:shadow-md transition-all duration-200
-      "
-    >
+  const locale = useLocale();
+  const href = item.slug ? `/${locale}/news/${item.slug}` : null;
+
+  const inner = (
+    <>
       {/* Tag */}
       <span
         className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full ${tagStyle(item.type)}`}
@@ -72,11 +65,30 @@ function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
       <p className="text-sm text-foreground-muted leading-relaxed flex-1">{item.summary}</p>
 
       {/* Read more */}
-      <span
-        className="inline-flex items-center gap-1 text-sm font-medium text-primary"
-      >
+      <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
         {t('readMore')} <ArrowRight size={14} />
       </span>
+    </>
+  );
+
+  return (
+    <motion.article
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay, ease: EASE }}
+      className="
+        snap-start shrink-0 w-[300px] sm:w-[320px]
+        bg-white rounded-[8px] border border-border
+        p-6 flex flex-col gap-3
+        hover:-translate-y-1 hover:shadow-md transition-all duration-200
+      "
+    >
+      {href ? (
+        <Link href={href} className="flex flex-col gap-3 flex-1 no-underline">
+          {inner}
+        </Link>
+      ) : inner}
     </motion.article>
   );
 }
