@@ -7,7 +7,7 @@
     "spatialProductsDesc": "3D-Scan-Hardware und Softwarelösungen",
     "spatialShowcaseDesc": "Reale 3D-Rekonstruktionsprojekte",
     "spatialIndustriesDesc": "Architektur, Kulturgut, Industrie und mehr",
-    "airspace": "Drohnenerkennung",
+    "airspace": "Raumsicherheit",
     "airspaceProducts": "Produkte",
     "airspaceShowcase": "Referenzen",
     "airspaceIndustries": "Branchen",
@@ -169,11 +169,11 @@
       "members": [
         {
           "name": "Colt Chen",
-          "role": "CEO"
+          "role": "Mitgründer / CEO"
         },
         {
-          "name": "Herry Sun",
-          "role": "COO"
+          "name": "Henry Sun",
+          "role": "Mitgründer / COO"
         },
         {
           "name": "Shenshen",
