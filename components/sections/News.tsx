@@ -38,6 +38,7 @@ interface NewsItem {
   summary: string;
   content: string;
   slug?: string;
+  thumbnail?: string;
 }
 
 function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
@@ -47,6 +48,12 @@ function NewsCard({ item, delay }: { item: NewsItem; delay: number }) {
 
   const inner = (
     <>
+      {/* Thumbnail */}
+      {item.thumbnail && (
+        <div className="w-full h-40 overflow-hidden rounded-[4px] -mx-0 mb-1">
+          <img src={item.thumbnail} alt={item.title} className="w-full h-full object-cover" />
+        </div>
+      )}
       {/* Tag */}
       <span
         className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full ${tagStyle(item.type)}`}
