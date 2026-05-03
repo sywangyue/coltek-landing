@@ -28,22 +28,24 @@ export default async function XgridsPage({
             <span>/</span>
             <span className="text-foreground font-medium">XGRIDS</span>
           </nav>
-          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-            Spatial Intelligence
-          </span>
-          <div className="flex items-center gap-4 mb-4">
-            <img
-              src="/images/logo/xgrids-logo.png"
-              alt="XGRIDS Logo"
-              className="h-12 lg:h-14 w-auto object-contain"
-            />
-            <h1 className="font-display text-3xl lg:text-4xl font-bold text-foreground">
-              XGRIDS
-            </h1>
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-6">
+              Spatial Intelligence
+            </span>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <img
+                src="/images/logo/xgrids-logo.png"
+                alt="XGRIDS Logo"
+                className="h-12 lg:h-14 w-auto object-contain"
+              />
+              <h1 className="font-display text-3xl lg:text-4xl font-bold text-foreground">
+                XGRIDS
+              </h1>
+            </div>
+            <p className="text-lg text-foreground-muted leading-relaxed">
+              {t('heroDescription')}
+            </p>
           </div>
-          <p className="text-lg text-foreground-muted max-w-2xl leading-relaxed">
-            {t('heroDescription')}
-          </p>
         </div>
       </section>
 
