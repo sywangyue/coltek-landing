@@ -32,7 +32,7 @@ export default function SpatialShowcase() {
           transition={{ duration: 0.6, ease: EASE }}
         >
           <iframe
-            src="https://lcc-viewer.xgrids.com/?data=https://da9i2vj1xvtoc.cloudfront.net/lcc-pub/fine/indoor/PentHouse/meta.lcc"
+            src="https://lcc-viewer.xgrids.com/pub/dhgdva-showroom"
             width="100%"
             height="500px"
             style={{ border: 'none', borderRadius: '16px' }}
