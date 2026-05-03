@@ -173,8 +173,8 @@
       "email": "Email Address",
       "interest": "I'm interested in...",
       "interests": {
-        "spatial": "Spatial Intelligence (3D Scanning)",
-        "airspace": "Spatial Security (Drone Detection)",
+        "spatial": "Spatial Intelligence",
+        "airspace": "Spatial Security",
         "ai": "AI Hardware",
         "other": "Other / General Inquiry"
       },

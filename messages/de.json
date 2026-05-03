@@ -173,8 +173,8 @@
       "email": "E-Mail-Adresse",
       "interest": "Ich interessiere mich für...",
       "interests": {
-        "spatial": "Räumliche Intelligenz (3D-Scanning)",
-        "airspace": "Raumsicherheit (Drohnenerkennung)",
+        "spatial": "Spatial Intelligence",
+        "airspace": "Raumsicherheit",
         "ai": "AI Hardware",
         "other": "Sonstiges / Allgemeine Anfrage"
       },

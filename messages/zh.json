@@ -173,8 +173,8 @@
       "email": "电子邮箱",
       "interest": "我感兴趣的领域...",
       "interests": {
-        "spatial": "空间智能（3D扫描）",
-        "airspace": "空间安防（无人机探测）",
+        "spatial": "空间智能",
+        "airspace": "空间安防",
         "ai": "AI硬件",
         "other": "其他 / 一般咨询"
       },

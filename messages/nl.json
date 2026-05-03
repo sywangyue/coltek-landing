@@ -173,8 +173,8 @@
       "email": "E-mailadres",
       "interest": "Ik ben geïnteresseerd in...",
       "interests": {
-        "spatial": "Ruimtelijke Intelligentie (3D-scanning)",
-        "airspace": "Ruimtebeveiliging (Drone detectie)",
+        "spatial": "Spatial Intelligence",
+        "airspace": "Ruimtebeveiliging",
         "ai": "AI-hardware",
         "other": "Anders / Algemene vraag"
       },
