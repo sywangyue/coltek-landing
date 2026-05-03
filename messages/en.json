@@ -33,7 +33,7 @@
         "keywords": "3D Scanning · World Model · Reconstruction"
       },
       "airspace": {
-        "title": "Drone Detection",
+        "title": "Spatial Security",
         "keywords": "Drone Detection · Localization · Situational Awareness"
       },
       "ai": {
@@ -41,7 +41,7 @@
         "keywords": "Next-Gen · Intelligent Devices · Coming Soon"
       }
     },
-    "trust": "European technology integration platform · NL & DE operations",
+    "trust": "",
     "ctaPrimary": "Explore Solutions",
     "ctaSecondary": "Get in Touch"
   },

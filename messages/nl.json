@@ -33,7 +33,7 @@
         "keywords": "3D-scanning · Wereldmodel · Reconstructie"
       },
       "airspace": {
-        "title": "Dronedetectie",
+        "title": "Ruimtebeveiliging",
         "keywords": "Drone-detectie · Lokalisatie · Situatiebewustzijn"
       },
       "ai": {
@@ -41,7 +41,7 @@
         "keywords": "Next-Gen · Intelligente Apparaten · Binnenkort"
       }
     },
-    "trust": "Europees technologie-integratieplatform · activiteiten in NL & DE",
+    "trust": "",
     "ctaPrimary": "Oplossingen verkennen",
     "ctaSecondary": "Neem contact op"
   },

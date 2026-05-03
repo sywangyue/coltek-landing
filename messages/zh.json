@@ -33,7 +33,7 @@
         "keywords": "3D扫描 · 世界模型 · 三维重建"
       },
       "airspace": {
-        "title": "无人机探测",
+        "title": "空间安防",
         "keywords": "无人机探测 · 精准定位 · 态势感知"
       },
       "ai": {
@@ -41,7 +41,7 @@
         "keywords": "下一代 · 智能设备 · 即将推出"
       }
     },
-    "trust": "欧洲技术整合平台 · 荷兰与德国运营",
+    "trust": "",
     "ctaPrimary": "探索解决方案",
     "ctaSecondary": "联系我们"
   },
