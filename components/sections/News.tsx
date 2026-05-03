@@ -9,6 +9,8 @@ import SectionTitle from '@/components/ui/SectionTitle';
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 
 const TAG_STYLES: Record<string, string> = {
+  Award:          'bg-yellow-100 text-yellow-700',
+  获奖:           'bg-yellow-100 text-yellow-700',
   Partnership:    'bg-primary/10 text-primary',
   Partnerschaft:  'bg-primary/10 text-primary',
   Partnerschap:   'bg-primary/10 text-primary',

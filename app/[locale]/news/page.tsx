@@ -5,6 +5,8 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 const TAG_STYLES: Record<string, string> = {
+  Award:          'bg-yellow-100 text-yellow-700',
+  获奖:           'bg-yellow-100 text-yellow-700',
   Partnership:    'bg-primary/10 text-primary',
   Partnerschaft:  'bg-primary/10 text-primary',
   Partnerschap:   'bg-primary/10 text-primary',
