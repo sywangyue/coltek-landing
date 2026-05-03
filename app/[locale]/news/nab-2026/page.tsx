@@ -37,8 +37,8 @@ export default async function NAB2026Page({ params }: Props) {
           </Link>
 
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-accent/10 text-accent">
-              {isZh ? '产品更新' : 'Product Update'}
+            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-yellow-100 text-yellow-700">
+              {isZh ? '获奖' : 'Award'}
             </span>
             <span className="text-xs text-foreground-muted">2026-04-24</span>
           </div>
