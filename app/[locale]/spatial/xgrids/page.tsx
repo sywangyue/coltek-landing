@@ -32,14 +32,14 @@ export default async function XgridsPage({
             Spatial Intelligence
           </span>
           <div className="flex items-center gap-4 mb-4">
-            <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground">
-              XGRIDS
-            </h1>
             <img
               src="/images/logo/xgrids-logo.png"
               alt="XGRIDS Logo"
               className="h-12 lg:h-14 w-auto object-contain"
             />
+            <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground">
+              XGRIDS
+            </h1>
           </div>
           <p className="text-lg text-foreground-muted max-w-2xl leading-relaxed">
             {t('heroDescription')}
