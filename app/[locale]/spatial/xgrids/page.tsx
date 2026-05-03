@@ -31,9 +31,16 @@ export default async function XgridsPage({
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-4">
             Spatial Intelligence
           </span>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            XGRIDS
-          </h1>
+          <div className="flex items-center gap-4 mb-4">
+            <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground">
+              XGRIDS
+            </h1>
+            <img
+              src="/images/logo/xgrids-logo.png"
+              alt="XGRIDS Logo"
+              className="h-12 lg:h-14 w-auto object-contain"
+            />
+          </div>
           <p className="text-lg text-foreground-muted max-w-2xl leading-relaxed">
             {t('heroDescription')}
           </p>
