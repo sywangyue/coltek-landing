@@ -31,6 +31,7 @@ interface NewsItem {
   date: string;
   summary: string;
   content: string;
+  slug?: string;
 }
 
 type Props = {
@@ -68,36 +69,36 @@ export default async function NewsPage({ params }: Props) {
 
           {/* News grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map((item, i) => (
-              <article
-                key={i}
-                className="bg-white rounded-[8px] border border-border p-6 flex flex-col gap-3 hover:-translate-y-1 hover:shadow-md transition-all duration-200"
-              >
-                {/* Tag */}
-                <span
-                  className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full ${tagStyle(item.type)}`}
-                >
-                  {item.type}
-                </span>
-
-                {/* Title */}
-                <h2 className="font-semibold text-foreground leading-snug">{item.title}</h2>
-
-                {/* Date */}
-                <div className="flex items-center gap-1.5 text-xs text-foreground-muted">
-                  <Calendar size={12} />
-                  <time>{item.date}</time>
-                </div>
-
-                {/* Summary */}
-                <p className="text-sm text-foreground-muted leading-relaxed">{item.summary}</p>
-
-                {/* Content */}
-                <p className="text-sm text-foreground leading-relaxed border-t border-border pt-3 mt-1">
-                  {item.content}
-                </p>
-              </article>
-            ))}
+            {items.map((item, i) => {
+              const href = item.slug ? `/${locale}/news/${item.slug}` : null;
+              const inner = (
+                <>
+                  <span className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full ${tagStyle(item.type)}`}>
+                    {item.type}
+                  </span>
+                  <h2 className="font-semibold text-foreground leading-snug">{item.title}</h2>
+                  <div className="flex items-center gap-1.5 text-xs text-foreground-muted">
+                    <Calendar size={12} />
+                    <time>{item.date}</time>
+                  </div>
+                  <p className="text-sm text-foreground-muted leading-relaxed">{item.summary}</p>
+                  {href && (
+                    <span className="inline-flex items-center gap-1 text-sm font-medium text-primary mt-auto">
+                      {t('readMore')} →
+                    </span>
+                  )}
+                </>
+              );
+              return href ? (
+                <Link key={i} href={href} className="bg-white rounded-[8px] border border-border p-6 flex flex-col gap-3 hover:-translate-y-1 hover:shadow-md transition-all duration-200 no-underline">
+                  {inner}
+                </Link>
+              ) : (
+                <article key={i} className="bg-white rounded-[8px] border border-border p-6 flex flex-col gap-3">
+                  {inner}
+                </article>
+              );
+            })}
           </div>
 
         </div>
