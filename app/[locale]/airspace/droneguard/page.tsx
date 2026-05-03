@@ -282,7 +282,7 @@ export default function DroneGuardPage() {
               <img
                 src="/images/logo/globe-protect-logo.png"
                 alt="GlobeProtect Logo"
-                className="h-8 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <h1 className="font-space-grotesk text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
