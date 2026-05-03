@@ -107,39 +107,12 @@
     "readMore": "Meer lezen",
     "items": [
       {
-        "type": "Partnerschap",
-        "title": "Coltek wordt XGRIDS Strategische Partner in Europa",
-        "date": "2026-03-15",
-        "summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
-        "content": "Coltek heeft officieel een strategische partnerschapsovereenkomst getekend met XGRIDS en wordt daarmee de exclusieve strategische partner voor de Europese regio. Dit partnerschap stelt Coltek in staat het volledige XGRIDS-productportfolio te distribueren en ondersteunen — inclusief Lixel L2 Pro, LixelKity K1, PortalCam en het LCC-cloudplatform — op alle Europese markten."
-      },
-      {
-        "type": "Evenement",
-        "title": "Intergeo 2026 — Ontmoet ons in Stuttgart",
-        "date": "2026-09-15",
-        "summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
-        "content": "Coltek neemt deel aan Intergeo 2026 in Stuttgart, Duitsland — een van Europa's toonaangevende geospatiale technologiebeurzen. Kom live scandemonstraties beleven met de Lixel L2 Pro, verken het LCC 3D Gaussian Splatting-platform en spreek met ons technisch team over uw projectvereisten."
-      },
-      {
-        "type": "Productupdates",
-        "title": "LCC-platform bereikt 10.000 reconstructies",
-        "date": "2026-02-28",
-        "summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd.",
-        "content": "Het Lixel CyberColor (LCC) AI-cloudplatform heeft een belangrijke mijlpaal bereikt — meer dan 10.000 3D Gaussian Splatting-reconstructies verwerkt. Deze groei weerspiegelt de toenemende adoptie in architectuur, cultureel erfgoed en industriële sectoren in Europa en wereldwijd."
-      },
-      {
-        "type": "Productupdates",
-        "title": "LixelKity K1 nu beschikbaar in Europa",
-        "date": "2026-01-20",
-        "summary": "De compacte handheld 3D-scanner K1 is nu officieel beschikbaar via Coltek.",
-        "content": "Coltek kondigt aan dat de LixelKity K1 — XGRIDS' compacte handheld 3D-scanner — nu in heel Europa te bestellen is. Met een gewicht van minder dan 1 kg, 48MP dual panoramische camera's en 360° LiDAR is de K1 ideaal voor binnenmapping, vastgoed en cultureel erfgoed toepassingen."
-      },
-      {
-        "type": "Partnerschap",
-        "title": "Coltek sluit distributiepartnerschap met GlobeProtect voor Europa",
-        "date": "2025-11-10",
-        "summary": "Coltek breidt zijn portfolio uit met counter-drone oplossingen via een nieuw partnerschap met GlobeProtect.",
-        "content": "Coltek heeft een distributiepartnerschap gesloten met GlobeProtect en voegt professionele counter-drone detectie- en lokalisatiesystemen toe aan zijn Europese portfolio. De overeenkomst omvat de volledige GlobeProtect-productlijn — van draagbare handdetectoren tot vaste TDOA-netwerksystemen."
+        "type": "Prijs",
+        "title": "Wereldprimeur: XGRIDS PortalCam wint vier NAB 2026 Product of the Year Awards",
+        "date": "2026-04-24",
+        "summary": "Op de NAB Show won de ruimtecamera PortalCam van XGRIDS vier Product of the Year Awards in de categorieën Intelligent Technology, Graphics, Editing & Visual Effects en Photography Equipment & Remote Production.",
+        "content": "De organisatoren omschreven de ruimtelijke intelligentietechnologie van XGRIDS als \"een van de meest geavanceerde innovatieve intelligente technologieën in de film- en televisie-industrie van vandaag\".",
+        "slug": "nab-2026"
       }
     ]
   },
