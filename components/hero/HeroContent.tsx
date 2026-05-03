@@ -120,7 +120,7 @@ export default function HeroContent() {
         variants={fadeUp(0.2)}
         initial="hidden"
         animate="visible"
-        className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6 max-w-4xl mx-auto"
+        className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6 max-w-4xl mx-auto whitespace-pre-line"
       >
         {t('slogan')}
       </motion.h1>
