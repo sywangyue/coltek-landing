@@ -86,7 +86,7 @@ function ArticleZh() {
       </p>
 
       <p className="text-foreground-muted leading-relaxed mb-6">
-        在这样的舞台上斩获四项大奖、脱颖而出，意味着其域创新的空间智能技术不仅具备前沿创新性，更具备<strong className="text-primary">改变行业工作方式的巨大潜力</strong>。
+        在这样的舞台上斩获四项大奖、脱颖而出，意味着其域创新的空间智能技术不仅具备前沿创新性，更具备<strong>改变行业工作方式的巨大潜力</strong>。
       </p>
 
       {/* 图片2：NAB颁奖舞台 */}
@@ -104,7 +104,7 @@ function ArticleZh() {
       </div>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
-        长期以来，影视制作依赖高成本、长周期的实景采集与后期重建流程，而空间智能与 3D 高斯技术的出现，正在让<strong className="text-primary">「真实世界数字化」</strong>成为一种更高效、更直接的生产方式。<strong>灵视 P1，正是这一变革的关键入口。</strong>
+        长期以来，影视制作依赖高成本、长周期的实景采集与后期重建流程，而空间智能与 3D 高斯技术的出现，正在让<strong>「真实世界数字化」</strong>成为一种更高效、更直接的生产方式。<strong>灵视 P1，正是这一变革的关键入口。</strong>
       </p>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
@@ -219,7 +219,7 @@ function ArticleEn() {
       </p>
 
       <p className="text-foreground-muted leading-relaxed mb-6">
-        Winning four major awards and standing out on such a stage demonstrates that XGRIDS's spatial intelligence technology not only features cutting-edge innovation <strong>but also holds immense potential to <span className="text-primary">transform industry workflows.</span></strong>
+        Winning four major awards and standing out on such a stage demonstrates that XGRIDS's spatial intelligence technology not only features cutting-edge innovation <strong>but also holds immense potential to transform industry workflows.</strong>
       </p>
 
       <div className="my-8 rounded-xl overflow-hidden">
@@ -235,7 +235,7 @@ function ArticleEn() {
       </div>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
-        For a long time, film and television production has relied on high-cost, time-consuming on-location shooting and post-production reconstruction processes. The emergence of spatial intelligence and 3D Gaussian technology is transforming <strong className="text-primary">"digitalization of the real world"</strong> into a more efficient and direct production method. <strong>The PortalCam serves as the pivotal gateway to this transformation.</strong>
+        For a long time, film and television production has relied on high-cost, time-consuming on-location shooting and post-production reconstruction processes. The emergence of spatial intelligence and 3D Gaussian technology is transforming <strong>"digitalization of the real world"</strong> into a more efficient and direct production method. <strong>The PortalCam serves as the pivotal gateway to this transformation.</strong>
       </p>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
