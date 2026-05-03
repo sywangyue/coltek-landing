@@ -278,9 +278,13 @@ export default function DroneGuardPage() {
             transition={{ duration: 0.6, ease: EASE }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5">
-              GlobeProtect
-            </span>
+            <div className="flex items-center justify-center gap-4 mb-5">
+              <img
+                src="/images/logo/globe-protect-logo.png"
+                alt="GlobeProtect Logo"
+                className="h-8 w-auto object-contain"
+              />
+            </div>
             <h1 className="font-space-grotesk text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               {t('hero.title')}
             </h1>
