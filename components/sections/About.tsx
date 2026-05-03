@@ -181,7 +181,7 @@ export default function About() {
                 className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
                 <span className="font-display font-bold text-base text-foreground tracking-tight">XGRIDS</span>
               </a>
-              <a href="https://www.globeprotect.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://globe-protect.com/" target="_blank" rel="noopener noreferrer"
                 className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
                 <span className="font-display font-bold text-base text-foreground tracking-tight">GlobeProtect</span>
               </a>
