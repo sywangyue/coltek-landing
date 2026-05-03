@@ -269,7 +269,7 @@ export default function DroneGuardPage() {
               Home
             </Link>
             <span>/</span>
-            <span className="text-foreground font-medium">DroneGuard</span>
+            <span className="text-foreground font-medium">GlobeProtect</span>
           </nav>
 
           <motion.div
@@ -279,7 +279,7 @@ export default function DroneGuardPage() {
             className="text-center max-w-3xl mx-auto"
           >
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5">
-              DroneGuard
+              GlobeProtect
             </span>
             <h1 className="font-space-grotesk text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               {t('hero.title')}
