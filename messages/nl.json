@@ -107,11 +107,11 @@
     "readMore": "Meer lezen",
     "items": [
       {
-        "type": "Prijs",
-        "title": "Wereldprimeur: XGRIDS PortalCam wint vier NAB 2026 Product of the Year Awards",
+        "type": "Award",
+        "title": "World First: XGRIDS PortalCam Wins Four NAB 2026 Product of the Year Awards",
         "date": "2026-04-24",
-        "summary": "Op de NAB Show won de ruimtecamera PortalCam van XGRIDS vier Product of the Year Awards in de categorieën Intelligent Technology, Graphics, Editing & Visual Effects en Photography Equipment & Remote Production.",
-        "content": "De organisatoren omschreven de ruimtelijke intelligentietechnologie van XGRIDS als \"een van de meest geavanceerde innovatieve intelligente technologieën in de film- en televisie-industrie van vandaag\".",
+        "summary": "At the NAB Show, XGRIDS's spatial camera PortalCam won four Product of the Year awards across Intelligent Technology, Graphics, Editing & Visual Effects, and Photography Equipment & Remote Production.",
+        "content": "The organizers described XGRIDS's spatial intelligence technology as \"one of the most cutting-edge innovative intelligent technologies in the film and television industry today.\"",
         "slug": "nab-2026"
       }
     ]
