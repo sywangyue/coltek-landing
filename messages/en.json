@@ -7,11 +7,11 @@
     "spatialProductsDesc": "3D scanning hardware & software solutions",
     "spatialShowcaseDesc": "Real-world 3D reconstruction projects",
     "spatialIndustriesDesc": "Architecture, heritage, industrial & more",
-    "airspace": "Drone Detection",
+    "airspace": "Spatial Security",
     "airspaceProducts": "Products",
     "airspaceShowcase": "Showcase",
     "airspaceIndustries": "Industries",
-    "airspaceProductsDesc": "Drone detection & localization hardware",
+    "airspaceProductsDesc": "Drone detection & spatial security solutions",
     "airspaceShowcaseDesc": "Deployed security case studies",
     "airspaceIndustriesDesc": "Airports, events, government & more",
     "xgrids": "XGRIDS",
@@ -25,15 +25,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "slogan": "Connecting Technologies. Enabling Industries.",
-    "mission": "We integrate leading global technologies into real-world applications across industries in Europe.",
+    "slogan": "Your One-Stop Strategic Partner for European Market Entry",
+    "mission": "Partnering with quality tech brands to co-create the European market.",
     "cards": {
       "spatial": {
         "title": "Spatial Intelligence",
         "keywords": "3D Scanning · World Model · Reconstruction"
       },
       "airspace": {
-        "title": "Drone Detection",
+        "title": "Spatial Security",
         "keywords": "Drone Detection · Localization · Situational Awareness"
       },
       "ai": {
@@ -41,7 +41,7 @@
         "keywords": "Next-Gen · Intelligent Devices · Coming Soon"
       }
     },
-    "trust": "European technology integration platform · NL & DE operations",
+    "trust": "",
     "ctaPrimary": "Explore Solutions",
     "ctaSecondary": "Get in Touch"
   },
@@ -60,8 +60,8 @@
         "desc": "LixelStudio · LCC · 3D Gaussian Splatting"
       },
       "precision": {
-        "title": "CM-Level Precision",
-        "desc": "Indoor & outdoor full-scene coverage"
+        "title": "Open Integration",
+        "desc": "Unity · Unreal · Web · Revit"
       }
     },
     "ctaProducts": "Explore Products",
@@ -107,46 +107,19 @@
     "readMore": "Read More",
     "items": [
       {
-        "type": "Partnership",
-        "title": "Coltek Becomes XGRIDS Strategic Partner in Europe",
-        "date": "2026-03-15",
-        "summary": "Strategic partnership established to bring advanced 3D scanning solutions to the European market.",
-        "content": "Coltek has officially signed a strategic partnership agreement with XGRIDS, becoming the exclusive strategic partner for the European region. This partnership enables Coltek to distribute and support the full XGRIDS product portfolio — including the Lixel L2 Pro, LixelKity K1, PortalCam, and the LCC cloud platform — across all European markets."
-      },
-      {
-        "type": "Event",
-        "title": "Intergeo 2026 — Meet Us in Stuttgart",
-        "date": "2026-09-15",
-        "summary": "Visit our booth to experience the latest Lixel L2 Pro and LCC platform live demonstrations.",
-        "content": "Coltek will be exhibiting at Intergeo 2026 in Stuttgart, Germany — one of Europe's leading geospatial technology conferences. Come experience live scanning demonstrations with the Lixel L2 Pro, explore the LCC 3D Gaussian Splatting platform, and speak with our technical team about your project requirements."
-      },
-      {
-        "type": "Product Update",
-        "title": "LCC Platform Reaches 10,000 Reconstructions",
-        "date": "2026-02-28",
-        "summary": "Lixel CyberColor cloud platform milestone: over 10,000 3D Gaussian Splatting models generated.",
-        "content": "The Lixel CyberColor (LCC) AI cloud platform has reached a significant milestone — more than 10,000 3D Gaussian Splatting reconstructions processed. This growth reflects accelerating adoption across architecture, cultural heritage, and industrial sectors in Europe and globally."
-      },
-      {
-        "type": "Product Update",
-        "title": "LixelKity K1 Now Available in Europe",
-        "date": "2026-01-20",
-        "summary": "The compact handheld 3D scanner K1 is now officially available for purchase through Coltek.",
-        "content": "Coltek is pleased to announce that the LixelKity K1 — XGRIDS' compact handheld 3D scanner — is now available for order across Europe. Weighing under 1 kg with 48MP dual panoramic cameras and 360° LiDAR, the K1 is ideal for indoor mapping, real estate, and cultural heritage applications."
-      },
-      {
-        "type": "Partnership",
-        "title": "Coltek Partners with GlobeProtect for European Distribution",
-        "date": "2025-11-10",
-        "summary": "Coltek expands its portfolio with counter-drone solutions through a new partnership with GlobeProtect.",
-        "content": "Coltek has signed a distribution partnership with GlobeProtect, adding professional counter-drone detection and localization systems to its European portfolio. The agreement covers the full GlobeProtect product line — from portable handheld detectors to fixed TDOA network systems — enabling Coltek to serve airports, public events, and critical infrastructure operators across Europe."
+        "type": "Award",
+        "title": "World First: XGRIDS PortalCam Wins Four NAB 2026 Product of the Year Awards",
+        "date": "2026-04-24",
+        "summary": "At the NAB Show, XGRIDS's spatial camera PortalCam won four Product of the Year awards across Intelligent Technology, Graphics, Editing & Visual Effects, and Photography Equipment & Remote Production.",
+        "content": "The organizers described XGRIDS's spatial intelligence technology as \"one of the most cutting-edge innovative intelligent technologies in the film and television industry today.\"",
+        "slug": "nab-2026"
       }
     ]
   },
   "about": {
     "label": "About Us",
     "title": "Technology Experts with a Global Vision",
-    "story": "We bring deep spatial intelligence and security technology expertise to the European market, with operations in the Netherlands and Germany.",
+    "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
     "stats": {
       "entities": {
         "value": "2",
@@ -169,11 +142,11 @@
       "members": [
         {
           "name": "Colt Chen",
-          "role": "CEO"
+          "role": "Co-Founder / CEO"
         },
         {
-          "name": "Herry Sun",
-          "role": "COO"
+          "name": "Henry Sun",
+          "role": "Co-Founder / COO"
         },
         {
           "name": "Shenshen",
@@ -237,7 +210,7 @@
       "sunova": {
         "name": "Sunova Innovation B.V.",
         "country": "Netherlands",
-        "address": "Rotterdam, Netherlands",
+        "address": "Rivium 1e Straat, Capelle aan den IJssel, Nederland",
         "phone": "+31 645402151"
       }
     },

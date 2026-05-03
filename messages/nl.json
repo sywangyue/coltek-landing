@@ -7,7 +7,7 @@
     "spatialProductsDesc": "3D-scan hardware en softwareoplossingen",
     "spatialShowcaseDesc": "Praktische 3D-reconstructieprojecten",
     "spatialIndustriesDesc": "Architectuur, erfgoed, industrie en meer",
-    "airspace": "Dronedetectie",
+    "airspace": "Ruimtebeveiliging",
     "airspaceProducts": "Producten",
     "airspaceShowcase": "Projecten",
     "airspaceIndustries": "Sectoren",
@@ -25,15 +25,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "slogan": "Technologieën verbinden. Industrieën mogelijk maken.",
-    "mission": "Wij integreren toonaangevende wereldwijde technologieën in praktische toepassingen voor de Europese industrie.",
+    "slogan": "Uw alles-in-één strategische partner voor toegang tot de Europese markt",
+    "mission": "Samen met kwaliteitstechnologiemerken de Europese markt vormgeven.",
     "cards": {
       "spatial": {
         "title": "Ruimtelijke Intelligentie",
         "keywords": "3D-scanning · Wereldmodel · Reconstructie"
       },
       "airspace": {
-        "title": "Dronedetectie",
+        "title": "Ruimtebeveiliging",
         "keywords": "Drone-detectie · Lokalisatie · Situatiebewustzijn"
       },
       "ai": {
@@ -41,7 +41,7 @@
         "keywords": "Next-Gen · Intelligente Apparaten · Binnenkort"
       }
     },
-    "trust": "Europees technologie-integratieplatform · activiteiten in NL & DE",
+    "trust": "",
     "ctaPrimary": "Oplossingen verkennen",
     "ctaSecondary": "Neem contact op"
   },
@@ -60,8 +60,8 @@
         "desc": "LixelStudio · LCC · 3D Gaussian Splatting"
       },
       "precision": {
-        "title": "CM-nauwkeurigheid",
-        "desc": "Binnen- en buitendekking voor volledige scènes"
+        "title": "Open Integratie",
+        "desc": "Unity · Unreal · Web · Revit"
       }
     },
     "ctaProducts": "Producten verkennen",
@@ -107,46 +107,19 @@
     "readMore": "Meer lezen",
     "items": [
       {
-        "type": "Partnerschap",
-        "title": "Coltek wordt XGRIDS Strategische Partner in Europa",
-        "date": "2026-03-15",
-        "summary": "Strategisch partnerschap om geavanceerde 3D-scanoplossingen op de Europese markt te brengen.",
-        "content": "Coltek heeft officieel een strategische partnerschapsovereenkomst getekend met XGRIDS en wordt daarmee de exclusieve strategische partner voor de Europese regio. Dit partnerschap stelt Coltek in staat het volledige XGRIDS-productportfolio te distribueren en ondersteunen — inclusief Lixel L2 Pro, LixelKity K1, PortalCam en het LCC-cloudplatform — op alle Europese markten."
-      },
-      {
-        "type": "Evenement",
-        "title": "Intergeo 2026 — Ontmoet ons in Stuttgart",
-        "date": "2026-09-15",
-        "summary": "Bezoek onze stand voor live demonstraties van de nieuwste Lixel L2 Pro en het LCC-platform.",
-        "content": "Coltek neemt deel aan Intergeo 2026 in Stuttgart, Duitsland — een van Europa's toonaangevende geospatiale technologiebeurzen. Kom live scandemonstraties beleven met de Lixel L2 Pro, verken het LCC 3D Gaussian Splatting-platform en spreek met ons technisch team over uw projectvereisten."
-      },
-      {
-        "type": "Productupdates",
-        "title": "LCC-platform bereikt 10.000 reconstructies",
-        "date": "2026-02-28",
-        "summary": "Mijlpaal van het Lixel CyberColor cloudplatform: meer dan 10.000 3D-modellen gegenereerd.",
-        "content": "Het Lixel CyberColor (LCC) AI-cloudplatform heeft een belangrijke mijlpaal bereikt — meer dan 10.000 3D Gaussian Splatting-reconstructies verwerkt. Deze groei weerspiegelt de toenemende adoptie in architectuur, cultureel erfgoed en industriële sectoren in Europa en wereldwijd."
-      },
-      {
-        "type": "Productupdates",
-        "title": "LixelKity K1 nu beschikbaar in Europa",
-        "date": "2026-01-20",
-        "summary": "De compacte handheld 3D-scanner K1 is nu officieel beschikbaar via Coltek.",
-        "content": "Coltek kondigt aan dat de LixelKity K1 — XGRIDS' compacte handheld 3D-scanner — nu in heel Europa te bestellen is. Met een gewicht van minder dan 1 kg, 48MP dual panoramische camera's en 360° LiDAR is de K1 ideaal voor binnenmapping, vastgoed en cultureel erfgoed toepassingen."
-      },
-      {
-        "type": "Partnerschap",
-        "title": "Coltek sluit distributiepartnerschap met GlobeProtect voor Europa",
-        "date": "2025-11-10",
-        "summary": "Coltek breidt zijn portfolio uit met counter-drone oplossingen via een nieuw partnerschap met GlobeProtect.",
-        "content": "Coltek heeft een distributiepartnerschap gesloten met GlobeProtect en voegt professionele counter-drone detectie- en lokalisatiesystemen toe aan zijn Europese portfolio. De overeenkomst omvat de volledige GlobeProtect-productlijn — van draagbare handdetectoren tot vaste TDOA-netwerksystemen."
+        "type": "Award",
+        "title": "World First: XGRIDS PortalCam Wins Four NAB 2026 Product of the Year Awards",
+        "date": "2026-04-24",
+        "summary": "At the NAB Show, XGRIDS's spatial camera PortalCam won four Product of the Year awards across Intelligent Technology, Graphics, Editing & Visual Effects, and Photography Equipment & Remote Production.",
+        "content": "The organizers described XGRIDS's spatial intelligence technology as \"one of the most cutting-edge innovative intelligent technologies in the film and television industry today.\"",
+        "slug": "nab-2026"
       }
     ]
   },
   "about": {
     "label": "Over ons",
     "title": "Technologie-experts met een wereldwijde visie",
-    "story": "Wij brengen diepgaande expertise in ruimtelijke intelligentie en beveiligingstechnologie naar de Europese markt, met activiteiten in Nederland en Duitsland.",
+    "story": "Missie: Gericht op de Europese markt benutten wij lokale operaties en toeleveringsketenvoordelen om technologiemerken in ruimtelijke intelligentie, beveiliging en AI-hardware een alles-in-één markttoegangsstrategie te bieden — zodat partners snel voet aan de grond krijgen en langetermijnwaarde creëren.\n\nVisie: De meest vertrouwde benchmark voor internationale techbedrijven op de Europese markt worden — door operationele barrières te doorbreken, professionele B2B-ondersteuning en B2C-verkoop samen te laten groeien en een brug te slaan voor mondiale technologieproducten naar Europa.",
     "stats": {
       "entities": {
         "value": "2",
@@ -169,11 +142,11 @@
       "members": [
         {
           "name": "Colt Chen",
-          "role": "CEO"
+          "role": "Medeoprichter / CEO"
         },
         {
-          "name": "Herry Sun",
-          "role": "COO"
+          "name": "Henry Sun",
+          "role": "Medeoprichter / COO"
         },
         {
           "name": "Shenshen",
@@ -237,7 +210,7 @@
       "sunova": {
         "name": "Sunova Innovation B.V.",
         "country": "Nederland",
-        "address": "Rotterdam, Nederland",
+        "address": "Rivium 1e Straat, Capelle aan den IJssel, Nederland",
         "phone": "+31 645402151"
       }
     },

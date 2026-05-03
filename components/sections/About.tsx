@@ -155,9 +155,11 @@ export default function About() {
               className="mb-6"
             />
 
-            <p className="text-foreground-muted leading-relaxed mb-8">
-              {t('story')}
-            </p>
+            <div className="text-foreground-muted leading-relaxed mb-8 space-y-4">
+              {t('story').split('\n\n').map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
 
             {/* Stat cards */}
             <div className="grid grid-cols-3 gap-3">
@@ -170,6 +172,19 @@ export default function About() {
                   delay={i * 0.12}
                 />
               ))}
+            </div>
+
+            {/* Partner logos */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <span className="text-xs font-semibold uppercase tracking-widest text-foreground-muted/60 mr-2">Partners</span>
+              <a href="https://www.xgrids.com" target="_blank" rel="noopener noreferrer"
+                className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
+                <span className="font-display font-bold text-base text-foreground tracking-tight">XGRIDS</span>
+              </a>
+              <a href="https://www.globeprotect.com" target="_blank" rel="noopener noreferrer"
+                className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
+                <span className="font-display font-bold text-base text-foreground tracking-tight">GlobeProtect</span>
+              </a>
             </div>
           </motion.div>
 

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk, Noto_Sans_SC } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -8,24 +7,10 @@ import { routing } from '@/i18n/routing';
 import CookieBanner from '@/components/layout/CookieBanner';
 import '../globals.css';
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: '--font-space-grotesk',
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const notoSansSC = Noto_Sans_SC({
-  variable: '--font-noto-sans-sc',
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-});
+// Using system fonts to avoid Google Fonts network dependency in local dev
+const inter = { variable: '--font-inter', className: '' };
+const spaceGrotesk = { variable: '--font-space-grotesk', className: '' };
+const notoSansSC = { variable: '--font-noto-sans-sc', className: '' };
 
 type Props = {
   children: React.ReactNode;
