@@ -64,7 +64,7 @@ export default async function NewsPage({ params }: Props) {
             <span className="block text-xs font-semibold uppercase tracking-widest text-primary mb-3">
               {t('subtitle')}
             </span>
-            <h1 className="font-display text-4xl font-bold text-foreground">
+            <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground">
               {t('title')}
             </h1>
           </div>

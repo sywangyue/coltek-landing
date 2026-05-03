@@ -281,7 +281,7 @@ export default function DroneGuardPage() {
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5">
               DroneGuard
             </span>
-            <h1 className="font-space-grotesk text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="font-space-grotesk text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               {t('hero.title')}
             </h1>
             <p className="text-lg text-foreground-muted max-w-3xl mx-auto leading-relaxed">
@@ -312,7 +312,7 @@ export default function DroneGuardPage() {
             transition={{ duration: 0.5, ease: EASE }}
             className="mb-12 text-center"
           >
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground">
+            <h2 className="font-display text-2xl lg:text-3xl font-bold text-foreground">
               {scenariosTitle}
             </h2>
           </motion.div>

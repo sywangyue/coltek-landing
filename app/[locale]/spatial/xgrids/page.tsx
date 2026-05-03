@@ -37,7 +37,7 @@ export default async function XgridsPage({
               alt="XGRIDS Logo"
               className="h-12 lg:h-14 w-auto object-contain"
             />
-            <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground">
+            <h1 className="font-display text-3xl lg:text-4xl font-bold text-foreground">
               XGRIDS
             </h1>
           </div>
