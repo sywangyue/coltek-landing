@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { User } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
@@ -54,6 +55,7 @@ function StatCard({
   label: string;
   detail: string;
   delay: number;
+  clickable?: boolean;
 }) {
   const isNumber = /^\d+$/.test(value);
   const ref = useRef<HTMLDivElement>(null);
@@ -119,6 +121,7 @@ function TeamCard({ name, role, image, delay }: { name: string; role: string; im
 // ── Main section ─────────────────────────────────────────────────────────────
 export default function About() {
   const t = useTranslations('about');
+  const useLocaleValue = useLocale();
 
   const stats = [
     {
@@ -163,28 +166,30 @@ export default function About() {
 
             {/* Stat cards */}
             <div className="grid grid-cols-3 gap-3">
-              {stats.map((stat, i) => (
+              <StatCard
+                value={stats[0].value}
+                label={stats[0].label}
+                detail={stats[0].detail}
+                delay={0}
+              />
+              <Link href={`/${useLocaleValue}/spatial/xgrids`} className="block no-underline">
                 <StatCard
-                  key={i}
-                  value={stat.value}
-                  label={stat.label}
-                  detail={stat.detail}
-                  delay={i * 0.12}
+                  value={stats[1].value}
+                  label={stats[1].label}
+                  detail={stats[1].detail}
+                  delay={0.12}
+                  clickable
                 />
-              ))}
-            </div>
-
-            {/* Partner logos */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <span className="text-xs font-semibold uppercase tracking-widest text-foreground-muted/60 mr-2">Partners</span>
-              <a href="https://www.xgrids.com" target="_blank" rel="noopener noreferrer"
-                className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
-                <span className="font-display font-bold text-base text-foreground tracking-tight">XGRIDS</span>
-              </a>
-              <a href="https://globe-protect.com/" target="_blank" rel="noopener noreferrer"
-                className="px-4 py-2 border border-border rounded-[8px] bg-white hover:border-primary/40 hover:shadow-sm transition-all opacity-80 hover:opacity-100">
-                <span className="font-display font-bold text-base text-foreground tracking-tight">GlobeProtect</span>
-              </a>
+              </Link>
+              <Link href={`/${useLocaleValue}/airspace/droneguard`} className="block no-underline">
+                <StatCard
+                  value={stats[2].value}
+                  label={stats[2].label}
+                  detail={stats[2].detail}
+                  delay={0.24}
+                  clickable
+                />
+              </Link>
             </div>
           </motion.div>
 
