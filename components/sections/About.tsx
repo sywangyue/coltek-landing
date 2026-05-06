@@ -50,11 +50,14 @@ function StatCard({
   label,
   detail,
   delay,
+  logo,
+  clickable,
 }: {
   value: string;
   label: string;
   detail: string;
   delay: number;
+  logo?: string;
   clickable?: boolean;
 }) {
   const isNumber = /^\d+$/.test(value);
@@ -73,9 +76,12 @@ function StatCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay, ease: EASE }}
-      className="bg-white rounded-[8px] border border-border p-6 text-center flex flex-col items-center justify-center"
+      className={`bg-white rounded-[8px] border border-border p-6 text-center flex flex-col items-center justify-center gap-2${clickable ? ' hover:border-primary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer' : ''}`}
     >
-      {(isNumber || value) && (
+      {logo && (
+        <img src={logo} alt={label} className="h-10 w-auto object-contain mb-1" />
+      )}
+      {!logo && (isNumber || value) && (
         <div
           className="font-display text-4xl font-bold mb-1"
           style={{
@@ -178,6 +184,7 @@ export default function About() {
                   label={stats[1].label}
                   detail={stats[1].detail}
                   delay={0.12}
+                  logo="/images/logo/xgrids-logo.png"
                   clickable
                 />
               </a>
@@ -187,6 +194,7 @@ export default function About() {
                   label={stats[2].label}
                   detail={stats[2].detail}
                   delay={0.24}
+                  logo="/images/logo/globe-protect-logo.png"
                   clickable
                 />
               </a>
