@@ -172,7 +172,7 @@ export default function About() {
                 detail={stats[0].detail}
                 delay={0}
               />
-              <Link href={`/${useLocaleValue}/spatial/xgrids`} className="block no-underline">
+              <a href="https://www.xgrids.com" target="_blank" rel="noopener noreferrer" className="block no-underline">
                 <StatCard
                   value={stats[1].value}
                   label={stats[1].label}
@@ -180,8 +180,8 @@ export default function About() {
                   delay={0.12}
                   clickable
                 />
-              </Link>
-              <Link href={`/${useLocaleValue}/airspace/droneguard`} className="block no-underline">
+              </a>
+              <a href="https://globe-protect.com/" target="_blank" rel="noopener noreferrer" className="block no-underline">
                 <StatCard
                   value={stats[2].value}
                   label={stats[2].label}
@@ -189,7 +189,7 @@ export default function About() {
                   delay={0.24}
                   clickable
                 />
-              </Link>
+              </a>
             </div>
           </motion.div>
 
