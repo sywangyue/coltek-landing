@@ -157,9 +157,9 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center center/cover no-repeat', minHeight: '420px'}}>
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center center/cover no-repeat', minHeight: '520px'}}>
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/20 to-black/50" />
-          <div className="relative z-10 min-h-[420px] flex flex-col justify-between p-8 lg:p-10">
+          <div className="relative z-10 min-h-[520px] flex flex-col justify-between p-8 lg:p-10">
 
             {/* Top row: badge + long description on the right */}
             <div className="flex items-start justify-between gap-8">
