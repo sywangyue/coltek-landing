@@ -157,18 +157,18 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center/cover no-repeat'}}>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
-          <div className="flex flex-col lg:flex-row items-center gap-0 relative z-10">
-            {/* Text side */}
-            <div className="flex-1 p-8 lg:p-12 z-10">
-              <div className="flex items-center gap-3 mb-6">
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center top/cover no-repeat', minHeight: '340px'}}>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+          <div className="flex flex-col lg:flex-row items-end gap-0 relative z-10 min-h-[340px]">
+            {/* Text side - pushed to bottom */}
+            <div className="flex-1 p-8 lg:p-10 pb-10 self-end">
+              <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
                   {locale === 'zh' ? '全新发布' : locale === 'de' ? 'Neu' : locale === 'nl' ? 'Nieuw' : 'New Release'}
                 </span>
                 <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel K2</span>
               </div>
-              <p className="text-gray-200 leading-relaxed mb-6 max-w-lg text-base">
+              <p className="text-gray-200 leading-relaxed mb-5 max-w-md text-sm">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计——兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
                   : locale === 'de'
