@@ -162,17 +162,13 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
           <div className="flex flex-col lg:flex-row items-center gap-0 relative z-10">
             {/* Text side */}
             <div className="flex-1 p-8 lg:p-12 z-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-6">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
                   {locale === 'zh' ? '全新发布' : locale === 'de' ? 'Neu' : locale === 'nl' ? 'Nieuw' : 'New Release'}
                 </span>
-                <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS</span>
+                <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel K2</span>
               </div>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-2">
-                Lixel K2
-              </h2>
-              <p className="text-accent font-semibold text-lg mb-4">The Gold Standard in Lightweight Scanning</p>
-              <p className="text-gray-300 leading-relaxed mb-6 max-w-lg">
+              <p className="text-gray-200 leading-relaxed mb-6 max-w-lg text-base">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计——兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
                   : locale === 'de'
