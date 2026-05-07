@@ -175,7 +175,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
 
             {/* Bottom row: short desc + specs + button */}
             <div>
-              <p className="text-gray-200 text-sm leading-relaxed mb-4 whitespace-nowrap">
+              <p className="font-display text-sm tracking-wide text-white/90 mb-4 whitespace-nowrap">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计。'
                   : locale === 'de'
