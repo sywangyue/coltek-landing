@@ -170,24 +170,12 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 </span>
                 <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel K2</span>
               </div>
-              {/* Right: long description beside the product */}
-              <div className="max-w-[220px] text-right hidden lg:block">
-                <p className="text-gray-200 text-xs leading-relaxed">
-                  {locale === 'zh'
-                    ? '兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
-                    : locale === 'de'
-                    ? 'Ausgewogen in Erfassungseffizienz, Benutzerfreundlichkeit und Ergebnisqualität. Unter 1 cm Genauigkeit, RTK integriert.'
-                    : locale === 'nl'
-                    ? 'Balans tussen efficiëntie, gebruiksgemak en kwaliteit. Nauwkeurigheid binnen 1 cm, ingebouwde RTK.'
-                    : 'Balancing capture efficiency, ease of use, and deliverable quality. Within 1 cm accuracy, built-in RTK.'
-                  }
-                </p>
-              </div>
+
             </div>
 
             {/* Bottom row: short desc + specs + button */}
             <div>
-              <p className="text-gray-200 text-sm leading-relaxed mb-4 max-w-xs">
+              <p className="text-gray-200 text-sm leading-relaxed mb-6 max-w-xs mt-16">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计。'
                   : locale === 'de'
@@ -198,7 +186,14 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 }
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                {['≤ 1 cm Accuracy', 'Built-in RTK', '200K pts/s', 'IP54', '1,200 g'].map((tag) => (
+                {[
+                  '≤ 1 cm Accuracy',
+                  'Built-in RTK',
+                  locale === 'zh' ? '实时彩色点云' : 'Real-time Color Point Cloud',
+                  '200K pts/s',
+                  'IP54',
+                  '1,200 g',
+                ].map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-500 text-gray-300">
                     {tag}
                   </span>
