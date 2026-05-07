@@ -153,7 +153,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         {/* Header */}
         <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.5, ease:EASE }} className="mb-8 text-center">
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-3">{t('label')}</span>
-          <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent />
+          <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent align="center" />
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
