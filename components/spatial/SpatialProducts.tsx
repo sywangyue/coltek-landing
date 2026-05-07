@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ScanLine, Monitor, Smartphone, Cloud, Puzzle, ExternalLink } from 'lucide-react';
@@ -115,6 +115,7 @@ const SW_LINKS: Record<string, string> = {
 
 export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<string, string> }) {
   const t = useTranslations('spatialProducts');
+  const locale = useLocale();
   const tCommon = useTranslations('common');
 
   const hwKeys = ['l2pro', 'k1', 'portalcam'] as const;
@@ -154,6 +155,60 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-3">{t('label')}</span>
           <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent />
         </motion.div>
+
+        {/* NEW: Lixel K2 Featured Banner */}
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 relative">
+          <div className="flex flex-col lg:flex-row items-center gap-0">
+            {/* Text side */}
+            <div className="flex-1 p-8 lg:p-12 z-10">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
+                  {locale === 'zh' ? '全新发布' : 'New Release'}
+                </span>
+                <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS</span>
+              </div>
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-2">
+                Lixel K2
+              </h2>
+              <p className="text-accent font-semibold text-lg mb-4">The Gold Standard in Lightweight Scanning</p>
+              <p className="text-gray-300 leading-relaxed mb-6 max-w-lg">
+                {locale === 'zh'
+                  ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计——兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
+                  : "XGRIDS' lightweight spatial scanner built for real-world conditions — balancing capture efficiency, ease of use, and deliverable quality. Engineering-grade accuracy within 1 cm, with built-in RTK and real-time colorized point clouds."
+                }
+              </p>
+              <div className="flex flex-wrap gap-3 mb-8">
+                {[
+                  '≤ 1 cm Accuracy',
+                  'Built-in RTK',
+                  '200K pts/s',
+                  'IP54',
+                  '1,200 g',
+                ].map((tag) => (
+                  <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-600 text-gray-300">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <a
+                href="https://www.xgrids.com/intl/lixelk2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-[8px] hover:bg-accent/90 transition-colors"
+              >
+                {locale === 'zh' ? '了解更多 →' : 'Learn More →'}
+              </a>
+            </div>
+            {/* Image side */}
+            <div className="lg:w-[420px] flex items-center justify-center p-8 lg:p-12">
+              <img
+                src="/images/spatial/products/k2/kv-main.png"
+                alt="Lixel K2"
+                className="h-80 lg:h-96 w-auto object-contain drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Hardware */}
         <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('hardware.sectionTitle')}</h3>
