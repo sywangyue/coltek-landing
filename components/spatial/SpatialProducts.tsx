@@ -157,8 +157,9 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 relative">
-          <div className="flex flex-col lg:flex-row items-center gap-0">
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center/cover no-repeat'}}>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
+          <div className="flex flex-col lg:flex-row items-center gap-0 relative z-10">
             {/* Text side */}
             <div className="flex-1 p-8 lg:p-12 z-10">
               <div className="flex items-center gap-3 mb-4">
@@ -203,14 +204,8 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 {locale === 'zh' ? '了解更多 →' : locale === 'de' ? 'Mehr erfahren →' : locale === 'nl' ? 'Meer informatie →' : 'Learn More →'}
               </a>
             </div>
-            {/* Image side */}
-            <div className="lg:w-[420px] flex items-center justify-center p-8 lg:p-12">
-              <img
-                src="/images/spatial/products/k2/kv-main.png"
-                alt="Lixel K2"
-                className="h-80 lg:h-96 w-auto object-contain drop-shadow-2xl"
-              />
-            </div>
+            {/* Image side - product visible in background KV */}
+            <div className="lg:w-[320px]" />
           </div>
         </div>
 
