@@ -157,36 +157,49 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center center/cover no-repeat', minHeight: '500px'}}>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-          <div className="flex flex-col lg:flex-row items-end gap-0 relative z-10 min-h-[500px]">
-            {/* Text side - pushed to bottom */}
-            <div className="flex-1 p-8 lg:p-10 pb-10 self-end">
-              <div className="flex items-center gap-3 mb-4">
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center center/cover no-repeat', minHeight: '420px'}}>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/20 to-black/50" />
+          <div className="relative z-10 min-h-[420px] flex flex-col justify-between p-8 lg:p-10">
+
+            {/* Top row: badge + long description on the right */}
+            <div className="flex items-start justify-between gap-8">
+              {/* Left: badge only */}
+              <div className="flex items-center gap-3">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
                   {locale === 'zh' ? '全新发布' : locale === 'de' ? 'Neu' : locale === 'nl' ? 'Nieuw' : 'New Release'}
                 </span>
                 <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel K2</span>
               </div>
-              <p className="text-gray-200 leading-relaxed mb-5 max-w-md text-sm">
+              {/* Right: long description beside the product */}
+              <div className="max-w-[220px] text-right hidden lg:block">
+                <p className="text-gray-200 text-xs leading-relaxed">
+                  {locale === 'zh'
+                    ? '兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
+                    : locale === 'de'
+                    ? 'Ausgewogen in Erfassungseffizienz, Benutzerfreundlichkeit und Ergebnisqualität. Unter 1 cm Genauigkeit, RTK integriert.'
+                    : locale === 'nl'
+                    ? 'Balans tussen efficiëntie, gebruiksgemak en kwaliteit. Nauwkeurigheid binnen 1 cm, ingebouwde RTK.'
+                    : 'Balancing capture efficiency, ease of use, and deliverable quality. Within 1 cm accuracy, built-in RTK.'
+                  }
+                </p>
+              </div>
+            </div>
+
+            {/* Bottom row: short desc + specs + button */}
+            <div>
+              <p className="text-gray-200 text-sm leading-relaxed mb-4 max-w-xs">
                 {locale === 'zh'
-                  ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计——兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
+                  ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计。'
                   : locale === 'de'
-                  ? 'Der leichte Raumscanner von XGRIDS für reale Einsatzbedingungen — ausgewogen in Erfassungseffizienz, Benutzerfreundlichkeit und Ergebnisqualität. Ingenieurgenauigkeit unter 1 cm, mit integriertem RTK und Echtzeit-Farbpunktwolken.'
+                  ? 'Der leichte Raumscanner von XGRIDS für reale Einsatzbedingungen.'
                   : locale === 'nl'
-                  ? 'De lichtgewicht ruimtescanner van XGRIDS voor gebruik in de praktijk — een balans tussen vastlegefficiëntie, gebruiksgemak en outputkwaliteit. Technische nauwkeurigheid binnen 1 cm, met ingebouwde RTK en realtime gekleurde puntenwolken.'
-                  : "XGRIDS' lightweight spatial scanner built for real-world conditions — balancing capture efficiency, ease of use, and deliverable quality. Engineering-grade accuracy within 1 cm, with built-in RTK and real-time colorized point clouds."
+                  ? 'De lichtgewicht ruimtescanner van XGRIDS voor gebruik in de praktijk.'
+                  : "XGRIDS' lightweight spatial scanner built for real-world conditions."
                 }
               </p>
-              <div className="flex flex-wrap gap-3 mb-8">
-                {[
-                  '≤ 1 cm Accuracy',
-                  'Built-in RTK',
-                  '200K pts/s',
-                  'IP54',
-                  '1,200 g',
-                ].map((tag) => (
-                  <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-600 text-gray-300">
+              <div className="flex flex-wrap gap-2 mb-6">
+                {['≤ 1 cm Accuracy', 'Built-in RTK', '200K pts/s', 'IP54', '1,200 g'].map((tag) => (
+                  <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-500 text-gray-300">
                     {tag}
                   </span>
                 ))}
@@ -200,8 +213,6 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 {locale === 'zh' ? '了解更多 →' : locale === 'de' ? 'Mehr erfahren →' : locale === 'nl' ? 'Meer informatie →' : 'Learn More →'}
               </a>
             </div>
-            {/* Image side - product visible in background KV */}
-            <div className="lg:w-[320px]" />
           </div>
         </div>
 
