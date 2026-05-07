@@ -163,7 +163,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
             <div className="flex-1 p-8 lg:p-12 z-10">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
-                  {locale === 'zh' ? '全新发布' : 'New Release'}
+                  {locale === 'zh' ? '全新发布' : locale === 'de' ? 'Neu' : locale === 'nl' ? 'Nieuw' : 'New Release'}
                 </span>
                 <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS</span>
               </div>
@@ -174,6 +174,10 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
               <p className="text-gray-300 leading-relaxed mb-6 max-w-lg">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计——兼顾采集效率、易用性与输出质量。精度达 1 cm 以内，内置 RTK，支持实时彩色点云输出。'
+                  : locale === 'de'
+                  ? 'Der leichte Raumscanner von XGRIDS für reale Einsatzbedingungen — ausgewogen in Erfassungseffizienz, Benutzerfreundlichkeit und Ergebnisqualität. Ingenieurgenauigkeit unter 1 cm, mit integriertem RTK und Echtzeit-Farbpunktwolken.'
+                  : locale === 'nl'
+                  ? 'De lichtgewicht ruimtescanner van XGRIDS voor gebruik in de praktijk — een balans tussen vastlegefficiëntie, gebruiksgemak en outputkwaliteit. Technische nauwkeurigheid binnen 1 cm, met ingebouwde RTK en realtime gekleurde puntenwolken.'
                   : "XGRIDS' lightweight spatial scanner built for real-world conditions — balancing capture efficiency, ease of use, and deliverable quality. Engineering-grade accuracy within 1 cm, with built-in RTK and real-time colorized point clouds."
                 }
               </p>
@@ -196,7 +200,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-[8px] hover:bg-accent/90 transition-colors"
               >
-                {locale === 'zh' ? '了解更多 →' : 'Learn More →'}
+                {locale === 'zh' ? '了解更多 →' : locale === 'de' ? 'Mehr erfahren →' : locale === 'nl' ? 'Meer informatie →' : 'Learn More →'}
               </a>
             </div>
             {/* Image side */}
