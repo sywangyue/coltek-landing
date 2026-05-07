@@ -175,7 +175,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
 
             {/* Bottom row: short desc + specs + button */}
             <div>
-              <p className="text-gray-200 text-sm leading-relaxed mb-6 max-w-xs mt-16">
+              <p className="text-gray-200 text-sm leading-relaxed mb-4 whitespace-nowrap mt-32">
                 {locale === 'zh'
                   ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计。'
                   : locale === 'de'
@@ -186,14 +186,14 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 }
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                {[
-                  '≤ 1 cm Accuracy',
-                  'Built-in RTK',
-                  locale === 'zh' ? '实时彩色点云' : 'Real-time Color Point Cloud',
-                  '200K pts/s',
-                  'IP54',
-                  '1,200 g',
-                ].map((tag) => (
+                {(locale === 'zh'
+                  ? ['≤ 1cm 精度', '内置 RTK', '实时彩色点云', '20万点/秒', 'IP54', '1,200g']
+                  : locale === 'de'
+                  ? ['≤ 1 cm Genauigkeit', 'Eingebautes RTK', 'Echtzeit-Farbpunktwolke', '200K Punkte/s', 'IP54', '1.200 g']
+                  : locale === 'nl'
+                  ? ['≤ 1 cm nauwkeurigheid', 'Ingebouwde RTK', 'Realtime kleurpuntwolk', '200K ptn/s', 'IP54', '1.200 g']
+                  : ['≤ 1 cm Accuracy', 'Built-in RTK', 'Real-time Color Point Cloud', '200K pts/s', 'IP54', '1,200 g']
+                ).map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-500 text-gray-300">
                     {tag}
                   </span>
