@@ -148,10 +148,10 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
   );
 
   return (
-    <section id="spatial-products" className="bg-white py-24">
+    <section id="spatial-products" className="bg-white pt-12 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.5, ease:EASE }} className="mb-12">
+        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.5, ease:EASE }} className="mb-8 text-center">
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-3">{t('label')}</span>
           <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent />
         </motion.div>
