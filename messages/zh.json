@@ -107,6 +107,15 @@
     "readMore": "阅读更多",
     "items": [
       {
+        "type": "活动",
+        "title": "XGRIDS 携 Lixel K2 亮相 3DISE 2026，荣升白金赞助商",
+        "date": "2026-05-07",
+        "summary": "XGRIDS 在欧洲领先的现实捕捉与空间计算行业盛会 3DISE 2026 上晋升白金赞助商，并正式发布全球首款 Lixel K2 空间扫描仪。",
+        "content": "XGRIDS 在 3DISE 2026 正式发布 Lixel K2，同步宣布 LixelStudio 4.0 更新。",
+        "slug": "3dise-2026",
+        "thumbnail": "/images/news/3dise-2026/lixel-k2-launch.jpg"
+      },
+      {
         "type": "获奖",
         "title": "全球唯一：灵视 P1 独揽四项 NAB 2026 年度产品大奖",
         "date": "2026-04-24",
