@@ -151,9 +151,9 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
     <section id="spatial-products" className="bg-white pt-12 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.5, ease:EASE }} className="mb-8 text-center">
+        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.5, ease:EASE }} className="mb-8">
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-3">{t('label')}</span>
-          <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent align="center" />
+          <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent />
         </motion.div>
 
         {/* NEW: Lixel K2 Featured Banner */}
@@ -206,13 +206,13 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </div>
 
         {/* Hardware */}
-        <h3 className="font-display text-lg font-bold text-foreground mb-5 text-center">{t('hardware.sectionTitle')}</h3>
+        <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('hardware.sectionTitle')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
           {hw.map((p, i) => <HardwareCard key={i} {...p} delay={i * 0.1} linkLabel={linkLabel} />)}
         </div>
 
         {/* Software */}
-        <h3 className="font-display text-lg font-bold text-foreground mb-5 text-center">{t('software.sectionTitle')}</h3>
+        <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('software.sectionTitle')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           {sw.map((s, i) => <SoftwareCard key={i} name={s.name} desc={s.desc} iconIdx={s.idx} delay={i * 0.08} href={s.href} linkLabel={linkLabel} />)}
         </div>
