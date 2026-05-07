@@ -206,13 +206,13 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </div>
 
         {/* Hardware */}
-        <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('hardware.sectionTitle')}</h3>
+        <h3 className="font-display text-lg font-bold text-foreground mb-5 text-center">{t('hardware.sectionTitle')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
           {hw.map((p, i) => <HardwareCard key={i} {...p} delay={i * 0.1} linkLabel={linkLabel} />)}
         </div>
 
         {/* Software */}
-        <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('software.sectionTitle')}</h3>
+        <h3 className="font-display text-lg font-bold text-foreground mb-5 text-center">{t('software.sectionTitle')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           {sw.map((s, i) => <SoftwareCard key={i} name={s.name} desc={s.desc} iconIdx={s.idx} delay={i * 0.08} href={s.href} linkLabel={linkLabel} />)}
         </div>
