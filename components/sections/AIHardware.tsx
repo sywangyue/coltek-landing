@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { CheckCircle, Loader2 } from 'lucide-react';
 import Button from '@/components/ui/Button';
@@ -77,6 +77,7 @@ function ChipAnimation() {
 // ── Subscribe form ──────────────────────────────────────────────────────────
 function SubscribeForm() {
   const t = useTranslations('aiHardware');
+  const locale = useLocale();
   const [email, setEmail]       = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading]   = useState(false);
@@ -94,7 +95,7 @@ function SubscribeForm() {
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, locale }),
       });
       const data = await res.json();
       if (!res.ok) {
