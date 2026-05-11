@@ -62,7 +62,7 @@ function InquiryForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, company, email, interests, source, message }),
+        body: JSON.stringify({ name, company, email, interests, source, message, locale }),
       });
       const data = await res.json();
       if (!res.ok) {

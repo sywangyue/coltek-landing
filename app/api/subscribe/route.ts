@@ -37,9 +37,9 @@ export async function POST(req: NextRequest) {
     await Promise.all([
       // Confirmation email to subscriber
       resend.emails.send({
-        from: 'Coltek Team <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+        from: 'Sunova & Coltek Team <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
         to: email,
-        subject: 'Coltek AI Hardware — Subscription Confirmed',
+        subject: 'Sunova & Coltek AI Hardware — Subscription Confirmed',
         text: [
           'Thank you for your interest in our upcoming AI Hardware products.',
           "We'll notify you as soon as there are updates.",
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       }),
       // Notification email to internal team
       resend.emails.send({
-        from: 'Coltek Website <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+        from: 'Sunova & Coltek Website <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
         to: 'support@sunova-innovation.nl',
         subject: '[New Subscriber] AI Hardware Interest',
         text: [

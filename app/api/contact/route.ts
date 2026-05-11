@@ -20,10 +20,100 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+type Locale = 'en' | 'de' | 'nl' | 'zh';
+
+const labels: Record<Locale, {
+  interests: Record<string, string>;
+  sources: Record<string, string>;
+  interestedIn: string;
+  heardAbout: string;
+  messageLabel: string;
+  footer: string;
+}> = {
+  en: {
+    interests: {
+      spatial: 'Spatial Intelligence',
+      airspace: 'Spatial Security',
+      ai: 'AI Hardware',
+      other: 'Other / General Inquiry',
+    },
+    sources: {
+      exhibition: 'Exhibition / Trade Show',
+      socialMedia: 'Social Media',
+      searchEngine: 'Search Engine (Google, Bing, etc.)',
+      referral: 'Friend Referral',
+      partner: 'Partner / Distributor',
+      other: 'Other',
+    },
+    interestedIn: 'Interested in',
+    heardAbout: 'Heard about us via',
+    messageLabel: 'Message',
+    footer: 'Sent from sunova-innovation.nl contact form',
+  },
+  de: {
+    interests: {
+      spatial: 'Räumliche Intelligenz',
+      airspace: 'Räumliche Sicherheit',
+      ai: 'KI-Hardware',
+      other: 'Sonstiges / Allgemeine Anfrage',
+    },
+    sources: {
+      exhibition: 'Messe / Ausstellung',
+      socialMedia: 'Soziale Medien',
+      searchEngine: 'Suchmaschine (Google, Bing, etc.)',
+      referral: 'Empfehlung',
+      partner: 'Partner / Händler',
+      other: 'Sonstiges',
+    },
+    interestedIn: 'Interesse an',
+    heardAbout: 'Aufmerksam geworden über',
+    messageLabel: 'Nachricht',
+    footer: 'Gesendet über das Kontaktformular von sunova-innovation.nl',
+  },
+  nl: {
+    interests: {
+      spatial: 'Ruimtelijke Intelligentie',
+      airspace: 'Ruimtelijke Beveiliging',
+      ai: 'AI Hardware',
+      other: 'Anders / Algemene vraag',
+    },
+    sources: {
+      exhibition: 'Beurs / Tentoonstelling',
+      socialMedia: 'Sociale Media',
+      searchEngine: 'Zoekmachine (Google, Bing, etc.)',
+      referral: 'Aanbeveling',
+      partner: 'Partner / Distributeur',
+      other: 'Anders',
+    },
+    interestedIn: 'Interesse in',
+    heardAbout: 'Via ons gehoord',
+    messageLabel: 'Bericht',
+    footer: 'Verzonden via het contactformulier van sunova-innovation.nl',
+  },
+  zh: {
+    interests: {
+      spatial: '空间智能',
+      airspace: '空间安防',
+      ai: 'AI硬件',
+      other: '其他 / 一般咨询',
+    },
+    sources: {
+      exhibition: '展会',
+      socialMedia: '社交媒体',
+      searchEngine: '搜索引擎（Google、Bing 等）',
+      referral: '朋友推荐',
+      partner: '合作伙伴 / 经销商',
+      other: '其他',
+    },
+    interestedIn: '感兴趣的领域',
+    heardAbout: '了解渠道',
+    messageLabel: '留言',
+    footer: '来自 sunova-innovation.nl 联系表单',
+  },
+};
+
 export async function POST(req: NextRequest) {
-  // Rate limiting
-  const ip =
-    req.headers.get('x-forwarded-for')?.split(',')[0].trim() ?? 'unknown';
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() ?? 'unknown';
   if (isRateLimited(ip)) {
     return NextResponse.json(
       { error: 'Too many requests. Please wait a moment before trying again.' },
@@ -31,7 +121,6 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Parse body
   let body: {
     name?: string;
     company?: string;
@@ -39,6 +128,7 @@ export async function POST(req: NextRequest) {
     interests?: string[];
     source?: string;
     message?: string;
+    locale?: string;
   };
   try {
     body = await req.json();
@@ -46,27 +136,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid request.' }, { status: 400 });
   }
 
-  const { name, company, email, interests = [], source, message } = body;
+  const { name, company, email, interests = [], source, message, locale } = body;
+  const lang: Locale = (['en', 'de', 'nl', 'zh'].includes(locale ?? '') ? locale : 'en') as Locale;
+  const l = labels[lang];
 
-  const interestLabels: Record<string, string> = {
-    spatial: '空间智能',
-    airspace: '空间安防',
-    ai: 'AI硬件',
-    other: '其他 / 一般咨询',
-  };
-  const interestDisplay = interests.map((k) => interestLabels[k] ?? k);
-
-  const sourceLabels: Record<string, string> = {
-    exhibition: '展会',
-    socialMedia: '社交媒体',
-    searchEngine: '搜索引擎（Google、Bing 等）',
-    referral: '朋友推荐',
-    partner: '合作伙伴 / 经销商',
-    other: '其他',
-  };
-  const sourceDisplay = source ? (sourceLabels[source] ?? source) : '—';
-
-  // Server-side validation
   if (!name?.trim()) {
     return NextResponse.json({ error: 'Name is required.' }, { status: 400 });
   }
@@ -80,7 +153,6 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Graceful degradation when RESEND_API_KEY is not configured
   if (!process.env.RESEND_API_KEY) {
     console.warn('[contact] RESEND_API_KEY not configured — email not sent.');
     return NextResponse.json(
@@ -91,25 +163,28 @@ export async function POST(req: NextRequest) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
+  const interestDisplay = interests.map((k) => l.interests[k] ?? k);
+  const sourceDisplay = source ? (l.sources[source] ?? source) : '—';
+
   const text = [
     `Name: ${name}`,
     `Company: ${company}`,
     `Email: ${email}`,
-    `Interested in: ${interestDisplay.length ? interestDisplay.join(', ') : '—'}`,
-    `Heard about us via: ${sourceDisplay}`,
+    `${l.interestedIn}: ${interestDisplay.length ? interestDisplay.join(', ') : '—'}`,
+    `${l.heardAbout}: ${sourceDisplay}`,
     '',
-    'Message:',
+    `${l.messageLabel}:`,
     message?.trim() || '—',
     '',
     '---',
-    'Sent from sunova-innovation.nl contact form',
+    l.footer,
   ].join('\n');
 
   try {
     await resend.emails.send({
-      from: 'Coltek Website <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+      from: 'Sunova & Coltek Website <no-reply@sunova-innovation.nl>',
       to: 'support@sunova-innovation.nl',
-      subject: `[Coltek Website Inquiry] from ${name} - ${company}`,
+      subject: `[Sunova & Coltek Inquiry] from ${name} - ${company}`,
       text,
     });
     return NextResponse.json({ success: true });
