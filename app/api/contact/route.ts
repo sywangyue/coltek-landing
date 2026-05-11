@@ -22,94 +22,21 @@ function isValidEmail(email: string): boolean {
 
 type Locale = 'en' | 'de' | 'nl' | 'zh';
 
-const labels: Record<Locale, {
-  interests: Record<string, string>;
-  sources: Record<string, string>;
-  interestedIn: string;
-  heardAbout: string;
-  messageLabel: string;
-  footer: string;
-}> = {
-  en: {
-    interests: {
-      spatial: 'Spatial Intelligence',
-      airspace: 'Spatial Security',
-      ai: 'AI Hardware',
-      other: 'Other / General Inquiry',
-    },
-    sources: {
-      exhibition: 'Exhibition / Trade Show',
-      socialMedia: 'Social Media',
-      searchEngine: 'Search Engine (Google, Bing, etc.)',
-      referral: 'Friend Referral',
-      partner: 'Partner / Distributor',
-      other: 'Other',
-    },
-    interestedIn: 'Interested in',
-    heardAbout: 'Heard about us via',
-    messageLabel: 'Message',
-    footer: 'Sent from sunova-innovation.nl contact form',
-  },
-  de: {
-    interests: {
-      spatial: 'Räumliche Intelligenz',
-      airspace: 'Räumliche Sicherheit',
-      ai: 'KI-Hardware',
-      other: 'Sonstiges / Allgemeine Anfrage',
-    },
-    sources: {
-      exhibition: 'Messe / Ausstellung',
-      socialMedia: 'Soziale Medien',
-      searchEngine: 'Suchmaschine (Google, Bing, etc.)',
-      referral: 'Empfehlung',
-      partner: 'Partner / Händler',
-      other: 'Sonstiges',
-    },
-    interestedIn: 'Interesse an',
-    heardAbout: 'Aufmerksam geworden über',
-    messageLabel: 'Nachricht',
-    footer: 'Gesendet über das Kontaktformular von sunova-innovation.nl',
-  },
-  nl: {
-    interests: {
-      spatial: 'Ruimtelijke Intelligentie',
-      airspace: 'Ruimtelijke Beveiliging',
-      ai: 'AI Hardware',
-      other: 'Anders / Algemene vraag',
-    },
-    sources: {
-      exhibition: 'Beurs / Tentoonstelling',
-      socialMedia: 'Sociale Media',
-      searchEngine: 'Zoekmachine (Google, Bing, etc.)',
-      referral: 'Aanbeveling',
-      partner: 'Partner / Distributeur',
-      other: 'Anders',
-    },
-    interestedIn: 'Interesse in',
-    heardAbout: 'Via ons gehoord',
-    messageLabel: 'Bericht',
-    footer: 'Verzonden via het contactformulier van sunova-innovation.nl',
-  },
-  zh: {
-    interests: {
-      spatial: '空间智能',
-      airspace: '空间安防',
-      ai: 'AI硬件',
-      other: '其他 / 一般咨询',
-    },
-    sources: {
-      exhibition: '展会',
-      socialMedia: '社交媒体',
-      searchEngine: '搜索引擎（Google、Bing 等）',
-      referral: '朋友推荐',
-      partner: '合作伙伴 / 经销商',
-      other: '其他',
-    },
-    interestedIn: '感兴趣的领域',
-    heardAbout: '了解渠道',
-    messageLabel: '留言',
-    footer: '来自 sunova-innovation.nl 联系表单',
-  },
+// Labels per locale for display in the notification email (always Chinese)
+const interestLabels: Record<string, Record<Locale, string>> = {
+  spatial: { en: 'Spatial Intelligence', de: 'Räumliche Intelligenz', nl: 'Ruimtelijke Intelligentie', zh: '空间智能' },
+  airspace: { en: 'Spatial Security', de: 'Räumliche Sicherheit', nl: 'Ruimtelijke Beveiliging', zh: '空间安防' },
+  ai: { en: 'AI Hardware', de: 'KI-Hardware', nl: 'AI Hardware', zh: 'AI硬件' },
+  other: { en: 'Other / General Inquiry', de: 'Sonstiges', nl: 'Anders', zh: '其他 / 一般咨询' },
+};
+
+const sourceLabels: Record<string, Record<Locale, string>> = {
+  exhibition: { en: 'Exhibition', de: 'Messe', nl: 'Beurs', zh: '展会' },
+  socialMedia: { en: 'Social Media', de: 'Soziale Medien', nl: 'Sociale Media', zh: '社交媒体' },
+  searchEngine: { en: 'Search Engine', de: 'Suchmaschine', nl: 'Zoekmachine', zh: '搜索引擎' },
+  referral: { en: 'Referral', de: 'Empfehlung', nl: 'Aanbeveling', zh: '朋友推荐' },
+  partner: { en: 'Partner', de: 'Partner', nl: 'Partner', zh: '合作伙伴 / 经销商' },
+  other: { en: 'Other', de: 'Sonstiges', nl: 'Anders', zh: '其他' },
 };
 
 export async function POST(req: NextRequest) {
@@ -138,7 +65,6 @@ export async function POST(req: NextRequest) {
 
   const { name, company, email, interests = [], source, message, locale } = body;
   const lang: Locale = (['en', 'de', 'nl', 'zh'].includes(locale ?? '') ? locale : 'en') as Locale;
-  const l = labels[lang];
 
   if (!name?.trim()) {
     return NextResponse.json({ error: 'Name is required.' }, { status: 400 });
@@ -163,28 +89,30 @@ export async function POST(req: NextRequest) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  const interestDisplay = interests.map((k) => l.interests[k] ?? k);
-  const sourceDisplay = source ? (l.sources[source] ?? source) : '—';
+  // Internal notification email is always in Chinese
+  const interestDisplay = interests.map((k) => interestLabels[k]?.[lang] ?? k);
+  const sourceDisplay = source ? (sourceLabels[source]?.[lang] ?? source) : '—';
 
   const text = [
-    `Name: ${name}`,
-    `Company: ${company}`,
-    `Email: ${email}`,
-    `${l.interestedIn}: ${interestDisplay.length ? interestDisplay.join(', ') : '—'}`,
-    `${l.heardAbout}: ${sourceDisplay}`,
+    `姓名: ${name}`,
+    `公司: ${company}`,
+    `邮箱: ${email}`,
+    `感兴趣的领域: ${interestDisplay.length ? interestDisplay.join('、') : '—'}`,
+    `了解渠道: ${sourceDisplay}`,
+    `提交语言: ${lang}`,
     '',
-    `${l.messageLabel}:`,
+    '留言:',
     message?.trim() || '—',
     '',
     '---',
-    l.footer,
+    '来自 sunova-innovation.nl 联系表单',
   ].join('\n');
 
   try {
     await resend.emails.send({
       from: 'Sunova & Coltek Website <no-reply@sunova-innovation.nl>',
       to: 'support@sunova-innovation.nl',
-      subject: `[Sunova & Coltek Inquiry] from ${name} - ${company}`,
+      subject: `[Sunova & Coltek 询盘] ${name} - ${company}`,
       text,
     });
     return NextResponse.json({ success: true });

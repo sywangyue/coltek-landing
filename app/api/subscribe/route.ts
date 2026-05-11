@@ -89,11 +89,11 @@ export async function POST(req: NextRequest) {
       resend.emails.send({
         from: 'Sunova & Coltek Website <no-reply@sunova-innovation.nl>',
         to: 'support@sunova-innovation.nl',
-        subject: '[New Subscriber] AI Hardware Interest',
+        subject: '[新订阅] AI硬件关注',
         text: [
-          `New email subscription: ${email}`,
-          `Subscribed at: ${timestamp}`,
-          `Language: ${lang}`,
+          `新订阅邮箱: ${email}`,
+          `订阅时间: ${timestamp}`,
+          `提交语言: ${lang}`,
         ].join('\n'),
       }),
     ]);
