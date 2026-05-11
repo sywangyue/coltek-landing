@@ -49,20 +49,20 @@ export async function POST(req: NextRequest) {
   const { name, company, email, interests = [], source, message } = body;
 
   const interestLabels: Record<string, string> = {
-    spatial: 'Spatial Intelligence',
-    airspace: 'Spatial Security',
-    ai: 'AI Hardware',
-    other: 'Other / General Inquiry',
+    spatial: '空间智能',
+    airspace: '空间安防',
+    ai: 'AI硬件',
+    other: '其他 / 一般咨询',
   };
   const interestDisplay = interests.map((k) => interestLabels[k] ?? k);
 
   const sourceLabels: Record<string, string> = {
-    exhibition: 'Exhibition / Trade Show',
-    socialMedia: 'Social Media',
-    searchEngine: 'Search Engine',
-    referral: 'Referral',
-    partner: 'Partner',
-    other: 'Other',
+    exhibition: '展会',
+    socialMedia: '社交媒体',
+    searchEngine: '搜索引擎（Google、Bing 等）',
+    referral: '朋友推荐',
+    partner: '合作伙伴 / 经销商',
+    other: '其他',
   };
   const sourceDisplay = source ? (sourceLabels[source] ?? source) : '—';
 

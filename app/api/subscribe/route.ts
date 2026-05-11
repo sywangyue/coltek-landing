@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
           'Thank you for your interest in our upcoming AI Hardware products.',
           "We'll notify you as soon as there are updates.",
           '',
-          '— The Coltek Team',
+          '— The Sunova & Coltek Team',
         ].join('\n'),
       }),
       // Notification email to internal team
