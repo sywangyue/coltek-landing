@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: 'Coltek Website <onboarding@resend.dev>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+      from: 'Coltek Website <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
       to: 'support@sunova-innovation.nl',
       subject: `[Coltek Website Inquiry] from ${name} - ${company}`,
       text,

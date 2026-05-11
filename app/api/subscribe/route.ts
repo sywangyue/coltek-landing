@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     await Promise.all([
       // Confirmation email to subscriber
       resend.emails.send({
-        from: 'Coltek Team <onboarding@resend.dev>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+        from: 'Coltek Team <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
         to: email,
         subject: 'Coltek AI Hardware — Subscription Confirmed',
         text: [
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       }),
       // Notification email to internal team
       resend.emails.send({
-        from: 'Coltek Website <onboarding@resend.dev>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
+        from: 'Coltek Website <no-reply@sunova-innovation.nl>', // TODO: replace with noreply@sunova-innovation.nl once domain is verified in Resend
         to: 'support@sunova-innovation.nl',
         subject: '[New Subscriber] AI Hardware Interest',
         text: [
