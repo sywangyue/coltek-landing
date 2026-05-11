@@ -56,6 +56,16 @@ export async function POST(req: NextRequest) {
   };
   const interestDisplay = interests.map((k) => interestLabels[k] ?? k);
 
+  const sourceLabels: Record<string, string> = {
+    exhibition: 'Exhibition / Trade Show',
+    socialMedia: 'Social Media',
+    searchEngine: 'Search Engine',
+    referral: 'Referral',
+    partner: 'Partner',
+    other: 'Other',
+  };
+  const sourceDisplay = source ? (sourceLabels[source] ?? source) : '—';
+
   // Server-side validation
   if (!name?.trim()) {
     return NextResponse.json({ error: 'Name is required.' }, { status: 400 });
@@ -86,7 +96,7 @@ export async function POST(req: NextRequest) {
     `Company: ${company}`,
     `Email: ${email}`,
     `Interested in: ${interestDisplay.length ? interestDisplay.join(', ') : '—'}`,
-    `Heard about us via: ${source || '—'}`,
+    `Heard about us via: ${sourceDisplay}`,
     '',
     'Message:',
     message?.trim() || '—',
