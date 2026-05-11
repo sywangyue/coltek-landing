@@ -24,12 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('title'),
     description: t('description'),
+    verification: {
+      google: 'b2IqM3WC-RZJsGWmjR38_wonYXY1BMiBP4jj9ZgIzXU',
+    },
     keywords: [
       'Coltek', 'Coltek GmbH', 'Coltek Robotics', 'Coltek Robotics GmbH',
       'Sunova Innovation', 'Sunova Innovation BV',
       'Spatial Intelligence', 'Drone Detection', 'AI Hardware',
       'European Market Entry', 'LiDAR', 'XGRIDS',
     ],
+    verification: {
+      google: 'b2IqM3WC-RZJsGWmjR38_wonYXY1BMiBP4jj9ZgIzXU',
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
