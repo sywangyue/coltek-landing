@@ -33,9 +33,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'Spatial Intelligence', 'Drone Detection', 'AI Hardware',
       'European Market Entry', 'LiDAR', 'XGRIDS',
     ],
-    verification: {
-      google: 'b2IqM3WC-RZJsGWmjR38_wonYXY1BMiBP4jj9ZgIzXU',
-    },
     openGraph: {
       title: t('title'),
       description: t('description'),
