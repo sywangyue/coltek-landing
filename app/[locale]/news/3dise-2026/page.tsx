@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props) {
   const isZh = locale === 'zh';
   return {
     title: isZh
-      ? 'Lixel K2 全球首秀！XGRIDS 以铂金伙伴身份亮相 3DISE 2026 | Coltek'
+      ? 'Lixel K2 全球首秀！其域创新以铂金伙伴身份亮相 3DISE 2026 | Coltek'
       : 'Lixel K2 Makes World Debut at 3DISE 2026 as XGRIDS Returns as Platinum Partner | Coltek',
   };
 }
@@ -57,11 +57,11 @@ function ArticleZh() {
     <article className="max-w-none">
 
       <h1 className="font-display text-3xl font-bold text-foreground leading-tight mb-8">
-        Lixel K2 全球首秀！XGRIDS 以铂金合作伙伴身份亮相 3DISE 2026
+        Lixel K2 全球首秀！其域创新以铂金合作伙伴身份亮相 3DISE 2026
       </h1>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
-        5 月 5 日至 6 日，XGRIDS 以<strong>铂金合作伙伴</strong>身份亮相欧洲领先的现实捕捉与空间计算盛会——<strong>3DISE 2026</strong>，持续深耕空间智能生态的创新发展。
+        5 月 5 日至 6 日，其域创新以<strong>铂金合作伙伴</strong>身份亮相欧洲领先的现实捕捉与空间计算盛会——<strong>3DISE 2026</strong>，持续深耕空间智能生态的创新发展。
       </p>
 
       {/* 图片1：3DISE 演讲台 — Spatial Intelligence */}
@@ -78,7 +78,7 @@ function ArticleZh() {
       </h2>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
-        本届展会上，<strong>XGRIDS 正式带来 Lixel K2 的全球公开首秀</strong>——这是一款轻量化、完全集成的空间扫描仪，具备实时彩色点云、内置 RTK 定位与工程级精度，以极具竞争力的价格实现了专业级现实捕捉。
+        本届展会上，<strong>其域创新正式带来 Lixel K2 的全球公开首秀</strong>——这是一款轻量化、完全集成的空间扫描仪，具备实时彩色点云、内置 RTK 定位与工程级精度，以极具竞争力的价格实现了专业级现实捕捉。
       </p>
 
       {/* 图片2：演讲台 Lixel K2 发布 */}
@@ -156,7 +156,7 @@ function ArticleZh() {
       </h2>
 
       <p className="text-foreground-muted leading-relaxed mb-4">
-        与此同时，XGRIDS 发布了 <strong>LixelStudio 4.0</strong> 的最新更新，带来一系列全面提升，将点云处理能力推向新的高度。此次更新重点包括：更精准的对齐与水平校准、大幅减少噪点与伪影带来的更洁净点云，以及更高精度、更一致的色彩还原效果。网格重建更加稳定可靠，整体处理流程也经过全面优化，更加直观高效——帮助专业用户从扫描到成果输出的速度大幅提升。
+        与此同时，其域创新发布了 <strong>LixelStudio 4.0</strong> 的最新更新，带来一系列全面提升，将点云处理能力推向新的高度。此次更新重点包括：更精准的对齐与水平校准、大幅减少噪点与伪影带来的更洁净点云，以及更高精度、更一致的色彩还原效果。网格重建更加稳定可靠，整体处理流程也经过全面优化，更加直观高效——帮助专业用户从扫描到成果输出的速度大幅提升。
       </p>
 
       <h3 className="font-semibold text-foreground mt-8 mb-4">
