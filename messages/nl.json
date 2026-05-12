@@ -107,6 +107,14 @@
     "readMore": "Meer lezen",
     "items": [
       {
+        "type": "Event",
+        "title": "XGRIDS Launches Lixel K2 as Platinum Partner at 3DISE 2026",
+        "date": "2026-05-05",
+        "summary": "XGRIDS returns to 3DISE 2026 as Platinum Partner, delivering the first public live debut of Lixel K2 alongside the major LixelStudio 4.0 update.",
+        "slug": "3dise-2026",
+        "thumbnail": "/images/news/3dise-2026/3dise-stage-spatial-intelligence.jpg"
+      },
+      {
         "type": "Award",
         "title": "World First: XGRIDS PortalCam Wins Four NAB 2026 Product of the Year Awards",
         "date": "2026-04-24",
