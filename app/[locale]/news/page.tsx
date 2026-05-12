@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Calendar, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
@@ -34,6 +35,7 @@ interface NewsItem {
   summary: string;
   content: string;
   slug?: string;
+  thumbnail?: string;
 }
 
 type Props = {
@@ -75,6 +77,16 @@ export default async function NewsPage({ params }: Props) {
               const href = item.slug ? `/${locale}/news/${item.slug}` : null;
               const inner = (
                 <>
+                  {item.thumbnail && (
+                    <div className="relative w-full h-48 rounded-lg overflow-hidden -mx-0 mb-1">
+                      <Image
+                        src={item.thumbnail}
+                        alt={item.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
                   <span className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full ${tagStyle(item.type)}`}>
                     {item.type}
                   </span>
