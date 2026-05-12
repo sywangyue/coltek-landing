@@ -218,6 +218,7 @@ function ArticleZh() {
         其域创新持续推动空间智能技术的发展，不断迈向新的高峰。每一个里程碑都印证了其域创新的承诺：让高精度空间扫描技术比以往任何时候都更强大、更可靠、更易于获取。<strong>随着从测绘、建筑到媒体及沉浸式体验等各行业对更丰富空间数据的需求持续增长，其域创新已做好充分准备，迎接这一未来。</strong>
       </p>
 
+      {/* 图片17：K2 室外建筑扫描 */}
       <div className="my-8 rounded-xl overflow-hidden">
         <Image
           src="/images/news/3dise-2026/k2-outdoor-scanning.jpg"
