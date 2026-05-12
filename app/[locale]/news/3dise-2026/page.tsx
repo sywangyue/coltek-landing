@@ -90,14 +90,7 @@ function ArticleZh() {
         />
       </div>
 
-      {/* 图片3：展台 K2 实物 */}
-      <div className="my-8 rounded-xl overflow-hidden">
-        <Image
-          src="/images/news/3dise-2026/3dise-booth-k2-display.jpg"
-          alt="3DISE 2026 展台上的 Lixel K2 实物展示"
-          width={800} height={1067} className="w-full object-cover"
-        />
-      </div>
+
 
       <h2 className="font-display text-xl font-bold text-foreground mt-10 mb-4">
         一机多能：完整的端到端软件生态
@@ -276,14 +269,7 @@ function ArticleEn() {
         />
       </div>
 
-      {/* Image 3: Booth K2 physical display */}
-      <div className="my-8 rounded-xl overflow-hidden">
-        <Image
-          src="/images/news/3dise-2026/3dise-booth-k2-display.jpg"
-          alt="Lixel K2 on display at the XGRIDS booth at 3DISE 2026"
-          width={800} height={1067} className="w-full object-cover"
-        />
-      </div>
+
 
       <h2 className="font-display text-xl font-bold text-foreground mt-10 mb-4">
         A Complete End-to-End Software Ecosystem
