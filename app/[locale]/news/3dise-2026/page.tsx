@@ -417,7 +417,7 @@ function ArticleEn() {
       </h2>
 
       <p className="text-foreground-muted leading-relaxed mb-8">
-        XGRIDS continued to advance the frontier of spatial intelligence at 3DISE 2026. Each new milestone reflects the company's commitment to making high-precision spatial scanning more capable, more reliable, and more accessible than ever. <strong>As industries from surveying and construction to media and immersive experience continue to demand richer spatial data, XGRIDS stands ready to meet that future.</strong>
+        XGRIDS continues to push the boundaries of spatial intelligence technology, reaching new heights with every step. Each milestone is a testament to XGRIDS's commitment to making high-precision spatial scanning more powerful, more reliable, and more accessible than ever before. <strong>As demand for richer spatial data continues to grow across industries — from surveying and construction to media and immersive experience — XGRIDS is fully prepared to meet that future.</strong>
       </p>
 
     </article>
