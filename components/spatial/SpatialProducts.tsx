@@ -110,7 +110,7 @@ const SW_LINKS: Record<string, string> = {
   studio: 'https://xgrids.com/lixelstudio',
   go:     'https://xgrids.com/',
   lcc:    'https://xgrids.com/intl/lcc',
-  revit:  'https://xgrids.com/',
+  revit:  'https://xgrids.com/intl/lccRevit',
 };
 
 export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<string, string> }) {
