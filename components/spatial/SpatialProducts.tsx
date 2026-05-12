@@ -108,7 +108,7 @@ const HW_LINKS: Record<string, string> = {
 
 const SW_LINKS: Record<string, string> = {
   studio: 'https://xgrids.com/lixelstudio',
-  go:     'https://xgrids.com/',
+  go:     'https://xgrids.com/intl/scannerseries',
   lcc:    'https://xgrids.com/intl/lcc',
   revit:  'https://xgrids.com/intl/lccRevit',
 };
