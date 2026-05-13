@@ -109,9 +109,9 @@ function TeamCard({ name, role, image, delay }: { name: string; role: string; im
       viewport={{ once: true }}
       className="bg-white rounded-[8px] p-5 flex flex-col items-center text-center hover:shadow-md transition-shadow duration-200"
     >
-      <div className="relative w-full aspect-square overflow-hidden bg-[#F1F5F9] mb-3 rounded-xl">
+      <div className="relative w-full aspect-[3/4] overflow-hidden bg-[#F1F5F9] mb-3 rounded-xl">
         {image ? (
-          <Image src={image} alt={name} fill quality={90} className="object-cover object-top" />
+          <Image src={image} alt={name} fill quality={90} className="object-cover object-center" />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
             <User size={36} className="text-foreground-muted/40" />
