@@ -187,12 +187,12 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {(locale === 'zh'
-                  ? ['≤ 1cm 精度', '内置 RTK', '实时彩色点云', '20万点/秒', 'IP54', '1,200g']
+                  ? ['≤ 1cm 精度', '内置 RTK', '实时彩色点云', '20万点/秒', 'IP54', '< 1 kg']
                   : locale === 'de'
-                  ? ['≤ 1 cm Genauigkeit', 'Eingebautes RTK', 'Echtzeit-Farbpunktwolke', '200K Punkte/s', 'IP54', '1.200 g']
+                  ? ['≤ 1 cm Genauigkeit', 'Eingebautes RTK', 'Echtzeit-Farbpunktwolke', '200K Punkte/s', 'IP54', '< 1 kg']
                   : locale === 'nl'
-                  ? ['≤ 1 cm nauwkeurigheid', 'Ingebouwde RTK', 'Realtime kleurpuntwolk', '200K ptn/s', 'IP54', '1.200 g']
-                  : ['≤ 1 cm Accuracy', 'Built-in RTK', 'Real-time Color Point Cloud', '200K pts/s', 'IP54', '1,200 g']
+                  ? ['≤ 1 cm nauwkeurigheid', 'Ingebouwde RTK', 'Realtime kleurpuntwolk', '200K ptn/s', 'IP54', '< 1 kg']
+                  : ['≤ 1 cm Accuracy', 'Built-in RTK', 'Real-time Color Point Cloud', '200K pts/s', 'IP54', '< 1 kg']
                 ).map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-500 text-gray-300">
                     {tag}
