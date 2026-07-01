@@ -12,9 +12,9 @@ const TEAM_IMAGES = [
   '/images/team/colt_chen_ceo.png',
   '/images/team/Herry_Sun_coo.jpg',
   '/images/team/shenshen_pm_xgrids.jpg',
+  '/images/team/jerry_zhang_bd_xgrids.jpg',
   '/images/team/estrella_wang_tecknical_support_xgrids.jpg',
   '/images/team/max_wang_consultant.png',
-  '/images/team/jerry_zhang_bd_xgrids.jpg',
 ];
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
@@ -23,7 +23,7 @@ const fadeUp = (d = 0) => ({
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: d, ease: EASE } },
 });
 
-// ── Count-up hook ────────────────────────────────────────────────────────────
+// ââ Count-up hook ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function useCountUp(target: number, duration = 1200, startOnView = false) {
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(!startOnView);
@@ -45,7 +45,7 @@ function useCountUp(target: number, duration = 1200, startOnView = false) {
   return { count, trigger: () => setStarted(true) };
 }
 
-// ── Stat card ────────────────────────────────────────────────────────────────
+// ââ Stat card ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function StatCard({
   value,
   label,
@@ -125,7 +125,7 @@ function TeamCard({ name, role, image, delay }: { name: string; role: string; im
   );
 }
 
-// ── Main section ─────────────────────────────────────────────────────────────
+// ââ Main section âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 export default function About() {
   const t = useTranslations('about');
   const useLocaleValue = useLocale();
@@ -148,7 +148,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12 lg:gap-16">
 
-          {/* ── Top: Text content ── */}
+          {/* ââ Top: Text content ââ */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -202,7 +202,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* ── Bottom: Team grid ── */}
+          {/* ââ Bottom: Team grid ââ */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
