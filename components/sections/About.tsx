@@ -14,6 +14,7 @@ const TEAM_IMAGES = [
   '/images/team/shenshen_pm_xgrids.jpg',
   '/images/team/estrella_wang_tecknical_support_xgrids.jpg',
   '/images/team/max_wang_consultant.png',
+  '/images/team/jerry_zhang_bd_xgrids.jpg',
 ];
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
