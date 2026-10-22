@@ -39,6 +39,10 @@
         "title": "空间安防",
         "keywords": "无人机探测 · 精准定位 · 态势感知"
       },
+      "payloads": {
+        "title": "无人机负载",
+        "keywords": "任务负载 · 机载侦测 · 即插即用"
+      },
       "ai": {
         "title": "AI硬件",
         "keywords": "下一代 · 智能设备 · 即将推出"
@@ -139,7 +143,7 @@
   "about": {
     "label": "关于我们",
     "title": "具有全球视野的技术专家",
-    "story": "企业使命：聚焦欧洲市场，依托本土化运营与供应链优势，为空间智能/安防及AI硬件品牌提供一站式出海解决方案，助力合作伙伴快速落地并创造长期价值。\n\n企业愿景：成为欧洲市场最受信任的科技出海标杆，打通全链路运营壁垒，实现B端专业赋能与C端终端销售的协同发展，构建全球科技产品通往欧洲的桥梁。",
+    "story": "企业使命：聚焦欧洲市场，依托本土化运营与供应链优势，为空间智能/安防、无人机负载及AI硬件品牌提供一站式出海解决方案，助力合作伙伴快速落地并创造长期价值。\n\n企业愿景：成为欧洲市场最受信任的科技出海标杆，打通全链路运营壁垒，实现B端专业赋能与C端终端销售的协同发展，构建全球科技产品通往欧洲的桥梁。",
     "stats": {
       "entities": {
         "value": "2",
@@ -199,8 +203,13 @@
       "interests": {
         "spatial": "空间智能",
         "airspace": "空间安防",
+        "payloads": "无人机负载",
         "ai": "AI硬件",
         "other": "其他 / 一般咨询"
+      },
+      "payloadProductsLabel": "具体产品",
+      "payloadProducts": {
+        "yunscan": "YunScan001 – 机载无人机侦测"
       },
       "message": "留言",
       "submit": "发送询价",
@@ -520,7 +529,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — 科技品牌进入欧洲市场的一站式战略合作伙伴",
-    "description": "为欧洲产业提供空间智能、无人机探测和AI硬件解决方案。由Coltek GmbH与Sunova Innovation BV联合提供，也称Coltek Robotics GmbH。"
+    "description": "为欧洲产业提供空间智能、无人机探测、无人机负载和AI硬件解决方案。由Coltek GmbH与Sunova Innovation BV联合提供，也称Coltek Robotics GmbH。"
   },
   "common": {
     "viewOnXgrids": "在 XGRIDS 查看"
@@ -741,6 +750,27 @@
     "heroDescription": "端到端空间智能平台——从精密硬件采集到AI驱动的三维重建与企业级数据分析"
   },
   "payloads": {
+    "overview": {
+      "label": "无人机负载",
+      "title": "行业无人机任务负载",
+      "subtitle": "让您现有的无人机胜任新任务",
+      "description": "我们为欧洲用户引入成熟的无人机任务负载。首款产品 YunScan001 可让大疆 Matrice 400 成为侦测半径 10 km 的空中无人机侦测节点。",
+      "highlights": {
+        "airborne": {
+          "title": "机载侦测",
+          "desc": "从空中发现无人机及其飞手，突破地面盲区"
+        },
+        "platform": {
+          "title": "专为大疆 M400 设计",
+          "desc": "无损挂载，E-Port V2 供电，3 分钟完成安装"
+        },
+        "integration": {
+          "title": "融入现有流程",
+          "desc": "数据显示在 DJI Pilot 2 上，并可经 MQTT 接入您的系统"
+        }
+      },
+      "cta": "探索负载产品"
+    },
     "hero": {
       "label": "无人机负载",
       "title": "无人机负载",

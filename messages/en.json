@@ -39,6 +39,10 @@
         "title": "Spatial Security",
         "keywords": "Drone Detection · Localization · Situational Awareness"
       },
+      "payloads": {
+        "title": "Drone Payloads",
+        "keywords": "Mission Payloads · Airborne Detection · Plug & Play"
+      },
       "ai": {
         "title": "AI Hardware",
         "keywords": "Next-Gen · Intelligent Devices · Coming Soon"
@@ -139,7 +143,7 @@
   "about": {
     "label": "About Us",
     "title": "Technology Experts with a Global Vision",
-    "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
+    "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, drone payloads and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
     "stats": {
       "entities": {
         "value": "2",
@@ -199,8 +203,13 @@
       "interests": {
         "spatial": "Spatial Intelligence",
         "airspace": "Spatial Security",
+        "payloads": "Drone Payloads",
         "ai": "AI Hardware",
         "other": "Other / General Inquiry"
+      },
+      "payloadProductsLabel": "Which payloads?",
+      "payloadProducts": {
+        "yunscan": "YunScan001 – airborne drone detection"
       },
       "message": "Message",
       "submit": "Send Inquiry",
@@ -520,7 +529,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — Your One-Stop Strategic Partner for European Market Entry",
-    "description": "Spatial Intelligence, Drone Detection, and AI Hardware solutions for European industries. Powered by Coltek GmbH and Sunova Innovation BV — also known as Coltek Robotics GmbH."
+    "description": "Spatial Intelligence, Drone Detection, Drone Payload and AI Hardware solutions for European industries. Powered by Coltek GmbH and Sunova Innovation BV — also known as Coltek Robotics GmbH."
   },
   "common": {
     "viewOnXgrids": "View on XGRIDS"
@@ -741,6 +750,27 @@
     "heroDescription": "End-to-end spatial intelligence platform — from precision hardware capture to AI-powered 3D reconstruction and enterprise analytics"
   },
   "payloads": {
+    "overview": {
+      "label": "Drone Payloads",
+      "title": "Mission Payloads for Enterprise Drones",
+      "subtitle": "New jobs for the drones you already fly",
+      "description": "We bring proven mission payloads to European operators, starting with YunScan001, which turns the DJI Matrice 400 into a flying drone-detection node with a 10 km radius.",
+      "highlights": {
+        "airborne": {
+          "title": "Airborne Detection",
+          "desc": "Spot drones and their pilots from the air, beyond ground blind spots"
+        },
+        "platform": {
+          "title": "Built for DJI M400",
+          "desc": "Non-invasive mounting, E-Port V2 power, ready in 3 minutes"
+        },
+        "integration": {
+          "title": "Fits Your Workflow",
+          "desc": "Data on the DJI Pilot 2 screen and via MQTT to your systems"
+        }
+      },
+      "cta": "Explore Payloads"
+    },
     "hero": {
       "label": "Drone Payloads",
       "title": "Drone Payloads",

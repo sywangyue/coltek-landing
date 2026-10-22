@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion, type Variants } from 'framer-motion';
-import { Scan, Shield, Cpu } from 'lucide-react';
+import { Scan, Shield, Drone, Cpu } from 'lucide-react';
 import Button from '@/components/ui/Button';
 
 // ---------- Fade-in variant factory ----------
@@ -30,6 +30,12 @@ const CARDS = [
     href: '#airspace',
   },
   {
+    key: 'payloads' as const,
+    icon: Drone,
+    iconClass: 'text-accent',
+    href: '#payloads',
+  },
+  {
     key: 'ai' as const,
     icon: Cpu,
     iconClass: '',          // gradient handled via style
@@ -52,7 +58,7 @@ function BusinessCard({
   href,
   delay,
 }: {
-  cardKey: 'spatial' | 'airspace' | 'ai';
+  cardKey: 'spatial' | 'airspace' | 'payloads' | 'ai';
   icon: typeof Scan;
   iconClass: string;
   href: string;
@@ -136,7 +142,7 @@ export default function HeroContent() {
       </motion.p>
 
       {/* Business Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-5xl mx-auto">
         {CARDS.map((card, i) => (
           <BusinessCard
             key={card.key}
