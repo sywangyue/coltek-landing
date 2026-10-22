@@ -136,8 +136,9 @@ export default function News() {
   };
 
   const arrowClass =
-    'w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground ' +
-    'hover:border-primary hover:text-primary transition-colors disabled:opacity-30 disabled:pointer-events-none';
+    'absolute top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white border border-border shadow-md ' +
+    'flex items-center justify-center text-foreground hover:text-primary hover:border-primary ' +
+    'transition-all duration-200 disabled:opacity-0 disabled:pointer-events-none';
 
   return (
     <section id="news" className="bg-white py-24 lg:py-32 overflow-hidden">
@@ -159,22 +160,12 @@ export default function News() {
                 withAccent
               />
             </div>
-            <div className="flex items-center justify-between gap-4 mt-6 lg:mt-0">
-              <Link
-                href={`/${locale}/news`}
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
-              >
-                {t('viewAll')} <ArrowRight size={14} />
-              </Link>
-              <div className="hidden lg:flex items-center gap-2">
-                <button type="button" aria-label="Previous" onClick={() => scrollByCard(-1)} disabled={!canPrev} className={arrowClass}>
-                  <ChevronLeft size={18} />
-                </button>
-                <button type="button" aria-label="Next" onClick={() => scrollByCard(1)} disabled={!canNext} className={arrowClass}>
-                  <ChevronRight size={18} />
-                </button>
-              </div>
-            </div>
+            <Link
+              href={`/${locale}/news`}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors mt-6 lg:mt-0"
+            >
+              {t('viewAll')} <ArrowRight size={14} />
+            </Link>
           </motion.div>
 
           {/* ── Right: horizontal scroll cards ── */}
@@ -186,15 +177,23 @@ export default function News() {
               ))}
             </div>
 
-            {/* Desktop: horizontal scroll */}
-            <div
-              ref={scrollerRef}
-              onScroll={updateArrows}
-              className="hidden lg:flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
-            >
-              {items.map((item, i) => (
-                <NewsCard key={i} item={item} delay={i * 0.12} />
-              ))}
+            {/* Desktop: horizontal scroll with side arrows */}
+            <div className="hidden lg:block relative">
+              <button type="button" aria-label="Previous" onClick={() => scrollByCard(-1)} disabled={!canPrev} className={`${arrowClass} -left-5`}>
+                <ChevronLeft size={20} />
+              </button>
+              <div
+                ref={scrollerRef}
+                onScroll={updateArrows}
+                className="flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
+              >
+                {items.map((item, i) => (
+                  <NewsCard key={i} item={item} delay={i * 0.12} />
+                ))}
+              </div>
+              <button type="button" aria-label="Next" onClick={() => scrollByCard(1)} disabled={!canNext} className={`${arrowClass} -right-5`}>
+                <ChevronRight size={20} />
+              </button>
             </div>
           </div>
 
