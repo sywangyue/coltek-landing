@@ -108,6 +108,14 @@
     "items": [
       {
         "type": "Event",
+        "title": "INTERGEO 2026: XGRIDS Unveils Lixel L3, Advancing the Future of Reality Capture",
+        "date": "2026-10-22",
+        "summary": "At INTERGEO 2026 in Munich, XGRIDS introduced its flagship Lixel L3 scanner, combining validated 5 mm relative accuracy, photorealistic 3D reconstruction and an integrated spatial capture workflow, with the Sunova team hosting live demonstrations for European professionals.",
+        "slug": "intergeo-2026",
+        "thumbnail": "/images/news/intergeo-2026/intergeo-booth-lixel-l3.jpg"
+      },
+      {
+        "type": "Event",
         "title": "Lixel K2 Makes World Debut at 3DISE 2026 as XGRIDS Returns as Platinum Partner",
         "date": "2026-05-12",
         "summary": "XGRIDS returns to 3DISE 2026 as Platinum Partner, delivering the first public live debut of Lixel K2 alongside the major LixelStudio 4.0 update.",

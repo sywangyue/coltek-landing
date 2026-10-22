@@ -108,6 +108,14 @@
     "items": [
       {
         "type": "活动",
+        "title": "INTERGEO 2026：其域创新发布 Lixel L3，推动实景三维采集迈向新阶段",
+        "date": "2026-10-22",
+        "summary": "在慕尼黑 INTERGEO 2026 上，其域创新正式推出旗舰级扫描仪 Lixel L3，集经过验证的 5 mm 相对精度、照片级三维重建与一体化空间采集工作流于一身；Sunova 团队在展台现场为欧洲专业用户带来演示与交流。",
+        "slug": "intergeo-2026",
+        "thumbnail": "/images/news/intergeo-2026/intergeo-booth-lixel-l3.jpg"
+      },
+      {
+        "type": "活动",
         "title": "Lixel K2 全球首秀！XGRIDS 以铂金合作伙伴身份亮相 3DISE 2026",
         "date": "2026-05-12",
         "summary": "XGRIDS 以铂金合作伙伴身份亮相欧洲顶级现实捕捉盛会 3DISE 2026，并正式发布 Lixel K2 全球首秀，同步推出 LixelStudio 4.0 重大更新。",
