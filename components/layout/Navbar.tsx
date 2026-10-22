@@ -77,6 +77,13 @@ export default function Navbar() {
         { labelKey: 'droneguard', descKey: 'droneguardDesc', href: `/${locale}/airspace/droneguard` },
       ],
     },
+    {
+      labelKey: 'payloads',
+      href: `/${locale}/payloads`,
+      dropdown: [
+        { labelKey: 'yunscan', descKey: 'yunscanDesc', href: `/${locale}/payloads/yunscan` },
+      ],
+    },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
     { labelKey: 'download', href: `/${locale}/download` },
     { labelKey: 'about', href: `/${locale}/#about` },
@@ -113,7 +120,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {navItems.map((item) => (
               <div
                 key={item.labelKey}
@@ -123,7 +130,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-foreground hover:text-primary rounded-lg transition-colors"
+                  className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-foreground hover:text-primary rounded-lg transition-colors whitespace-nowrap"
                 >
                   {t(item.labelKey as Parameters<typeof t>[0])}
                   {item.dropdown && (
@@ -215,7 +222,7 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-background-alt transition-colors"
+              className="xl:hidden p-2 rounded-lg hover:bg-background-alt transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -233,7 +240,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden fixed inset-0 top-16 bg-white z-40 overflow-y-auto"
+            className="xl:hidden fixed inset-0 top-16 bg-white z-40 overflow-y-auto"
           >
             <div className="px-4 py-6 space-y-1">
               {navItems.map((item) => (

@@ -18,6 +18,9 @@
     "xgridsDesc": "Ruimtelijk intelligentieplatform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone-detectiesysteem",
+    "payloads": "Drone-payloads",
+    "yunscan": "YunScan001",
+    "yunscanDesc": "Dronedetectie vanuit de lucht",
     "aiHardware": "AI-hardware",
     "news": "Nieuws",
     "download": "Download",
@@ -736,5 +739,209 @@
   },
   "xgrids": {
     "heroDescription": "End-to-end ruimtelijk intelligentieplatform — van precisie hardware-capture tot AI-gestuurde 3D-reconstructie en bedrijfsanalyse"
+  },
+  "payloads": {
+    "hero": {
+      "label": "Drone-payloads",
+      "title": "Drone-payloads",
+      "description": "Missiepayloads die uw bestaande professionele drones nieuwe taken geven, geselecteerd en ondersteund door Sunova voor Europese operators."
+    },
+    "viewProduct": "Product bekijken",
+    "categories": [
+      {
+        "key": "airspace",
+        "title": "Luchtruimbeveiliging",
+        "desc": "Detectie van drones en hun piloten vanuit de lucht",
+        "items": [
+          {
+            "id": "yunscan",
+            "name": "YunScan001",
+            "tagline": "Payload voor dronedetectie vanuit de lucht, voor de DJI Matrice 400",
+            "specs": [
+              "DJI Matrice 400",
+              "≥10 km detectiestraal",
+              "2,4 / 5,8 GHz",
+              "≥20 doelen",
+              "≤350 g"
+            ],
+            "image": "/images/payloads/yunscan/on-m400.png",
+            "slug": "yunscan"
+          }
+        ]
+      }
+    ],
+    "yunscan": {
+      "label": "Luchtruimbeveiliging · Drone-payload",
+      "subtitle": "Dronedetectie vanuit de lucht voor de DJI Matrice 400",
+      "description": "YunScan001 wordt onder de DJI M400 gemonteerd en maakt er een vliegend detectiepunt van. Vanuit de lucht vangt het dronesignalen op binnen een straal van 10 km, herkent het model en serienummer, en toont zowel de drone als de piloot op het DJI Pilot 2-scherm, zonder de dode hoeken door terrein en gebouwen waar grondsystemen mee te maken hebben.",
+      "cta": "Demo aanvragen",
+      "highlights": [
+        {
+          "value": "≥10 km",
+          "label": "Detectiestraal (open terrein)"
+        },
+        {
+          "value": "≥20",
+          "label": "Doelen tegelijk gevolgd"
+        },
+        {
+          "value": "≤350 g",
+          "label": "Gewicht module"
+        },
+        {
+          "value": "≤3 min",
+          "label": "Installatietijd"
+        }
+      ],
+      "features": {
+        "title": "Kernfuncties",
+        "items": [
+          {
+            "title": "360° dual-band detectie",
+            "desc": "Scant 2,4 GHz en 5,8 GHz tegelijk met een omnidirectionele antenne en decodeert Remote ID-uitzendingen volgens ASTM F3411 en ASD-STAN prEN 4709-002."
+          },
+          {
+            "title": "Model en identiteit",
+            "desc": "Een ingebouwde modellenbibliotheek herkent het volledige DJI-assortiment en merken zoals Autel en Skydio, en leest serienummers en unieke UAV-identificaties uit."
+          },
+          {
+            "title": "Locatie van de piloot",
+            "desc": "Toont de actuele positie van de piloot en het startpunt, met een QR-code op de controller die grondteams er direct naartoe navigeert. Gemiddelde detectietijd onder 30 seconden."
+          },
+          {
+            "title": "Geïntegreerd met DJI Pilot 2",
+            "desc": "Detectiegegevens verschijnen op hetzelfde scherm als het vliegbeeld. Via MQTT 5.0 gaan ze rechtstreeks naar het cloudplatform voor logging, het terugspelen van vliegroutes en koppeling met bestaande beveiligingssystemen."
+          },
+          {
+            "title": "Volledige bewijsketen",
+            "desc": "Legt van elk doel identiteit, positie, vliegroute, snelheid, koers en detectietijd vast, zodat elk incident gedocumenteerd en achteraf geëvalueerd kan worden."
+          },
+          {
+            "title": "Plug-and-play",
+            "desc": "Niet-invasieve montage onder de romp op de originele bevestigingspunten van de M400, gevoed via E-Port V2, met kabelvoeding voor lange missies. Geen aanpassing aan het toestel."
+          }
+        ]
+      },
+      "app": {
+        "title": "Op de DJI-controller",
+        "desc": "De YunScan-plug-in voor DJI Pilot 2 toont de detectiegegevens direct naast het vliegbeeld.",
+        "items": [
+          {
+            "title": "Compacte modus",
+            "desc": "Aantal doelen en alarmstatus in één oogopslag tijdens de missie.",
+            "image": "/images/payloads/yunscan/app-compact.jpg"
+          },
+          {
+            "title": "Detailmodus",
+            "desc": "Model, serienummer, afstand, hoogte en signaalsterkte per doel.",
+            "image": "/images/payloads/yunscan/app-detail.jpg"
+          },
+          {
+            "title": "Navigatie naar de piloot",
+            "desc": "Scan de QR-code om direct naar de positie van de piloot te navigeren.",
+            "image": "/images/payloads/yunscan/app-qr.jpg"
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Toepassingen",
+        "items": [
+          {
+            "title": "Grote evenementen",
+            "desc": "Vlieg vooraf ingestelde routes rond locaties en houd het luchtruim gedurende het hele evenement in de gaten."
+          },
+          {
+            "title": "Handhaving & noodhulp",
+            "desc": "Snel opstijgen, het lage luchtruim afdekken en verdachte drones van dichtbij controleren samen met grondteams."
+          },
+          {
+            "title": "Luchthavens",
+            "desc": "Indringers in vrije zones vroeg detecteren, vanuit een gezichtspunt dat grondsensoren niet bereiken."
+          },
+          {
+            "title": "Energie- en petrochemische locaties",
+            "desc": "Perimeters en tankparken in complex terrein patrouilleren zonder dode hoeken."
+          },
+          {
+            "title": "Vitale infrastructuur",
+            "desc": "Regelmatige patrouilles boven overheidslocaties, nutsvoorzieningen en andere belangrijke gebieden."
+          }
+        ]
+      },
+      "specs": {
+        "title": "Specificaties",
+        "rows": [
+          [
+            "Compatibel toestel",
+            "DJI Matrice 400 (E-Port V2)"
+          ],
+          [
+            "Montage",
+            "Niet-invasieve rompmontage op originele bevestigingspunten, geen aanpassing"
+          ],
+          [
+            "Detectiebereik",
+            "≥10 km (open terrein)"
+          ],
+          [
+            "Frequentiebanden",
+            "2,4 GHz / 5,8 GHz, gelijktijdig"
+          ],
+          [
+            "Antennedekking",
+            "360° horizontaal"
+          ],
+          [
+            "Gelijktijdige doelen",
+            "≥20"
+          ],
+          [
+            "Remote ID-standaarden",
+            "ASTM F3411, ASD-STAN prEN 4709-002"
+          ],
+          [
+            "Detecteerbare drones",
+            "Volledig DJI consumenten- en professioneel assortiment; Autel, Skydio en andere merken via wifi- / videolinkprotocollen"
+          ],
+          [
+            "Voeding",
+            "Via het toestel (E-Port V2); kabelvoeding ondersteund"
+          ],
+          [
+            "Installatietijd",
+            "≤3 min"
+          ],
+          [
+            "Afmetingen",
+            "150 × 55 × 45 mm"
+          ],
+          [
+            "Gewicht",
+            "≤350 g"
+          ],
+          [
+            "Bedrijfstemperatuur",
+            "-20 °C tot 50 °C"
+          ],
+          [
+            "Beschermingsgraad",
+            "IP43"
+          ],
+          [
+            "Data-interface",
+            "MQTT 5.0"
+          ],
+          [
+            "Certificeringen",
+            "CE, FCC, CNAS; DJI PSDK-geautoriseerd"
+          ]
+        ]
+      },
+      "contact": {
+        "title": "Zie YunScan001 in actie",
+        "desc": "Neem contact met ons op voor een demo, prijzen of om te bespreken hoe detectie vanuit de lucht in uw beveiliging past.",
+        "button": "Contact opnemen"
+      }
+    }
   }
 }

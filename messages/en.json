@@ -18,6 +18,9 @@
     "xgridsDesc": "Spatial intelligence platform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone detection system",
+    "payloads": "Drone Payloads",
+    "yunscan": "YunScan001",
+    "yunscanDesc": "Airborne drone detection",
     "aiHardware": "AI Hardware",
     "news": "News",
     "download": "Download",
@@ -736,5 +739,209 @@
   },
   "xgrids": {
     "heroDescription": "End-to-end spatial intelligence platform — from precision hardware capture to AI-powered 3D reconstruction and enterprise analytics"
+  },
+  "payloads": {
+    "hero": {
+      "label": "Drone Payloads",
+      "title": "Drone Payloads",
+      "description": "Mission payloads that give your existing enterprise drones new jobs, selected and supported by Sunova for European operators."
+    },
+    "viewProduct": "View product",
+    "categories": [
+      {
+        "key": "airspace",
+        "title": "Airspace Security",
+        "desc": "Airborne detection of drones and their operators",
+        "items": [
+          {
+            "id": "yunscan",
+            "name": "YunScan001",
+            "tagline": "Airborne drone detection payload for the DJI Matrice 400",
+            "specs": [
+              "DJI Matrice 400",
+              "≥10 km detection radius",
+              "2.4 / 5.8 GHz",
+              "≥20 targets",
+              "≤350 g"
+            ],
+            "image": "/images/payloads/yunscan/on-m400.png",
+            "slug": "yunscan"
+          }
+        ]
+      }
+    ],
+    "yunscan": {
+      "label": "Airspace Security · Drone Payload",
+      "subtitle": "Airborne drone detection for the DJI Matrice 400",
+      "description": "YunScan001 mounts under the DJI M400 and turns it into a flying detection node. From the air it picks up drone signals within a 10 km radius, identifies model and serial number, and shows both the drone and its operator on the DJI Pilot 2 screen, without the terrain and building blind spots of ground-based systems.",
+      "cta": "Request a demo",
+      "highlights": [
+        {
+          "value": "≥10 km",
+          "label": "Detection radius (open field)"
+        },
+        {
+          "value": "≥20",
+          "label": "Targets tracked simultaneously"
+        },
+        {
+          "value": "≤350 g",
+          "label": "Module weight"
+        },
+        {
+          "value": "≤3 min",
+          "label": "Installation time"
+        }
+      ],
+      "features": {
+        "title": "Core capabilities",
+        "items": [
+          {
+            "title": "360° dual-band detection",
+            "desc": "Scans 2.4 GHz and 5.8 GHz simultaneously with an omnidirectional antenna and decodes Remote ID broadcasts to ASTM F3411 and ASD-STAN prEN 4709-002."
+          },
+          {
+            "title": "Model and identity",
+            "desc": "A built-in model library recognises the full DJI lineup as well as brands such as Autel and Skydio, and extracts serial numbers and unique UAV identifiers."
+          },
+          {
+            "title": "Operator location",
+            "desc": "Shows the operator's live position and take-off point, with a QR code on the controller that navigates ground teams straight there. Average detection time is under 30 seconds."
+          },
+          {
+            "title": "Integrated with DJI Pilot 2",
+            "desc": "Detection data appears on the same screen as the flight view. Over MQTT 5.0 it streams directly to the cloud platform for logging, track replay and integration with existing security systems."
+          },
+          {
+            "title": "Complete evidence chain",
+            "desc": "Records identity, position, flight track, speed, heading and detection time for every target, so each incident can be documented and reviewed afterwards."
+          },
+          {
+            "title": "Plug and play",
+            "desc": "Non-invasive belly mounting on the M400's factory mounting points, powered via E-Port V2, with tethered power for long missions. No modification to the aircraft."
+          }
+        ]
+      },
+      "app": {
+        "title": "On the DJI controller",
+        "desc": "The YunScan plugin for DJI Pilot 2 puts detection data right next to the flight view.",
+        "items": [
+          {
+            "title": "Compact mode",
+            "desc": "Target count and alert status at a glance during the mission.",
+            "image": "/images/payloads/yunscan/app-compact.jpg"
+          },
+          {
+            "title": "Detail mode",
+            "desc": "Model, serial number, distance, altitude and signal strength for each target.",
+            "image": "/images/payloads/yunscan/app-detail.jpg"
+          },
+          {
+            "title": "Operator navigation",
+            "desc": "Scan the QR code to navigate straight to the operator's position.",
+            "image": "/images/payloads/yunscan/app-qr.jpg"
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Application scenarios",
+        "items": [
+          {
+            "title": "Major events",
+            "desc": "Patrol preset routes around venues and keep continuous watch over the airspace throughout the event."
+          },
+          {
+            "title": "Law enforcement & emergency response",
+            "desc": "Take off quickly, cover the low airspace and verify suspicious drones at close range together with ground teams."
+          },
+          {
+            "title": "Airports",
+            "desc": "Detect intrusions into clear zones early, from a viewpoint that ground sensors cannot reach."
+          },
+          {
+            "title": "Energy & petrochemical sites",
+            "desc": "Patrol perimeters and tank farms in complex terrain without blind spots."
+          },
+          {
+            "title": "Critical infrastructure",
+            "desc": "Regular patrols over government sites, utilities and other key areas."
+          }
+        ]
+      },
+      "specs": {
+        "title": "Specifications",
+        "rows": [
+          [
+            "Compatible aircraft",
+            "DJI Matrice 400 (E-Port V2)"
+          ],
+          [
+            "Mounting",
+            "Non-invasive belly mount on factory mounting points, no modification"
+          ],
+          [
+            "Detection range",
+            "≥10 km (open field)"
+          ],
+          [
+            "Frequency bands",
+            "2.4 GHz / 5.8 GHz, simultaneous"
+          ],
+          [
+            "Antenna coverage",
+            "360° horizontal"
+          ],
+          [
+            "Simultaneous targets",
+            "≥20"
+          ],
+          [
+            "Remote ID standards",
+            "ASTM F3411, ASD-STAN prEN 4709-002"
+          ],
+          [
+            "Detectable drones",
+            "Full DJI consumer and enterprise lineup; Autel, Skydio and other brands via Wi-Fi / video-link protocols"
+          ],
+          [
+            "Power supply",
+            "Via the aircraft (E-Port V2); tethered power supported"
+          ],
+          [
+            "Installation time",
+            "≤3 min"
+          ],
+          [
+            "Dimensions",
+            "150 × 55 × 45 mm"
+          ],
+          [
+            "Weight",
+            "≤350 g"
+          ],
+          [
+            "Operating temperature",
+            "-20 °C to 50 °C"
+          ],
+          [
+            "Ingress protection",
+            "IP43"
+          ],
+          [
+            "Data interface",
+            "MQTT 5.0"
+          ],
+          [
+            "Certifications",
+            "CE, FCC, CNAS; DJI PSDK authorised"
+          ]
+        ]
+      },
+      "contact": {
+        "title": "See YunScan001 in action",
+        "desc": "Contact us for a demo, pricing, or to discuss how airborne detection fits your security operations.",
+        "button": "Contact us"
+      }
+    }
   }
 }

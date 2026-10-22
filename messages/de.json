@@ -18,6 +18,9 @@
     "xgridsDesc": "Räumliche Intelligenz-Plattform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drohnenerkennungssystem",
+    "payloads": "Drohnen-Nutzlasten",
+    "yunscan": "YunScan001",
+    "yunscanDesc": "Luftgestützte Drohnenerkennung",
     "aiHardware": "AI Hardware",
     "news": "Neuigkeiten",
     "download": "Download",
@@ -736,5 +739,209 @@
   },
   "xgrids": {
     "heroDescription": "End-to-End-Plattform für räumliche Intelligenz — von der präzisen Hardware-Erfassung bis zur KI-gestützten 3D-Rekonstruktion und Unternehmensanalyse"
+  },
+  "payloads": {
+    "hero": {
+      "label": "Drohnen-Nutzlasten",
+      "title": "Drohnen-Nutzlasten",
+      "description": "Missions-Nutzlasten, die Ihren vorhandenen Industriedrohnen neue Aufgaben ermöglichen, ausgewählt und betreut von Sunova für europäische Betreiber."
+    },
+    "viewProduct": "Produkt ansehen",
+    "categories": [
+      {
+        "key": "airspace",
+        "title": "Luftraumsicherheit",
+        "desc": "Erkennung von Drohnen und ihren Piloten aus der Luft",
+        "items": [
+          {
+            "id": "yunscan",
+            "name": "YunScan001",
+            "tagline": "Nutzlast zur luftgestützten Drohnenerkennung für die DJI Matrice 400",
+            "specs": [
+              "DJI Matrice 400",
+              "≥10 km Erkennungsradius",
+              "2,4 / 5,8 GHz",
+              "≥20 Ziele",
+              "≤350 g"
+            ],
+            "image": "/images/payloads/yunscan/on-m400.png",
+            "slug": "yunscan"
+          }
+        ]
+      }
+    ],
+    "yunscan": {
+      "label": "Luftraumsicherheit · Drohnen-Nutzlast",
+      "subtitle": "Luftgestützte Drohnenerkennung für die DJI Matrice 400",
+      "description": "YunScan001 wird unter der DJI M400 montiert und macht sie zu einem fliegenden Erkennungsknoten. Aus der Luft erfasst es Drohnensignale im Umkreis von 10 km, identifiziert Modell und Seriennummer und zeigt Drohne und Pilot auf dem DJI Pilot 2-Bildschirm an, ohne die toten Winkel durch Gelände und Gebäude, die bodengestützte Systeme haben.",
+      "cta": "Demo anfragen",
+      "highlights": [
+        {
+          "value": "≥10 km",
+          "label": "Erkennungsradius (freies Gelände)"
+        },
+        {
+          "value": "≥20",
+          "label": "Gleichzeitig verfolgte Ziele"
+        },
+        {
+          "value": "≤350 g",
+          "label": "Modulgewicht"
+        },
+        {
+          "value": "≤3 min",
+          "label": "Installationszeit"
+        }
+      ],
+      "features": {
+        "title": "Kernfunktionen",
+        "items": [
+          {
+            "title": "360° Dualband-Erkennung",
+            "desc": "Scannt 2,4 GHz und 5,8 GHz gleichzeitig mit einer Rundstrahlantenne und dekodiert Remote-ID-Aussendungen nach ASTM F3411 und ASD-STAN prEN 4709-002."
+          },
+          {
+            "title": "Modell und Identität",
+            "desc": "Eine integrierte Modellbibliothek erkennt die gesamte DJI-Produktpalette sowie Marken wie Autel und Skydio und liest Seriennummern und eindeutige UAV-Kennungen aus."
+          },
+          {
+            "title": "Pilotenstandort",
+            "desc": "Zeigt die aktuelle Position des Piloten und den Startpunkt an, mit einem QR-Code auf der Fernsteuerung, der Bodenteams direkt dorthin navigiert. Durchschnittliche Erkennungszeit unter 30 Sekunden."
+          },
+          {
+            "title": "Integriert in DJI Pilot 2",
+            "desc": "Erkennungsdaten erscheinen auf demselben Bildschirm wie das Flugbild. Über MQTT 5.0 werden sie direkt an die Cloud-Plattform übertragen – für Protokollierung, Flugbahn-Wiedergabe und Anbindung an bestehende Sicherheitssysteme."
+          },
+          {
+            "title": "Lückenlose Beweiskette",
+            "desc": "Erfasst für jedes Ziel Identität, Position, Flugbahn, Geschwindigkeit, Kurs und Erkennungszeitpunkt, sodass jeder Vorfall dokumentiert und nachträglich ausgewertet werden kann."
+          },
+          {
+            "title": "Plug-and-play",
+            "desc": "Nicht-invasive Montage am Rumpf an den Original-Befestigungspunkten der M400, Stromversorgung über E-Port V2, Kabelstromversorgung für lange Einsätze. Keine Änderungen am Fluggerät."
+          }
+        ]
+      },
+      "app": {
+        "title": "Auf der DJI-Fernsteuerung",
+        "desc": "Das YunScan-Plug-in für DJI Pilot 2 zeigt die Erkennungsdaten direkt neben dem Flugbild.",
+        "items": [
+          {
+            "title": "Kompaktmodus",
+            "desc": "Anzahl der Ziele und Alarmstatus auf einen Blick während der Mission.",
+            "image": "/images/payloads/yunscan/app-compact.jpg"
+          },
+          {
+            "title": "Detailmodus",
+            "desc": "Modell, Seriennummer, Entfernung, Höhe und Signalstärke für jedes Ziel.",
+            "image": "/images/payloads/yunscan/app-detail.jpg"
+          },
+          {
+            "title": "Navigation zum Piloten",
+            "desc": "QR-Code scannen und direkt zur Position des Piloten navigieren.",
+            "image": "/images/payloads/yunscan/app-qr.jpg"
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Anwendungsszenarien",
+        "items": [
+          {
+            "title": "Großveranstaltungen",
+            "desc": "Festgelegte Routen rund um Veranstaltungsorte abfliegen und den Luftraum während der gesamten Veranstaltung überwachen."
+          },
+          {
+            "title": "Polizei & Notfalleinsätze",
+            "desc": "Schnell starten, den unteren Luftraum abdecken und verdächtige Drohnen gemeinsam mit Bodenteams aus der Nähe überprüfen."
+          },
+          {
+            "title": "Flughäfen",
+            "desc": "Eindringlinge in Schutzzonen frühzeitig erkennen – aus einer Perspektive, die Bodensensoren nicht erreichen."
+          },
+          {
+            "title": "Energie- und Petrochemie-Standorte",
+            "desc": "Perimeter und Tanklager in komplexem Gelände ohne tote Winkel überwachen."
+          },
+          {
+            "title": "Kritische Infrastruktur",
+            "desc": "Regelmäßige Patrouillen über Regierungsgebäuden, Versorgungsanlagen und anderen Schlüsselbereichen."
+          }
+        ]
+      },
+      "specs": {
+        "title": "Technische Daten",
+        "rows": [
+          [
+            "Kompatibles Fluggerät",
+            "DJI Matrice 400 (E-Port V2)"
+          ],
+          [
+            "Montage",
+            "Nicht-invasive Rumpfmontage an Original-Befestigungspunkten, keine Änderungen"
+          ],
+          [
+            "Erkennungsreichweite",
+            "≥10 km (freies Gelände)"
+          ],
+          [
+            "Frequenzbänder",
+            "2,4 GHz / 5,8 GHz, gleichzeitig"
+          ],
+          [
+            "Antennenabdeckung",
+            "360° horizontal"
+          ],
+          [
+            "Gleichzeitige Ziele",
+            "≥20"
+          ],
+          [
+            "Remote-ID-Standards",
+            "ASTM F3411, ASD-STAN prEN 4709-002"
+          ],
+          [
+            "Erkennbare Drohnen",
+            "Gesamte DJI Consumer- und Enterprise-Palette; Autel, Skydio und weitere Marken über WLAN- / Videolink-Protokolle"
+          ],
+          [
+            "Stromversorgung",
+            "Über das Fluggerät (E-Port V2); Kabelstromversorgung unterstützt"
+          ],
+          [
+            "Installationszeit",
+            "≤3 min"
+          ],
+          [
+            "Abmessungen",
+            "150 × 55 × 45 mm"
+          ],
+          [
+            "Gewicht",
+            "≤350 g"
+          ],
+          [
+            "Betriebstemperatur",
+            "-20 °C bis 50 °C"
+          ],
+          [
+            "Schutzart",
+            "IP43"
+          ],
+          [
+            "Datenschnittstelle",
+            "MQTT 5.0"
+          ],
+          [
+            "Zertifizierungen",
+            "CE, FCC, CNAS; DJI PSDK-autorisiert"
+          ]
+        ]
+      },
+      "contact": {
+        "title": "YunScan001 in Aktion erleben",
+        "desc": "Kontaktieren Sie uns für eine Demo, Preise oder um zu besprechen, wie luftgestützte Erkennung in Ihre Sicherheitsabläufe passt.",
+        "button": "Kontakt aufnehmen"
+      }
+    }
   }
 }
