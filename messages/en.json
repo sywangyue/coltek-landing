@@ -53,7 +53,7 @@
     "highlights": {
       "hardware": {
         "title": "Flagship Hardware",
-        "desc": "Lixel L2 Pro · K1 · PortalCam"
+        "desc": "Lixel L3 · K2 · L2 Pro · PortalCam"
       },
       "platform": {
         "title": "AI Reconstruction",
@@ -236,15 +236,15 @@
     "subtitle": "From scanning hardware to AI-powered reconstruction software",
     "hardware": {
       "sectionTitle": "Hardware",
+      "k2": {
+        "name": "Lixel K2",
+        "tagline": "Lightweight Spatial Scanner",
+        "desc": "At approx. 1.2 kg, the Lixel K2 combines LiDAR, three cameras and built-in RTK for 1 cm measurement accuracy. A single scan delivers a true-color point cloud, mesh and 3DGS model, ideal for Scan-to-BIM, digital twins and everyday surveying."
+      },
       "l2pro": {
         "name": "Lixel L2 Pro",
-        "tagline": "Flagship Handheld 3D Scanner",
+        "tagline": "High-Precision Handheld 3D Scanner",
         "desc": "The new Lixel L2 Pro combines LiDAR, visual, and IMU modules with AI, delivering real-time point cloud data that rivals post-processed quality, ushering in the \"zero post-processing era\" for SLAM devices."
-      },
-      "k1": {
-        "name": "LixelKity K1",
-        "tagline": "Compact Handheld 3D Scanner",
-        "desc": "Compact, powerful, and precise. Generate rich-colored, finely detailed 3D models with unmatched ease and speed."
       },
       "portalcam": {
         "name": "PortalCam",

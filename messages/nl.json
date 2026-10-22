@@ -53,7 +53,7 @@
     "highlights": {
       "hardware": {
         "title": "Vlaggenschip Hardware",
-        "desc": "Lixel L2 Pro · K1 · PortalCam"
+        "desc": "Lixel L3 · K2 · L2 Pro · PortalCam"
       },
       "platform": {
         "title": "AI-reconstructie",
@@ -236,15 +236,15 @@
     "subtitle": "Van scan-hardware tot AI-gestuurde reconstructiesoftware",
     "hardware": {
       "sectionTitle": "Hardware",
+      "k2": {
+        "name": "Lixel K2",
+        "tagline": "Lichtgewicht ruimtescanner",
+        "desc": "Met ca. 1,2 kg combineert de Lixel K2 LiDAR, drie camera's en ingebouwde RTK voor een meetnauwkeurigheid van 1 cm. Eén scan levert een puntenwolk in ware kleuren, een mesh en een 3DGS-model op – ideaal voor Scan-to-BIM, digital twins en dagelijkse landmeetkunde."
+      },
       "l2pro": {
         "name": "Lixel L2 Pro",
-        "tagline": "Vlaggenschip Handheld 3D-Scanner",
+        "tagline": "Uiterst nauwkeurige handheld 3D-scanner",
         "desc": "De nieuwe Lixel L2 Pro combineert LiDAR-, visuele en IMU-modules met AI-algoritmen en levert realtime puntenwolkdata van post-processing kwaliteit – en luidt daarmee het 'zero post-processing tijdperk' in voor SLAM-apparaten."
-      },
-      "k1": {
-        "name": "LixelKity K1",
-        "tagline": "Compacte Handheld 3D-Scanner",
-        "desc": "Compact, krachtig en nauwkeurig. Genereer kleurrijke, gedetailleerde 3D-modellen met ongeëvenaard gemak en snelheid."
       },
       "portalcam": {
         "name": "PortalCam",

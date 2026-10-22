@@ -53,7 +53,7 @@
     "highlights": {
       "hardware": {
         "title": "旗舰硬件",
-        "desc": "Lixel L2 Pro · K1 · PortalCam"
+        "desc": "Lixel L3 · K2 · L2 Pro · PortalCam"
       },
       "platform": {
         "title": "AI重建平台",
@@ -236,15 +236,15 @@
     "subtitle": "从扫描硬件到AI驱动的重建软件",
     "hardware": {
       "sectionTitle": "硬件",
+      "k2": {
+        "name": "Lixel K2",
+        "tagline": "轻量化空间扫描仪",
+        "desc": "约 1.2 kg 的轻巧机身，集成 LiDAR、三摄像头与内置 RTK，测量精度达 1 cm。一次扫描即可同时输出真彩点云、Mesh 与 3DGS 模型，适用于 Scan-to-BIM、数字孪生与日常测绘。"
+      },
       "l2pro": {
         "name": "Lixel L2 Pro",
-        "tagline": "旗舰手持3D扫描仪",
+        "tagline": "高精度手持3D扫描仪",
         "desc": "全新 Lixel L2 Pro 融合 LiDAR、视觉与 IMU 模块，搭载 AI 算法，实时输出媲美后处理质量的点云数据，开创 SLAM 设备「零后处理时代」。"
-      },
-      "k1": {
-        "name": "LixelKity K1",
-        "tagline": "紧凑型手持3D扫描仪",
-        "desc": "轻巧、强大、精准。以前所未有的便捷与速度，生成色彩丰富、细节精细的 3D 模型。"
       },
       "portalcam": {
         "name": "PortalCam",

@@ -95,14 +95,14 @@ function SoftwareCard({ name, desc, iconIdx, delay, href, linkLabel }: {
 
 /** Maps component key → lowercase base filename (without extension) in public/images/spatial/ */
 const HW_IMAGE_BASES: Record<string, string> = {
+  k2:        'k2',
   l2pro:     'l2 pro',
-  k1:        'k1',
   portalcam: 'portalcam',
 };
 
 const HW_LINKS: Record<string, string> = {
+  k2:       'https://www.xgrids.com/intl/lixelk2',
   l2pro:    'https://xgrids.com/lixell2pro',
-  k1:       'https://xgrids.com/intl/lixelk1',
   portalcam:'https://xgrids.com/intl/portalcam',
 };
 
@@ -118,7 +118,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
   const locale = useLocale();
   const tCommon = useTranslations('common');
 
-  const hwKeys = ['l2pro', 'k1', 'portalcam'] as const;
+  const hwKeys = ['k2', 'l2pro', 'portalcam'] as const;
   const swKeys = ['studio', 'go', 'lcc', 'revit'] as const;
 
   const linkLabel = tCommon('viewOnXgrids');
@@ -156,9 +156,9 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
           <SectionTitle title={t('title')} subtitle={t('subtitle')} withAccent />
         </motion.div>
 
-        {/* NEW: Lixel K2 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/k2/kv-hero.jpg) center center/cover no-repeat', minHeight: '520px'}}>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/20 to-black/50" />
+        {/* NEW: Lixel L3 Featured Banner */}
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/l3/kv-hero.jpg) center center/cover no-repeat', minHeight: '520px'}}>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
           <div className="relative z-10 min-h-[520px] flex flex-col justify-between p-8 lg:p-10">
 
             {/* Top row: badge + long description on the right */}
@@ -168,7 +168,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent text-white uppercase tracking-widest">
                   {locale === 'zh' ? '全新发布' : locale === 'de' ? 'Neu' : locale === 'nl' ? 'Nieuw' : 'New Release'}
                 </span>
-                <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel K2</span>
+                <span className="text-xs text-gray-400 uppercase tracking-widest">XGRIDS · Lixel L3</span>
               </div>
 
             </div>
@@ -177,22 +177,22 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
             <div>
               <p className="font-display text-sm tracking-wide text-white/90 mb-4 whitespace-nowrap">
                 {locale === 'zh'
-                  ? 'XGRIDS 推出的轻量化空间扫描仪，专为真实环境设计。'
+                  ? 'XGRIDS 旗舰级高精度空间扫描仪，精度与照片级真彩兼得。'
                   : locale === 'de'
-                  ? 'Der leichte Raumscanner von XGRIDS für reale Einsatzbedingungen.'
+                  ? 'Der Flaggschiff-Raumscanner von XGRIDS – Präzision trifft Fotorealismus.'
                   : locale === 'nl'
-                  ? 'De lichtgewicht ruimtescanner van XGRIDS voor gebruik in de praktijk.'
-                  : "XGRIDS' lightweight spatial scanner built for real-world conditions."
+                  ? 'De vlaggenschip-ruimtescanner van XGRIDS – nauwkeurigheid ontmoet fotorealisme.'
+                  : "XGRIDS' flagship high-accuracy spatial scanner – accuracy meets photorealism."
                 }
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {(locale === 'zh'
-                  ? ['≤ 1cm 精度', '内置 RTK', '实时彩色点云', '20万点/秒', 'IP54', '< 1 kg']
+                  ? ['5 mm 相对精度', '64万点/秒', '120 m 测距', '内置 RTK', '4K HDR 真彩', 'IP54']
                   : locale === 'de'
-                  ? ['≤ 1 cm Genauigkeit', 'Eingebautes RTK', 'Echtzeit-Farbpunktwolke', '200K Punkte/s', 'IP54', '< 1 kg']
+                  ? ['5 mm relative Genauigkeit', '640K Punkte/s', '120 m Reichweite', 'Eingebautes RTK', '4K-HDR-Farbe', 'IP54']
                   : locale === 'nl'
-                  ? ['≤ 1 cm nauwkeurigheid', 'Ingebouwde RTK', 'Realtime kleurpuntwolk', '200K ptn/s', 'IP54', '< 1 kg']
-                  : ['≤ 1 cm Accuracy', 'Built-in RTK', 'Real-time Color Point Cloud', '200K pts/s', 'IP54', '< 1 kg']
+                  ? ['5 mm relatieve nauwkeurigheid', '640K ptn/s', '120 m bereik', 'Ingebouwde RTK', '4K HDR-kleur', 'IP54']
+                  : ['5 mm Relative Accuracy', '640K pts/s', '120 m Range', 'Built-in RTK', '4K HDR Color', 'IP54']
                 ).map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1.5 rounded-full border border-gray-500 text-gray-300">
                     {tag}
@@ -200,7 +200,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 ))}
               </div>
               <a
-                href="https://www.xgrids.com/intl/lixelk2"
+                href="https://www.xgrids.com/intl/lixell3"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-[8px] hover:bg-accent/90 transition-colors"
