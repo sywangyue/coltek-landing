@@ -38,6 +38,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Slide-in animations start up to 40px off to the side; without this, phones
+   widen the page to fit them and it can be dragged sideways. `clip` (unlike
+   `hidden`) does not create a scroll container, so sticky elements keep working. */
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   background-color: #FFFFFF;
   color: #111827;
