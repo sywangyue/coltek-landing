@@ -61,6 +61,12 @@
     "title": "3D-scan- en reconstructieoplossingen",
     "subtitle": "Europees XGRIDS-strategisch partner",
     "description": "Wij bieden uitgebreide 3D-ruimtelijke digitalisatieoplossingen, van hardware-scanning tot AI-gedreven reconstructie, voor industrieën in heel Europa.",
+    "launch": {
+      "badge": "Nieuw",
+      "title": "De Lixel L3 is er",
+      "subtitle": "5 mm nauwkeurig · Ware kleuren · Puntenwolk, mesh & 3DGS",
+      "cta": "Ontdek de Lixel L3"
+    },
     "highlights": {
       "hardware": {
         "title": "Vlaggenschip Hardware",

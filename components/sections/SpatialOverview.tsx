@@ -4,7 +4,8 @@ import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ScanLine, Brain, Target, ImageIcon, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { ScanLine, Brain, Target, ArrowRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/ui/SectionTitle';
 
@@ -29,7 +30,7 @@ const HIGHLIGHTS = [
   { icon: Target,   key: 'precision' as const },
 ];
 
-export default function SpatialOverview({ imageSrc }: { imageSrc?: string }) {
+export default function SpatialOverview() {
   const t = useTranslations('spatial');
   const locale = useLocale();
   const router = useRouter();
@@ -95,7 +96,7 @@ export default function SpatialOverview({ imageSrc }: { imageSrc?: string }) {
             </div>
           </motion.div>
 
-          {/* ── Right: Image placeholder ── */}
+          {/* ── Right: Lixel L3 launch visual ── */}
           <motion.div
             variants={fadeRight}
             initial="hidden"
@@ -103,16 +104,40 @@ export default function SpatialOverview({ imageSrc }: { imageSrc?: string }) {
             viewport={{ once: true, margin: '-80px' }}
             className="relative"
           >
-            <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
-              {imageSrc ? (
-                <Image src={imageSrc} alt="Spatial Intelligence" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
-              ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                  <ImageIcon size={40} className="text-foreground-muted/40" />
-                  <span className="text-sm text-foreground-muted/60 font-medium">Product Image</span>
+            {/* 16:9 so the product name printed on the key visual is never cropped */}
+            <Link
+              href={`/${locale}/spatial/xgrids`}
+              className="group relative block aspect-[16/9] rounded-[16px] overflow-hidden border border-border bg-[#0B1220]"
+            >
+              <Image
+                src="/images/spatial/products/l3/kv-hero.jpg"
+                alt="XGRIDS Lixel L3"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+
+              {/* Launch badge */}
+              <span className="absolute top-4 left-4 inline-flex items-center gap-2 bg-accent text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-75 animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                </span>
+                {t('launch.badge')}
+              </span>
+
+              {/* Launch strip, kept low on the dark floor so it clears the
+                  product name and slogan printed on the key visual */}
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-4 pt-8 pb-3 sm:px-5 sm:pb-4">
+                <div className="min-w-0">
+                  <p className="font-display text-base sm:text-lg font-bold text-white leading-tight">{t('launch.title')}</p>
+                  <p className="hidden sm:block text-xs text-white/75 mt-0.5 line-clamp-2">{t('launch.subtitle')}</p>
                 </div>
-              )}
-            </div>
+                <span className="shrink-0 inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/25 text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full group-hover:bg-accent group-hover:border-accent transition-colors">
+                  {t('launch.cta')} <ArrowRight size={14} />
+                </span>
+              </div>
+            </Link>
             {/* Decorative gradient accent */}
             <div
               className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10 -z-10"

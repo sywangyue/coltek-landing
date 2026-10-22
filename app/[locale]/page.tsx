@@ -19,7 +19,7 @@ export default function HomePage() {
     <main>
       <Navbar />
       <Hero />
-      <SpatialOverview imageSrc={overviewImages['spatial']} />
+      <SpatialOverview />
       <AirspaceOverview imageSrc={overviewImages['dronedetection']} />
       <DjiOverview />
       <PayloadsOverview />

@@ -61,6 +61,12 @@
     "title": "3D扫描与重建解决方案",
     "subtitle": "欧洲XGRIDS战略合作伙伴",
     "description": "我们提供全面的3D空间数字化解决方案，从硬件扫描到AI驱动的三维重建，服务于欧洲各行各业。",
+    "launch": {
+      "badge": "全新发布",
+      "title": "Lixel L3 现已发布",
+      "subtitle": "5 mm 精度 · 照片级真彩 · 一次扫描三种成果",
+      "cta": "了解 Lixel L3"
+    },
     "highlights": {
       "hardware": {
         "title": "旗舰硬件",

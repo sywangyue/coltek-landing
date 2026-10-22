@@ -61,6 +61,12 @@
     "title": "3D Scanning & Reconstruction Solutions",
     "subtitle": "Europe's XGRIDS Strategic Partner",
     "description": "We provide comprehensive 3D spatial digitization solutions, from hardware scanning to AI-powered reconstruction, serving industries across Europe.",
+    "launch": {
+      "badge": "Just launched",
+      "title": "Lixel L3 is here",
+      "subtitle": "5 mm accuracy · True colour · Point cloud, mesh & 3DGS",
+      "cta": "Discover Lixel L3"
+    },
     "highlights": {
       "hardware": {
         "title": "Flagship Hardware",
