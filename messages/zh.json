@@ -18,7 +18,11 @@
     "xgridsDesc": "空间智能平台",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "无人机探测系统",
+    "drones": "无人机",
+    "dji": "DJI 行业无人机",
+    "djiDesc": "巡检、机场、运载与农业",
     "payloads": "无人机负载",
+    "payloadsDesc": "YunScan001 等任务负载",
     "yunscan": "YunScan001",
     "yunscanDesc": "机载无人机侦测",
     "aiHardware": "AI硬件",
@@ -39,9 +43,9 @@
         "title": "空间安防",
         "keywords": "无人机探测 · 精准定位 · 态势感知"
       },
-      "payloads": {
-        "title": "无人机负载",
-        "keywords": "任务负载 · 机载侦测 · 即插即用"
+      "drones": {
+        "title": "无人机",
+        "keywords": "DJI 行业无人机 · 任务负载 · 自动机场"
       },
       "ai": {
         "title": "AI硬件",
@@ -143,7 +147,7 @@
   "about": {
     "label": "关于我们",
     "title": "具有全球视野的技术专家",
-    "story": "企业使命：聚焦欧洲市场，依托本土化运营与供应链优势，为空间智能/安防、无人机负载及AI硬件品牌提供一站式出海解决方案，助力合作伙伴快速落地并创造长期价值。\n\n企业愿景：成为欧洲市场最受信任的科技出海标杆，打通全链路运营壁垒，实现B端专业赋能与C端终端销售的协同发展，构建全球科技产品通往欧洲的桥梁。",
+    "story": "企业使命：聚焦欧洲市场，依托本土化运营与供应链优势，为空间智能/安防、无人机与负载及AI硬件品牌提供一站式出海解决方案，助力合作伙伴快速落地并创造长期价值。\n\n企业愿景：成为欧洲市场最受信任的科技出海标杆，打通全链路运营壁垒，实现B端专业赋能与C端终端销售的协同发展，构建全球科技产品通往欧洲的桥梁。",
     "stats": {
       "entities": {
         "value": "2",
@@ -203,13 +207,22 @@
       "interests": {
         "spatial": "空间智能",
         "airspace": "空间安防",
+        "dji": "DJI 行业无人机",
         "payloads": "无人机负载",
         "ai": "AI硬件",
         "other": "其他 / 一般咨询"
       },
-      "payloadProductsLabel": "具体产品",
-      "payloadProducts": {
-        "yunscan": "YunScan001 – 机载无人机侦测"
+      "productOptionsLabel": "具体产品",
+      "productOptions": {
+        "dji": {
+          "inspection": "巡检与公共安全（Matrice 400 / Matrice 4 系列）",
+          "dock": "自动机场（Dock 4）",
+          "delivery": "运载（FlyCart）",
+          "agriculture": "农业（Agras / Mavic 3M）"
+        },
+        "payloads": {
+          "yunscan": "YunScan001 – 机载无人机侦测"
+        }
       },
       "message": "留言",
       "submit": "发送询价",
@@ -529,7 +542,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — 科技品牌进入欧洲市场的一站式战略合作伙伴",
-    "description": "为欧洲产业提供空间智能、无人机探测、无人机负载和AI硬件解决方案。由Coltek GmbH与Sunova Innovation BV联合提供，也称Coltek Robotics GmbH。"
+    "description": "为欧洲产业提供空间智能、无人机探测、DJI 行业无人机、无人机负载和AI硬件解决方案。由Coltek GmbH与Sunova Innovation BV联合提供，也称Coltek Robotics GmbH。"
   },
   "common": {
     "viewOnXgrids": "在 XGRIDS 查看"
@@ -972,6 +985,235 @@
         "desc": "欢迎联系我们预约演示、获取报价，或探讨机载侦测如何融入您的安防工作。",
         "button": "联系我们"
       }
+    }
+  },
+  "dji": {
+    "overview": {
+      "label": "DJI 行业无人机",
+      "title": "DJI 行业无人机",
+      "subtitle": "DJI 行业授权经销商",
+      "description": "我们提供 DJI 行业级全系产品，从 Matrice 400、Matrice 4 系列到 Dock 4、FlyCart 和 Agras，并帮助您为任务选择合适的机型与负载。",
+      "highlights": {
+        "inspection": {
+          "title": "巡检与安防",
+          "desc": "Matrice 400 与 Matrice 4 系列，用于巡检、测绘与应急救援"
+        },
+        "dock": {
+          "title": "自动机场",
+          "desc": "Dock 4 支持 25 秒自动换电，7×24 小时远程作业"
+        },
+        "field": {
+          "title": "运载与农业",
+          "desc": "FlyCart 用于空中运输，Agras 与 Mavic 3M 服务农业"
+        }
+      },
+      "cta": "探索 DJI 无人机"
+    },
+    "hero": {
+      "badge": "DJI 行业授权经销商",
+      "title": "DJI 行业无人机",
+      "description": "从巡检与公共安全，到自动机场、运载与农业，我们为欧洲企业和政府机构提供 DJI 行业级全系产品，并协助您选择合适的机型与负载。"
+    },
+    "officialSite": "在 DJI 官网查看",
+    "quote": "询价",
+    "categories": [
+      {
+        "key": "inspection",
+        "title": "巡检与公共安全",
+        "desc": "用于巡检、测绘与应急救援的旗舰平台和小型多传感器无人机",
+        "items": [
+          {
+            "id": "m400",
+            "name": "DJI Matrice 400 RTK",
+            "tagline": "长航时旗舰平台，具备电力线级别的障碍感知",
+            "specs": [
+              "59 分钟续航",
+              "6 kg 载重",
+              "旋转式 LiDAR + 毫米波雷达",
+              "IP55",
+              "40 km 图传（FCC）",
+              "RTK 1 cm + 1 ppm"
+            ],
+            "image": "/images/drones/dji/m400.png"
+          },
+          {
+            "id": "m4t",
+            "name": "DJI Matrice 4T",
+            "tagline": "面向公共安全与巡检的小型热成像多传感器无人机",
+            "specs": [
+              "49 分钟续航",
+              "热成像 640 × 512",
+              "48 MP 广角 + 3× / 7× 变焦",
+              "112× 混合变焦",
+              "激光测距 1800 m"
+            ],
+            "image": "/images/drones/dji/m4t.png"
+          },
+          {
+            "id": "m4e",
+            "name": "DJI Matrice 4E",
+            "tagline": "面向测绘与巡检的小型三摄无人机",
+            "specs": [
+              "49 分钟续航",
+              "48 MP 广角（1/1.3″）",
+              "3× 与 7× 变焦",
+              "激光测距 1800 m",
+              "1219 g"
+            ],
+            "image": "/images/drones/dji/m4e.png"
+          },
+          {
+            "id": "m4d",
+            "name": "DJI Matrice 4D / 4TD",
+            "tagline": "防护等级更高的机场版无人机，也可搭配 RC Plus 2 单独使用",
+            "specs": [
+              "54 分钟续航",
+              "IP55",
+              "广角 + 中焦 + 长焦",
+              "激光测距 1800 m",
+              "热成像相机（4TD）"
+            ],
+            "image": "/images/drones/dji/m4td.png"
+          }
+        ]
+      },
+      {
+        "key": "dock",
+        "title": "自动机场",
+        "desc": "全天候远程值守的无人机机场",
+        "items": [
+          {
+            "id": "dock4",
+            "name": "DJI Dock 4 与 Matrice 5TD",
+            "tagline": "DJI 首款支持自动换电的机场",
+            "specs": [
+              "换电 < 25 秒",
+              "7×24 小时作业",
+              "机场 IP56，-40 ~ 50 °C",
+              "Matrice 5TD：59 分钟，IP55",
+              "3 × 50 MP 相机 + 热成像",
+              "LiDAR + 毫米波雷达"
+            ],
+            "image": "/images/drones/dji/dock4.png"
+          }
+        ]
+      },
+      {
+        "key": "delivery",
+        "title": "运载与物流",
+        "desc": "空中运送物资的大载重无人机",
+        "items": [
+          {
+            "id": "fc100",
+            "name": "DJI FlyCart 100",
+            "tagline": "最大载重 100 kg 的旗舰运载无人机",
+            "specs": [
+              "最大载重 100 kg",
+              "最大起飞重量 170 kg",
+              "航程最远 12 km（双电池）",
+              "IP55",
+              "O4 图传 20 km（FCC）",
+              "4G 增强图传"
+            ],
+            "image": "/images/drones/dji/fc100.png"
+          },
+          {
+            "id": "fc30",
+            "name": "DJI FlyCart 30",
+            "tagline": "支持货箱与空吊模式的远距离运载无人机",
+            "specs": [
+              "最大载重 40 kg",
+              "空载最远 28 km",
+              "载重 30 kg 时 16 km",
+              "IP55",
+              "抗风 12 m/s"
+            ],
+            "image": "/images/drones/dji/fc30.png"
+          }
+        ]
+      },
+      {
+        "key": "agriculture",
+        "title": "农业",
+        "desc": "喷洒、播撒与作物监测",
+        "items": [
+          {
+            "id": "t100",
+            "name": "DJI Agras T100",
+            "tagline": "最大载重 100 kg 的大型农业无人机",
+            "specs": [
+              "100 L 喷洒箱",
+              "150 L 播撒箱",
+              "喷幅 5–13 m",
+              "喷洒、播撒与吊运",
+              "最大作业速度 13.8 m/s"
+            ],
+            "image": "/images/drones/dji/t100.png"
+          },
+          {
+            "id": "t70p",
+            "name": "DJI Agras T70P",
+            "tagline": "喷洒、播撒、吊运样样能干的高效机型",
+            "specs": [
+              "70 L 喷洒箱",
+              "100 L 播撒箱",
+              "最大载重 70 kg",
+              "喷幅 4–11 m",
+              "吊运 65 kg"
+            ],
+            "image": "/images/drones/dji/t70p.png"
+          },
+          {
+            "id": "t25p",
+            "name": "DJI Agras T25P",
+            "tagline": "可折叠的小型农业无人机，一人即可作业",
+            "specs": [
+              "20 L 喷洒箱",
+              "30 L 播撒箱",
+              "喷幅 4–7 m",
+              "16 L/min（2 喷头）",
+              "内置航测建图"
+            ],
+            "image": "/images/drones/dji/t25p.png"
+          },
+          {
+            "id": "t30",
+            "name": "DJI Agras T30",
+            "tagline": "成熟可靠的 40 kg 喷洒无人机，机身可变形",
+            "specs": [
+              "30 L 喷洒箱",
+              "最大载重 40 kg",
+              "球形雷达系统",
+              "IP67",
+              "双 FPV 相机"
+            ],
+            "image": "/images/drones/dji/t30.png"
+          },
+          {
+            "id": "m3m",
+            "name": "DJI Mavic 3M",
+            "tagline": "面向精准农业的多光谱测绘无人机",
+            "specs": [
+              "4 × 5 MP 多光谱",
+              "20 MP 4/3 RGB 相机",
+              "43 分钟续航",
+              "单次最多 200 公顷",
+              "厘米级 RTK"
+            ],
+            "image": "/images/drones/dji/m3m.png"
+          }
+        ]
+      }
+    ],
+    "payloads": {
+      "title": "为 Matrice 400 加装侦测能力",
+      "desc": "YunScan001 挂载于 M400 机腹，可侦测 10 km 范围内的无人机及其飞手。",
+      "button": "查看 YunScan001"
+    },
+    "contact": {
+      "title": "找到合适的 DJI 方案",
+      "desc": "告诉我们您的作业需求，我们会为您推荐合适的机型、负载与配件，并提供报价。",
+      "button": "联系我们"
     }
   }
 }

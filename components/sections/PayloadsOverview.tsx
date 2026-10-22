@@ -35,21 +35,21 @@ export default function PayloadsOverview() {
   const router = useRouter();
 
   return (
-    <section id="payloads" className="bg-white py-24 lg:py-32">
+    <section id="payloads" className="bg-background-alt py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/*
-          Desktop: text left, image right  (opposite of Airspace above)
+          Desktop: image left, text right  (opposite of the DJI section above)
           Mobile:  image on top, text below
         */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* ── Left: Text content (Desktop order-1, Mobile order-2) ── */}
+          {/* ── Right: Text content (Desktop order-2, Mobile order-2) ── */}
           <motion.div
-            variants={fadeLeft}
+            variants={fadeRight}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
-            className="order-2 lg:order-1"
+            className="order-2 lg:order-2"
           >
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               {t('label')}
@@ -75,7 +75,7 @@ export default function PayloadsOverview() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-background-alt border border-border rounded-[8px] p-4 hover:-translate-y-1 transition-transform duration-200"
+                  className="bg-white border border-border rounded-[8px] p-4 hover:-translate-y-1 transition-transform duration-200"
                 >
                   <Icon size={22} className="text-accent mb-2" />
                   <p className="text-sm font-semibold text-foreground mb-0.5">
@@ -93,15 +93,15 @@ export default function PayloadsOverview() {
             </Button>
           </motion.div>
 
-          {/* ── Right: Product image (Desktop order-2, Mobile order-1) ── */}
+          {/* ── Left: Product image (Desktop order-1, Mobile order-1) ── */}
           <motion.div
-            variants={fadeRight}
+            variants={fadeLeft}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
-            className="relative order-1 lg:order-2"
+            className="relative order-1 lg:order-1"
           >
-            <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
+            <div className="relative aspect-[4/3] rounded-[16px] bg-white overflow-hidden border border-border">
               <Image
                 src="/images/payloads/yunscan/on-m400.png"
                 alt="YunScan001 on a DJI Matrice 400"
@@ -112,7 +112,7 @@ export default function PayloadsOverview() {
             </div>
             {/* Decorative gradient accent */}
             <div
-              className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10 -z-10"
+              className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full opacity-10 -z-10"
               style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}
             />
           </motion.div>

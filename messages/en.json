@@ -18,7 +18,11 @@
     "xgridsDesc": "Spatial intelligence platform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone detection system",
+    "drones": "Drones",
+    "dji": "DJI Enterprise",
+    "djiDesc": "Inspection, docks, delivery & agriculture",
     "payloads": "Drone Payloads",
+    "payloadsDesc": "YunScan001 and more",
     "yunscan": "YunScan001",
     "yunscanDesc": "Airborne drone detection",
     "aiHardware": "AI Hardware",
@@ -39,9 +43,9 @@
         "title": "Spatial Security",
         "keywords": "Drone Detection · Localization · Situational Awareness"
       },
-      "payloads": {
-        "title": "Drone Payloads",
-        "keywords": "Mission Payloads · Airborne Detection · Plug & Play"
+      "drones": {
+        "title": "Drones",
+        "keywords": "DJI Enterprise · Mission Payloads · Docks"
       },
       "ai": {
         "title": "AI Hardware",
@@ -143,7 +147,7 @@
   "about": {
     "label": "About Us",
     "title": "Technology Experts with a Global Vision",
-    "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, drone payloads and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
+    "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, drones and payloads, and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
     "stats": {
       "entities": {
         "value": "2",
@@ -203,13 +207,22 @@
       "interests": {
         "spatial": "Spatial Intelligence",
         "airspace": "Spatial Security",
+        "dji": "DJI Enterprise Drones",
         "payloads": "Drone Payloads",
         "ai": "AI Hardware",
         "other": "Other / General Inquiry"
       },
-      "payloadProductsLabel": "Which payloads?",
-      "payloadProducts": {
-        "yunscan": "YunScan001 – airborne drone detection"
+      "productOptionsLabel": "Which products?",
+      "productOptions": {
+        "dji": {
+          "inspection": "Inspection & public safety (Matrice 400 / Matrice 4)",
+          "dock": "Automated docks (Dock 4)",
+          "delivery": "Delivery (FlyCart)",
+          "agriculture": "Agriculture (Agras / Mavic 3M)"
+        },
+        "payloads": {
+          "yunscan": "YunScan001 – airborne drone detection"
+        }
       },
       "message": "Message",
       "submit": "Send Inquiry",
@@ -529,7 +542,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — Your One-Stop Strategic Partner for European Market Entry",
-    "description": "Spatial Intelligence, Drone Detection, Drone Payload and AI Hardware solutions for European industries. Powered by Coltek GmbH and Sunova Innovation BV — also known as Coltek Robotics GmbH."
+    "description": "Spatial Intelligence, Drone Detection, DJI Enterprise Drones, Drone Payload and AI Hardware solutions for European industries. Powered by Coltek GmbH and Sunova Innovation BV — also known as Coltek Robotics GmbH."
   },
   "common": {
     "viewOnXgrids": "View on XGRIDS"
@@ -972,6 +985,235 @@
         "desc": "Contact us for a demo, pricing, or to discuss how airborne detection fits your security operations.",
         "button": "Contact us"
       }
+    }
+  },
+  "dji": {
+    "overview": {
+      "label": "DJI Enterprise",
+      "title": "DJI Enterprise Drones",
+      "subtitle": "Authorised DJI Enterprise Dealer",
+      "description": "We supply the current DJI Enterprise lineup, from the Matrice 400 and Matrice 4 series to Dock 4, FlyCart and Agras, and help you choose the right aircraft and payloads for your mission.",
+      "highlights": {
+        "inspection": {
+          "title": "Inspection & Safety",
+          "desc": "Matrice 400 and Matrice 4 series for inspection, mapping and emergency response"
+        },
+        "dock": {
+          "title": "Automated Docks",
+          "desc": "Dock 4 with 25-second battery swap for 24/7 remote operations"
+        },
+        "field": {
+          "title": "Delivery & Agriculture",
+          "desc": "FlyCart for air transport, Agras and Mavic 3M for farming"
+        }
+      },
+      "cta": "Explore DJI Drones"
+    },
+    "hero": {
+      "badge": "Authorised DJI Enterprise Dealer",
+      "title": "DJI Enterprise Drones",
+      "description": "From inspection and public safety to automated docks, delivery and agriculture: we supply the current DJI Enterprise lineup to European businesses and public authorities, with advice on choosing the right aircraft and payloads."
+    },
+    "officialSite": "View on DJI.com",
+    "quote": "Request a quote",
+    "categories": [
+      {
+        "key": "inspection",
+        "title": "Inspection & Public Safety",
+        "desc": "Flagship platforms and compact multi-sensor drones for inspection, mapping and emergency response",
+        "items": [
+          {
+            "id": "m400",
+            "name": "DJI Matrice 400 RTK",
+            "tagline": "Flagship long-endurance platform with power-line-level obstacle sensing",
+            "specs": [
+              "59 min flight time",
+              "6 kg payload",
+              "Rotating LiDAR + mmWave radar",
+              "IP55",
+              "40 km transmission (FCC)",
+              "RTK 1 cm + 1 ppm"
+            ],
+            "image": "/images/drones/dji/m400.png"
+          },
+          {
+            "id": "m4t",
+            "name": "DJI Matrice 4T",
+            "tagline": "Compact thermal multi-sensor drone for public safety and inspection",
+            "specs": [
+              "49 min flight time",
+              "Thermal 640 × 512",
+              "48 MP wide + 3× / 7× zoom",
+              "112× hybrid zoom",
+              "Laser rangefinder 1800 m"
+            ],
+            "image": "/images/drones/dji/m4t.png"
+          },
+          {
+            "id": "m4e",
+            "name": "DJI Matrice 4E",
+            "tagline": "Compact triple-camera drone for mapping and inspection",
+            "specs": [
+              "49 min flight time",
+              "48 MP wide (1/1.3″)",
+              "3× and 7× zoom",
+              "Laser rangefinder 1800 m",
+              "1219 g"
+            ],
+            "image": "/images/drones/dji/m4e.png"
+          },
+          {
+            "id": "m4d",
+            "name": "DJI Matrice 4D / 4TD",
+            "tagline": "Weather-resistant dock drones, also flyable with the RC Plus 2",
+            "specs": [
+              "54 min flight time",
+              "IP55",
+              "Wide + medium tele + tele",
+              "Laser rangefinder 1800 m",
+              "Thermal camera (4TD)"
+            ],
+            "image": "/images/drones/dji/m4td.png"
+          }
+        ]
+      },
+      {
+        "key": "dock",
+        "title": "Automated Docks",
+        "desc": "Drone-in-a-box for remote operations around the clock",
+        "items": [
+          {
+            "id": "dock4",
+            "name": "DJI Dock 4 with Matrice 5TD",
+            "tagline": "DJI's first dock with automatic battery swap",
+            "specs": [
+              "Battery swap < 25 s",
+              "24/7 operation",
+              "Dock IP56, -40 to 50 °C",
+              "Matrice 5TD: 59 min, IP55",
+              "3 × 50 MP cameras + thermal",
+              "LiDAR + mmWave radar"
+            ],
+            "image": "/images/drones/dji/dock4.png"
+          }
+        ]
+      },
+      {
+        "key": "delivery",
+        "title": "Delivery & Transport",
+        "desc": "Heavy-lift drones for moving goods by air",
+        "items": [
+          {
+            "id": "fc100",
+            "name": "DJI FlyCart 100",
+            "tagline": "Flagship delivery drone with up to 100 kg payload",
+            "specs": [
+              "Up to 100 kg payload",
+              "170 kg max. take-off weight",
+              "Up to 12 km range (2 batteries)",
+              "IP55",
+              "20 km O4 transmission (FCC)",
+              "4G-enhanced link"
+            ],
+            "image": "/images/drones/dji/fc100.png"
+          },
+          {
+            "id": "fc30",
+            "name": "DJI FlyCart 30",
+            "tagline": "Long-range transport drone with cargo and winch modes",
+            "specs": [
+              "Up to 40 kg payload",
+              "28 km max. range (empty)",
+              "16 km with 30 kg",
+              "IP55",
+              "12 m/s wind resistance"
+            ],
+            "image": "/images/drones/dji/fc30.png"
+          }
+        ]
+      },
+      {
+        "key": "agriculture",
+        "title": "Agriculture",
+        "desc": "Spraying, spreading and crop monitoring",
+        "items": [
+          {
+            "id": "t100",
+            "name": "DJI Agras T100",
+            "tagline": "Heavy-duty agricultural drone with 100 kg payload",
+            "specs": [
+              "100 L spray tank",
+              "150 L spreading tank",
+              "5–13 m spray width",
+              "Spraying, spreading and lifting",
+              "13.8 m/s max. speed"
+            ],
+            "image": "/images/drones/dji/t100.png"
+          },
+          {
+            "id": "t70p",
+            "name": "DJI Agras T70P",
+            "tagline": "Efficient all-rounder for spraying, spreading and lifting",
+            "specs": [
+              "70 L spray tank",
+              "100 L spreading tank",
+              "Up to 70 kg payload",
+              "4–11 m spray width",
+              "65 kg lifting"
+            ],
+            "image": "/images/drones/dji/t70p.png"
+          },
+          {
+            "id": "t25p",
+            "name": "DJI Agras T25P",
+            "tagline": "Compact, foldable agricultural drone for one-person operation",
+            "specs": [
+              "20 L spray tank",
+              "30 L spreading tank",
+              "4–7 m spray width",
+              "16 L/min (2 nozzles)",
+              "Built-in aerial mapping"
+            ],
+            "image": "/images/drones/dji/t25p.png"
+          },
+          {
+            "id": "t30",
+            "name": "DJI Agras T30",
+            "tagline": "Proven 40 kg spraying drone with a transformable body",
+            "specs": [
+              "30 L spray tank",
+              "Up to 40 kg payload",
+              "Spherical radar system",
+              "IP67",
+              "Two FPV cameras"
+            ],
+            "image": "/images/drones/dji/t30.png"
+          },
+          {
+            "id": "m3m",
+            "name": "DJI Mavic 3M",
+            "tagline": "Multispectral mapping drone for precision agriculture",
+            "specs": [
+              "4 × 5 MP multispectral",
+              "20 MP 4/3 RGB camera",
+              "43 min flight time",
+              "Up to 200 ha per flight",
+              "Centimetre-level RTK"
+            ],
+            "image": "/images/drones/dji/m3m.png"
+          }
+        ]
+      }
+    ],
+    "payloads": {
+      "title": "Add detection to your Matrice 400",
+      "desc": "YunScan001 mounts under the M400 and detects drones and their pilots within 10 km.",
+      "button": "View YunScan001"
+    },
+    "contact": {
+      "title": "Find the right DJI solution",
+      "desc": "Tell us about your mission and we will recommend the aircraft, payloads and accessories, and send you a quote.",
+      "button": "Contact us"
     }
   }
 }

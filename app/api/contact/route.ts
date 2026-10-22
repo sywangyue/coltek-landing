@@ -26,14 +26,23 @@ type Locale = 'en' | 'de' | 'nl' | 'zh';
 const interestLabels: Record<string, Record<Locale, string>> = {
   spatial: { en: 'Spatial Intelligence', de: 'Räumliche Intelligenz', nl: 'Ruimtelijke Intelligentie', zh: '空间智能' },
   airspace: { en: 'Spatial Security', de: 'Räumliche Sicherheit', nl: 'Ruimtelijke Beveiliging', zh: '空间安防' },
+  dji: { en: 'DJI Enterprise Drones', de: 'DJI Enterprise Drohnen', nl: 'DJI Enterprise-drones', zh: 'DJI 行业无人机' },
   payloads: { en: 'Drone Payloads', de: 'Drohnen-Nutzlasten', nl: 'Drone-payloads', zh: '无人机负载' },
   ai: { en: 'AI Hardware', de: 'KI-Hardware', nl: 'AI Hardware', zh: 'AI硬件' },
   other: { en: 'Other / General Inquiry', de: 'Sonstiges', nl: 'Anders', zh: '其他 / 一般咨询' },
 };
 
-// Products under "Drone Payloads" (product names are the same in every language)
-const payloadProductLabels: Record<string, string> = {
-  yunscan: 'YunScan001',
+// Product sub-options per interest (product names are the same in every language)
+const productLabels: Record<string, Record<string, string>> = {
+  dji: {
+    inspection: 'Matrice 400 / Matrice 4',
+    dock: 'Dock 4',
+    delivery: 'FlyCart',
+    agriculture: 'Agras / Mavic 3M',
+  },
+  payloads: {
+    yunscan: 'YunScan001',
+  },
 };
 
 const sourceLabels: Record<string, Record<Locale, string>> = {
@@ -59,7 +68,7 @@ export async function POST(req: NextRequest) {
     company?: string;
     email?: string;
     interests?: string[];
-    payloadProducts?: string[];
+    products?: Record<string, string[]>;
     source?: string;
     message?: string;
     locale?: string;
@@ -70,7 +79,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid request.' }, { status: 400 });
   }
 
-  const { name, company, email, interests = [], payloadProducts = [], source, message, locale } = body;
+  const { name, company, email, interests = [], products = {}, source, message, locale } = body;
   const lang: Locale = (['en', 'de', 'nl', 'zh'].includes(locale ?? '') ? locale : 'en') as Locale;
 
   if (!name?.trim()) {
@@ -97,10 +106,10 @@ export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   // Internal notification email is always in Chinese
-  const productDisplay = payloadProducts.map((k) => payloadProductLabels[k] ?? k);
   const interestDisplay = interests.map((k) => {
     const label = interestLabels[k]?.[lang] ?? k;
-    return k === 'payloads' && productDisplay.length ? `${label}（${productDisplay.join('、')}）` : label;
+    const chosen = (products[k] ?? []).map((p) => productLabels[k]?.[p] ?? p);
+    return chosen.length ? `${label}（${chosen.join('、')}）` : label;
   });
   const sourceDisplay = source ? (sourceLabels[source]?.[lang] ?? source) : '—';
 

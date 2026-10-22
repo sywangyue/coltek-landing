@@ -13,7 +13,7 @@ export default function Footer() {
   const quickLinks = [
     { labelKey: 'spatial', href: `/${locale}/#spatial` },
     { labelKey: 'airspace', href: `/${locale}/#airspace` },
-    { labelKey: 'payloads', href: `/${locale}/#payloads` },
+    { labelKey: 'drones', href: `/${locale}/#drones` },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
     { labelKey: 'news', href: `/${locale}/#news` },
     { labelKey: 'about', href: `/${locale}/#about` },

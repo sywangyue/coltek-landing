@@ -18,7 +18,11 @@
     "xgridsDesc": "Räumliche Intelligenz-Plattform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drohnenerkennungssystem",
+    "drones": "Drohnen",
+    "dji": "DJI Enterprise",
+    "djiDesc": "Inspektion, Docks, Transport & Landwirtschaft",
     "payloads": "Drohnen-Nutzlasten",
+    "payloadsDesc": "YunScan001 und mehr",
     "yunscan": "YunScan001",
     "yunscanDesc": "Luftgestützte Drohnenerkennung",
     "aiHardware": "AI Hardware",
@@ -39,9 +43,9 @@
         "title": "Raumsicherheit",
         "keywords": "Drohnenerkennung · Ortung · Lageerfassung"
       },
-      "payloads": {
-        "title": "Drohnen-Nutzlasten",
-        "keywords": "Missions-Nutzlasten · Luftgestützte Erkennung · Plug & Play"
+      "drones": {
+        "title": "Drohnen",
+        "keywords": "DJI Enterprise · Nutzlasten · Docks"
       },
       "ai": {
         "title": "AI Hardware",
@@ -143,7 +147,7 @@
   "about": {
     "label": "Über uns",
     "title": "Technologieexperten mit globaler Vision",
-    "story": "Mission: Mit Fokus auf den europäischen Markt nutzen wir lokale Betriebsstrukturen und Lieferkettenkompetenz, um Technologiemarken aus den Bereichen Raumintelligenz, Sicherheit, Drohnen-Nutzlasten und KI-Hardware eine umfassende Markteintritts-lösung zu bieten — für eine schnelle Etablierung und langfristige Wertschöpfung.\n\nVision: Der vertrauenswürdigste Maßstab für globale Technologieunternehmen im europäischen Markt zu werden — durch den Abbau aller operativen Barrieren, B2B-Enablement und B2C-Vertrieb im Einklang und als Brücke für globale Technologieprodukte nach Europa.",
+    "story": "Mission: Mit Fokus auf den europäischen Markt nutzen wir lokale Betriebsstrukturen und Lieferkettenkompetenz, um Technologiemarken aus den Bereichen Raumintelligenz, Sicherheit, Drohnen und Nutzlasten sowie KI-Hardware eine umfassende Markteintritts-lösung zu bieten — für eine schnelle Etablierung und langfristige Wertschöpfung.\n\nVision: Der vertrauenswürdigste Maßstab für globale Technologieunternehmen im europäischen Markt zu werden — durch den Abbau aller operativen Barrieren, B2B-Enablement und B2C-Vertrieb im Einklang und als Brücke für globale Technologieprodukte nach Europa.",
     "stats": {
       "entities": {
         "value": "2",
@@ -203,13 +207,22 @@
       "interests": {
         "spatial": "Spatial Intelligence",
         "airspace": "Raumsicherheit",
+        "dji": "DJI Enterprise Drohnen",
         "payloads": "Drohnen-Nutzlasten",
         "ai": "AI Hardware",
         "other": "Sonstiges / Allgemeine Anfrage"
       },
-      "payloadProductsLabel": "Welche Nutzlasten?",
-      "payloadProducts": {
-        "yunscan": "YunScan001 – luftgestützte Drohnenerkennung"
+      "productOptionsLabel": "Welche Produkte?",
+      "productOptions": {
+        "dji": {
+          "inspection": "Inspektion & öffentliche Sicherheit (Matrice 400 / Matrice 4)",
+          "dock": "Automatisierte Docks (Dock 4)",
+          "delivery": "Transport (FlyCart)",
+          "agriculture": "Landwirtschaft (Agras / Mavic 3M)"
+        },
+        "payloads": {
+          "yunscan": "YunScan001 – luftgestützte Drohnenerkennung"
+        }
       },
       "message": "Nachricht",
       "submit": "Anfrage senden",
@@ -529,7 +542,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — Ihr One-Stop-Strategiepartner für den Eintritt in den europäischen Markt",
-    "description": "Räumliche Intelligenz, Drohnenerkennung, Drohnen-Nutzlasten und AI Hardware-Lösungen für die europäische Industrie. Angeboten von Coltek GmbH und Sunova Innovation BV — auch bekannt als Coltek Robotics GmbH."
+    "description": "Räumliche Intelligenz, Drohnenerkennung, DJI Enterprise Drohnen, Drohnen-Nutzlasten und AI Hardware-Lösungen für die europäische Industrie. Angeboten von Coltek GmbH und Sunova Innovation BV — auch bekannt als Coltek Robotics GmbH."
   },
   "common": {
     "viewOnXgrids": "Auf XGRIDS ansehen"
@@ -972,6 +985,235 @@
         "desc": "Kontaktieren Sie uns für eine Demo, Preise oder um zu besprechen, wie luftgestützte Erkennung in Ihre Sicherheitsabläufe passt.",
         "button": "Kontakt aufnehmen"
       }
+    }
+  },
+  "dji": {
+    "overview": {
+      "label": "DJI Enterprise",
+      "title": "DJI Enterprise Drohnen",
+      "subtitle": "Autorisierter DJI Enterprise Händler",
+      "description": "Wir liefern die aktuelle DJI Enterprise Produktpalette, von der Matrice 400 und der Matrice 4-Serie bis zu Dock 4, FlyCart und Agras, und helfen Ihnen, das passende Fluggerät und die richtigen Nutzlasten für Ihren Einsatz zu wählen.",
+      "highlights": {
+        "inspection": {
+          "title": "Inspektion & Sicherheit",
+          "desc": "Matrice 400 und Matrice 4-Serie für Inspektion, Vermessung und Notfalleinsätze"
+        },
+        "dock": {
+          "title": "Automatisierte Docks",
+          "desc": "Dock 4 mit Akkuwechsel in 25 Sekunden für den 24/7-Fernbetrieb"
+        },
+        "field": {
+          "title": "Transport & Landwirtschaft",
+          "desc": "FlyCart für den Lufttransport, Agras und Mavic 3M für die Landwirtschaft"
+        }
+      },
+      "cta": "DJI Drohnen entdecken"
+    },
+    "hero": {
+      "badge": "Autorisierter DJI Enterprise Händler",
+      "title": "DJI Enterprise Drohnen",
+      "description": "Von Inspektion und öffentlicher Sicherheit über automatisierte Docks bis zu Transport und Landwirtschaft: Wir liefern die aktuelle DJI Enterprise Produktpalette an europäische Unternehmen und Behörden und beraten Sie bei der Wahl von Fluggerät und Nutzlast."
+    },
+    "officialSite": "Auf DJI.com ansehen",
+    "quote": "Angebot anfragen",
+    "categories": [
+      {
+        "key": "inspection",
+        "title": "Inspektion & öffentliche Sicherheit",
+        "desc": "Flaggschiff-Plattformen und kompakte Multisensor-Drohnen für Inspektion, Vermessung und Einsatzkräfte",
+        "items": [
+          {
+            "id": "m400",
+            "name": "DJI Matrice 400 RTK",
+            "tagline": "Langzeit-Flaggschiffplattform mit Hinderniserkennung auf Stromleitungsniveau",
+            "specs": [
+              "59 Min. Flugzeit",
+              "6 kg Nutzlast",
+              "Rotierendes LiDAR + mmWave-Radar",
+              "IP55",
+              "40 km Übertragung (FCC)",
+              "RTK 1 cm + 1 ppm"
+            ],
+            "image": "/images/drones/dji/m400.png"
+          },
+          {
+            "id": "m4t",
+            "name": "DJI Matrice 4T",
+            "tagline": "Kompakte Wärmebild-Multisensordrohne für Sicherheit und Inspektion",
+            "specs": [
+              "49 Min. Flugzeit",
+              "Wärmebild 640 × 512",
+              "48 MP Weitwinkel + 3× / 7× Zoom",
+              "112× Hybridzoom",
+              "Laser-Entfernungsmesser 1800 m"
+            ],
+            "image": "/images/drones/dji/m4t.png"
+          },
+          {
+            "id": "m4e",
+            "name": "DJI Matrice 4E",
+            "tagline": "Kompakte Drohne mit drei Kameras für Vermessung und Inspektion",
+            "specs": [
+              "49 Min. Flugzeit",
+              "48 MP Weitwinkel (1/1,3″)",
+              "3× und 7× Zoom",
+              "Laser-Entfernungsmesser 1800 m",
+              "1219 g"
+            ],
+            "image": "/images/drones/dji/m4e.png"
+          },
+          {
+            "id": "m4d",
+            "name": "DJI Matrice 4D / 4TD",
+            "tagline": "Wetterfeste Dock-Drohnen, auch mit RC Plus 2 einsetzbar",
+            "specs": [
+              "54 Min. Flugzeit",
+              "IP55",
+              "Weitwinkel + mittlere Tele + Tele",
+              "Laser-Entfernungsmesser 1800 m",
+              "Wärmebildkamera (4TD)"
+            ],
+            "image": "/images/drones/dji/m4td.png"
+          }
+        ]
+      },
+      {
+        "key": "dock",
+        "title": "Automatisierte Docks",
+        "desc": "Drone-in-a-Box für den Fernbetrieb rund um die Uhr",
+        "items": [
+          {
+            "id": "dock4",
+            "name": "DJI Dock 4 mit Matrice 5TD",
+            "tagline": "Das erste DJI Dock mit automatischem Akkuwechsel",
+            "specs": [
+              "Akkuwechsel < 25 s",
+              "24/7-Betrieb",
+              "Dock IP56, -40 bis 50 °C",
+              "Matrice 5TD: 59 Min., IP55",
+              "3 × 50-MP-Kameras + Wärmebild",
+              "LiDAR + mmWave-Radar"
+            ],
+            "image": "/images/drones/dji/dock4.png"
+          }
+        ]
+      },
+      {
+        "key": "delivery",
+        "title": "Transport & Logistik",
+        "desc": "Schwerlastdrohnen für den Warentransport aus der Luft",
+        "items": [
+          {
+            "id": "fc100",
+            "name": "DJI FlyCart 100",
+            "tagline": "Flaggschiff-Transportdrohne mit bis zu 100 kg Nutzlast",
+            "specs": [
+              "Bis zu 100 kg Nutzlast",
+              "170 kg max. Startgewicht",
+              "Bis zu 12 km Reichweite (2 Akkus)",
+              "IP55",
+              "20 km O4-Übertragung (FCC)",
+              "4G-verstärkte Übertragung"
+            ],
+            "image": "/images/drones/dji/fc100.png"
+          },
+          {
+            "id": "fc30",
+            "name": "DJI FlyCart 30",
+            "tagline": "Langstrecken-Transportdrohne mit Fracht- und Windenmodus",
+            "specs": [
+              "Bis zu 40 kg Nutzlast",
+              "28 km max. Reichweite (leer)",
+              "16 km mit 30 kg",
+              "IP55",
+              "12 m/s Windwiderstand"
+            ],
+            "image": "/images/drones/dji/fc30.png"
+          }
+        ]
+      },
+      {
+        "key": "agriculture",
+        "title": "Landwirtschaft",
+        "desc": "Sprühen, Streuen und Pflanzenüberwachung",
+        "items": [
+          {
+            "id": "t100",
+            "name": "DJI Agras T100",
+            "tagline": "Schwerlast-Agrardrohne mit 100 kg Nutzlast",
+            "specs": [
+              "100 L Sprühtank",
+              "150 L Streutank",
+              "5–13 m Sprühbreite",
+              "Sprühen, Streuen und Heben",
+              "13,8 m/s max. Geschwindigkeit"
+            ],
+            "image": "/images/drones/dji/t100.png"
+          },
+          {
+            "id": "t70p",
+            "name": "DJI Agras T70P",
+            "tagline": "Effizienter Allrounder zum Sprühen, Streuen und Heben",
+            "specs": [
+              "70 L Sprühtank",
+              "100 L Streutank",
+              "Bis zu 70 kg Nutzlast",
+              "4–11 m Sprühbreite",
+              "65 kg Heben"
+            ],
+            "image": "/images/drones/dji/t70p.png"
+          },
+          {
+            "id": "t25p",
+            "name": "DJI Agras T25P",
+            "tagline": "Kompakte, faltbare Agrardrohne für den Ein-Personen-Betrieb",
+            "specs": [
+              "20 L Sprühtank",
+              "30 L Streutank",
+              "4–7 m Sprühbreite",
+              "16 L/min (2 Düsen)",
+              "Integrierte Luftkartierung"
+            ],
+            "image": "/images/drones/dji/t25p.png"
+          },
+          {
+            "id": "t30",
+            "name": "DJI Agras T30",
+            "tagline": "Bewährte 40-kg-Sprühdrohne mit wandelbarem Rahmen",
+            "specs": [
+              "30 L Sprühtank",
+              "Bis zu 40 kg Nutzlast",
+              "Sphärisches Radarsystem",
+              "IP67",
+              "Zwei FPV-Kameras"
+            ],
+            "image": "/images/drones/dji/t30.png"
+          },
+          {
+            "id": "m3m",
+            "name": "DJI Mavic 3M",
+            "tagline": "Multispektral-Vermessungsdrohne für die Präzisionslandwirtschaft",
+            "specs": [
+              "4 × 5 MP Multispektral",
+              "20 MP 4/3 RGB-Kamera",
+              "43 Min. Flugzeit",
+              "Bis zu 200 ha pro Flug",
+              "Zentimetergenaues RTK"
+            ],
+            "image": "/images/drones/dji/m3m.png"
+          }
+        ]
+      }
+    ],
+    "payloads": {
+      "title": "Erweitern Sie Ihre Matrice 400 um Drohnenerkennung",
+      "desc": "YunScan001 wird unter der M400 montiert und erkennt Drohnen und ihre Piloten im Umkreis von 10 km.",
+      "button": "YunScan001 ansehen"
+    },
+    "contact": {
+      "title": "Die passende DJI-Lösung finden",
+      "desc": "Beschreiben Sie uns Ihren Einsatz – wir empfehlen Fluggerät, Nutzlasten und Zubehör und senden Ihnen ein Angebot.",
+      "button": "Kontakt aufnehmen"
     }
   }
 }

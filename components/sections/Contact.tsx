@@ -13,9 +13,12 @@ const EASE = [0.25, 0.1, 0.25, 1] as const;
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
-const INTEREST_KEYS = ['spatial', 'airspace', 'payloads', 'ai', 'other'] as const;
-// Products listed under "Drone Payloads" (keys of contact.form.payloadProducts)
-const PAYLOAD_PRODUCT_KEYS = ['yunscan'] as const;
+const INTEREST_KEYS = ['spatial', 'airspace', 'dji', 'payloads', 'ai', 'other'] as const;
+// Product sub-options shown under an interest once it is ticked (keys of contact.form.productOptions.<interest>)
+const PRODUCT_OPTIONS: Partial<Record<(typeof INTEREST_KEYS)[number], readonly string[]>> = {
+  dji: ['inspection', 'dock', 'delivery', 'agriculture'],
+  payloads: ['yunscan'],
+};
 const SOURCE_KEYS = ['exhibition', 'socialMedia', 'searchEngine', 'referral', 'partner', 'other'] as const;
 
 // ── Inquiry form ─────────────────────────────────────────────────────────────
@@ -25,7 +28,7 @@ function InquiryForm() {
   const [status, setStatus] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [interests, setInterests] = useState<string[]>([]);
-  const [payloadProducts, setPayloadProducts] = useState<string[]>([]);
+  const [products, setProducts] = useState<Record<string, string[]>>({});
   const [source, setSource] = useState('');
   const [privacyConsented, setPrivacyConsented] = useState(false);
 
@@ -39,17 +42,24 @@ function InquiryForm() {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
 
   const toggleInterest = (key: string) => {
-    // Unticking "Drone Payloads" also clears its product choices
-    if (key === 'payloads' && interests.includes(key)) setPayloadProducts([]);
+    // Unticking an interest also clears its product choices
+    if (interests.includes(key)) {
+      setProducts((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
     setInterests((prev) =>
       prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
     );
   };
 
-  const togglePayloadProduct = (key: string) =>
-    setPayloadProducts((prev) =>
-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
-    );
+  const toggleProduct = (interest: string, key: string) =>
+    setProducts((prev) => {
+      const list = prev[interest] ?? [];
+      return { ...prev, [interest]: list.includes(key) ? list.filter((k) => k !== key) : [...list, key] };
+    });
 
   function validate(): boolean {
     const errors: Record<string, string> = {};
@@ -73,7 +83,7 @@ function InquiryForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, company, email, interests, payloadProducts, source, message, locale }),
+        body: JSON.stringify({ name, company, email, interests, products, source, message, locale }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -177,20 +187,20 @@ function InquiryForm() {
                 </span>
               </label>
 
-              {/* Product choices appear once "Drone Payloads" is ticked */}
-              {key === 'payloads' && interests.includes('payloads') && (
+              {/* Product choices appear once an interest that has them is ticked */}
+              {PRODUCT_OPTIONS[key] && interests.includes(key) && (
                 <div className="mt-2 ml-7 pl-4 border-l-2 border-primary/20 space-y-2">
-                  <p className="text-xs text-foreground-muted">{t('form.payloadProductsLabel')}</p>
-                  {PAYLOAD_PRODUCT_KEYS.map((p) => (
+                  <p className="text-xs text-foreground-muted">{t('form.productOptionsLabel')}</p>
+                  {PRODUCT_OPTIONS[key].map((p) => (
                     <label key={p} className="flex items-center gap-3 cursor-pointer group">
                       <input
                         type="checkbox"
-                        checked={payloadProducts.includes(p)}
-                        onChange={() => togglePayloadProduct(p)}
+                        checked={(products[key] ?? []).includes(p)}
+                        onChange={() => toggleProduct(key, p)}
                         className="w-4 h-4 rounded border-border accent-primary cursor-pointer"
                       />
                       <span className="text-sm text-foreground group-hover:text-primary transition-colors">
-                        {t(`form.payloadProducts.${p}`)}
+                        {t(`form.productOptions.${key}.${p}`)}
                       </span>
                     </label>
                   ))}

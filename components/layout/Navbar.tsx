@@ -78,10 +78,11 @@ export default function Navbar() {
       ],
     },
     {
-      labelKey: 'payloads',
-      href: `/${locale}/payloads`,
+      labelKey: 'drones',
+      href: `/${locale}/drones/dji`,
       dropdown: [
-        { labelKey: 'yunscan', descKey: 'yunscanDesc', href: `/${locale}/payloads/yunscan` },
+        { labelKey: 'dji', descKey: 'djiDesc', href: `/${locale}/drones/dji` },
+        { labelKey: 'payloads', descKey: 'payloadsDesc', href: `/${locale}/payloads` },
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },

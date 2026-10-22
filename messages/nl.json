@@ -18,7 +18,11 @@
     "xgridsDesc": "Ruimtelijk intelligentieplatform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone-detectiesysteem",
+    "drones": "Drones",
+    "dji": "DJI Enterprise",
+    "djiDesc": "Inspectie, docks, transport & landbouw",
     "payloads": "Drone-payloads",
+    "payloadsDesc": "YunScan001 en meer",
     "yunscan": "YunScan001",
     "yunscanDesc": "Dronedetectie vanuit de lucht",
     "aiHardware": "AI-hardware",
@@ -39,9 +43,9 @@
         "title": "Ruimtebeveiliging",
         "keywords": "Drone-detectie · Lokalisatie · Situatiebewustzijn"
       },
-      "payloads": {
-        "title": "Drone-payloads",
-        "keywords": "Missiepayloads · Detectie vanuit de lucht · Plug & play"
+      "drones": {
+        "title": "Drones",
+        "keywords": "DJI Enterprise · Missiepayloads · Docks"
       },
       "ai": {
         "title": "AI-hardware",
@@ -143,7 +147,7 @@
   "about": {
     "label": "Over ons",
     "title": "Technologie-experts met een wereldwijde visie",
-    "story": "Missie: Gericht op de Europese markt benutten wij lokale operaties en toeleveringsketenvoordelen om technologiemerken in ruimtelijke intelligentie, beveiliging, drone-payloads en AI-hardware een alles-in-één markttoegangsstrategie te bieden — zodat partners snel voet aan de grond krijgen en langetermijnwaarde creëren.\n\nVisie: De meest vertrouwde benchmark voor internationale techbedrijven op de Europese markt worden — door operationele barrières te doorbreken, professionele B2B-ondersteuning en B2C-verkoop samen te laten groeien en een brug te slaan voor mondiale technologieproducten naar Europa.",
+    "story": "Missie: Gericht op de Europese markt benutten wij lokale operaties en toeleveringsketenvoordelen om technologiemerken in ruimtelijke intelligentie, beveiliging, drones en payloads, en AI-hardware een alles-in-één markttoegangsstrategie te bieden — zodat partners snel voet aan de grond krijgen en langetermijnwaarde creëren.\n\nVisie: De meest vertrouwde benchmark voor internationale techbedrijven op de Europese markt worden — door operationele barrières te doorbreken, professionele B2B-ondersteuning en B2C-verkoop samen te laten groeien en een brug te slaan voor mondiale technologieproducten naar Europa.",
     "stats": {
       "entities": {
         "value": "2",
@@ -203,13 +207,22 @@
       "interests": {
         "spatial": "Spatial Intelligence",
         "airspace": "Ruimtebeveiliging",
+        "dji": "DJI Enterprise-drones",
         "payloads": "Drone-payloads",
         "ai": "AI-hardware",
         "other": "Anders / Algemene vraag"
       },
-      "payloadProductsLabel": "Welke payloads?",
-      "payloadProducts": {
-        "yunscan": "YunScan001 – dronedetectie vanuit de lucht"
+      "productOptionsLabel": "Welke producten?",
+      "productOptions": {
+        "dji": {
+          "inspection": "Inspectie & openbare veiligheid (Matrice 400 / Matrice 4)",
+          "dock": "Geautomatiseerde docks (Dock 4)",
+          "delivery": "Transport (FlyCart)",
+          "agriculture": "Landbouw (Agras / Mavic 3M)"
+        },
+        "payloads": {
+          "yunscan": "YunScan001 – dronedetectie vanuit de lucht"
+        }
       },
       "message": "Bericht",
       "submit": "Aanvraag sturen",
@@ -529,7 +542,7 @@
   },
   "meta": {
     "title": "Sunova Innovation — Uw alles-in-één strategische partner voor toegang tot de Europese markt",
-    "description": "Ruimtelijke Intelligentie, Dronedetectie, Drone-payloads en AI-hardwareoplossingen voor de Europese industrie. Aangeboden door Coltek GmbH en Sunova Innovation BV — ook bekend als Coltek Robotics GmbH."
+    "description": "Ruimtelijke Intelligentie, Dronedetectie, DJI Enterprise-drones, Drone-payloads en AI-hardwareoplossingen voor de Europese industrie. Aangeboden door Coltek GmbH en Sunova Innovation BV — ook bekend als Coltek Robotics GmbH."
   },
   "common": {
     "viewOnXgrids": "Bekijk op XGRIDS"
@@ -972,6 +985,235 @@
         "desc": "Neem contact met ons op voor een demo, prijzen of om te bespreken hoe detectie vanuit de lucht in uw beveiliging past.",
         "button": "Contact opnemen"
       }
+    }
+  },
+  "dji": {
+    "overview": {
+      "label": "DJI Enterprise",
+      "title": "DJI Enterprise-drones",
+      "subtitle": "Geautoriseerde DJI Enterprise-dealer",
+      "description": "Wij leveren het actuele DJI Enterprise-assortiment, van de Matrice 400 en Matrice 4-serie tot Dock 4, FlyCart en Agras, en helpen u het juiste toestel en de juiste payloads voor uw missie te kiezen.",
+      "highlights": {
+        "inspection": {
+          "title": "Inspectie & veiligheid",
+          "desc": "Matrice 400 en Matrice 4-serie voor inspectie, kartering en noodhulp"
+        },
+        "dock": {
+          "title": "Geautomatiseerde docks",
+          "desc": "Dock 4 met accuwissel in 25 seconden voor 24/7 operaties op afstand"
+        },
+        "field": {
+          "title": "Transport & landbouw",
+          "desc": "FlyCart voor luchttransport, Agras en Mavic 3M voor de landbouw"
+        }
+      },
+      "cta": "DJI-drones bekijken"
+    },
+    "hero": {
+      "badge": "Geautoriseerde DJI Enterprise-dealer",
+      "title": "DJI Enterprise-drones",
+      "description": "Van inspectie en openbare veiligheid tot geautomatiseerde docks, transport en landbouw: wij leveren het actuele DJI Enterprise-assortiment aan Europese bedrijven en overheden, en adviseren u bij de keuze van toestel en payload."
+    },
+    "officialSite": "Bekijken op DJI.com",
+    "quote": "Offerte aanvragen",
+    "categories": [
+      {
+        "key": "inspection",
+        "title": "Inspectie & openbare veiligheid",
+        "desc": "Vlaggenschipplatforms en compacte multisensordrones voor inspectie, kartering en hulpdiensten",
+        "items": [
+          {
+            "id": "m400",
+            "name": "DJI Matrice 400 RTK",
+            "tagline": "Vlaggenschipplatform voor lange missies met obstakeldetectie tot op hoogspanningslijnniveau",
+            "specs": [
+              "59 min vliegtijd",
+              "6 kg payload",
+              "Roterende LiDAR + mmWave-radar",
+              "IP55",
+              "40 km transmissie (FCC)",
+              "RTK 1 cm + 1 ppm"
+            ],
+            "image": "/images/drones/dji/m400.png"
+          },
+          {
+            "id": "m4t",
+            "name": "DJI Matrice 4T",
+            "tagline": "Compacte thermische multisensordrone voor veiligheid en inspectie",
+            "specs": [
+              "49 min vliegtijd",
+              "Thermisch 640 × 512",
+              "48 MP groothoek + 3× / 7× zoom",
+              "112× hybride zoom",
+              "Laserafstandsmeter 1800 m"
+            ],
+            "image": "/images/drones/dji/m4t.png"
+          },
+          {
+            "id": "m4e",
+            "name": "DJI Matrice 4E",
+            "tagline": "Compacte drone met drie camera's voor kartering en inspectie",
+            "specs": [
+              "49 min vliegtijd",
+              "48 MP groothoek (1/1,3″)",
+              "3× en 7× zoom",
+              "Laserafstandsmeter 1800 m",
+              "1219 g"
+            ],
+            "image": "/images/drones/dji/m4e.png"
+          },
+          {
+            "id": "m4d",
+            "name": "DJI Matrice 4D / 4TD",
+            "tagline": "Weerbestendige dockdrones, ook los te vliegen met de RC Plus 2",
+            "specs": [
+              "54 min vliegtijd",
+              "IP55",
+              "Groothoek + middentele + tele",
+              "Laserafstandsmeter 1800 m",
+              "Warmtebeeldcamera (4TD)"
+            ],
+            "image": "/images/drones/dji/m4td.png"
+          }
+        ]
+      },
+      {
+        "key": "dock",
+        "title": "Geautomatiseerde docks",
+        "desc": "Drone-in-a-box voor operaties op afstand, dag en nacht",
+        "items": [
+          {
+            "id": "dock4",
+            "name": "DJI Dock 4 met Matrice 5TD",
+            "tagline": "Het eerste DJI-dock met automatische accuwissel",
+            "specs": [
+              "Accuwissel < 25 s",
+              "24/7 inzetbaar",
+              "Dock IP56, -40 tot 50 °C",
+              "Matrice 5TD: 59 min, IP55",
+              "3 × 50 MP-camera's + warmtebeeld",
+              "LiDAR + mmWave-radar"
+            ],
+            "image": "/images/drones/dji/dock4.png"
+          }
+        ]
+      },
+      {
+        "key": "delivery",
+        "title": "Transport & logistiek",
+        "desc": "Zware vrachtdrones voor goederentransport door de lucht",
+        "items": [
+          {
+            "id": "fc100",
+            "name": "DJI FlyCart 100",
+            "tagline": "Vlaggenschip-transportdrone met tot 100 kg payload",
+            "specs": [
+              "Tot 100 kg payload",
+              "170 kg max. startgewicht",
+              "Tot 12 km bereik (2 accu's)",
+              "IP55",
+              "20 km O4-transmissie (FCC)",
+              "4G-versterkte verbinding"
+            ],
+            "image": "/images/drones/dji/fc100.png"
+          },
+          {
+            "id": "fc30",
+            "name": "DJI FlyCart 30",
+            "tagline": "Transportdrone voor lange afstanden met vracht- en liermodus",
+            "specs": [
+              "Tot 40 kg payload",
+              "28 km max. bereik (leeg)",
+              "16 km met 30 kg",
+              "IP55",
+              "12 m/s windbestendigheid"
+            ],
+            "image": "/images/drones/dji/fc30.png"
+          }
+        ]
+      },
+      {
+        "key": "agriculture",
+        "title": "Landbouw",
+        "desc": "Spuiten, strooien en gewasmonitoring",
+        "items": [
+          {
+            "id": "t100",
+            "name": "DJI Agras T100",
+            "tagline": "Zware landbouwdrone met 100 kg payload",
+            "specs": [
+              "100 L spuittank",
+              "150 L strooitank",
+              "5–13 m spuitbreedte",
+              "Spuiten, strooien en heffen",
+              "13,8 m/s max. snelheid"
+            ],
+            "image": "/images/drones/dji/t100.png"
+          },
+          {
+            "id": "t70p",
+            "name": "DJI Agras T70P",
+            "tagline": "Efficiënte allrounder voor spuiten, strooien en heffen",
+            "specs": [
+              "70 L spuittank",
+              "100 L strooitank",
+              "Tot 70 kg payload",
+              "4–11 m spuitbreedte",
+              "65 kg heffen"
+            ],
+            "image": "/images/drones/dji/t70p.png"
+          },
+          {
+            "id": "t25p",
+            "name": "DJI Agras T25P",
+            "tagline": "Compacte, opvouwbare landbouwdrone voor bediening door één persoon",
+            "specs": [
+              "20 L spuittank",
+              "30 L strooitank",
+              "4–7 m spuitbreedte",
+              "16 L/min (2 sproeiers)",
+              "Ingebouwde luchtkartering"
+            ],
+            "image": "/images/drones/dji/t25p.png"
+          },
+          {
+            "id": "t30",
+            "name": "DJI Agras T30",
+            "tagline": "Beproefde 40 kg-spuitdrone met een vervormbaar frame",
+            "specs": [
+              "30 L spuittank",
+              "Tot 40 kg payload",
+              "Sferisch radarsysteem",
+              "IP67",
+              "Twee FPV-camera's"
+            ],
+            "image": "/images/drones/dji/t30.png"
+          },
+          {
+            "id": "m3m",
+            "name": "DJI Mavic 3M",
+            "tagline": "Multispectrale karteringsdrone voor precisielandbouw",
+            "specs": [
+              "4 × 5 MP multispectraal",
+              "20 MP 4/3 RGB-camera",
+              "43 min vliegtijd",
+              "Tot 200 ha per vlucht",
+              "RTK op centimeterniveau"
+            ],
+            "image": "/images/drones/dji/m3m.png"
+          }
+        ]
+      }
+    ],
+    "payloads": {
+      "title": "Voeg dronedetectie toe aan uw Matrice 400",
+      "desc": "YunScan001 wordt onder de M400 gemonteerd en detecteert drones en hun piloten binnen 10 km.",
+      "button": "YunScan001 bekijken"
+    },
+    "contact": {
+      "title": "Vind de juiste DJI-oplossing",
+      "desc": "Vertel ons over uw missie: wij adviseren toestel, payloads en accessoires en sturen u een offerte.",
+      "button": "Contact opnemen"
     }
   }
 }

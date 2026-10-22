@@ -3,6 +3,7 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/hero/Hero';
 import SpatialOverview from '@/components/sections/SpatialOverview';
 import AirspaceOverview from '@/components/sections/AirspaceOverview';
+import DjiOverview from '@/components/sections/DjiOverview';
 import PayloadsOverview from '@/components/sections/PayloadsOverview';
 import AIHardware from '@/components/sections/AIHardware';
 import News from '@/components/sections/News';
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Hero />
       <SpatialOverview imageSrc={overviewImages['spatial']} />
       <AirspaceOverview imageSrc={overviewImages['dronedetection']} />
+      <DjiOverview />
       <PayloadsOverview />
       <AIHardware />
       <About />

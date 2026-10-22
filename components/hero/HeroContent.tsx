@@ -30,10 +30,10 @@ const CARDS = [
     href: '#airspace',
   },
   {
-    key: 'payloads' as const,
+    key: 'drones' as const,
     icon: Drone,
     iconClass: 'text-accent',
-    href: '#payloads',
+    href: '#drones',
   },
   {
     key: 'ai' as const,
@@ -58,7 +58,7 @@ function BusinessCard({
   href,
   delay,
 }: {
-  cardKey: 'spatial' | 'airspace' | 'payloads' | 'ai';
+  cardKey: 'spatial' | 'airspace' | 'drones' | 'ai';
   icon: typeof Scan;
   iconClass: string;
   href: string;
