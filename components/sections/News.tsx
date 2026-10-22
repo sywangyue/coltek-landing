@@ -1,8 +1,9 @@
 'use client';
 
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
 
@@ -109,6 +110,35 @@ export default function News() {
   const allItems = t.raw('items') as NewsItem[];
   const items = allItems.slice(0, 3);
 
+  // Desktop scroller: arrow buttons step one card at a time
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const [canPrev, setCanPrev] = useState(false);
+  const [canNext, setCanNext] = useState(false);
+
+  const updateArrows = useCallback(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    setCanPrev(el.scrollLeft > 4);
+    setCanNext(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+
+  useEffect(() => {
+    updateArrows();
+    window.addEventListener('resize', updateArrows);
+    return () => window.removeEventListener('resize', updateArrows);
+  }, [updateArrows]);
+
+  const scrollByCard = (dir: 1 | -1) => {
+    const el = scrollerRef.current;
+    const card = el?.firstElementChild as HTMLElement | null;
+    if (!el || !card) return;
+    el.scrollBy({ left: dir * (card.offsetWidth + 20), behavior: 'smooth' });
+  };
+
+  const arrowClass =
+    'w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground ' +
+    'hover:border-primary hover:text-primary transition-colors disabled:opacity-30 disabled:pointer-events-none';
+
   return (
     <section id="news" className="bg-white py-24 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,12 +159,22 @@ export default function News() {
                 withAccent
               />
             </div>
-            <Link
-              href={`/${locale}/news`}
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors mt-6 lg:mt-0"
-            >
-              {t('viewAll')} <ArrowRight size={14} />
-            </Link>
+            <div className="flex items-center justify-between gap-4 mt-6 lg:mt-0">
+              <Link
+                href={`/${locale}/news`}
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
+              >
+                {t('viewAll')} <ArrowRight size={14} />
+              </Link>
+              <div className="hidden lg:flex items-center gap-2">
+                <button type="button" aria-label="Previous" onClick={() => scrollByCard(-1)} disabled={!canPrev} className={arrowClass}>
+                  <ChevronLeft size={18} />
+                </button>
+                <button type="button" aria-label="Next" onClick={() => scrollByCard(1)} disabled={!canNext} className={arrowClass}>
+                  <ChevronRight size={18} />
+                </button>
+              </div>
+            </div>
           </motion.div>
 
           {/* ── Right: horizontal scroll cards ── */}
@@ -147,7 +187,11 @@ export default function News() {
             </div>
 
             {/* Desktop: horizontal scroll */}
-            <div className="hidden lg:flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2">
+            <div
+              ref={scrollerRef}
+              onScroll={updateArrows}
+              className="hidden lg:flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
+            >
               {items.map((item, i) => (
                 <NewsCard key={i} item={item} delay={i * 0.12} />
               ))}
