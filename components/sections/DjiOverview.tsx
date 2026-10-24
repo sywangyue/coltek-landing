@@ -103,10 +103,10 @@ export default function DjiOverview() {
           >
             <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
               <Image
-                src="/images/drones/dji/m400.png"
-                alt="DJI Matrice 400 RTK"
+                src="/images/drones/dji/m400-landscape.webp"
+                alt="DJI Matrice 400"
                 fill
-                className="object-contain p-8"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
