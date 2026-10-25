@@ -101,7 +101,7 @@ export default function DjiOverview() {
             viewport={{ once: true, margin: '-80px' }}
             className="relative order-1 lg:order-2"
           >
-            <div className="relative aspect-[4/3] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
+            <div className="relative aspect-[16/9] rounded-[16px] bg-[#F1F5F9] overflow-hidden border border-border">
               <Image
                 src="/images/drones/dji/m400-landscape.webp"
                 alt="DJI Matrice 400"
