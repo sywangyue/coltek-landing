@@ -55,6 +55,9 @@ function ProductCard({
   contactHref: string;
   delay: number;
 }) {
+  const locale = useLocale();
+  const detailLabel = { zh: '查看产品详情', en: 'View product', de: 'Produkt ansehen', nl: 'Bekijk product' }[locale] ?? 'View product';
+  const detailHref = product.id === 'm400' ? `/${locale}/drones/dji/matrice-400` : null;
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -91,7 +94,11 @@ function ProductCard({
         </div>
 
         <div className="mt-auto flex flex-wrap items-center justify-between gap-2">
-          <a
+          {detailHref ? (
+            <Link href={detailHref} className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent border border-accent/40 rounded-full px-3 py-1 hover:bg-accent/5 transition-colors">
+              {detailLabel} <ArrowRight size={12} />
+            </Link>
+          ) : <a
             href={DJI_LINKS[product.id]}
             target="_blank"
             rel="noopener noreferrer"
@@ -99,9 +106,9 @@ function ProductCard({
           >
             {labels.officialSite}
             <ExternalLink size={11} />
-          </a>
+          </a>}
           <Link
-            href={contactHref}
+            href={detailHref ? `${detailHref}#inquiry` : contactHref}
             className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
           >
             {labels.quote} <ArrowRight size={14} />

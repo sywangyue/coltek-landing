@@ -129,12 +129,16 @@ export async function POST(req: NextRequest) {
   ].join('\n');
 
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'Sunova & Coltek Website <no-reply@sunova-innovation.nl>',
       to: 'support@sunova-innovation.nl',
       subject: `[Sunova & Coltek 询盘] ${name} - ${company}`,
       text,
     });
+    if (result.error) {
+      console.error('[contact] Resend rejected request:', result.error.name);
+      return NextResponse.json({ error: 'Email could not be sent. Please try again or contact us directly.' }, { status: 502 });
+    }
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error('[contact] Resend error:', err);
