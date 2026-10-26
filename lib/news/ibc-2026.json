@@ -5,7 +5,7 @@
     "blocks": [
       {
         "type": "paragraph",
-        "text": "在 2026 年 10 月 5 日发布的一篇文章中，Vizrt 展示了如何利用 XGRIDS PortalCam 采集真实环境，通过 3D 高斯泼溅（3DGS）进行重建，并将成果带入 Viz Engine，用于虚拟制作。"
+        "text": "在 2026 年 10 月 5 日发布的一篇文章中，Vizrt 展示了如何利用 **XGRIDS PortalCam** 采集真实环境，通过 **3D 高斯泼溅（3DGS）**进行重建，并将成果带入 Viz Engine，用于虚拟制作。"
       },
       {
         "type": "paragraph",
@@ -28,7 +28,7 @@
       },
       {
         "type": "paragraph",
-        "text": "今年展示的核心产品是全新的面向虚幻引擎的LCC插件（LCC Plugin for Unreal Engine）。它将XGRIDS的捕捉与重建工作流连接到用于虚拟制作的实时 3D 平台 Unreal Engine，打通了从PortalCam到LCC轻量化重建，再进入虚幻引擎的完整链条。"
+        "text": "今年展示的核心产品是全新的面向虚幻引擎的LCC插件（**LCC Plugin for Unreal Engine**）。它将XGRIDS的捕捉与重建工作流连接到用于虚拟制作的实时 3D 平台 Unreal Engine，打通了从PortalCam到LCC轻量化重建，再进入虚幻引擎的完整链条。"
       },
       {
         "type": "image",
@@ -39,7 +39,7 @@
       },
       {
         "type": "paragraph",
-        "text": "这一工作流连接三个阶段：PortalCam 采集真实场景；LCC 将数据重建为照片级真实的 3DGS 场景；面向虚幻引擎的 LCC 插件再将场景导入 Unreal，与其他制作资产共同使用。采集与重建耗时取决于场景规模、复杂程度和所用硬件。"
+        "text": "这一工作流连接三个阶段：**PortalCam 采集真实场景**；**LCC 将数据重建为照片级真实的 3DGS 场景**；面向虚幻引擎的 LCC 插件再**将场景导入 Unreal**，与其他制作资产共同使用。采集与重建耗时取决于场景规模、复杂程度和所用硬件。"
       },
       {
         "type": "image",
@@ -50,7 +50,7 @@
       },
       {
         "type": "paragraph",
-        "text": "对于虚拟制作团队而言，这有助于连接实景采集与实时渲染。PortalCam + LCC + UE 工作流将这些阶段衔接起来，插件还支持用于虚拟制作的 nDisplay。摄像机跟踪与片场运行仍需结合制作系统进行配置。"
+        "text": "对于虚拟制作团队而言，这有助于连接实景采集与实时渲染。**PortalCam + LCC + UE 工作流**将这些阶段衔接起来，插件还支持用于虚拟制作的 nDisplay。摄像机跟踪与片场运行仍需结合制作系统进行配置。"
       },
       {
         "type": "image",
@@ -61,7 +61,7 @@
       },
       {
         "type": "paragraph",
-        "text": "该插件支持大型 3DGS 场景，适合需要处理整个环境而非单一道具的工作流。截至本文发布时，XGRIDS 提供 Free 免费版，并将 Pro 版标注为限时免费。不同版本的功能与许可条件有所区别，部署前应查阅官方插件页面。"
+        "text": "该插件支持**大型 3DGS 场景**，适合需要处理整个环境而非单一道具的工作流。截至本文发布时，XGRIDS 提供 **Free 免费版**，并将 **Pro 版标注为限时免费**。不同版本的功能与许可条件有所区别，部署前应查阅官方插件页面。"
       },
       {
         "type": "image",
@@ -91,7 +91,7 @@
       },
       {
         "type": "paragraph",
-        "text": "正因如此，面向虚幻引擎的LCC插件这类集成才显得重要。随着生态逐渐成熟，最终胜出的技术将是能够融入创作者现有工作流的技术——让捕捉到的空间成为制作的下一环节，而不是流程的终点。"
+        "text": "正因如此，面向虚幻引擎的LCC插件这类集成才显得重要。随着生态逐渐成熟，最终胜出的技术将是**能够融入创作者现有工作流**的技术——让捕捉到的空间成为制作的下一环节，而不是流程的终点。"
       },
       {
         "type": "image",
@@ -110,7 +110,7 @@
       },
       {
         "type": "paragraph",
-        "text": "整个IBC期间，Sunova团队接待访客，展示XGRIDS产品，并讨论实景捕捉如何支持他们的项目。现场演示和面对面交流，让团队有机会了解来自建筑、测绘到数字内容制作等不同领域专业人士的优先需求。"
+        "text": "整个IBC期间，Sunova团队接待访客，展示XGRIDS产品，并讨论实景捕捉如何支持他们的项目。**现场演示和面对面交流**，让团队有机会了解来自建筑、测绘到数字内容制作等不同领域专业人士的优先需求。"
       },
       {
         "type": "image",
@@ -121,7 +121,7 @@
       },
       {
         "type": "paragraph",
-        "text": "这些讨论也凸显了许多用户共同关注的实际问题：捕捉工作流需要适应人们在现场的实际工作方式。对于在施工现场或多个地点作业的专业人士而言，捕捉、传输和共享数据的简便性，可能与最终模型质量同样重要。"
+        "text": "这些讨论也凸显了许多用户共同关注的实际问题：捕捉工作流需要适应人们在现场的实际工作方式。对于在施工现场或多个地点作业的专业人士而言，**捕捉、传输和共享数据的简便性**，可能与最终模型质量同样重要。"
       },
       {
         "type": "image",
@@ -147,7 +147,7 @@
       },
       {
         "type": "paragraph",
-        "text": "IBC 2026强化了实景捕捉未来的一个核心理念：捕捉世界只是开始。随着3DGS不断发展，其影响力将越来越取决于现实环境能否高效地从捕捉走向重建、集成和创意使用。"
+        "text": "IBC 2026强化了实景捕捉未来的一个核心理念：**捕捉世界只是开始**。随着3DGS不断发展，其影响力将越来越取决于现实环境能否高效地从捕捉走向重建、集成和创意使用。"
       },
       {
         "type": "paragraph",
@@ -161,7 +161,7 @@
     "blocks": [
       {
         "type": "paragraph",
-        "text": "In an article published on 5 October 2026, Vizrt explored how real-world environments captured with the XGRIDS PortalCam could be reconstructed using 3D Gaussian Splatting (3DGS) and brought into Viz Engine for virtual production."
+        "text": "In an article published on 5 October 2026, Vizrt explored how real-world environments captured with the **XGRIDS PortalCam** could be reconstructed using **3D Gaussian Splatting (3DGS)** and brought into Viz Engine for virtual production."
       },
       {
         "type": "paragraph",
@@ -184,7 +184,7 @@
       },
       {
         "type": "paragraph",
-        "text": "The centerpiece of this year's showcase was the new LCC Plugin for Unreal Engine. It connects XGRIDS' capture and reconstruction workflow to Unreal Engine, a real-time 3D platform used in virtual production, completing a chain that runs from the PortalCam, through LCC's lightweight reconstruction, into Unreal Engine."
+        "text": "The centerpiece of this year's showcase was the new **LCC Plugin for Unreal Engine**. It connects XGRIDS' capture and reconstruction workflow to Unreal Engine, a real-time 3D platform used in virtual production, completing a chain that runs from the PortalCam, through LCC's lightweight reconstruction, into Unreal Engine."
       },
       {
         "type": "image",
@@ -195,7 +195,7 @@
       },
       {
         "type": "paragraph",
-        "text": "The workflow connects three stages: PortalCam captures a real-world location; LCC reconstructs it into a photorealistic 3DGS scene; and the LCC Plugin for Unreal Engine brings that scene into Unreal alongside other production assets. Capture and reconstruction time depend on the size and complexity of the location and the hardware used."
+        "text": "The workflow connects three stages: **PortalCam captures a real-world location**; **LCC reconstructs it into a photorealistic 3DGS scene**; and the LCC Plugin for Unreal Engine **brings that scene into Unreal** alongside other production assets. Capture and reconstruction time depend on the size and complexity of the location and the hardware used."
       },
       {
         "type": "image",
@@ -206,7 +206,7 @@
       },
       {
         "type": "paragraph",
-        "text": "For virtual production teams, this helps connect location capture with real-time rendering. The PortalCam + LCC + UE workflow brings these stages together, with the plugin supporting nDisplay for virtual production. Camera tracking and on-set operation still depend on the production system and its configuration."
+        "text": "For virtual production teams, this helps connect location capture with real-time rendering. The **PortalCam + LCC + UE workflow** brings these stages together, with the plugin supporting nDisplay for virtual production. Camera tracking and on-set operation still depend on the production system and its configuration."
       },
       {
         "type": "image",
@@ -217,7 +217,7 @@
       },
       {
         "type": "paragraph",
-        "text": "The plugin supports large 3DGS scenes, which matters when scanning whole environments rather than individual props. As of publication, XGRIDS offers a Free edition and lists the Pro edition as free for a limited time. Features and licensing terms differ by edition; teams should check the official plugin page before deployment."
+        "text": "The plugin supports **large 3DGS scenes**, which matters when scanning whole environments rather than individual props. As of publication, XGRIDS offers a **Free edition** and lists the **Pro edition as free for a limited time**. Features and licensing terms differ by edition; teams should check the official plugin page before deployment."
       },
       {
         "type": "image",
@@ -247,7 +247,7 @@
       },
       {
         "type": "paragraph",
-        "text": "This is precisely why integrations like the LCC Plugin for Unreal Engine matter. As the ecosystem matures, the technology that wins is the one that fits into the workflows creators already use — turning a captured space into the next stage of a production, rather than a dead end."
+        "text": "This is precisely why integrations like the LCC Plugin for Unreal Engine matter. As the ecosystem matures, the technology that wins is the one that **fits into the workflows creators already use** — turning a captured space into the next stage of a production, rather than a dead end."
       },
       {
         "type": "image",
@@ -266,7 +266,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Throughout IBC, the Sunova team welcomed visitors to explore XGRIDS’ products and discuss how reality capture could support their projects. Live demonstrations and face-to-face conversations provided opportunities to understand the priorities of professionals working across different fields, from architecture and surveying to digital content production."
+        "text": "Throughout IBC, the Sunova team welcomed visitors to explore XGRIDS’ products and discuss how reality capture could support their projects. **Live demonstrations and face-to-face conversations** provided opportunities to understand the priorities of professionals working across different fields, from architecture and surveying to digital content production."
       },
       {
         "type": "image",
@@ -277,7 +277,7 @@
       },
       {
         "type": "paragraph",
-        "text": "These discussions also highlighted a practical consideration shared by many users: a capture workflow needs to fit the way people actually work in the field. For professionals operating on construction sites or across multiple locations, simplicity in capturing, transferring and sharing data can be just as important as the quality of the final model."
+        "text": "These discussions also highlighted a practical consideration shared by many users: a capture workflow needs to fit the way people actually work in the field. For professionals operating on construction sites or across multiple locations, **simplicity in capturing, transferring and sharing data** can be just as important as the quality of the final model."
       },
       {
         "type": "image",
@@ -303,7 +303,7 @@
       },
       {
         "type": "paragraph",
-        "text": "IBC 2026 reinforced a central idea for the future of reality capture: capturing the world is only the beginning. As 3DGS continues to develop, its impact will increasingly depend on how effectively real-world environments can move from capture into reconstruction, integration and creative use."
+        "text": "IBC 2026 reinforced a central idea for the future of reality capture: **capturing the world is only the beginning**. As 3DGS continues to develop, its impact will increasingly depend on how effectively real-world environments can move from capture into reconstruction, integration and creative use."
       },
       {
         "type": "paragraph",
