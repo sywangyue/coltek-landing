@@ -1,13 +1,5 @@
 import type { MetadataRoute } from 'next';
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const locales = ['en', 'de', 'nl', 'zh'];
-  const baseUrl = 'https://sunova-innovation.nl';
-
-  return locales.map((locale) => ({
-    url: `${baseUrl}/${locale}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 1,
-  }));
+const locales=['en','de','nl','zh'];
+return locales.flatMap(locale=>[{url:`https://sunova-innovation.nl/${locale}`,lastModified:new Date(),changeFrequency:'monthly' as const,priority:1},{url:`https://www.sunova-innovation.nl/${locale}/spatial/xgrids/lixel-l3`,lastModified:new Date(),changeFrequency:'monthly' as const,priority:0.8}]);
 }

@@ -200,9 +200,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
                 ))}
               </div>
               <a
-                href="https://www.xgrids.com/intl/lixell3"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/${locale}/spatial/xgrids/lixel-l3`}
                 className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-[8px] hover:bg-accent/90 transition-colors"
               >
                 {locale === 'zh' ? '了解更多 →' : locale === 'de' ? 'Mehr erfahren →' : locale === 'nl' ? 'Meer informatie →' : 'Learn More →'}
