@@ -124,6 +124,14 @@
     "readMore": "Meer lezen",
     "items": [
       {
+        "type": "Evenement",
+        "title": "IBC 2026: XGRIDS Brings Reality Capture into the Virtual Production Pipeline",
+        "date": "2026-10-26",
+        "summary": "Sunova blikt terug op IBC 2026: PortalCam, LCC en de Unreal Engine-plugin verbinden het vastleggen van echte ruimtes met virtuele productie.",
+        "slug": "ibc-2026",
+        "thumbnail": "/images/news/ibc-2026/ibc-01.webp"
+      },
+      {
         "type": "Event",
         "title": "INTERGEO 2026: XGRIDS Unveils Lixel L3, Advancing the Future of Reality Capture",
         "date": "2026-10-22",

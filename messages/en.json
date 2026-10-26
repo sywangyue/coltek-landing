@@ -125,6 +125,14 @@
     "items": [
       {
         "type": "Event",
+        "title": "IBC 2026: XGRIDS Brings Reality Capture into the Virtual Production Pipeline",
+        "date": "2026-10-26",
+        "summary": "Sunova looks back at IBC 2026, exploring how PortalCam, LCC reconstruction and the Unreal Engine plugin connect real-world capture with virtual production.",
+        "slug": "ibc-2026",
+        "thumbnail": "/images/news/ibc-2026/ibc-01.webp"
+      },
+      {
+        "type": "Event",
         "title": "INTERGEO 2026: XGRIDS Unveils Lixel L3, Advancing the Future of Reality Capture",
         "date": "2026-10-22",
         "summary": "At INTERGEO 2026 in Munich, XGRIDS introduced its flagship Lixel L3 scanner, combining validated 5 mm relative accuracy, photorealistic 3D reconstruction and an integrated spatial capture workflow, with the Sunova team hosting live demonstrations for European professionals.",

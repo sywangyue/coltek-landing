@@ -125,6 +125,14 @@
     "items": [
       {
         "type": "活动",
+        "title": "IBC 2026：XGRIDS 将实景采集带入虚拟制作流程",
+        "date": "2026-10-26",
+        "summary": "Sunova 回顾 IBC 2026：从 PortalCam 实景采集、LCC 重建到 Unreal Engine 插件，探索 3DGS 如何连接真实环境与虚拟制作。",
+        "slug": "ibc-2026",
+        "thumbnail": "/images/news/ibc-2026/ibc-01.webp"
+      },
+      {
+        "type": "活动",
         "title": "INTERGEO 2026：其域创新发布 Lixel L3，推动实景三维采集迈向新阶段",
         "date": "2026-10-22",
         "summary": "在慕尼黑 INTERGEO 2026 上，其域创新正式推出旗舰级扫描仪 Lixel L3，集经过验证的 5 mm 相对精度、照片级三维重建与一体化空间采集工作流于一身；Sunova 团队在展台现场为欧洲专业用户带来演示与交流。",
