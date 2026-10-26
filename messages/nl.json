@@ -155,6 +155,11 @@
     "title": "Technologie-experts met een wereldwijde visie",
     "story": "Missie: Gericht op de Europese markt benutten wij lokale operaties en toeleveringsketenvoordelen om technologiemerken in ruimtelijke intelligentie, beveiliging, drones en payloads, en AI-hardware een alles-in-één markttoegangsstrategie te bieden — zodat partners snel voet aan de grond krijgen en langetermijnwaarde creëren.\n\nVisie: De meest vertrouwde benchmark voor internationale techbedrijven op de Europese markt worden — door operationele barrières te doorbreken, professionele B2B-ondersteuning en B2C-verkoop samen te laten groeien en een brug te slaan voor mondiale technologieproducten naar Europa.",
     "stats": {
+      "dji": {
+        "value": "",
+        "label": "Erkend DJI Enterprise-dealer",
+        "detail": "Professionele drones & oplossingen"
+      },
       "entities": {
         "value": "2",
         "label": "Geregistreerde Entiteiten",

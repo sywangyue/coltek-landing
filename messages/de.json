@@ -155,6 +155,11 @@
     "title": "Technologieexperten mit globaler Vision",
     "story": "Mission: Mit Fokus auf den europäischen Markt nutzen wir lokale Betriebsstrukturen und Lieferkettenkompetenz, um Technologiemarken aus den Bereichen Raumintelligenz, Sicherheit, Drohnen und Nutzlasten sowie KI-Hardware eine umfassende Markteintritts-lösung zu bieten — für eine schnelle Etablierung und langfristige Wertschöpfung.\n\nVision: Der vertrauenswürdigste Maßstab für globale Technologieunternehmen im europäischen Markt zu werden — durch den Abbau aller operativen Barrieren, B2B-Enablement und B2C-Vertrieb im Einklang und als Brücke für globale Technologieprodukte nach Europa.",
     "stats": {
+      "dji": {
+        "value": "",
+        "label": "Autorisierter DJI Enterprise Händler",
+        "detail": "Professionelle Drohnen & Lösungen"
+      },
       "entities": {
         "value": "2",
         "label": "Registrierte Unternehmen",

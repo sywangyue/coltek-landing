@@ -155,6 +155,11 @@
     "title": "Technology Experts with a Global Vision",
     "story": "Mission: Focused on the European market, we leverage local operations and supply chain advantages to provide tech brands in spatial intelligence, security, drones and payloads, and AI hardware with a one-stop market-entry solution — helping partners establish a foothold quickly and create long-term value.\n\nVision: To become Europe's most trusted benchmark for tech companies going global — breaking down full-chain operational barriers, enabling professional B2B empowerment and B2C terminal sales in tandem, and building the bridge for global tech products into Europe.",
     "stats": {
+      "dji": {
+        "value": "",
+        "label": "DJI Enterprise Authorized Dealer",
+        "detail": "Enterprise drones & solutions"
+      },
       "entities": {
         "value": "2",
         "label": "Registered Entities",

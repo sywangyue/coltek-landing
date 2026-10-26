@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
 import { motion, useInView } from 'framer-motion';
 import { User } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
@@ -77,14 +77,14 @@ function StatCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay, ease: EASE }}
-      className={`bg-white rounded-[8px] border border-border p-6 text-center flex flex-col items-center justify-center gap-2${clickable ? ' hover:border-primary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer' : ''}`}
+      className={`bg-white rounded-[8px] border border-border h-full min-h-[168px] p-5 text-center flex flex-col items-center justify-start gap-2${clickable ? ' hover:border-primary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer' : ''}`}
     >
       {logo && (
-        <img src={logo} alt={label} className="h-10 w-auto object-contain mb-1" />
+        <div className="h-10 mb-2 mt-1 flex items-center justify-center"><img src={logo} alt={label} className={`${logo === '/images/logo/dji-logo.svg' ? 'h-7' : 'h-10'} w-auto max-w-full object-contain`} /></div>
       )}
       {!logo && (isNumber || value) && (
         <div
-          className="font-display text-4xl font-bold mb-1"
+          className="font-display text-4xl font-bold h-10 mb-2 mt-1"
           style={{
             background: 'linear-gradient(135deg, #8B5CF6, #34D399)',
             WebkitBackgroundClip: 'text',
@@ -128,7 +128,7 @@ function TeamCard({ name, role, image, delay }: { name: string; role: string; im
 // ââ Main section âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 export default function About() {
   const t = useTranslations('about');
-  const useLocaleValue = useLocale();
+
 
   const stats = [
     {
@@ -172,13 +172,23 @@ export default function About() {
             </div>
 
             {/* Stat cards */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-4 gap-3">
               <StatCard
                 value={stats[0].value}
                 label={stats[0].label}
                 detail={stats[0].detail}
                 delay={0}
               />
+              <a href="https://enterprise.dji.com/" target="_blank" rel="noopener noreferrer" className="block no-underline rounded-[8px] focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4">
+                <StatCard
+                  value=""
+                  label={t('stats.dji.label')}
+                  detail=""
+                  delay={0.06}
+                  logo="/images/logo/dji-logo.svg"
+                  clickable
+                />
+              </a>
               <a href="https://www.xgrids.com" target="_blank" rel="noopener noreferrer" className="block no-underline">
                 <StatCard
                   value={stats[1].value}
