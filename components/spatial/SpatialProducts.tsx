@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ScanLine, ExternalLink } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
-import WorkflowSteps from '@/components/shared/WorkflowSteps';
+import PlatformWorkflow from './PlatformWorkflow';
 import TechHighlights from '@/components/shared/TechHighlights';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
@@ -134,10 +134,6 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
     href: `/${locale}/spatial/xgrids/${SW_LINKS[k]}`,
   }));
 
-  const steps = [0,1,2,3].map((i) => ({
-    label: t(`workflow.step${i}.label` as Parameters<typeof t>[0]),
-    desc:  t(`workflow.step${i}.desc`  as Parameters<typeof t>[0]),
-  }));
 
   const techItems = [0,1,2,3,4].map((i) =>
     t(`techHighlights.item${i}` as Parameters<typeof t>[0])
@@ -219,12 +215,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </div>
 
         {/* Workflow */}
-        <WorkflowSteps
-          title={t('workflow.title')}
-          steps={steps}
-          accentFrom="#8B5CF6"
-          accentTo="#34D399"
-        />
+        <PlatformWorkflow />
 
         {/* Tech highlights */}
         <TechHighlights
