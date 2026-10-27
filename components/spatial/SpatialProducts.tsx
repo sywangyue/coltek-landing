@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { ScanLine, ExternalLink } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
 import PlatformWorkflow from './PlatformWorkflow';
-import TechHighlights from '@/components/shared/TechHighlights';
+import SpatialTechnology from './SpatialTechnology';
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 const fadeUp = (d = 0) => ({
@@ -218,10 +218,10 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         <PlatformWorkflow />
 
         {/* Tech highlights */}
-        <TechHighlights
+        <SpatialTechnology
           title={t('techHighlights.title')}
           items={techItems}
-          dotColor="#34D399"
+
         />
       </div>
     </section>
