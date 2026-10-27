@@ -258,7 +258,7 @@ const specGroupIndices:Record<string,number[][]>={
 };
 
 export function getXgridsProduct(slug:string,locale:string){
- const p=products.find(item=>item.slug===slug); if(!p)return null;
+ const p=products.find(item=>item.slug===slug); if(!p||slug==='lixel-l2-pro')return null;
  const text=(v:Text)=>L(v,locale);
  const overviewUrl='https://www.xgrids.com/intl/'+({ 'lixel-l3':'lixell3','lixel-k2':'lixelk2','lixel-l2-pro':'lixell2pro','portalcam':'portalcam','lixel-studio':'lixelstudio','lixel-go':'lixell2pro','lcc-studio':'lcc','lcc-for-revit':'lccRevit'} as Record<string,string>)[slug];
  const image=({'lixel-l2-pro':'/images/spatial/official/l2pro.webp','portalcam':'/images/spatial/official/portalcam.webp','lixel-studio':'/images/spatial/official/studio.webp','lixel-go':'/images/spatial/official/go.webp','lcc-studio':'/images/spatial/official/lcc.webp','lcc-for-revit':'/images/spatial/official/revit.webp'} as Record<string,string>)[slug]||p.image;
@@ -270,6 +270,6 @@ export function getXgridsProduct(slug:string,locale:string){
  specs:[...p.specs.map(([key,value])=>({label:text(specLabels[key]),value:text(value)})),...(extraSpecs[slug]||[]).map(([label,value])=>({label:text(label),value:text(value)}))],
  blocks:verifiedBlocks[slug].map(block=>({...block,title:text(block.title),navLabel:text(({outputs:q('成果展示','Outputs','Ergebnisse','Resultaten'),analysis:q('工程分析','Analysis','Analyse','Analyse'),applications:q('场景应用','Applications','Anwendungen','Toepassingen'),editions:q('版本对比','Editions','Versionen','Versies'),processing:q('数据处理','Processing','Verarbeitung','Verwerking'),fieldwork:q('现场作业','Fieldwork','Feldeinsatz','Veldwerk')} as Record<string,Text>)[block.id]||q('工作流程','Workflow','Workflow','Workflow')),items:block.items.map(item=>({...item,title:text(item.title),body:text(item.body),note:item.note?text(item.note):undefined}))})),
  ui:{navOutput:text(q('成果类型','Outputs','Ergebnisse','Resultaten')),navWorkflow:text(q('工作流程','Workflow','Workflow','Workflow')),navDetails:text(q('功能详情','Features','Funktionen','Functies')),...Object.fromEntries(Object.entries(labels).map(([k,v])=>[k,text(v)])),readMore:text(q('了解核心能力','Explore capabilities','Funktionen entdecken','Ontdek de functies')),official:text(q('依据 XGRIDS 官方产品资料整理','Based on official XGRIDS product information','Nach offiziellen XGRIDS-Produktinformationen','Gebaseerd op officiële XGRIDS-productinformatie')),contactTitle:text(q('了解产品，或为您的项目咨询','Discuss the product and your project','Produkt und Projekt besprechen','Bespreek het product en uw project')),noOrder:text(q('提交的是产品咨询，不会产生订单或付款。','This is a product enquiry, not an order or payment.','Dies ist eine Produktanfrage, keine Bestellung oder Zahlung.','Dit is een productaanvraag, geen bestelling of betaling.'))} as Record<keyof typeof labels|'readMore'|'official'|'navOutput'|'navWorkflow'|'navDetails',string>,
- related:products.filter(item=>item.kind===p.kind&&item.slug!==slug).map(item=>({slug:item.slug,name:item.name,headline:text(item.headline)}))};
+ related:products.filter(item=>item.kind===p.kind&&item.slug!==slug&&item.slug!=='lixel-l2-pro').map(item=>({slug:item.slug,name:item.name,headline:text(item.headline)}))};
 }
 export type XgridsProductData=NonNullable<ReturnType<typeof getXgridsProduct>>;

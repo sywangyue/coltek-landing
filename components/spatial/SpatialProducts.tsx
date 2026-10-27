@@ -26,9 +26,9 @@ function HardwareCard({ name, tagline, desc, delay, href, linkLabel, imageSrc }:
       viewport={{ once: true }}
       className="group bg-white border border-border rounded-[8px] overflow-hidden hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col"
     >
-      <div className="relative h-40 bg-[#F1F5F9] overflow-hidden rounded-t-lg">
+      <div className="relative aspect-video bg-[#111820] overflow-hidden rounded-t-lg">
         {imageSrc ? (
-          <Image src={imageSrc} alt={name} fill className="object-contain p-4 transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src={imageSrc} alt={name} fill className="object-contain" sizes="(max-width: 768px) 100vw, 50vw" />
         ) : (
           <div className="h-full flex flex-col items-center justify-center gap-2 transition-transform duration-300 group-hover:scale-105">
             <ScanLine size={32} className="text-accent/50" />
@@ -45,8 +45,6 @@ function HardwareCard({ name, tagline, desc, delay, href, linkLabel, imageSrc }:
         </div>
         <a
           href={href}
-          target="_blank"
-          rel="noopener noreferrer"
           className="mt-auto inline-flex items-center gap-1.5 self-start text-xs font-semibold text-accent border border-accent/40 rounded-full px-3 py-1 hover:bg-accent/5 transition-colors duration-200"
         >
           {linkLabel}
@@ -118,7 +116,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
   const locale = useLocale();
   const tCommon = useTranslations('common');
 
-  const hwKeys = ['k2', 'l2pro', 'portalcam'] as const;
+  const hwKeys = ['k2', 'portalcam'] as const;
   const swKeys = ['studio', 'go', 'lcc', 'revit'] as const;
 
   const linkLabel = tCommon('viewOnXgrids');
@@ -127,8 +125,8 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
     name:     t(`hardware.${k}.name`),
     tagline:  t(`hardware.${k}.tagline`),
     desc:     t(`hardware.${k}.desc` as Parameters<typeof t>[0]),
-    href:     HW_LINKS[k],
-    imageSrc: imageMap[HW_IMAGE_BASES[k]],
+    href:     `/${locale}/spatial/xgrids/${k==='k2'?'lixel-k2':'portalcam'}`,
+    imageSrc: ({k2:'/images/spatial/products/k2/kv-hero.jpg',portalcam:'/images/spatial/official/portalcam-banner.jpg'} as Record<string,string>)[k] || imageMap[HW_IMAGE_BASES[k]],
   }));
 
   const sw = swKeys.map((k, i) => ({
@@ -211,8 +209,8 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
 
         {/* Hardware */}
         <h3 className="font-display text-lg font-bold text-foreground mb-5">{t('hardware.sectionTitle')}</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
-          {hw.map((p, i) => <HardwareCard key={i} {...p} delay={i * 0.1} linkLabel={linkLabel} />)}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
+          {hw.map((p, i) => <HardwareCard key={i} {...p} delay={i * 0.1} linkLabel={({zh:'查看产品详情',en:'View product',de:'Produkt ansehen',nl:'Bekijk product'} as Record<string,string>)[locale] || 'View product'} />)}
         </div>
 
         {/* Software */}

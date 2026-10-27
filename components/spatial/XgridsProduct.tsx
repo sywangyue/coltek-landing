@@ -7,6 +7,7 @@ import {ArrowRight, ArrowUpRight} from 'lucide-react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import L3Chinese from './L3Chinese';
+import HardwareChinese from './HardwareChinese';
 import type {XgridsProductData} from '@/lib/xgrids-products';
 
 const wrap='mx-auto max-w-7xl px-5 sm:px-8';
@@ -36,7 +37,7 @@ export default function XgridsProduct({data:p,locale}:{data:XgridsProductData;lo
  }
  return <main lang={locale} className="bg-white pb-20 text-slate-900 lg:pb-0">
   <Navbar/>
-  {p.slug==='lixel-l3'?<L3Chinese data={p}/>:<>{cinematic?<section className="relative mt-16 overflow-hidden bg-[#141b26] text-white">
+  {p.slug==='lixel-l3'?<L3Chinese data={p}/>:['lixel-k2','portalcam'].includes(p.slug)?<HardwareChinese data={p}/>:<>{cinematic?<section className="relative mt-16 overflow-hidden bg-[#141b26] text-white">
    <div className="relative aspect-video md:absolute md:inset-0 md:aspect-auto"><Image src={p.image} alt={p.name} fill preload sizes="100vw" className="object-cover object-center"/></div>
    <div className="absolute inset-0 hidden bg-gradient-to-r from-black/85 via-black/35 to-transparent md:block"/>
    <div className={`${wrap} relative pb-12 pt-8 md:min-h-[600px] md:py-20 lg:py-28`}><Link href={base} className="text-xs text-white/70">XGRIDS / {u.all}</Link><div className="mt-10 max-w-md"><h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">{p.name}</h1><h2 className="mb-5 mt-5 text-2xl font-medium leading-snug">{p.headline}</h2><p className="text-sm leading-7 text-slate-200">{p.description}</p><a href={`#${p.blocks[0].id}`} className={`${button} mt-7`}>{u.readMore}<ArrowRight size={17}/></a></div></div>
