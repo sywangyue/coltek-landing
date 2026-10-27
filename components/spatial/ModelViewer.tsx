@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback } from 'react';
 import { RotateCcw, Maximize2 } from 'lucide-react';
 
-const VIEWER_URL = 'https://lcc-viewer.xgrids.com/pub/dhgdva-showroom';
+const VIEWER_URL = 'https://lcc-viewer.xgrids.com/pub/8daf9b78-371f-411f-8fa4-b85596a695c5';
 
 interface ModelViewerProps {
   instruction: string;
