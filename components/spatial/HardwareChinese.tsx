@@ -3,6 +3,7 @@ import {useHardwareText} from '@/lib/hardware-translations';
 import {useLocale} from 'next-intl';
 import {useState} from 'react';
 import Image from 'next/image';
+import ProductSectionNav from './ProductSectionNav';
 import Link from 'next/link';
 import {ArrowRight,ArrowDown,ArrowUpRight,ScanLine,Monitor,Globe2,Building2,Clapperboard,Boxes,Check,Gamepad2,Map,Glasses,Radar,Cpu,Network,Sparkles} from 'lucide-react';
 import type {XgridsProductData} from '@/lib/xgrids-products';
@@ -53,7 +54,7 @@ export default function HardwareChinese({data:p}:{data:XgridsProductData}){
   <section className="bg-[#07121f] pt-24 text-white"><div className={wrap}><Link href={`/${locale}/spatial/xgrids`} className="text-sm text-slate-300 hover:underline underline-offset-4">{t("XGRIDS / 全部产品")}</Link><div className="flex flex-wrap items-end justify-between gap-6 py-9 sm:py-12"><div><h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">{p.name}</h1><p className="mt-4 text-xl text-slate-200 sm:text-2xl">{isPortal?t("不止记录画面，记录整个空间。"):t("轻装扫描，把现场带回办公室。")}</p></div><a href="#inquiry" className={action}>{t("咨询配置与报价")}<ArrowUpRight size={17}/></a></div></div>
    <div className="mx-auto max-w-[1600px]">{isPortal?<Video src={portal+'banner_2.mp4'} label={t("PortalCam 官方产品展示")}/>:<div className='relative aspect-video'><Image src={p.image} alt={t("Lixel K2 官方整机展示")} fill preload sizes='100vw' className='object-contain'/></div>}</div><div className={`${wrap} py-8 sm:py-10`}><p className="max-w-3xl text-base leading-8 text-slate-200 sm:text-lg">{isPortal?t("四相机与激光雷达协同记录真实场景，经 LCC Studio 处理为可漫游、编辑与分享的 3DGS 内容。"):t("约 1.2 kg 机身，集成激光雷达、三相机与 RTK。一次采集，从现场实时点云到工程数据与实景模型，按交付目标选择处理路径。")}</p></div>
   </section>
-  <nav aria-label={p.name+t("页面导航")} className="sticky top-16 z-30 border-b border-slate-200 bg-white"><div className={`${wrap} flex overflow-x-auto`}>{nav.map(([id,title])=><a key={id} href={'#'+id} className="flex-1 whitespace-nowrap px-4 py-5 text-center text-sm font-medium hover:text-violet-700 focus-visible:outline-2 focus-visible:outline-violet-600">{title}</a>)}</div></nav>
+  <ProductSectionNav label={p.name+t("页面导航")} items={nav}/>
   <section id="capabilities" className={`${wrap} scroll-mt-36 py-16 sm:py-24`}>
    <div className="mb-10 grid gap-5 md:grid-cols-2 md:items-end"><h2 className={heading}>{isPortal?t("拍下的空间，真的可以走进去。"):t("轻量机身，认真对待每一个细节。")}</h2><p className="max-w-lg text-base leading-8 text-slate-600">{isPortal?t("在空间中自由改变观察位置，而不只是站在固定拍摄点旋转视角。下面是官方动态演示。"):t("现场采集效率与后续数据质量同样重要。先检查覆盖，再处理出符合项目需要的成果。")}</p></div>
    <Video src={isPortal?portal+'WhatisaSpatialCamera.mp4':k2+'K2_3_1_1.mp4'} label={isPortal?t("PortalCam 官方空间漫游演示"):t("K2 官方量测精度演示")}/>

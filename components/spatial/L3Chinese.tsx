@@ -2,6 +2,7 @@
 
 import {useEffect, useRef, useState} from 'react';
 import Image from 'next/image';
+import ProductSectionNav from './ProductSectionNav';
 import Link from 'next/link';
 import {ArrowRight, ArrowDown, ArrowUpRight, Check, ScanLine, Sparkles, Globe2, Gamepad2, Boxes, Map, Building2, Glasses, Radar, Cpu, Network} from 'lucide-react';
 import {useLocale} from 'next-intl';
@@ -60,9 +61,7 @@ export default function L3Chinese({data:p}:{data:XgridsProductData}){
    <OfficialVideo file="1.1/xgrids-l3-handheld-3d-lidar-scanner-hero_1.mp4" label={t("L3 官方产品动态展示")} className="mx-auto aspect-video max-w-[1600px]"/>
    <div className={`${width} py-8 sm:py-10`}><p className="max-w-3xl text-base leading-8 text-slate-200 sm:text-lg">{t("将激光雷达、真彩视觉、RTK 与触控屏集于一身。一次采集，为工程量测留下几何数据，也为空间展示保留视觉细节。")}</p></div>
   </section>
-  <nav aria-label={t("L3 页面导航")} className="sticky top-16 z-30 border-b border-slate-200 bg-white"><div className={`${width} flex overflow-x-auto`}>
-   {[['capabilities',t("核心能力")],['outputs',t("数据成果")],['workflow',t("作业流程")],['specifications',t("技术参数")],['inquiry',t("咨询采购")]].map(([id,label])=><a key={id} href={`#${id}`} className="flex-1 whitespace-nowrap px-4 py-5 text-center text-sm font-medium hover:text-violet-700 focus-visible:outline-2 focus-visible:outline-violet-600">{label}</a>)}
-  </div></nav>
+  <ProductSectionNav label={t("L3 页面导航")} items={[['capabilities',t("核心能力")],['outputs',t("数据成果")],['workflow',t("作业流程")],['specifications',t("技术参数")],['inquiry',t("咨询采购")]]}/>
 
   <section id="capabilities" className={`${width} scroll-mt-36 py-16 sm:py-24`}>
    <div className="mb-10 grid gap-5 md:grid-cols-2 md:items-end"><h2 className={heading}>{t("细节，经得起量测。")}</h2><p className="max-w-lg text-base leading-8 text-slate-600">{t("L3 的精度分为实时与后处理两组指标。现场先看清采集结果，再按交付要求完成数据处理。")}</p></div>

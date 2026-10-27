@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ScanLine, Monitor, Smartphone, Cloud, Puzzle, ExternalLink } from 'lucide-react';
+import { ScanLine, ExternalLink } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
 import WorkflowSteps from '@/components/shared/WorkflowSteps';
 import TechHighlights from '@/components/shared/TechHighlights';
@@ -56,11 +56,11 @@ function HardwareCard({ name, tagline, desc, delay, href, linkLabel, imageSrc }:
 }
 
 // Software card
-const SW_ICONS = [Monitor, Smartphone, Cloud, Puzzle];
+const SW_ICONS = ['lixelstudio-logo.png', 'lixelgo-logo.png', 'lccstudio-logo.png', 'revit-logo.png'];
 function SoftwareCard({ name, desc, iconIdx, delay, href, linkLabel }: {
   name: string; desc: string; iconIdx: number; delay: number; href: string; linkLabel: string;
 }) {
-  const Icon = SW_ICONS[iconIdx % SW_ICONS.length];
+  const icon = SW_ICONS[iconIdx % SW_ICONS.length];
   return (
     <motion.div
       variants={fadeUp(delay)}
@@ -70,8 +70,8 @@ function SoftwareCard({ name, desc, iconIdx, delay, href, linkLabel }: {
       className="bg-white border border-border rounded-[8px] p-4 flex flex-col gap-3 hover:-translate-y-1 hover:shadow-md transition-all duration-200"
     >
       <div className="flex gap-3">
-        <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-          <Icon size={18} className="text-accent" />
+        <div className={`w-12 h-12 rounded-lg flex items-center justify-center shrink-0 ${iconIdx === 0 || iconIdx === 3 ? 'bg-slate-900 p-2' : 'bg-slate-50 p-1'}`}>
+          <Image src={`/images/spatial/official/${icon}`} alt={`${name} logo`} width={48} height={48} className="h-full w-full object-contain" />
         </div>
         <div>
           <p className="text-sm font-semibold text-foreground mb-0.5">{name}</p>
