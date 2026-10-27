@@ -107,13 +107,12 @@ export default function SpatialOverview() {
             {/* 16:9 so the product name printed on the key visual is never cropped */}
             <Link
               href={`/${locale}/spatial/xgrids`}
-              className="group relative block aspect-[16/9] rounded-[16px] overflow-hidden border border-border bg-[#0B1220]"
+              className="group relative block sm:aspect-[16/9] rounded-[16px] overflow-hidden border border-border bg-[#0B1220]"
             >
               <Image
                 src="/images/spatial/products/l3/kv-hero.jpg"
                 alt="XGRIDS Lixel L3"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                width={1920} height={1080} className="h-auto w-full object-contain sm:absolute sm:inset-0 sm:h-full"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
@@ -128,7 +127,7 @@ export default function SpatialOverview() {
 
               {/* Launch strip, kept low on the dark floor so it clears the
                   product name and slogan printed on the key visual */}
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-4 pt-8 pb-3 sm:px-5 sm:pb-4">
+              <div className="relative sm:absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-4 pt-8 pb-3 sm:px-5 sm:pb-4">
                 <div className="min-w-0">
                   <p className="font-display text-base sm:text-lg font-bold text-white leading-tight">{t('launch.title')}</p>
                   <p className="hidden sm:block text-xs text-white/75 mt-0.5 line-clamp-2">{t('launch.subtitle')}</p>

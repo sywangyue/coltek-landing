@@ -32,14 +32,14 @@ function OfficialVideo({file,label,className='',fullFilm=false}:{file:string;lab
   const observer=new IntersectionObserver(([entry])=>{
    if(entry.isIntersecting){
     if(!video.getAttribute('src')){video.src=url;video.load();}
-    if(!motion.matches&&!fullFilm)void video.play().catch(()=>{/* Native controls remain available when autoplay is blocked. */});
+    if(!motion.matches&&!fullFilm)void video.play().catch(()=>{/* Keep the poster visible when autoplay is blocked. */});
    }else video.pause();
   },{threshold:0.2});
   observer.observe(video);
   return()=>{observer.disconnect();video.pause();video.removeAttribute('src');video.load();};
  },[url,fullFilm]);
  return <div className={`relative overflow-hidden bg-[#111820] ${className}`}>
-  <video ref={ref} aria-label={label} poster={url+'?x-oss-process=video/snapshot,t_1000,w_1200,m_fast'} controls muted={!fullFilm} loop={!fullFilm} playsInline preload="none" onError={()=>setFailed(true)} className="absolute inset-0 h-full w-full object-contain"/>
+  <video ref={ref} aria-label={label} poster={url+'?x-oss-process=video/snapshot,t_1000,w_1200,m_fast'} controls={fullFilm} tabIndex={fullFilm?0:-1} disablePictureInPicture={!fullFilm} muted={!fullFilm} loop={!fullFilm} playsInline preload="none" onError={()=>setFailed(true)} className={`absolute inset-0 h-full w-full object-contain ${fullFilm?'':'pointer-events-none'}`}/>
   {failed&&<p role="status" className="absolute inset-x-0 bottom-0 bg-slate-950 p-4 text-sm text-white">{t("视频暂时无法加载。")}<a className="ml-2 underline" href="https://www.xgrids.com/intl/lixell3" target="_blank" rel="noopener noreferrer">{t("查看官方演示")}</a></p>}
  </div>;
 }

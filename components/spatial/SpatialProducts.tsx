@@ -153,9 +153,10 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
         </motion.div>
 
         {/* NEW: Lixel L3 Featured Banner */}
-        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative" style={{background: 'url(/images/spatial/products/l3/kv-hero.jpg) center center/cover no-repeat', minHeight: '520px'}}>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
-          <div className="relative z-10 min-h-[520px] flex flex-col justify-between p-8 lg:p-10">
+        <div className="mb-10 rounded-2xl overflow-hidden border border-border relative bg-[#0b1220]">
+          <Image src="/images/spatial/products/l3/kv-hero.jpg" alt="Lixel L3" width={1920} height={1080} sizes="100vw" className="h-auto w-full object-contain sm:absolute sm:inset-0 sm:h-full sm:object-cover" />
+          <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
+          <div className="relative z-10 sm:min-h-[520px] flex flex-col justify-between gap-6 p-5 sm:p-8 lg:p-10">
 
             {/* Top row: badge + long description on the right */}
             <div className="flex items-start justify-between gap-8">
@@ -171,7 +172,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
 
             {/* Bottom row: short desc + specs + button */}
             <div>
-              <p className="font-display text-sm tracking-wide text-white/90 mb-4 whitespace-nowrap">
+              <p className="font-display text-sm tracking-wide text-white/90 mb-4 leading-relaxed">
                 {locale === 'zh'
                   ? 'XGRIDS 旗舰级高精度空间扫描仪，精度与照片级真彩兼得。'
                   : locale === 'de'
