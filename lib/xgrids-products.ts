@@ -260,7 +260,7 @@ const specGroupIndices:Record<string,number[][]>={
 export function getXgridsProduct(slug:string,locale:string){
  const p=products.find(item=>item.slug===slug); if(!p||slug==='lixel-l2-pro')return null;
  const text=(v:Text)=>L(v,locale);
- const overviewUrl='https://www.xgrids.com/intl/'+({ 'lixel-l3':'lixell3','lixel-k2':'lixelk2','lixel-l2-pro':'lixell2pro','portalcam':'portalcam','lixel-studio':'lixelstudio','lixel-go':'lixell2pro','lcc-studio':'lcc','lcc-for-revit':'lccRevit'} as Record<string,string>)[slug];
+ const overviewUrl='https://www.xgrids.com/intl/'+({ 'lixel-l3':'lixell3','lixel-k2':'lixelk2','lixel-l2-pro':'lixell2pro','portalcam':'portalcam','lixel-studio':'lixelstudio','lixel-go':'support/download/lixelgo','lcc-studio':'lcc','lcc-for-revit':'lccRevit'} as Record<string,string>)[slug];
  const image=({'lixel-l2-pro':'/images/spatial/official/l2pro.webp','portalcam':'/images/spatial/official/portalcam.webp','lixel-studio':'/images/spatial/official/studio.webp','lixel-go':'/images/spatial/official/go.webp','lcc-studio':'/images/spatial/official/lcc.webp','lcc-for-revit':'/images/spatial/official/revit.webp'} as Record<string,string>)[slug]||p.image;
  const specs=[...p.specs.map(([key,value])=>({label:text(specLabels[key]),value:text(value)})),...(extraSpecs[slug]||[]).map(([label,value])=>({label:text(label),value:text(value)}))];
  const specGroups=specGroupIndices[slug]?specGroupIndices[slug].map((indices,i)=>({title:text(specGroupTitles[i]),items:indices.map(index=>specs[index])})):specs.map(item=>({title:item.label,items:[item]}));

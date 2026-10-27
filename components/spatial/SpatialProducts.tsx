@@ -80,8 +80,6 @@ function SoftwareCard({ name, desc, iconIdx, delay, href, linkLabel }: {
       </div>
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 self-start text-xs font-semibold text-accent border border-accent/40 rounded-full px-3 py-1 hover:bg-accent/5 transition-colors duration-200"
       >
         {linkLabel}
@@ -105,21 +103,21 @@ const HW_LINKS: Record<string, string> = {
 };
 
 const SW_LINKS: Record<string, string> = {
-  studio: 'https://xgrids.com/lixelstudio',
-  go:     'https://xgrids.com/intl/scannerseries',
-  lcc:    'https://xgrids.com/intl/lcc',
-  revit:  'https://xgrids.com/intl/lccRevit',
+  studio: 'lixel-studio',
+  go:     'lixel-go',
+  lcc:    'lcc-studio',
+  revit:  'lcc-for-revit',
 };
 
 export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<string, string> }) {
   const t = useTranslations('spatialProducts');
   const locale = useLocale();
-  const tCommon = useTranslations('common');
+
 
   const hwKeys = ['k2', 'portalcam'] as const;
   const swKeys = ['studio', 'go', 'lcc', 'revit'] as const;
 
-  const linkLabel = tCommon('viewOnXgrids');
+  const linkLabel = ({zh:'查看产品详情',en:'View product details',de:'Produktdetails ansehen',nl:'Bekijk productdetails'} as Record<string,string>)[locale] || 'View product details';
 
   const hw = hwKeys.map((k) => ({
     name:     t(`hardware.${k}.name`),
@@ -133,7 +131,7 @@ export default function SpatialProducts({ imageMap = {} }: { imageMap?: Record<s
     name: t(`software.${k}.name`),
     desc: t(`software.${k}.desc`),
     idx:  i,
-    href: SW_LINKS[k],
+    href: `/${locale}/spatial/xgrids/${SW_LINKS[k]}`,
   }));
 
   const steps = [0,1,2,3].map((i) => ({
