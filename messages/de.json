@@ -1058,39 +1058,36 @@
           {
             "id": "m4t",
             "name": "DJI Matrice 4T",
-            "tagline": "Kompakte Wärmebild-Multisensordrohne für Sicherheit und Inspektion",
+            "tagline": "Die Lage erfassen. Wärme erkennen.",
             "specs": [
-              "49 Min. Flugzeit",
-              "Wärmebild 640 × 512",
-              "48 MP Weitwinkel + 3× / 7× Zoom",
-              "112× Hybridzoom",
-              "Laser-Entfernungsmesser 1800 m"
+              "Native Wärmebildauflösung · 640 × 512",
+              "Max. Flugzeit · 49 min",
+              "Laserentfernungsmesser · 1,800 m",
+              "Startgewicht · 1,219 g"
             ],
-            "image": "/images/drones/dji/m4t.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4e",
             "name": "DJI Matrice 4E",
-            "tagline": "Kompakte Drohne mit drei Kameras für Vermessung und Inspektion",
+            "tagline": "Aufnahmen für die Vermessung",
             "specs": [
-              "49 Min. Flugzeit",
-              "48 MP Weitwinkel (1/1,3″)",
-              "3× und 7× Zoom",
-              "Laser-Entfernungsmesser 1800 m",
-              "1219 g"
+              "Weitwinkelkamera · 4/3″ · 20 MP",
+              "Min. Fotointervall · 0.5 s",
+              "Max. Flugzeit · 49 min",
+              "Laserentfernungsmesser · 1,800 m"
             ],
-            "image": "/images/drones/dji/m4e.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4d",
             "name": "DJI Matrice 4D / 4TD",
-            "tagline": "Wetterfeste Dock-Drohnen, auch mit RC Plus 2 einsetzbar",
+            "tagline": "Vermessung oder Wärmebild. Die passende Drohne.",
             "specs": [
-              "54 Min. Flugzeit",
-              "IP55",
-              "Weitwinkel + mittlere Tele + Tele",
-              "Laser-Entfernungsmesser 1800 m",
-              "Wärmebildkamera (4TD)"
+              "Max. Flugzeit · 54 min",
+              "Schutzart · IP55",
+              "Startgewicht · 1,850 g",
+              "Max. Windwiderstand · 12 m/s"
             ],
             "image": "/images/drones/dji/m4td.png"
           }
@@ -1103,17 +1100,15 @@
         "items": [
           {
             "id": "dock4",
-            "name": "DJI Dock 4 mit Matrice 5TD",
-            "tagline": "Das erste DJI Dock mit automatischem Akkuwechsel",
+            "name": "DJI Dock 4 · Matrice 5TD",
+            "tagline": "Akkuwechsel für fortlaufende Fernmissionen",
             "specs": [
-              "Akkuwechsel < 25 s",
-              "24/7-Betrieb",
-              "Dock IP56, -40 bis 50 °C",
-              "Matrice 5TD: 59 Min., IP55",
-              "3 × 50-MP-Kameras + Wärmebild",
-              "LiDAR + mmWave-Radar"
+              "Akkuwechsel · <25 s",
+              "5TD max. Flugzeit · 59 min",
+              "Dock-Schutzart · IP56",
+              "Native Wärmebildauflösung · 1280 × 1024"
             ],
-            "image": "/images/drones/dji/dock4.png"
+            "image": "/images/drones/dji/official/dock4.webp"
           }
         ]
       },

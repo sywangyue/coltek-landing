@@ -57,7 +57,7 @@ function ProductCard({
 }) {
   const locale = useLocale();
   const detailLabel = { zh: '查看产品详情', en: 'View product', de: 'Produkt ansehen', nl: 'Bekijk product' }[locale] ?? 'View product';
-  const detailHref = product.id === 'm400' ? `/${locale}/drones/dji/matrice-400` : null;
+  const detailHref = ({m400:'matrice-400',m4t:'matrice-4t',m4e:'matrice-4e',m4d:'matrice-4d-series',dock4:'dock-4'} as Record<string,string>)[product.id] ? `/${locale}/drones/dji/${({m400:'matrice-400',m4t:'matrice-4t',m4e:'matrice-4e',m4d:'matrice-4d-series',dock4:'dock-4'} as Record<string,string>)[product.id]}` : null;
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}

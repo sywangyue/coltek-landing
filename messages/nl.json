@@ -1058,39 +1058,36 @@
           {
             "id": "m4t",
             "name": "DJI Matrice 4T",
-            "tagline": "Compacte thermische multisensordrone voor veiligheid en inspectie",
+            "tagline": "Overzicht krijgen. Warmte zichtbaar maken.",
             "specs": [
-              "49 min vliegtijd",
-              "Thermisch 640 × 512",
-              "48 MP groothoek + 3× / 7× zoom",
-              "112× hybride zoom",
-              "Laserafstandsmeter 1800 m"
+              "Oorspronkelijke thermische resolutie · 640 × 512",
+              "Max. vliegtijd · 49 min",
+              "Laserafstandsmeter · 1,800 m",
+              "Startgewicht · 1,219 g"
             ],
-            "image": "/images/drones/dji/m4t.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4e",
             "name": "DJI Matrice 4E",
-            "tagline": "Compacte drone met drie camera's voor kartering en inspectie",
+            "tagline": "Beelden met kartering als doel",
             "specs": [
-              "49 min vliegtijd",
-              "48 MP groothoek (1/1,3″)",
-              "3× en 7× zoom",
-              "Laserafstandsmeter 1800 m",
-              "1219 g"
+              "Groothoekcamera · 4/3″ · 20 MP",
+              "Min. foto-interval · 0.5 s",
+              "Max. vliegtijd · 49 min",
+              "Laserafstandsmeter · 1,800 m"
             ],
-            "image": "/images/drones/dji/m4e.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4d",
             "name": "DJI Matrice 4D / 4TD",
-            "tagline": "Weerbestendige dockdrones, ook los te vliegen met de RC Plus 2",
+            "tagline": "Kartering of warmtebeeld. Kies uw toestel.",
             "specs": [
-              "54 min vliegtijd",
-              "IP55",
-              "Groothoek + middentele + tele",
-              "Laserafstandsmeter 1800 m",
-              "Warmtebeeldcamera (4TD)"
+              "Max. vliegtijd · 54 min",
+              "Beschermingsklasse · IP55",
+              "Startgewicht · 1,850 g",
+              "Max. windbestendigheid · 12 m/s"
             ],
             "image": "/images/drones/dji/m4td.png"
           }
@@ -1103,17 +1100,15 @@
         "items": [
           {
             "id": "dock4",
-            "name": "DJI Dock 4 met Matrice 5TD",
-            "tagline": "Het eerste DJI-dock met automatische accuwissel",
+            "name": "DJI Dock 4 · Matrice 5TD",
+            "tagline": "Accuwissels voor doorlopende missies op afstand",
             "specs": [
-              "Accuwissel < 25 s",
-              "24/7 inzetbaar",
-              "Dock IP56, -40 tot 50 °C",
-              "Matrice 5TD: 59 min, IP55",
-              "3 × 50 MP-camera's + warmtebeeld",
-              "LiDAR + mmWave-radar"
+              "Accuwissel · <25 s",
+              "5TD max. vliegtijd · 59 min",
+              "Dockbescherming · IP56",
+              "Oorspronkelijke thermische resolutie · 1280 × 1024"
             ],
-            "image": "/images/drones/dji/dock4.png"
+            "image": "/images/drones/dji/official/dock4.webp"
           }
         ]
       },

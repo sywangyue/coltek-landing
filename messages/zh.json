@@ -1058,39 +1058,36 @@
           {
             "id": "m4t",
             "name": "DJI Matrice 4T",
-            "tagline": "面向公共安全与巡检的小型热成像多传感器无人机",
+            "tagline": "把现场看清，把温差看见",
             "specs": [
-              "49 分钟续航",
-              "热成像 640 × 512",
-              "48 MP 广角 + 3× / 7× 变焦",
-              "112× 混合变焦",
-              "激光测距 1800 m"
+              "原生热成像分辨率 · 640 × 512",
+              "最长飞行时间 · 49 min",
+              "激光测距 · 1,800 m",
+              "起飞重量 · 1,219 g"
             ],
-            "image": "/images/drones/dji/m4t.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4e",
             "name": "DJI Matrice 4E",
-            "tagline": "面向测绘与巡检的小型三摄无人机",
+            "tagline": "让每一张影像，进入测绘流程",
             "specs": [
-              "49 分钟续航",
-              "48 MP 广角（1/1.3″）",
-              "3× 与 7× 变焦",
-              "激光测距 1800 m",
-              "1219 g"
+              "广角相机 · 4/3″ · 20 MP",
+              "最短拍照间隔 · 0.5 s",
+              "最长飞行时间 · 49 min",
+              "激光测距 · 1,800 m"
             ],
-            "image": "/images/drones/dji/m4e.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4d",
             "name": "DJI Matrice 4D / 4TD",
-            "tagline": "防护等级更高的机场版无人机，也可搭配 RC Plus 2 单独使用",
+            "tagline": "从航测到热成像，选择合适的机场机型",
             "specs": [
-              "54 分钟续航",
-              "IP55",
-              "广角 + 中焦 + 长焦",
-              "激光测距 1800 m",
-              "热成像相机（4TD）"
+              "最长飞行时间 · 54 min",
+              "防护等级 · IP55",
+              "起飞重量 · 1,850 g",
+              "最大抗风能力 · 12 m/s"
             ],
             "image": "/images/drones/dji/m4td.png"
           }
@@ -1103,17 +1100,15 @@
         "items": [
           {
             "id": "dock4",
-            "name": "DJI Dock 4 与 Matrice 5TD",
-            "tagline": "DJI 首款支持自动换电的机场",
+            "name": "DJI Dock 4 · Matrice 5TD",
+            "tagline": "换电接力，让远程任务更连贯",
             "specs": [
-              "换电 < 25 秒",
-              "7×24 小时作业",
-              "机场 IP56，-40 ~ 50 °C",
-              "Matrice 5TD：59 分钟，IP55",
-              "3 × 50 MP 相机 + 热成像",
-              "LiDAR + 毫米波雷达"
+              "换电时间 · <25 s",
+              "5TD 最长飞行 · 59 min",
+              "机场防护 · IP56",
+              "原生热成像分辨率 · 1280 × 1024"
             ],
-            "image": "/images/drones/dji/dock4.png"
+            "image": "/images/drones/dji/official/dock4.webp"
           }
         ]
       },

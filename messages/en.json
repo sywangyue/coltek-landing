@@ -1058,39 +1058,36 @@
           {
             "id": "m4t",
             "name": "DJI Matrice 4T",
-            "tagline": "Compact thermal multi-sensor drone for public safety and inspection",
+            "tagline": "See the scene. Reveal the heat.",
             "specs": [
-              "49 min flight time",
-              "Thermal 640 × 512",
-              "48 MP wide + 3× / 7× zoom",
-              "112× hybrid zoom",
-              "Laser rangefinder 1800 m"
+              "Native thermal resolution · 640 × 512",
+              "Max. flight time · 49 min",
+              "Laser rangefinder · 1,800 m",
+              "Takeoff weight · 1,219 g"
             ],
-            "image": "/images/drones/dji/m4t.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4e",
             "name": "DJI Matrice 4E",
-            "tagline": "Compact triple-camera drone for mapping and inspection",
+            "tagline": "Capture with mapping in mind",
             "specs": [
-              "49 min flight time",
-              "48 MP wide (1/1.3″)",
-              "3× and 7× zoom",
-              "Laser rangefinder 1800 m",
-              "1219 g"
+              "Wide camera · 4/3″ · 20 MP",
+              "Min. photo interval · 0.5 s",
+              "Max. flight time · 49 min",
+              "Laser rangefinder · 1,800 m"
             ],
-            "image": "/images/drones/dji/m4e.png"
+            "image": "/images/drones/dji/official/m4.webp"
           },
           {
             "id": "m4d",
             "name": "DJI Matrice 4D / 4TD",
-            "tagline": "Weather-resistant dock drones, also flyable with the RC Plus 2",
+            "tagline": "Mapping or thermal missions. Choose your aircraft.",
             "specs": [
-              "54 min flight time",
-              "IP55",
-              "Wide + medium tele + tele",
-              "Laser rangefinder 1800 m",
-              "Thermal camera (4TD)"
+              "Max. flight time · 54 min",
+              "Ingress protection · IP55",
+              "Takeoff weight · 1,850 g",
+              "Max. wind resistance · 12 m/s"
             ],
             "image": "/images/drones/dji/m4td.png"
           }
@@ -1103,17 +1100,15 @@
         "items": [
           {
             "id": "dock4",
-            "name": "DJI Dock 4 with Matrice 5TD",
-            "tagline": "DJI's first dock with automatic battery swap",
+            "name": "DJI Dock 4 · Matrice 5TD",
+            "tagline": "Battery swaps for continuous remote workflows",
             "specs": [
-              "Battery swap < 25 s",
-              "24/7 operation",
-              "Dock IP56, -40 to 50 °C",
-              "Matrice 5TD: 59 min, IP55",
-              "3 × 50 MP cameras + thermal",
-              "LiDAR + mmWave radar"
+              "Battery swap · <25 s",
+              "5TD max. flight · 59 min",
+              "Dock protection · IP56",
+              "Native thermal resolution · 1280 × 1024"
             ],
-            "image": "/images/drones/dji/dock4.png"
+            "image": "/images/drones/dji/official/dock4.webp"
           }
         ]
       },
