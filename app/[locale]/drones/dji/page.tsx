@@ -67,12 +67,12 @@ function ProductCard({
       className="group bg-white border border-border rounded-[12px] overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
     >
       {/* Image (white: the product shots have transparent or white backgrounds) */}
-      <div className="relative aspect-video overflow-hidden bg-[#111a24] border-b border-border">
+      <div className="relative aspect-video overflow-hidden bg-slate-100 border-b border-border">
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
