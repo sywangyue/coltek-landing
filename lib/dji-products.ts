@@ -1382,7 +1382,7 @@ const products:Product[]=[
         ]
       }
     ],
-    "hero": "/images/drones/dji/m4td.png",
+    "hero": "/images/drones/dji/official/m4d-landscape.webp",
     "faq": [
       {
         "question": [

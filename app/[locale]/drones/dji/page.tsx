@@ -67,7 +67,7 @@ function ProductCard({
       className="group bg-white border border-border rounded-[12px] overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
     >
       {/* Image (white: the product shots have transparent or white backgrounds) */}
-      <div className="relative bg-white border-b border-border h-48">
+      <div className="relative aspect-video overflow-hidden bg-[#111a24] border-b border-border">
         <Image
           src={product.image}
           alt={product.name}

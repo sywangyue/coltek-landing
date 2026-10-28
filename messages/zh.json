@@ -1053,7 +1053,7 @@
               "40 km 图传（FCC）",
               "RTK 1 cm + 1 ppm"
             ],
-            "image": "/images/drones/dji/m400.png"
+            "image": "/images/drones/dji/m400-landscape.webp"
           },
           {
             "id": "m4t",
@@ -1089,7 +1089,7 @@
               "起飞重量 · 1,850 g",
               "最大抗风能力 · 12 m/s"
             ],
-            "image": "/images/drones/dji/m4td.png"
+            "image": "/images/drones/dji/official/m4d-landscape.webp"
           }
         ]
       },
@@ -1129,7 +1129,7 @@
               "O4 图传 20 km（FCC）",
               "4G 增强图传"
             ],
-            "image": "/images/drones/dji/fc100.png"
+            "image": "/images/drones/dji/official/fc100.webp"
           },
           {
             "id": "fc30",
@@ -1142,7 +1142,7 @@
               "IP55",
               "抗风 12 m/s"
             ],
-            "image": "/images/drones/dji/fc30.png"
+            "image": "/images/drones/dji/official/fc30-field.webp"
           }
         ]
       },
@@ -1162,7 +1162,7 @@
               "喷洒、播撒与吊运",
               "最大作业速度 13.8 m/s"
             ],
-            "image": "/images/drones/dji/t100.png"
+            "image": "/images/drones/dji/official/t100.webp"
           },
           {
             "id": "t70p",
@@ -1175,7 +1175,7 @@
               "喷幅 4–11 m",
               "吊运 65 kg"
             ],
-            "image": "/images/drones/dji/t70p.png"
+            "image": "/images/drones/dji/official/t70p.webp"
           },
           {
             "id": "t25p",
@@ -1188,7 +1188,7 @@
               "16 L/min（2 喷头）",
               "内置航测建图"
             ],
-            "image": "/images/drones/dji/t25p.png"
+            "image": "/images/drones/dji/official/t25p.webp"
           },
           {
             "id": "t30",
@@ -1201,7 +1201,7 @@
               "IP67",
               "双 FPV 相机"
             ],
-            "image": "/images/drones/dji/t30.png"
+            "image": "/images/drones/dji/official/t30-field.webp"
           },
           {
             "id": "m3m",
@@ -1214,7 +1214,7 @@
               "单次最多 200 公顷",
               "厘米级 RTK"
             ],
-            "image": "/images/drones/dji/m3m.png"
+            "image": "/images/drones/dji/official/m3m.webp"
           }
         ]
       }

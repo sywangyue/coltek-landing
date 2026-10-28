@@ -1053,7 +1053,7 @@
               "40 km Übertragung (FCC)",
               "RTK 1 cm + 1 ppm"
             ],
-            "image": "/images/drones/dji/m400.png"
+            "image": "/images/drones/dji/m400-landscape.webp"
           },
           {
             "id": "m4t",
@@ -1089,7 +1089,7 @@
               "Startgewicht · 1,850 g",
               "Max. Windwiderstand · 12 m/s"
             ],
-            "image": "/images/drones/dji/m4td.png"
+            "image": "/images/drones/dji/official/m4d-landscape.webp"
           }
         ]
       },
@@ -1129,7 +1129,7 @@
               "20 km O4-Übertragung (FCC)",
               "4G-verstärkte Übertragung"
             ],
-            "image": "/images/drones/dji/fc100.png"
+            "image": "/images/drones/dji/official/fc100.webp"
           },
           {
             "id": "fc30",
@@ -1142,7 +1142,7 @@
               "IP55",
               "12 m/s Windwiderstand"
             ],
-            "image": "/images/drones/dji/fc30.png"
+            "image": "/images/drones/dji/official/fc30-field.webp"
           }
         ]
       },
@@ -1162,7 +1162,7 @@
               "Sprühen, Streuen und Heben",
               "13,8 m/s max. Geschwindigkeit"
             ],
-            "image": "/images/drones/dji/t100.png"
+            "image": "/images/drones/dji/official/t100.webp"
           },
           {
             "id": "t70p",
@@ -1175,7 +1175,7 @@
               "4–11 m Sprühbreite",
               "65 kg Heben"
             ],
-            "image": "/images/drones/dji/t70p.png"
+            "image": "/images/drones/dji/official/t70p.webp"
           },
           {
             "id": "t25p",
@@ -1188,7 +1188,7 @@
               "16 L/min (2 Düsen)",
               "Integrierte Luftkartierung"
             ],
-            "image": "/images/drones/dji/t25p.png"
+            "image": "/images/drones/dji/official/t25p.webp"
           },
           {
             "id": "t30",
@@ -1201,7 +1201,7 @@
               "IP67",
               "Zwei FPV-Kameras"
             ],
-            "image": "/images/drones/dji/t30.png"
+            "image": "/images/drones/dji/official/t30-field.webp"
           },
           {
             "id": "m3m",
@@ -1214,7 +1214,7 @@
               "Bis zu 200 ha pro Flug",
               "Zentimetergenaues RTK"
             ],
-            "image": "/images/drones/dji/m3m.png"
+            "image": "/images/drones/dji/official/m3m.webp"
           }
         ]
       }
