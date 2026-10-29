@@ -25,6 +25,7 @@ const SOURCE_KEYS = ['exhibition', 'socialMedia', 'searchEngine', 'referral', 'p
 function InquiryForm() {
   const t = useTranslations('contact');
   const locale = useLocale();
+  const productOptions = {...PRODUCT_OPTIONS, payloads: locale === 'zh' ? ['yunscan', 'wissonP3'] : ['yunscan']};
   const [status, setStatus] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [interests, setInterests] = useState<string[]>([]);
@@ -188,10 +189,10 @@ function InquiryForm() {
               </label>
 
               {/* Product choices appear once an interest that has them is ticked */}
-              {PRODUCT_OPTIONS[key] && interests.includes(key) && (
+              {productOptions[key] && interests.includes(key) && (
                 <div className="mt-2 ml-7 pl-4 border-l-2 border-primary/20 space-y-2">
                   <p className="text-xs text-foreground-muted">{t('form.productOptionsLabel')}</p>
-                  {PRODUCT_OPTIONS[key].map((p) => (
+                  {productOptions[key].map((p) => (
                     <label key={p} className="flex items-center gap-3 cursor-pointer group">
                       <input
                         type="checkbox"

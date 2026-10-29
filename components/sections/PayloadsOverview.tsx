@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Radar, Drone, Cable, ArrowRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionTitle from '@/components/ui/SectionTitle';
@@ -110,7 +111,7 @@ export default function PayloadsOverview() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Decorative gradient accent */}
+            {locale === 'zh' && <Link href="/zh/payloads/wisson-p3" className="group mt-5 flex items-center gap-5 overflow-hidden rounded-xl border border-border bg-white hover:shadow-md"><Image src="/images/payloads/wisson-p3/facade-hero.jpg" alt="万勋P3幕墙清洗" width={160} height={100} className="h-28 w-32 object-cover sm:w-40"/><div className="py-4 pr-4"><p className="text-xs text-primary">清洁负载</p><h3 className="mt-1 font-semibold">WISSON P3</h3><span className="mt-2 inline-flex items-center gap-2 text-sm text-foreground-muted">了解空中柔韧清洗 <ArrowRight size={16}/></span></div></Link>}{/* Decorative gradient accent */}
             <div
               className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full opacity-10 -z-10"
               style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}

@@ -22,14 +22,16 @@
     "dji": "DJI 行业无人机",
     "djiDesc": "巡检、机场、运载与农业",
     "payloads": "无人机负载",
-    "payloadsDesc": "YunScan001 等任务负载",
+    "payloadsDesc": "侦测与清洁等任务负载",
     "yunscan": "YunScan001",
     "yunscanDesc": "机载无人机侦测",
     "aiHardware": "AI硬件",
     "news": "新闻",
     "download": "下载",
     "about": "关于我们",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "wissonP3": "万勋 P3 · 清洁负载",
+    "wissonP3Desc": "建筑立面空中柔韧清洗"
   },
   "hero": {
     "slogan": "科技品牌进入欧洲市场的\n一站式战略合作伙伴",
@@ -240,7 +242,8 @@
           "agriculture": "农业（Agras / Mavic 3M）"
         },
         "payloads": {
-          "yunscan": "YunScan001 – 机载无人机侦测"
+          "yunscan": "YunScan001 – 机载无人机侦测",
+          "wissonP3": "WISSON P3 – 清洁负载"
         }
       },
       "message": "留言",

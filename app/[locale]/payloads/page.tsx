@@ -47,7 +47,7 @@ function PayloadCard({ item, href, viewLabel }: { item: PayloadItem; href: strin
             src={item.image}
             alt={item.name}
             fill
-            className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+            className={`${item.id === 'wisson-p3' ? 'object-cover' : 'object-contain p-6'} group-hover:scale-105 transition-transform duration-300`}
             sizes="(max-width: 1024px) 100vw, 420px"
           />
         </div>
@@ -79,7 +79,7 @@ function PayloadCard({ item, href, viewLabel }: { item: PayloadItem; href: strin
 export default function PayloadsPage() {
   const t = useTranslations('payloads');
   const locale = useLocale();
-  const categories = t.raw('categories') as CategoryData[];
+  const categories = [...(t.raw('categories') as CategoryData[]), ...(locale === 'zh' ? [{key:'cleaning', title:'建筑立面清洁', desc:'从空中清洗负载到地面供水，按项目配置完整作业系统。', items:[{id:'wisson-p3', name:'WISSON Orion AP3-P3', tagline:'空中柔韧清洗，让高处立面更易接近。', specs:['Pliabot® 柔韧关节','可调喷射方向','地面供水'],image:'/images/payloads/wisson-p3/facade-hero.jpg',slug:'wisson-p3'}]}] : [])];
 
   return (
     <main>

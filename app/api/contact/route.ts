@@ -42,6 +42,7 @@ const productLabels: Record<string, Record<string, string>> = {
   },
   payloads: {
     yunscan: 'YunScan001',
+    wissonP3: 'WISSON Orion AP3-P3',
   },
 };
 

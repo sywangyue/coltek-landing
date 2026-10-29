@@ -83,6 +83,7 @@ export default function Navbar() {
       dropdown: [
         { labelKey: 'dji', descKey: 'djiDesc', href: `/${locale}/drones/dji` },
         { labelKey: 'payloads', descKey: 'payloadsDesc', href: `/${locale}/payloads` },
+        ...(locale === 'zh' ? [{ labelKey: 'wissonP3', descKey: 'wissonP3Desc', href: '/zh/payloads/wisson-p3' }] : []),
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
