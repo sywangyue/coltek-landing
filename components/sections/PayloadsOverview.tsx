@@ -35,6 +35,11 @@ export default function PayloadsOverview() {
   const locale = useLocale();
   const router = useRouter();
 
+  if(locale==='zh') return <section id="payloads" className="bg-background-alt py-20 lg:py-28"><div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div className="mb-10 flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><div className="max-w-2xl"><p className="mb-4 text-xs font-semibold tracking-widest text-accent">无人机负载</p><SectionTitle title="为不同任务，选择合适的负载。" withAccent/><p className="mt-5 text-base leading-8 text-foreground-muted">从空中侦测到建筑清洁，为现有飞行平台拓展任务能力。按应用选择产品系列，再确认平台适配与设备配置。</p></div><Link href="/zh/payloads" className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-primary">查看全部负载 <ArrowRight size={16}/></Link></div><div className="grid gap-6 md:grid-cols-2">{[
+      {name:'YunScan001',type:'侦测负载',description:'面向空中无人机侦测任务，将侦测能力随飞行平台带入作业区域。',image:'/images/payloads/yunscan/on-m400.png',href:'/zh/payloads/yunscan',fit:'object-contain p-6',tags:['机载无人机侦测','DJI M400 适配']},
+      {name:'WISSON 万勋 P3',type:'清洁负载',description:'面向建筑立面清洗，以柔韧清洗负载连接空中执行与地面供水。',image:'/images/payloads/wisson-p3/facade-hero.jpg',href:'/zh/payloads/wisson-p3',fit:'object-cover',tags:['柔韧清洗系统','空地协同配置']},
+    ].map(product=><Link key={product.name} href={product.href} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-lg focus-visible:outline-primary"><div className="relative aspect-[16/9] overflow-hidden bg-white"><Image src={product.image} alt={product.name} fill sizes="(max-width:767px) 100vw,50vw" className={product.fit}/></div><div className="flex flex-1 flex-col border-t border-border p-6 sm:p-8"><p className="text-xs font-semibold tracking-wider text-primary">{product.type}</p><h3 className="mt-3 text-2xl font-semibold">{product.name}</h3><p className="mt-4 text-sm leading-7 text-foreground-muted">{product.description}</p><ul className="my-6 flex flex-wrap gap-2">{product.tags.map(tag=><li key={tag} className="rounded-full border border-border px-3 py-1 text-xs text-foreground-muted">{tag}</li>)}</ul><span className="mt-auto flex items-center justify-between border-t border-border pt-5 text-sm font-semibold text-primary">了解产品<ArrowRight size={18} className="transition-transform group-hover:translate-x-1"/></span></div></Link>)}</div></div></section>;
+
   return (
     <section id="payloads" className="bg-background-alt py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -111,7 +116,7 @@ export default function PayloadsOverview() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {locale === 'zh' && <Link href="/zh/payloads/wisson-p3" className="group mt-5 flex items-center gap-5 overflow-hidden rounded-xl border border-border bg-white hover:shadow-md"><Image src="/images/payloads/wisson-p3/facade-hero.jpg" alt="万勋P3幕墙清洗" width={160} height={100} className="h-28 w-32 object-cover sm:w-40"/><div className="py-4 pr-4"><p className="text-xs text-primary">清洁负载</p><h3 className="mt-1 font-semibold">WISSON P3</h3><span className="mt-2 inline-flex items-center gap-2 text-sm text-foreground-muted">了解空中柔韧清洗 <ArrowRight size={16}/></span></div></Link>}{/* Decorative gradient accent */}
+            {/* Decorative gradient accent */}
             <div
               className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full opacity-10 -z-10"
               style={{ background: 'linear-gradient(135deg, #8B5CF6, #34D399)' }}

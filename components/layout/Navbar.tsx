@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Globe, ChevronDown, Menu, X } from 'lucide-react';
+import { Globe, ChevronDown, ChevronRight, Menu, X } from 'lucide-react';
 
 const LOCALES = [
   { code: 'en', label: 'English' },
@@ -16,6 +16,7 @@ const LOCALES = [
 ];
 
 type DropdownItem = {
+  children?: DropdownItem[];
   labelKey: string;
   descKey: string;
   href: string;
@@ -26,6 +27,19 @@ type NavItem = {
   href: string;
   dropdown?: DropdownItem[];
 };
+
+function PayloadSubmenu({sub, mobile=false, close}:{sub:DropdownItem;mobile?:boolean;close:()=>void}) {
+  const t=useTranslations('nav');
+  const [open,setOpen]=useState(false);
+  const id=`payload-submenu-${mobile?'mobile':'desktop'}`;
+  return <div className="relative" onMouseEnter={()=>!mobile&&setOpen(true)} onMouseLeave={()=>!mobile&&setOpen(false)} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))setOpen(false)}} onKeyDown={e=>{if(e.key==='Escape'){e.stopPropagation();setOpen(false);e.currentTarget.querySelector('button')?.focus()}}}>
+    <div className="flex items-center rounded-lg hover:bg-background-alt">
+      <Link href={sub.href} onClick={close} className="min-w-0 flex-1 px-4 py-3"><span className="block text-sm font-medium">{t(sub.labelKey)}</span>{!mobile&&<span className="mt-0.5 block text-xs text-foreground-muted">{t(sub.descKey)}</span>}</Link>
+      <button type="button" aria-label={t(sub.labelKey)} aria-expanded={open} aria-controls={id} onClick={()=>setOpen(!open)} className="mr-2 rounded-lg p-2 text-foreground-muted hover:bg-primary/10 focus-visible:outline-primary">{mobile?<ChevronDown size={16} className={open?'rotate-180':''}/>:<ChevronRight size={16}/>}</button>
+    </div>
+    {open&&<div id={id} className={mobile?'ml-5 border-l border-border pl-2':'absolute left-full top-0 w-64 pl-2'}><div className={mobile?'py-1':'rounded-2xl border border-border bg-white p-1 shadow-lg'}>{sub.children?.map(child=><Link key={child.labelKey} href={child.href} onClick={close} className="block rounded-xl px-4 py-3 hover:bg-background-alt focus-visible:outline-primary"><span className="block text-sm font-medium">{t(child.labelKey)}</span><span className="mt-1 block text-xs text-foreground-muted">{t(child.descKey)}</span></Link>)}</div></div>}
+  </div>;
+}
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -82,7 +96,10 @@ export default function Navbar() {
       href: `/${locale}/drones/dji`,
       dropdown: [
         { labelKey: 'dji', descKey: 'djiDesc', href: `/${locale}/drones/dji` },
-        { labelKey: 'payloads', descKey: 'payloadsDesc', href: `/${locale}/payloads` },
+        { labelKey: 'payloads', descKey: 'payloadsDesc', href: `/${locale}/payloads`, children: [
+          {labelKey:'yunscan',descKey:'yunscanDesc',href:`/${locale}/payloads/yunscan`},
+          ...(locale==='zh'?[{labelKey:'wissonP3',descKey:'wissonP3Desc',href:'/zh/payloads/wisson-p3'}]:[]),
+        ] },
       ],
     },
     { labelKey: 'aiHardware', href: `/${locale}/#ai-hardware` },
@@ -128,6 +145,9 @@ export default function Navbar() {
                 className="relative"
                 onMouseEnter={() => item.dropdown && setActiveDropdown(item.labelKey)}
                 onMouseLeave={() => setActiveDropdown(null)}
+                onFocus={() => item.dropdown && setActiveDropdown(item.labelKey)}
+                onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))setActiveDropdown(null)}}
+                onKeyDown={e=>{if(e.key==='Escape')setActiveDropdown(null)}}
               >
                 <Link
                   href={item.href}
@@ -153,9 +173,9 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -8 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute top-full left-0 mt-1 w-64 bg-white rounded-[16px] shadow-lg border border-border overflow-hidden"
+                        className="absolute top-full left-0 w-64 bg-white rounded-[16px] shadow-lg border border-border p-1"
                       >
-                        {item.dropdown.map((sub) => (
+                        {item.dropdown.map((sub) => sub.children ? <PayloadSubmenu key={sub.labelKey} sub={sub} close={()=>setActiveDropdown(null)}/> : (
                           <Link
                             key={sub.labelKey}
                             href={sub.href}
@@ -273,7 +293,7 @@ export default function Navbar() {
                             transition={{ duration: 0.15 }}
                             className="overflow-hidden pl-4"
                           >
-                            {item.dropdown.map((sub) => (
+                            {item.dropdown.map((sub) => sub.children ? <PayloadSubmenu key={sub.labelKey} sub={sub} mobile close={()=>setMobileOpen(false)}/> : (
                               <Link
                                 key={sub.labelKey}
                                 href={sub.href}
