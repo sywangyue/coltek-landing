@@ -98,7 +98,7 @@ export default function Navbar() {
         { labelKey: 'dji', descKey: 'djiDesc', href: `/${locale}/drones/dji` },
         { labelKey: 'payloads', descKey: 'payloadsDesc', href: `/${locale}/payloads`, children: [
           {labelKey:'yunscan',descKey:'yunscanDesc',href:`/${locale}/payloads/yunscan`},
-          ...(locale==='zh'?[{labelKey:'wissonP3',descKey:'wissonP3Desc',href:'/zh/payloads/wisson-p3'}]:[]),
+          {labelKey:'wissonP3',descKey:'wissonP3Desc',href:`/${locale}/payloads/wisson-p3`},
         ] },
       ],
     },

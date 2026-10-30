@@ -18,18 +18,20 @@
     "xgridsDesc": "Ruimtelijk intelligentieplatform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone-detectiesysteem",
-    "drones": "Drones",
+    "drones": "Drones & Payloads",
     "dji": "DJI Enterprise",
     "djiDesc": "Inspectie, docks, transport & landbouw",
     "payloads": "Drone-payloads",
-    "payloadsDesc": "YunScan001 en meer",
+    "payloadsDesc": "Payloads voor detectie en reiniging",
     "yunscan": "YunScan001",
     "yunscanDesc": "Dronedetectie vanuit de lucht",
     "aiHardware": "AI-hardware",
     "news": "Nieuws",
     "download": "Download",
     "about": "Over ons",
-    "contact": "Contact"
+    "contact": "Contact",
+    "wissonP3": "WISSON P3",
+    "wissonP3Desc": "Gevelreiniging vanuit de lucht"
   },
   "hero": {
     "slogan": "Uw alles-in-één strategische partner\nvoor toegang tot de Europese markt",
@@ -240,7 +242,8 @@
           "agriculture": "Landbouw (Agras / Mavic 3M)"
         },
         "payloads": {
-          "yunscan": "YunScan001 – dronedetectie vanuit de lucht"
+          "yunscan": "YunScan001 – dronedetectie vanuit de lucht",
+          "wissonP3": "WISSON P3"
         }
       },
       "message": "Bericht",

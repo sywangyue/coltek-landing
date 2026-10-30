@@ -18,18 +18,20 @@
     "xgridsDesc": "Spatial intelligence platform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drone detection system",
-    "drones": "Drones",
+    "drones": "Drones & Payloads",
     "dji": "DJI Enterprise",
     "djiDesc": "Inspection, docks, delivery & agriculture",
     "payloads": "Drone Payloads",
-    "payloadsDesc": "YunScan001 and more",
+    "payloadsDesc": "Detection and cleaning payloads",
     "yunscan": "YunScan001",
     "yunscanDesc": "Airborne drone detection",
     "aiHardware": "AI Hardware",
     "news": "News",
     "download": "Download",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "wissonP3": "WISSON P3",
+    "wissonP3Desc": "Aerial facade cleaning"
   },
   "hero": {
     "slogan": "Your One-Stop Strategic Partner\nfor European Market Entry",
@@ -240,7 +242,8 @@
           "agriculture": "Agriculture (Agras / Mavic 3M)"
         },
         "payloads": {
-          "yunscan": "YunScan001 – airborne drone detection"
+          "yunscan": "YunScan001 – airborne drone detection",
+          "wissonP3": "WISSON P3"
         }
       },
       "message": "Message",

@@ -25,7 +25,7 @@ const SOURCE_KEYS = ['exhibition', 'socialMedia', 'searchEngine', 'referral', 'p
 function InquiryForm() {
   const t = useTranslations('contact');
   const locale = useLocale();
-  const productOptions = {...PRODUCT_OPTIONS, payloads: locale === 'zh' ? ['yunscan', 'wissonP3'] : ['yunscan']};
+  const productOptions = {...PRODUCT_OPTIONS, payloads: ['yunscan', 'wissonP3']};
   const [status, setStatus] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [interests, setInterests] = useState<string[]>([]);

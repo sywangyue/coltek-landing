@@ -18,18 +18,20 @@
     "xgridsDesc": "Räumliche Intelligenz-Plattform",
     "droneguard": "GlobeProtect",
     "droneguardDesc": "Drohnenerkennungssystem",
-    "drones": "Drohnen",
+    "drones": "Drohnen & Nutzlasten",
     "dji": "DJI Enterprise",
     "djiDesc": "Inspektion, Docks, Transport & Landwirtschaft",
     "payloads": "Drohnen-Nutzlasten",
-    "payloadsDesc": "YunScan001 und mehr",
+    "payloadsDesc": "Nutzlasten für Detektion und Reinigung",
     "yunscan": "YunScan001",
     "yunscanDesc": "Luftgestützte Drohnenerkennung",
     "aiHardware": "AI Hardware",
     "news": "Neuigkeiten",
     "download": "Download",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "wissonP3": "WISSON P3",
+    "wissonP3Desc": "Fassadenreinigung aus der Luft"
   },
   "hero": {
     "slogan": "Ihr One-Stop-Strategiepartner\nfür den Eintritt in den europäischen Markt",
@@ -240,7 +242,8 @@
           "agriculture": "Landwirtschaft (Agras / Mavic 3M)"
         },
         "payloads": {
-          "yunscan": "YunScan001 – luftgestützte Drohnenerkennung"
+          "yunscan": "YunScan001 – luftgestützte Drohnenerkennung",
+          "wissonP3": "WISSON P3"
         }
       },
       "message": "Nachricht",

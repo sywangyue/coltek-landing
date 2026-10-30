@@ -1,4 +1,5 @@
 'use client';
+import {getWissonCopy} from '@/lib/wisson-copy';
 import {useRef, useState, type FormEvent} from 'react';
 import {useLocale, useTranslations} from 'next-intl';
 import {ArrowRight, Check, Mail} from 'lucide-react';
@@ -8,9 +9,10 @@ const field = 'mt-2 w-full min-w-0 rounded-lg border border-slate-300 bg-white p
 
 
 const p={name:'WISSON Orion AP3-P3'};
-const u={enquiryTitle:'一起确认你的 P3 清洗方案',enquiryIntro:'告诉我们建筑材质、作业高度与面积、现有无人机和供水条件，我们将与你确认设备配置、报价与交付。',selected:'咨询产品',none:'P3 柔韧系留清洗系统',placeholder:'例如：玻璃幕墙、预计清洗高度和面积、现有无人机型号、供水条件，以及希望了解的配置。',inquiry:'项目咨询'};
 export default function WissonP3Inquiry(){
-const locale=useLocale();const t=useTranslations('matrice400');
+const locale=useLocale();const w=getWissonCopy(locale);
+const u={enquiryTitle:w(77),enquiryIntro:w(78),selected:w(79),none:w(80),placeholder:w(81),inquiry:w(21)};
+const t=useTranslations('matrice400');
 const enquiryChoice=null;
 const [status,setStatus]=useState<'idle'|'sending'|'success'|'error'>('idle');
 const [error,setError]=useState('');const sending=useRef(false);
